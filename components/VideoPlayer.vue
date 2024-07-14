@@ -1,0 +1,32 @@
+<template>
+  <div>
+    <video autoplay loop muted playsinline class="full-size-video">
+      <source 
+      v-for="source in videoSources" :key="source.src"
+              :src="source.src" :type="source.type" :media="source.media">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    'videoSources': {
+      type: Array,
+      required: true,
+      validator(sources) {
+        return sources.every(source => 'src' in source && 'type' in source);
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+.full-size-video {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100vh; /* Optionally limit the height to the viewport */
+}
+</style>

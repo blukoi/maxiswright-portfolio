@@ -57,6 +57,12 @@ module.exports = {
         'main': ['brother-1816', 'sans-serif'], // Primary sans-serif font
         'title': ['Optician Sans', 'sans-serif'] // Specialized title font
       },
+
+
+      height: {
+        '75vh': '75vh',
+        '50vh': '50vh',
+      },
     },
 
     screens: {

@@ -2,23 +2,23 @@
   <div>
     <CustomCursor />
     <NavBar />
-    <TestComponent />
-    <HomeJumbotron />
+    <!-- <TestComponent /> -->
+    <div class="fixed top-20 w-full content-center h-50vh md:h-75vh z-0">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-12">
+        <div class="col-span-1 col-start-1 md:col-span-6 md:col-start-4">
+          <JumbotronHome />
+        </div>
+      </div>
+    </div>
+    <div class="">
+      Test
+    </div>
   </div>
 </template>
 
 <script>
-import CustomCursor from '~/components/CustomCursor.vue';
-import NavBar from '~/components/NavBar.vue';
-import TestComponent from '~/components/TestComponent.vue';
-
 export default {
   name: 'HomePage',
-  components: {
-    CustomCursor,
-    TestComponent,
-    NavBar,
-  },
   head: {
     title: 'Max is Wright',
     meta: [
