@@ -20,6 +20,8 @@ module.exports = {
         'postitYellow': '#FFF6A4',
         'postitBlue': '#89CBFB',
         'postitPink': '#F9BCEE',
+        'homeGray': '#2c2c2c',
+        'whiteFaded': 'rgba(255,255,255,0.48)',
 
 
         // WORK CASE STUDIES
@@ -46,13 +48,13 @@ module.exports = {
       },
 
       backgroundImage: {
-        'bg-gradient-applecar': 'linear-gradient(to right, #BF5AF3, #0B84FF)',
-        'bg-gradient-tattooo': 'linear-gradient(to right, #4285F4, #6416C7, #FF6F6F)',
-        'bg-gradient-fontfacing': 'linear-gradient(to right, #2D71F6, #540761)',
+        'applecar': 'linear-gradient(to right, #BF5AF3, #0B84FF)',
+        'tattooo': 'linear-gradient(to right, #4285F4, #6416C7, #FF6F6F)',
+        'fontfacing': 'linear-gradient(to right, #2D71F6, #540761)',
       },
-      
+
       fontFamily: {
-        'sans': ['brother-1816', 'sans-serif'], // Primary sans-serif font
+        'main': ['brother-1816', 'sans-serif'], // Primary sans-serif font
         'title': ['Optician Sans', 'sans-serif'] // Specialized title font
       },
     },

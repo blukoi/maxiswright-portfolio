@@ -1,4 +1,9 @@
 /* Define custom fonts */
+/* Define custom fonts */
+/* Define custom fonts */
+/* Define custom fonts */
+/* Define custom fonts */
+
 @font-face {
     font-family: 'Optician Sans';
     src: url('~/Assets/fonts/Optician-Sans.otf') format('opentype');
@@ -6,11 +11,40 @@
     font-style: normal;
 }
 
+/* Prep for custom cursor */
+/* Prep for custom cursor */
+/* Prep for custom cursor */
+/* Prep for custom cursor */
+/* Prep for custom cursor */
+
 html, body, a {
     cursor: none;
 }
 
 /* Tailwind's Base, Components, and Utilities */
+/* Tailwind's Base, Components, and Utilities */
+/* Tailwind's Base, Components, and Utilities */
+/* Tailwind's Base, Components, and Utilities */
+/* Tailwind's Base, Components, and Utilities */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Shortening Repeating Class Groups */
+/* Shortening Repeating Class Groups */
+/* Shortening Repeating Class Groups */
+/* Shortening Repeating Class Groups */
+/* Shortening Repeating Class Groups */
+
+.gradient-applecar {
+    @apply bg-gradient-to-r from-applecarAutonomous to-applecarBlue;
+}
+
+/* .gradient-fontfacing {
+    @apply bg-gradient-to-r from-[#2D71F6] to-[#540761];
+}
+
+.gradient-tattooo {
+    @apply bg-gradient-to-r from-[#4285F4] via[#6416C7] to-[#FF6F6F];
+} */
