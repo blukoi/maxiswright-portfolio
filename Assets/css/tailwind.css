@@ -19,6 +19,8 @@
 
 html, body, a {
     cursor: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {

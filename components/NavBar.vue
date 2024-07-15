@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed z-50 top-0 w-full h-20 content-center bg-whiteFaded backdrop-filter backdrop-blur-sm font-main font-light">
+    <nav class="fixed z-50 top-0 w-full h-20 content-center bg-whiteFaded backdrop-filter backdrop-blur-sm font-main font-normal">
       <div class="w-full container mx-auto px-4 sm:px-0">
         <div class="flex flex-row justify-between">
           <nuxt-link to="/" class="w-12 h-12 rounded-full bg-black hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-white active:text-mint stroke-none focus:stroke-white">
