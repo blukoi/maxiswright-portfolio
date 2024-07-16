@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed z-50 top-0 w-full h-20 content-center bg-whiteFaded backdrop-filter backdrop-blur-sm font-main font-normal">
+    <nav class="fixed z-50 top-0 w-full h-20 content-center bg-whiteFaded backdrop-filter backdrop-blur-sm font-main">
       <div class="w-full container mx-auto px-4 sm:px-0">
         <div class="flex flex-row justify-between">
           <nuxt-link to="/" class="w-12 h-12 rounded-full bg-black hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-white active:text-mint stroke-none focus:stroke-white">
@@ -10,7 +10,7 @@
               </g>
             </svg>
           </nuxt-link>
-          <ul class="flex flex-row gap-3 h-fill items-center uppercase text-xs tracking-wider">
+          <ul class="flex flex-row gap-3 h-fill items-center uppercase text-xs font-bold tracking-wider">
             <li>
                 <ButtonSmall label="Home" link="/" />
             </li>

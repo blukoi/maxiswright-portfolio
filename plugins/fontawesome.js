@@ -43,6 +43,8 @@ import {
     fa8,
     fa9,
     fa0,
+    faHand,
+    faArrowRightLong,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -96,6 +98,8 @@ library.add(
     fa8,
     fa9,
     fa0,
+    faHand,
+    faArrowRightLong,
     faFontAwesome,
     faLinkedin,
     faInstagram,
@@ -109,4 +113,4 @@ library.add(
 //  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon);
 // });
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('FontAwesomeIcon', FontAwesomeIcon);

@@ -1,36 +1,51 @@
 [
     {
-      "image": "/Work/EV/0_Cockpit.png",
-      "title": "UX Design for the Apple Car",
-      "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
-      "category": "Automotive UX",
-      "categoryIcon": "fas fa-car-side",
-      "buttonLink": "/applecar",
-      "highlight": true,
-      "completed": true,
-      "type": "Work"
+        "id": "1",
+        "image": "/Work/EV/0_Cockpit.png",
+        "title": "UX Design for the Apple Car",
+        "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
+        "category": "Automotive UX",
+        "categoryIcon": "fas fa-car-side",
+        "buttonLink": "/applecar",
+        "highlight": true,
+        "completed": true,
+        "type": "Work"
     },
     {
-      "image": "/Experiments/CarControls/0_Cover_Med.png",
-      "title": "Rethinking Physical Car Controls",
-      "caption": "Exploring ways to reintroduce physical controls to the touchscreen interactions which currently dominate the vehicle dashboard landscape",
-      "category": "Automotive UX",
-      "categoryIcon": "fas fa-car-side",
-      "buttonLink": "/carcontrols",
-      "highlight": false,
-      "completed": true,
-      "type": "Experiment"
+        "id": "2",
+        "image": "/Experiments/CarControls/0_Cover_Med.png",
+        "title": "Rethinking Physical Car Controls",
+        "caption": "Exploring ways to reintroduce physical controls to the touchscreen interactions which currently dominate the vehicle dashboard landscape",
+        "category": "Automotive UX",
+        "categoryIcon": "fas fa-car-side",
+        "buttonLink": "/carcontrols",
+        "highlight": false,
+        "completed": true,
+        "type": "Experiment"
     },
     {
-      "image": "/Work/Fontfacing/0_Cover.png",
-      "title": "Innovating Typeface Design",
-      "caption": "Creating a concept for an AI-driven design app, and exploring how AI features are visually incorporated into complex interfaces, to streamline the design process of typography",
-      "category": "Automotive UX",
-      "categoryIcon": "fas fa-car-side",
-      "buttonLink": "/fontfacing",
-      "highlight": true,
-      "completed": true,
-      "type": "Work"
+        "id": "3",
+        "image": "/Work/Fontfacing/0_Cover.png",
+        "title": "Innovating Typeface Design",
+        "caption": "Creating a concept for an AI-driven design app, and exploring how AI features are visually incorporated into complex interfaces, to streamline the design process of typography",
+        "category": "Desktop App",
+        "categoryIcon": "fas fa-desktop",
+        "buttonLink": "/fontfacing",
+        "highlight": true,
+        "completed": true,
+        "type": "Work"
+    },
+    {
+        "id": "4",
+        "image": "/Work/Tattooo/0_Cover_Med.png",
+        "title": "A More Comfortable Approach to Tattooing",
+        "caption": "Designing a quasi-social platform for tattoo artists and enthusiasts, especially first-timers, with a tailored visual design language and information architecture",
+        "category": "Mobile App",
+        "categoryIcon": "fas fa-mobile-screen",
+        "buttonLink": "/tattooo",
+        "highlight": true,
+        "completed": true,
+        "type": "Work"
     }
 ]
   
