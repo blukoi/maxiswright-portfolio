@@ -12,7 +12,7 @@
     </div>
     <div class="w-full h-50vh bg-transparent inline-block"></div>
     <div class="w-full content-center z-10 bg-grayLighter relative">
-      <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-24">
+      <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32">
 
         <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 -mt-24 mb-24 pointer-events-none">
           <div class="col-span-1">

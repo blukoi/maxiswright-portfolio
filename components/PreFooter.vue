@@ -1,10 +1,10 @@
 <template>
     <div class="w-full content-center z-10 bg-white relative">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1">
-            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 my-24 text-2xl font-title">
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 my-32 text-2xl font-title">
 
                 <div class="col-span-1">
-                    <h1 class="">More —</h1>
+                    <h1 class="text-grayDarkest">More —</h1>
                 </div>
 
                 <nuxt-link v-if="linksVisibility[0]" :to="currentProject.buttonLink" class="col-span-1 md:col-span-2 bg-grayDarker hover:bg-mint px-8 py-6 rounded-md flex flex-row items-center space-x-4 text-white">
