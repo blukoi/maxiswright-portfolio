@@ -80,17 +80,108 @@
       </div>
       <div class="w-full content-center z-20 bg-grayDarkest relative">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 my-32">
-            <div class="col-span-3 h-14 bg-transparent md:h-20 md:bg-mint pl-0 md:pl-8 rounded-md flex flex-row text-white items-center space-x-6">
+            <div class="col-span-1 md:col-span-3 h-14 bg-transparent md:h-20 md:bg-mint pl-0 md:pl-8 rounded-md flex flex-row text-white items-center space-x-6">
                 <div class="h-12 w-12 flex flex-row justify-items-center items-center hidden md:grid">
                     <FontAwesomeIcon :icon="['fas', 'address-card']" class="text-3xl" />
                 </div>
                 <h1 class="text-2xl font-title">Core Competencies</h1>
             </div>
-            <div class="col-span-1 bg-white rounded-md p-4">
-                <div class="w-full bg-transparent rounded-sm">
+            <div class="col-span-1 bg-white rounded-md p-4 space-y-8">
+                <div class="w-full flex justify-center bg-transparent rounded-sm">
+                    <img src="/Brand/Core_DesignResearch.svg" alt="Example Illustration Depicting Research via White Boarding and Post-Its" class="md:w-full">
                 </div>
-                <div class="w-full">
-                    <h1 class="font-title text-xl text-grayDarker">Design Research</h1>
+                <div class="w-full pl-4">
+                    <div class="w-full">
+                        <h1 class="font-title text-xl text-grayDarker">Design Research</h1>
+                    </div>
+                    <div>
+                        <ul class="list-none flex flex-row flex-wrap gap-1">
+                            <PillsPrimary :tags="designResearch"></PillsPrimary>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 bg-white rounded-md p-4 space-y-8">
+                <div class="w-full flex justify-center bg-transparent rounded-sm">
+                    <img src="/Brand/Core_VisualDesign.svg" alt="Example Illustration Depicting the Visual Design and Alteration of a Design System" class="md:w-full">
+                </div>
+                <div class="w-full pl-4">
+                    <div class="w-full">
+                        <h1 class="font-title text-xl text-grayDarker">Visual Design</h1>
+                    </div>
+                    <div>
+                        <PillsPrimary :tags="visualDesign"></PillsPrimary>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 bg-white rounded-md p-4 space-y-8">
+                <div class="w-full flex justify-center bg-transparent rounded-sm">
+                    <img src="/Brand/Core_Prototyping.svg" alt="Example Illustration Depicting the Connections Between Prototyped Wireframes" class="md:w-full">
+                </div>
+                <div class="w-full pl-4">
+                    <div class="w-full">
+                        <h1 class="font-title text-xl text-grayDarker">High Fidelity Prototyping</h1>
+                    </div>
+                    <div>
+                        <PillsPrimary :tags="highFidelityPrototyping"></PillsPrimary>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="w-full content-center z-20 bg-grayDarkest relative">
+        <div class="container px-4 sm:px-0 mx-auto">
+            <div class="h-px w-full bg-grayMiddle"></div>
+        </div>
+      </div>
+      <div class="w-full content-center z-20 bg-grayDarkest relative">
+        <div class="container px-4 sm:px-0 pb-4 mx-auto my-32 bg-transparent md:bg-mint rounded-md space-y-6">
+            <div class="w-full h-14 md:h-20 pl-0 md:pl-8 flex flex-row text-white items-center space-x-6">
+                <div class="h-12 w-12 flex flex-row justify-items-center items-center hidden md:grid">
+                    <FontAwesomeIcon :icon="['fas', 'shapes']" class="text-3xl" />
+                </div>
+                <h1 class="text-2xl font-title">A Bit of This, A Bit of That</h1>
+            </div>
+            <div class="pl-8">
+                <p class="font-main text-sm text-grayLightPrimary md:text-whiteFaded">I love to learn, but wouldn’t call myself an expert on these technologies or processes just yet. I’m always eager to explore and add to my toolkit.</p>
+            </div>
+            <div class="ml-8 mr-4 p-4 bg-white md:bg-whiteFaded rounded-md md:rounded-sm">
+                <div :class="['flex', 'gap-4', 'md:gap-8', 'justify-between', 'md:justify-start', anySectionExpanded ? 'flex-col' : 'flex-row']">
+                    <div :class="['flex', 'flex-col', 'justify-start', 'gap-1', 'text-grayDarkest', anySectionExpanded ? 'w-full' : 'w-fit']">
+                        <div class="flex flex-row self-start items-center space-x-2 mr-4">
+                            <div class="h-9 w-9 flex flex-row justify-center items-center">
+                                <FontAwesomeIcon :icon="['fas', 'cubes']" class="text-xl" />
+                            </div>
+                            <h1 class="text-xl font-title">3-D</h1>
+                        </div>
+                        <PillsSecondary v-show="isExpanded2['3d']" :tags="tagList1"></PillsSecondary>
+                    </div>
+                    <div :class="['flex', 'flex-col', 'justify-start', 'gap-1', 'text-grayDarkest', anySectionExpanded ? 'w-full' : 'w-fit']">
+                        <div class="flex flex-row self-start items-center space-x-2 mr-4">
+                            <div class="h-9 w-9 flex flex-row justify-center items-center">
+                                <FontAwesomeIcon :icon="['fas', 'code']" class="text-xl" />
+                            </div>
+                            <h1 class="text-xl font-title">Code</h1>
+                        </div>
+                        <PillsSecondary v-show="isExpanded2['code']" :tags="tagList2"></PillsSecondary>
+                    </div>
+                    <div :class="['flex', 'flex-col', 'justify-start', 'gap-1', 'text-grayDarkest', anySectionExpanded ? 'w-full' : 'w-fit']">
+                        <div class="flex flex-row self-start items-center space-x-2 mr-4">
+                            <div class="h-9 w-9 flex flex-row justify-center items-center">
+                                <FontAwesomeIcon :icon="['fas', 'thumbs-up']" class="text-xl" />
+                            </div>
+                            <h1 class="text-xl font-title">Misc.</h1>
+                        </div>
+                        <PillsSecondary v-show="isExpanded2['misc']" :tags="tagList3"></PillsSecondary>
+                    </div>
+                </div>
+                <div class="w-full flex flex-row justify-end mt-4">
+                    <button class="button flex flex-row gap-4 pl-1 text-grayDarker items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white font-main" @click="toggleAll">
+                        <p class="uppercase text-xs tracking-widest">{{ isAllExpanded ? 'Hide All' : 'Read More' }}</p>
+                        <div class="h-6 w-6 flex justify-center items-center">
+                            <FontAwesomeIcon :icon="['fas', isAllExpanded ? 'caret-up' : 'caret-down']" class="text-sm" />
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -105,7 +196,30 @@
     name: 'AboutPage',
     data() {
         return {
-        isExpanded: false
+        isExpanded: false,
+        isExpanded2: {
+            '3d': false,
+            'code': false,
+            'misc': false
+        },
+        designResearch: ['User Interviews', 'Contextual Analysis', 'Affinity Mapping', 'Surveys', 'Insights'],
+        visualDesign: ['Design Systems', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe AfterEffects'],
+        highFidelityPrototyping: ['Figma', 'Wireframing', 'Interface Design', 'Microinteractions', 'Animations', 'Front-end Development', 'Visual Studio Code', 'GitHub'],
+        tagList1: [
+            { label: 'Cinema4D', level: 'Intermediate' },
+            { label: 'Unity', level: 'Beginner' },
+            { label: 'SolidWorks', level: 'Intermediate' },
+            { label: 'KeyShot', level: 'Beginner' }
+        ],
+        tagList2: [
+            { label: 'Vue.js', level: 'Beginner' },
+            { label: 'Nuxt.js', level: 'Beginner' },
+            { label: 'Python', level: 'Beginner' }
+        ],
+        tagList3: [
+            { label: 'ProtoPie', level: 'Beginner' },
+            { label: 'Origami Studio', level: 'Heard of it' }
+        ]
         };
     },
     head: {
@@ -117,6 +231,26 @@
           content: "Max's new, rebuilt portfolio website. Max is a versatile product designer with a talent for visual design and product + systems thinking / eager to tackle complex challenges and craft user-focused digital experiences. This website was built with plain HTML, CSS, and JS, and ChatGPT was used to convert the entire site for Nuxt.JS, including project initiation, folder management, using terminal, script changes, incorporating JSON, and problem fixes."
         }
       ],
+    },
+    computed: {
+        isAllExpanded() {
+            // Check if all sections are expanded
+            return Object.values(this.isExpanded2).every(state => state);
+        },
+        anySectionExpanded() {
+            return Object.values(this.isExpanded2).some(status => status);
+        }
+    },
+    methods: {
+        toggleAll() {
+            const newState = !this.isAllExpanded;
+            // Toggle all sections at once
+            this.isExpanded2 = {
+                '3d': newState,
+                'code': newState,
+                'misc': newState
+        };
+    }
     },
   }
   </script>
