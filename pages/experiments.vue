@@ -8,18 +8,18 @@
                 <div class="col-span-1">
                     <CopyTitle>
                         <template #title>
-                            <span>Work —</span>
+                            <span>Experiments —</span>
                         </template>
                         <template #content>
-                            These case studies constitute work to which I was able to devote or approximate a project cycle. For smaller scale projects which allowed me to explore or try new things, check out my 
-                            <nuxt-link to="/experiments" class="font-bold hover:text-mint hover:bg-white rounded-sm">Experiments</nuxt-link> page.
+                            These projects are primarily experimental in nature, and constitute new topic exploration or just playing with areas I like. For my more substantial projects with more research, prep, and dedication check out my 
+                            <nuxt-link to="/work" class="font-bold hover:text-mint hover:bg-white rounded-sm">Work</nuxt-link> page.
                         </template>
                     </CopyTitle>
                 </div>
             </div>
         </div>
 
-        <CoverMain type="Work" />
+        <CoverMain type="Experiment" />
 
         <div class="w-full content-center z-10 bg-grayLighter">
             <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-16 my-32">
@@ -29,16 +29,16 @@
             </div>
         </div>
 
-        <PreFooter :currentProjectId="'1'" :linksVisibility="[false, false, true, true]" />
+        <PreFooter :currentProjectId="'1'" :linksVisibility="[false, true, false, true]" />
         <FooterSection />
     </div>
 </template>
   
 <script>
 export default {
-name: 'WorkPage',
+name: 'ExperimentsPage',
 head: {
-    title: 'Max is Wright - Work',
+    title: 'Max is Wright - Experiments',
     meta: [
     {
         hid: 'description',

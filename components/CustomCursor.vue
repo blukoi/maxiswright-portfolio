@@ -45,11 +45,11 @@
       },
       handleMouseOver(e) {
         // Check if the mouse is over an element within an <a> tag
-        this.isLinkHovered = !!e.target.closest('a');
+        this.isLinkHovered = !!e.target.closest('a, button');
       },
       handleMouseOut(e) {
         // Ensure mouse out is considered only if it leaves an <a> tag
-        if (e.target.closest('a') && (!e.relatedTarget || !e.relatedTarget.closest('a'))) {
+        if (e.target.closest('a, button') && (!e.relatedTarget || !e.relatedTarget.closest('a, button'))) {
           this.isLinkHovered = false;
         }
       }

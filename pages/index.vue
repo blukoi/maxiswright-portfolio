@@ -65,13 +65,13 @@ export default {
 <style>
 @keyframes wave-animation {
     0%, 20%, 80%, 100% {
-        transform: rotate(0deg);
+        transform: scaleX(-1) rotate(0deg);
     }
     40% {
-        transform: rotate(-20deg);
+        transform: scaleX(-1) rotate(-20deg);
     }
     60% {
-        transform: rotate(20deg);
+        transform: scaleX(-1) rotate(20deg);
     }
 }
 

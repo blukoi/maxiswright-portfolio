@@ -45,6 +45,7 @@ import {
     fa0,
     faHand,
     faArrowRightLong,
+    faAddressCard,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -100,6 +101,7 @@ library.add(
     fa0,
     faHand,
     faArrowRightLong,
+    faAddressCard,
     faFontAwesome,
     faLinkedin,
     faInstagram,
