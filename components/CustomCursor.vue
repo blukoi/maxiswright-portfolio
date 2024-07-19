@@ -1,6 +1,6 @@
 <template>
     <div 
-      :class="['custom-cursor', { 'custom-cursor--link': isLinkHovered }]"
+      :class="['custom-cursor', { 'custom-cursor--link': isLinkHovered }, { 'custom-cursor--input': isLinkHoveredInput }]"
       :style="cursorStyle"
     ></div>
   </template>
@@ -12,6 +12,7 @@
         mouseX: 0,
         mouseY: 0,
         isLinkHovered: false,
+        isLinkHoveredInput: false,
         initCursor: false,
       };
     },
@@ -29,11 +30,15 @@
       document.addEventListener('mousemove', this.handleMouseMove);
       document.addEventListener('mouseover', this.handleMouseOver);
       document.addEventListener('mouseout', this.handleMouseOut);
+      document.addEventListener('mouseover', this.handleMouseOverInput);
+      document.addEventListener('mouseout', this.handleMouseOutInput);
     },
     beforeDestroy() {
       document.removeEventListener('mousemove', this.handleMouseMove);
       document.removeEventListener('mouseover', this.handleMouseOver);
       document.removeEventListener('mouseout', this.handleMouseOut);
+      document.removeEventListener('mouseover', this.handleMouseOverInput);
+      document.removeEventListener('mouseout', this.handleMouseOutInput);
     },
     methods: {
       handleMouseMove(e) {
@@ -51,6 +56,16 @@
         // Ensure mouse out is considered only if it leaves an <a> tag
         if (e.target.closest('a, button') && (!e.relatedTarget || !e.relatedTarget.closest('a, button'))) {
           this.isLinkHovered = false;
+        }
+      },
+      handleMouseOverInput(e) {
+        // Check if the mouse is over an element within an <a> tag
+        this.isLinkHoveredInput = !!e.target.closest('input, textarea');
+      },
+      handleMouseOutInput(e) {
+        // Ensure mouse out is considered only if it leaves an <a> tag
+        if (e.target.closest('input, textarea') && (!e.relatedTarget || !e.relatedTarget.closest('input, textarea'))) {
+          this.isLinkHoveredInput = false;
         }
       }
     }
@@ -71,6 +86,10 @@
     }
     .custom-cursor--link {
         border-radius: 0;
+    }
+    .custom-cursor--input {
+        border-radius: 0;
+        width: 12px;
     }
     .cursor-hide {
         cursor: none;

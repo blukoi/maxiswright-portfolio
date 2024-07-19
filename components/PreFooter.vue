@@ -7,7 +7,7 @@
                     <h1 class="text-grayDarkest">More —</h1>
                 </div>
 
-                <nuxt-link v-if="linksVisibility[0]" :to="currentProject.buttonLink" class="col-span-1 md:col-span-2 bg-grayDarker hover:bg-mint px-8 py-6 rounded-md flex flex-row items-center space-x-4 text-white">
+                <nuxt-link v-if="linksVisibility[0]" :to="currentProject.buttonLink" class="col-span-1 md:col-span-2 bg-grayDarker hover:bg-mint hover:border-mint hover:border-2 px-8 py-6 rounded-md flex flex-row items-center space-x-4 text-white">
                     <div class="h-8 w-8 flex justify-center items-center">
                         <FontAwesomeIcon :icon="currentProject.categoryIcon.split(' ')" class="text-2xl" />
                     </div>
@@ -16,7 +16,7 @@
 
                 <div class="col-span-1 md:col-span-2 md:col-start-2 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
-                    <nuxt-link v-if="linksVisibility[1]" to="/work" class="col-span-1 button-link block overflow-hidden relative rounded-md">
+                    <nuxt-link v-if="linksVisibility[1]" to="/work" class="col-span-1 button-link block overflow-hidden relative rounded-md hover:border-mint hover:border-2">
                         <div class="relative w-full h-20">
                             <img src="/Generic/gradient1.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient1.png" alt="Foreground" class="foreground-image">
@@ -26,7 +26,7 @@
                         </div>
                     </nuxt-link>
                     
-                    <nuxt-link v-if="linksVisibility[2]" to="/experiments" class="col-span-1 button-link block overflow-hidden relative rounded-md">
+                    <nuxt-link v-if="linksVisibility[2]" to="/experiments" class="col-span-1 button-link block overflow-hidden relative rounded-md hover:border-mint hover:border-2">
                         <div class="relative w-full h-20">
                             <img src="/Generic/gradient2.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient2.png" alt="Foreground" class="foreground-image">
@@ -36,7 +36,7 @@
                         </div>
                     </nuxt-link>
                     
-                    <nuxt-link v-if="linksVisibility[3]" to="/links" class="col-span-1 button-link block overflow-hidden relative rounded-md">
+                    <nuxt-link v-if="linksVisibility[3]" to="/links" class="col-span-1 button-link block overflow-hidden relative rounded-md hover:border-mint hover:border-2">
                         <div class="relative w-full h-20">
                             <img src="/Generic/gradient3.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient3.png" alt="Foreground" class="foreground-image">

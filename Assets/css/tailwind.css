@@ -17,7 +17,7 @@
 /* Prep for custom cursor */
 /* Prep for custom cursor */
 
-html, body, a {
+html, body, a, input, textarea, label {
     cursor: none;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

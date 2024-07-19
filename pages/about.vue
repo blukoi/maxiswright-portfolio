@@ -54,12 +54,12 @@
                             <p>While I was completing my Associate of Science in Graphic Design I took a UX class. Taking that UX class changed everything. It gave me an avenue to do all of the things I was good at: ask questions, explore a new topic or problem, synthesize and analyze data, create a visual design system, and apply that design to create a well-informed and thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
                             <p>After completing my AS in Graphic Design in my free time, I decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
                             <ul class="list-disc pl-4">
-                                <li>In 2010 I was a college dropout with a 1.54 GPA</li>
+                                <li>In 2010 I was a college dropout with a 1.5 GPA</li>
                                 <li>In 2023 I completed a 4-year degree in 2 years with a 3.9 GPA</li>
                             </ul>
                         </div>
                         <div class="w-full flex flex-row justify-end mt-4">
-                            <button v-if="!isExpanded" id="ReadMore" class="flex flex-row gap-4 pl-1 text-grayMiddle items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white button" tabindex="0" type="button" @click="isExpanded = true">
+                            <!-- <button v-if="!isExpanded" id="ReadMore" class="flex flex-row gap-4 pl-1 text-grayMiddle items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white button" tabindex="0" type="button" @click="isExpanded = true">
                                 <p class="uppercase text-xs tracking-widest">Read More</p>
                                 <div class="h-6 w-6 flex flex-row justify-center items-center">
                                     <FontAwesomeIcon :icon="['fas', 'caret-down']" class="text-base" />
@@ -69,6 +69,12 @@
                                 <p class="uppercase text-xs tracking-widest">Hide</p>
                                 <div class="h-6 w-6 flex flex-row justify-center items-center">
                                     <FontAwesomeIcon :icon="['fas', 'caret-up']" class="text-base" />
+                                </div>
+                            </button> -->
+                            <button class="button flex flex-row gap-4 pl-1 text-grayDarker items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white font-main" @click="toggleOne">
+                                <p class="uppercase text-xs tracking-widest">{{ isExpanded ? 'Hide' : 'Read More' }}</p>
+                                <div class="h-6 w-6 flex justify-center items-center">
+                                    <FontAwesomeIcon :icon="['fas', isExpanded ? 'caret-up' : 'caret-down']" class="text-sm" />
                                 </div>
                             </button>
                         </div>
@@ -177,11 +183,60 @@
                 </div>
                 <div class="w-full flex flex-row justify-end mt-4">
                     <button class="button flex flex-row gap-4 pl-1 text-grayDarker items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white font-main" @click="toggleAll">
-                        <p class="uppercase text-xs tracking-widest">{{ isAllExpanded ? 'Hide All' : 'Read More' }}</p>
+                        <p class="uppercase text-xs tracking-widest">{{ isAllExpanded ? 'Hide' : 'Read More' }}</p>
                         <div class="h-6 w-6 flex justify-center items-center">
                             <FontAwesomeIcon :icon="['fas', isAllExpanded ? 'caret-up' : 'caret-down']" class="text-sm" />
                         </div>
                     </button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="w-full content-center z-20 bg-grayLightPrimary relative">
+        <div class="container px-4 sm:px-0 pb-4 mx-auto my-32 bg-transparent grid gap-16 md:gap-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="col-span-1">
+                <div class="space-y-8">
+                    <h1 class="font-title text-xl text-grayDarkest">
+                        Work Philosophy
+                    </h1>
+                    <div class="w-full pl-8 space-y-4 font-main">
+                        <p class="text-sm">Some of the things I try to focus on while working with any team include:</p>
+                        <PillsPrimary :tags="workPhilosophy"></PillsPrimary>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 flex flex-row justify-between lg:justify-center lg:gap-8 text-grayMiddle">
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'beer-mug-empty']" class="text-2xl" />
+                </div>
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'person-skating']" class="text-2xl" />
+                </div>
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'gamepad']" class="text-2xl" />
+                </div>
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'film']" class="text-2xl" />
+                </div>
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'cat']" class="text-2xl" />
+                </div>
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'hotdog']" class="text-2xl" />
+                </div>
+                <div class="h-10 w-10 flex flex-row justify-center items-center">
+                    <FontAwesomeIcon :icon="['fas', 'burger']" class="text-2xl" />
+                </div>
+            </div>
+            <div class="col-span-1 md:col-start-2 lg:col-start-3">
+                <div class="space-y-8">
+                    <h1 class="font-title text-xl text-grayDarkest">
+                        In my Free Time
+                    </h1>
+                    <div class="w-full pl-8 space-y-4 font-main">
+                        <p class="text-sm">Even if we’re not lucky enough to work together, if any of my other interests resonate with you, please reach out! I’m always open to hit a tennis court, relax at a brewery, or sit down for some gaming.</p>
+                        <PillsPrimary :tags="freeTime"></PillsPrimary>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,7 +274,9 @@
         tagList3: [
             { label: 'ProtoPie', level: 'Beginner' },
             { label: 'Origami Studio', level: 'Heard of it' }
-        ]
+        ],
+        workPhilosophy: ['Remember the user (it’s not always you)', 'Stay curious and ask a lot of questions', 'Test early, test often', 'Always be open to learn', 'Deliver work you can be proud of'],
+        freeTime: ['Playing tennis', 'Craft beer', 'Watching hockey', 'Playing Destiny', 'Watching movies', 'Eating new foods','Taking pics of my cats', 'Arguing about sandwiches', 'Eating burgers']
         };
     },
     head: {
@@ -242,6 +299,9 @@
         }
     },
     methods: {
+        toggleOne() {
+            this.isExpanded = !this.isExpanded
+        },
         toggleAll() {
             const newState = !this.isAllExpanded;
             // Toggle all sections at once
@@ -250,7 +310,7 @@
                 'code': newState,
                 'misc': newState
         };
-    }
+        }
     },
   }
   </script>
