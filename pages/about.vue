@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="w-full text-center">
-                        <p class="font-main font-bold text-lg italic text-white">Good UX is like CG in movies: when applied well, no one will notice it.</p>
+                        <p class="font-main text-lg italic text-white">Good UX is like CG in movies: when applied well, no one will notice it.</p>
                     </div>
                     <div class="w-full grid justify-items-end text-white opacity-50">
                         <div class="h-10 w-10 flex flex-row justify-center items-center">
@@ -79,7 +79,7 @@
                             </button>
                         </div>
                     </div>
-                    <p class="ml-4">What I’ve learned and strive to embody in my work is that <span class="font-bold">with thoughtful research, empathetically balancing user needs, and regular testing of new iterations we can create products that enhance the way we live and interact.</span> We don’t have to rely on dark patterns that can alienate people who feel like they’re being preyed upon, or create experiences that are visually appealing but fail to help people understand the information.</p>
+                    <p class="ml-4">What I’ve learned and strive to embody in my work is that with thoughtful research, empathetically balancing user needs, and regular testing of new iterations we can create products that enhance the way we live and interact. We don’t have to rely on dark patterns that can alienate people who feel like they’re being preyed upon, or create experiences that are visually appealing but fail to help people understand the information.</p>
                 </div>
             </div>
         </div>

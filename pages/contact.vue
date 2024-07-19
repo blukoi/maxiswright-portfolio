@@ -4,7 +4,7 @@
       <NavBar />
       <div class="w-screen h-screen content-center z-10 bg-grayLighter">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 lg:gap-16 mt-16 mb-16 md:mb-32 pt-20">
-            <div class="h-full col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-2 bg-grayDarker rounded-md p-4 flex items-center">
+            <div class="h-full col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-2 bg-grayDarkest rounded-md p-4 flex items-center">
                 <form
                     name="contact"
                     action="/pages/success"
@@ -13,9 +13,9 @@
                     data-netlify="true"
                     class="font-main flex flex-col"
                     >
-                    <p class="-z-10 h-0 opacity-0" tabindex="-1">
-                        <label>
-                        Don’t fill this out if you’re human: <input name="favoritecolor" />
+                    <p class="-z-10 max-h-0 opacity-0 pointer-events-none" tabindex="-1">
+                        <label class="max-h-0 opacity-0 pointer-events-none" tabindex="-1">
+                        Don’t fill this out if you’re human: <input name="favoritecolor" class="max-h-0 opacity-0 pointer-events-none" tabindex="-1" />
                         </label>
                     </p>
                     <p class="w-full flex flex-col text-grayLightPrimary text-sm mb-8 gap-1">
@@ -28,13 +28,18 @@
                     </p>
                     <p class="w-full flex flex-col text-grayLightPrimary text-sm mb-8 gap-1">
                         <label for="message">Message —</label>
-                        <textarea id="message" name="message" maxlength="500" class="rounded-sm text-base text-grayDarker p-2" 
+                        <textarea 
+                            id="message" 
                             v-model="messageText" 
-                            @input="updateCharacterCount" required>
+                            name="message" 
+                            maxlength="500" 
+                            class="rounded-sm text-base text-grayDarker p-2" 
+                            required 
+                            @input="updateCharacterCount">
                         </textarea>
                         <span 
                             id="characterCount" class="w-full flex flex-row justify-end text-xs"
-                            :class="{'text-whiteFaded': characterCount < 490, 'text-Bad': characterCount >= 490}">
+                            :class="{'text-whiteFaded': characterCount < 490, 'text-bad': characterCount >= 490}">
                             {{ characterCount }}/500
                         </span>
                     </p>
