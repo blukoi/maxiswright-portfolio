@@ -49,7 +49,7 @@ export default {
   },
   data() {
     return {
-      projects: require('../assets/projects.json')
+      projects: require('~/Assets/projects.json')
     };
   },computed: {
   highlightedProjects() {
