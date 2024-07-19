@@ -67,7 +67,7 @@ export default {
   },
   data() {
     return {
-      projects: require('~/assets/projects.json')
+      projects: require('../assets/projects.json')
     };
   },
   computed: {
