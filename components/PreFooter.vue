@@ -21,7 +21,7 @@
                             <img src="/Generic/gradient1.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient1.png" alt="Foreground" class="foreground-image">
                         </div>
-                        <div class="title-container absolute w-full h-full left-8 top-0 content-center">
+                        <div class="title-container absolute w-full h-full left-8 top-0 flex items-center">
                             <h1 class="text-white">Work</h1>
                         </div>
                     </nuxt-link>
@@ -31,7 +31,7 @@
                             <img src="/Generic/gradient2.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient2.png" alt="Foreground" class="foreground-image">
                         </div>
-                        <div class="title-container absolute w-full h-full left-8 top-0 content-center">
+                        <div class="title-container absolute w-full h-full left-8 top-0 flex items-center">
                             <h1 class="text-white">Experiments</h1>
                         </div>
                     </nuxt-link>
@@ -41,7 +41,7 @@
                             <img src="/Generic/gradient3.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient3.png" alt="Foreground" class="foreground-image">
                         </div>
-                        <div class="title-container absolute w-full h-full left-8 top-0 content-center">
+                        <div class="title-container absolute w-full h-full left-8 top-0 flex items-center">
                             <h1 class="text-white">Links</h1>
                         </div>
                     </nuxt-link>

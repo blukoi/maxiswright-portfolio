@@ -4,17 +4,19 @@
         <NavBar />
 
         <div class="w-full content-center z-10 bg-grayLighter">
-            <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32 mt-40">
-                <div class="col-span-1">
-                    <CopyTitle>
-                        <template #title>
-                            <span>Experiments —</span>
-                        </template>
-                        <template #content>
-                            These projects are primarily experimental in nature, and constitute new topic exploration or just playing with areas I like. For my more substantial projects with more research, prep, and dedication check out my 
-                            <nuxt-link to="/work" class="font-bold hover:text-mint hover:bg-white rounded-sm">Work</nuxt-link> page.
-                        </template>
-                    </CopyTitle>
+            <div class="container px-4 sm:px-0 mx-auto pt-40 pb-16 md:pb-32">
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+                    <div class="col-span-1">
+                        <CopyTitle>
+                            <template #title>
+                                <span>Experiments —</span>
+                            </template>
+                            <template #content>
+                                These projects are primarily experimental in nature, and constitute new topic exploration or just playing with areas I like. For my more substantial projects with more research, prep, and dedication check out my 
+                                <nuxt-link to="/work" class="font-bold hover:text-mint hover:bg-white rounded-sm">Work</nuxt-link> page.
+                            </template>
+                        </CopyTitle>
+                    </div>
                 </div>
             </div>
         </div>
@@ -22,9 +24,11 @@
         <CoverMain type="Experiment" />
 
         <div class="w-full content-center z-10 bg-grayLighter">
-            <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-16 my-32">
-                <div class="col-span-1 md:col-span-4 md:col-start-2">
-                    <MessageMore />
+            <div class="py-32">
+                <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-16">
+                    <div class="col-span-1 md:col-span-4 md:col-start-2">
+                        <MessageMore />
+                    </div>
                 </div>
             </div>
         </div>

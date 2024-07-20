@@ -12,33 +12,38 @@
     </div>
     <div class="w-full h-50vh bg-transparent inline-block"></div>
     <div class="w-full content-center z-10 bg-grayLighter relative">
-      <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32">
+      <div class="container px-4 sm:px-0 mx-auto pt-16 pb-16 md:pb-32 bg-grayLighter relative">
 
-        <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 -mt-24 mb-24 pointer-events-none">
-          <div class="col-span-1">
-            <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-md flex flex-row gap-8">
-              <div class="h-8 w-8 flex flex-row justify-center items-center">
-                <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-3xl" />
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+
+          <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 -mt-24 mb-24 pointer-events-none">
+            <div class="col-span-1">
+              <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-md flex flex-row gap-8">
+                <div class="h-8 w-8 flex flex-row justify-center items-center">
+                  <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-3xl" />
+                </div>
+                <h1 class="font-title text-3xl">
+                  Hi, I'm Max!
+                </h1>
               </div>
-              <h1 class="font-title text-3xl">
-                Hi, I'm Max!
-              </h1>
-            </div>
-            <div class="pl-8 mt-6 space-y-6">
-              <div>
-                <p class="font-normal font-main text-sm text-gray-Darker">A versatile product designer with a flair for visual design and product + systems thinking / eager to tackle complex challenges and craft user-focused digital experiences.</p>
-              </div>
-              <div class="flex flex-col space-y-6">
-                <WorkAvailability />
-                <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max" />
+              <div class="pl-8 mt-6 space-y-6">
+                <div>
+                  <p class="font-normal font-main text-sm text-gray-Darker">A versatile product designer with a flair for visual design and product + systems thinking / eager to tackle complex challenges and craft user-focused digital experiences.</p>
+                </div>
+                <div class="flex flex-col space-y-6">
+                  <WorkAvailability />
+                  <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max" />
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="col-span-1 md:col-span-2 col-start-1 md:col-start-2">
+            <CoverHome />
+          </div>
+      
         </div>
 
-        <div class="col-span-1 md:col-span-2 col-start-1 md:col-start-2">
-          <CoverHome />
-        </div>
       </div>
     </div>
     <PreFooter :currentProjectId="'1'" :linksVisibility="[false, true, true, false]" />
