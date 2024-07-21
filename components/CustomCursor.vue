@@ -50,20 +50,18 @@
       },
       handleMouseOver(e) {
         // Check if the mouse is over an element within an <a> tag
-        this.isLinkHovered = !!e.target.closest('a, button');
+        this.isLinkHovered = !!e.target.closest('a, button', 'label', '.button');
       },
       handleMouseOut(e) {
         // Ensure mouse out is considered only if it leaves an <a> tag
-        if (e.target.closest('a, button') && (!e.relatedTarget || !e.relatedTarget.closest('a, button'))) {
+        if (e.target.closest('a, button', 'label', '.button') && (!e.relatedTarget || !e.relatedTarget.closest('a, button', 'label', '.button'))) {
           this.isLinkHovered = false;
         }
       },
       handleMouseOverInput(e) {
-        // Check if the mouse is over an element within an <a> tag
         this.isLinkHoveredInput = !!e.target.closest('input, textarea');
       },
       handleMouseOutInput(e) {
-        // Ensure mouse out is considered only if it leaves an <a> tag
         if (e.target.closest('input, textarea') && (!e.relatedTarget || !e.relatedTarget.closest('input, textarea'))) {
           this.isLinkHoveredInput = false;
         }

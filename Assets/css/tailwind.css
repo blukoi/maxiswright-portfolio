@@ -47,14 +47,18 @@ body {
 /* Shortening Repeating Class Groups */
 /* Shortening Repeating Class Groups */
 
+.gradient-text {
+    @apply inline-block text-transparent bg-clip-text;
+}
+
 .gradient-applecar {
     @apply bg-gradient-to-r from-applecarAutonomous to-applecarBlue;
 }
 
-/* .gradient-fontfacing {
-    @apply bg-gradient-to-r from-[#2D71F6] to-[#540761];
+.gradient-fontfacing {
+    @apply bg-gradient-to-r from-fontfacingBlue to-fontfacingPurple;
 }
 
 .gradient-tattooo {
-    @apply bg-gradient-to-r from-[#4285F4] via[#6416C7] to-[#FF6F6F];
-} */
+    @apply bg-gradient-to-r from-tattoooBlue via-tattoooSecondaryDarker to-tattoooAlert;
+}

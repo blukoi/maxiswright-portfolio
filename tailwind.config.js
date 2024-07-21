@@ -29,6 +29,7 @@ module.exports = {
         // FontFacing
         'fontfacingBlue': '#2D71F6',
         'fontfacingGreen': '#041821',
+        'fontfacingPurple': '#540761',
 
         // Apple Car
         'applecarBlue': '#0B84FF',
@@ -58,11 +59,16 @@ module.exports = {
         'title': ['Optician Sans', 'sans-serif'] // Specialized title font
       },
 
-
       height: {
         '75vh': '75vh',
         '51vh': '51vh',
         '50vh': '50vh',
+      },
+
+      spacing: {
+        '112': '28rem',
+        '128': '32rem',
+        '160': '40rem',
       },
     },
 

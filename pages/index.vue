@@ -18,7 +18,7 @@
 
           <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 -mt-24 mb-24 pointer-events-none">
             <div class="col-span-1">
-              <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-md flex flex-row gap-8">
+              <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-md flex flex-row gap-4">
                 <div class="h-8 w-8 flex flex-row justify-center items-center">
                   <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-3xl" />
                 </div>
@@ -60,7 +60,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: "Max's new, rebuilt portfolio website. Max is a versatile product designer with a talent for visual design and product + systems thinking / eager to tackle complex challenges and craft user-focused digital experiences. This website was built with plain HTML, CSS, and JS, and ChatGPT was used to convert the entire site for Nuxt.JS, including project initiation, folder management, using terminal, script changes, incorporating JSON, and problem fixes."
+        content: "Max's new, rebuilt portfolio website. Max is a versatile product designer with a talent for visual design and product + systems thinking. He's eager to tackle complex challenges and craft user-focused digital experiences. This website was built with plain HTML, CSS, and JS, and ChatGPT was used to convert the entire site for Nuxt.JS, including project initiation, folder management, using terminal, script changes, incorporating JSON, and problem fixes."
       }
     ],
   },

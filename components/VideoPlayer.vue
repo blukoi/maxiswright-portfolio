@@ -1,6 +1,6 @@
 <template>
   <div>
-    <video autoplay loop muted playsinline class="full-size-video">
+    <video autoplay loop muted playsinline class="full-size-video aspect-auto">
       <source 
       v-for="source in videoSources" :key="source.src"
               :src="source.src" :type="source.type" :media="source.media">
@@ -26,7 +26,9 @@ export default {
 <style scoped>
 .full-size-video {
   width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
+  height: 100%; /* Maintain aspect ratio */
   max-height: 100vh; /* Optionally limit the height to the viewport */
+  object-fit: fill;
+  aspect-ratio: 16 / 9;
 }
 </style>
