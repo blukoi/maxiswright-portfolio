@@ -1,6 +1,6 @@
 <template>
   <div>
-    <video autoplay loop muted playsinline class="full-size-video aspect-auto">
+    <video autoplay loop muted playsinline class="full-size-video aspect-auto rounded-sm">
       <source 
       v-for="source in videoSources" :key="source.src"
               :src="source.src" :type="source.type" :media="source.media">
@@ -29,6 +29,20 @@ export default {
   height: 100%; /* Maintain aspect ratio */
   max-height: 100vh; /* Optionally limit the height to the viewport */
   object-fit: fill;
-  aspect-ratio: 16 / 9;
 }
 </style>
+
+<!-- HOW TO USE
+
+
+<VideoPlayer
+  :videoSources="[
+    { src: '/Brand/Hero_Animated_Full.mp4', type: 'video/mp4' },
+    { src: '/Brand/Hero_Animated_960.mp4', type: 'video/mp4' },
+    { src: '/Brand/Hero_Animated_720.mp4', type: 'video/mp4' },
+    { src: '/Brand/Hero_Animated_480.mp4', type: 'video/mp4' }
+    ]">
+</VideoPlayer>
+
+
+-->

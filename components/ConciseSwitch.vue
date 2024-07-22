@@ -15,17 +15,24 @@
 
 <script>
 export default {
-    props: {
-        value: {
-            type: Boolean,
-            default: true
-        }
-    },
-    methods: {
-        toggle() {
-            this.$emit('input', !this.value); // Toggles the current state and emits it
-        }
+  props: {
+    value: Boolean // Accepts v-model's value
+  },
+  computed: {
+    isConcise: {
+      get() {
+        return this.value;
+      },
+      set(value) {
+        this.$emit('input', value); // This makes v-model work
+      }
     }
+  },
+  methods: {
+    toggle() {
+      this.isConcise = !this.isConcise;
+    }
+  }
 }
 </script>
 
