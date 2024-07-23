@@ -83,26 +83,28 @@
       <!-- HIGHLIGHTS -->
 
       <div class="w-full bg-white py-32 md:py-64 space-y-32 relative z-20">
-        <div class="container mx-auto px-4 md:px-0 grid grid-cols-1 md:grid-cols-6 gap-x-16 gap-y-32">
-            <div class="col-span-1 md:col-span-4 md:col-start-2 gradient-applecar rounded-md font-title text-2xl p-4 text-white space-y-8 mb-16 md:mb-32">
-                <h1 class="w-full rounded-sm bg-white text-grayDarkest text-center">How might we...</h1>
-                <p class="w-full pb-4 text-center">...design seamless automotive experiences which support Apple’s existing ecosystem?</p>
-            </div>
-            <div class="col-span-1 md:col-span-6 rounded-md md:rounded-none p-4 md:p-0 bg-grayLightPrimary md:bg-transparent grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-8">
-                <div class="col-span-1 order-2 md:order-1 pl-4 md:pl-0 space-y-8">
-                    <h3 class="font-main font-bold text-sm uppercase">Extend Apple’s Current Design Philosophy</h3>
-                    <p class="pl-0 md:pl-8 font-main text-sm">We tried to reflect Apple’s penchant for a seamless, thoughtful user experience. The dashboard utilizes MagSafe ports to enable owners to use whatever-sized screen they prefer, under the assumption that iPads would get MagSafe features at some point soon. We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
-                </div>
-                <div class="col-span-1 md:col-span-2 col-start-1 md:col-start-2 order-1 md:order-2 rounded-sm md:rounded-md">
-                    <ImagePrimary
-                        srcset-small="/Work/EV/0_Cockpit_Full.png"
-                        srcset-medium="/Work/EV/0_Cockpit_Med.png"
-                        srcset-large="/Work/EV/0_Cockpit_Small.png"
-                        alt-text="A mockup of the interior of an electric car, showing the dashboard with a prototype of newly designed screens."
-                    />
-                </div>
-            </div>
-        </div>
+
+        <!-- HOW MIGHT WE & HERO IMAGE -->
+        <IntroHowMightWe
+            how="How might we..."
+            direction="...design seamless automotive experiences which support Apple’s existing ecosystem?"
+            title="Extend Apple’s Current Design Philosophy"
+            bgColor="gradient-applecar"
+        >
+            <template #caption>
+                <p class="pl-0 md:pl-8 font-main text-sm">We tried to reflect Apple’s penchant for a seamless, thoughtful user experience. The dashboard utilizes MagSafe ports to enable owners to use whatever-sized screen they prefer, under the assumption that iPads would get MagSafe features at some point soon. We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
+            </template>
+            <template #media>
+                <ImagePrimary
+                    srcset-small="/Work/EV/0_Cockpit_Full.png"
+                    srcset-medium="/Work/EV/0_Cockpit_Med.png"
+                    srcset-large="/Work/EV/0_Cockpit_Small.png"
+                    alt-text="A mockup of the interior of an electric car, showing the dashboard with a prototype of newly designed screens."
+                />
+            </template>
+        </IntroHowMightWe>
+
+        <!-- SIDE SCROLLER WITH FEATURE CALL-OUTS -->
         <IntroHighlights 
             title="Highlights"
         >
@@ -146,120 +148,53 @@
                     large: '/Work/EV/0_ARVR_Full.png',
                 }" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="High-Resolution Image Display" 
-                alt-text="A detailed view of the interactive interface" 
+                title="Spatial Computing" 
+                alt-text="A mockup of the interior of a car while sitting in the driver's seat; the driver is using AR glasses and using an AR menu hovering in the air in front of them." 
                 imageParent="h-80 md:h-160 w-60 md:w-120" 
             >
                 <template #caption>
-                    <p>Detailed imagery helps highlight our technological advancements.</p>
+                    <p>More than simply adding AR/VR to the driving experience, we wanted to integrate spatial computing so that AR information appears seamlessly within your surroundings in the cockpit. Some menus adhere to physical surfaces for tactile feedback, and other elements intelligently move so they don’t cover necessities like the meter or streetview.</p>
                 </template>
             </ScrollerImage>
+
+
+            <ScrollerImage
+                :srcset = "{
+                    small: '/Work/EV/0_ThirdSpace_Small.png',
+                    medium: '/Work/EV/0_ThirdSpace_Med.png',
+                    large: '/Work/EV/0_ThirdSpace_Full.png',
+                }" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                title="Enforcing the “Third Space”" 
+                alt-text="A prototype of a dashboard center screen using an app to order a delivery with the car as the delivery option." 
+                imageParent="h-80 md:h-160 w-60 md:w-120" 
+            >
+                <template #caption>
+                    <p>Your home and workspace are very often personalized to your needs and self expression. Even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
+                </template>
+            </ScrollerImage>
+
+
+            <ScrollerVideo
+            :videoSources="[
+                    { src: '/Work/EV/0_MeterAutonomous_Full.mp4', type: 'video/mp4' },
+                    { src: '/Work/EV/0_MeterAutonomous_1080.mp4', type: 'video/mp4' },
+                    { src: '/Work/EV/0_MeterAutonomous_480.mp4', type: 'video/mp4' }
+                ]"
+                title="Using Color to Highlight Autonomous Driving Features"
+                videoParent="h-80 w-60 md:h-160 md:w-120"
+            >
+                <template #caption>
+                    <p>Apple, like many large technology companies (but not many car companies), uses highlight colors for important information. We continued that trend by using an Autonomous Violet as the indicator of autonomous driving mode and related features.</p>
+                </template>
+            </ScrollerVideo>
+
 
             <!-- SCROLLER CONTENT END -->
 
 
         </IntroHighlights>
-        <!-- 
-        <div class="w-full space-y-4">
-            <div class="container mx-auto px-4 md:px-0">
-                <div class="flex flex-row justify-between text-grayDarkest">
-                    <h1 class="font-title text-xl">Highlights</h1>
-                    <div class="h-6 w-6 flex justify-center items-center rounded-full">
-                        <FontAwesomeIcon :icon="['fas', 'arrows-left-right']" class="text-sm" />
-                    </div>
-                </div>
-            </div>
-            <div class="container mx-auto px-4 md:px-0 relative">
-                <div class="w-full overflow-x-auto relative pl-8">
-                    <div class="relative bg-black rounded-md p-8 flex flex-nowrap justify-start space-x-64 block w-max mr-8 font-main text-sm text-grayLightPrimary">
-                        <div class="space-y-16">
-                            <div class="h-160 w-120 flex flex-col justify-center">
-                                <VideoPlayer
-                                :videoSources="[
-                                    { src: '/Work/EV/0_SeamlessTransitionFull.mp4', type: 'video/mp4' },
-                                    { src: '/Work/EV/0_SeamlessTransition1080.mp4', type: 'video/mp4' },
-                                    { src: '/Work/EV/0_SeamlessTransition480.mp4', type: 'video/mp4' }
-                                    ]">
-                                </VideoPlayer>
-                            </div>
-                            <div class="w-96 shrink-0 inline-block space-y-4">
-                                <h3 class="text-white font-bold uppercase">Seamless Transitions Between Devices</h3>
-                                <p>We wanted to continue Apple’s penchant for supporting an interconnected ecosystem within their product line so that your Apple Car would connect with the rest of your Apple products. Your music, phone calls, GPS, and more would seamlessly transition to your Apple Car media screens (and vice versa) so you can keep moving.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="space-y-16">
-                            <div class="h-160 w-64 flex flex-col justify-center">
-                                <VideoSmall
-                                :videoSources="[
-                                    { src: '/Work/EV/0_PassengerID.mp4', type: 'video/mp4' }
-                                    ]">
-                                </VideoSmall>
-                            </div>
-                            <div class="w-96 shrink-0 inline-block space-y-4">
-                                <h3 class="text-white font-bold uppercase">Passenger ID</h3>
-                                <p>To extend the Apple Wallet and Apple ID, you can now make a Passenger ID which remembers your preferred climate and seat position. When entering a new Apple Car or other participating vehicle you can connect your Passenger ID and the car will accommodate your preferences.</p>
-                                <p>You can also create different presets to easily adjust for different situations, such as when you need a nap or if it’s colder than usual.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="space-y-16">
-                            <div class="h-160 w-120 flex flex-col justify-center">
-                                <ImageSmall
-                                    srcset-small="/Work/EV/0_ARVR_Full.png"
-                                    srcset-medium="/Work/EV/0_ARVR_Med.png"
-                                    srcset-large="/Work/EV/0_ARVR_Small.png"
-                                    alt-text="A mockup of the interior of a car while sitting in the driver's seat; the driver is using AR glasses and using an AR menu hovering in the air in front of them."
-                                />
-                            </div>
-                            <div class="w-96 shrink-0 inline-block space-y-4">
-                                <h3 class="text-white font-bold uppercase">Spatial Computing</h3>
-                                <p>More than simply adding AR/VR to the driving experience, we wanted to integrate spatial computing so that AR information appears seamlessly within your surroundings in the cockpit. Some menus adhere to physical surfaces for tactile feedback, and other elements intelligently move so they don’t cover necessities like the meter or streetview.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="space-y-16">
-                            <div class="h-160 w-120 flex flex-col justify-center">
-                                <ImageSmall
-                                    srcset-small="/Work/EV/0_ThirdSpace_Full.png"
-                                    srcset-medium="/Work/EV/0_ThirdSpace_Med.png"
-                                    srcset-large="/Work/EV/0_ThirdSpace_Small.png"
-                                    alt-text="A prototype of a dashboard center screen using an app to order a delivery with the car as the delivery option."
-                                />
-                            </div>
-                            <div class="w-96 shrink-0 inline-block space-y-4">
-                                <h3 class="text-white font-bold uppercase">Enforcing the “Third Space”</h3>
-                                <p>Your home and workspace are very often personalized to your needs and self expression. Even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="space-y-16">
-                            <div class="h-160 w-120 flex flex-col justify-center">
-                                <VideoPlayer
-                                :videoSources="[
-                                    { src: '/Work/EV/0_MeterAutonomousFull.mp4', type: 'video/mp4' },
-                                    { src: '/Work/EV/0_MeterAutonomous1080.mp4', type: 'video/mp4' },
-                                    { src: '/Work/EV/0_MeterAutonomous480.mp4', type: 'video/mp4' }
-                                    ]">
-                                </VideoPlayer>
-                            </div>
-                            <div class="w-96 shrink-0 inline-block space-y-4">
-                                <h3 class="text-white font-bold uppercase">Using Color to Highlight Autonomous Driving Features</h3>
-                                <p>Apple, like many large technology companies (but not many car companies), uses highlight colors for important information. We continued that trend by using an Autonomous Violet as the indicator of autonomous driving mode and related features.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-full absolute top-0 right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
-                <div class="h-full absolute top-0 left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-            </div>
-        </div> -->
       </div>
-      <div class="bg-grayMiddle h-10 relative"></div>
 
       <PreFooter :currentProjectId="'2'" :linksVisibility="[true, true, true, false]" class="relative"/>
       <FooterSection />

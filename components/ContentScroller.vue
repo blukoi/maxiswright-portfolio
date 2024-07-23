@@ -6,7 +6,7 @@
                 <slot></slot>
             </div>
         </div>
-        <div class="h-full absolute top-0 right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
-        <div class="h-full absolute top-0 left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+        <div class="h-full absolute top-0 right-4 md:right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+        <div class="h-full absolute top-0 left-4 md:left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
     </div>
 </template>
