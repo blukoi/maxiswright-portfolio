@@ -103,6 +103,63 @@
                 </div>
             </div>
         </div>
+        <IntroHighlights 
+            title="Highlights"
+        >
+
+
+            <!-- SCROLLER CONTENT START -->
+
+            <ScrollerVideo
+                :videoSources="[
+                    { src: '/Work/EV/0_SeamlessTransitionFull.mp4', type: 'video/mp4' },
+                    { src: '/Work/EV/0_SeamlessTransition1080.mp4', type: 'video/mp4' },
+                    { src: '/Work/EV/0_SeamlessTransition480.mp4', type: 'video/mp4' },
+                ]"
+                title="Seamless Transitions Between Devices"
+                videoParent="h-80 w-60 md:h-160 md:w-120"
+            >
+                <template #caption>
+                    <p>We wanted to continue Apple’s penchant for supporting an interconnected ecosystem within their product line so that your Apple Car would connect with the rest of your Apple products. Your music, phone calls, GPS, and more would seamlessly transition to your Apple Car media screens (and vice versa) so you can keep moving.</p>
+                </template>
+            </ScrollerVideo>
+
+
+            <ScrollerVideo
+                :videoSources="[
+                    { src: '/Work/EV/0_PassengerID.mp4', type: 'video/mp4' }
+                ]"
+                title="Passenger ID"
+                videoParent="h-80 w-32 md:h-160 md:w-64"
+            >
+                <template #caption>
+                    <p>To extend the Apple Wallet and Apple ID, you can now make a Passenger ID which remembers your preferred climate and seat position. When entering a new Apple Car or other participating vehicle you can connect your Passenger ID and the car will accommodate your preferences.</p>
+                    <p>You can also create different presets to easily adjust for different situations, such as when you need a nap or if it’s colder than usual.</p>
+                </template>
+            </ScrollerVideo>
+
+
+            <ScrollerImage
+                :srcset = "{
+                    small: '/Work/EV/0_ARVR_Small.png',
+                    medium: '/Work/EV/0_ARVR_Med.png',
+                    large: '/Work/EV/0_ARVR_Full.png',
+                }" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                title="High-Resolution Image Display" 
+                alt-text="A detailed view of the interactive interface" 
+                imageParent="h-80 md:h-160 w-60 md:w-120" 
+            >
+                <template #caption>
+                    <p>Detailed imagery helps highlight our technological advancements.</p>
+                </template>
+            </ScrollerImage>
+
+            <!-- SCROLLER CONTENT END -->
+
+
+        </IntroHighlights>
+        <!-- 
         <div class="w-full space-y-4">
             <div class="container mx-auto px-4 md:px-0">
                 <div class="flex flex-row justify-between text-grayDarkest">
@@ -200,7 +257,7 @@
                 <div class="h-full absolute top-0 right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
                 <div class="h-full absolute top-0 left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
             </div>
-        </div>
+        </div> -->
       </div>
       <div class="bg-grayMiddle h-10 relative"></div>
 
