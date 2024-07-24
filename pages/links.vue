@@ -19,36 +19,36 @@
                         icon-name="message"
                         label="Contact Form"
                     ></ButtonIcon>
-                    <Mailto mail="max.wri@gmail.com" subject="Let's connect!" title="Write me a email" class="h-16 p-4 rounded-md flex flex-row justify-start items-center bg-mint hover:bg-grayDarker text-white gap-4">
+                    <a href="mailto:max.wri@gmail.com" class="h-16 p-4 rounded-md flex flex-row justify-start items-center bg-mint hover:bg-grayDarker text-white gap-4">
                         <div class="h-8 w-8 flex flex-row justify-center items-center">
                             <FontAwesomeIcon :icon="['fas', 'envelope']" class="text-xl" />
                         </div>
                         <h1 class="font-title text-xl">Email</h1>
-                    </Mailto>
-                    <ButtonIcon 
+                    </a>
+                    <ButtonIconExternal 
                         link="https://www.linkedin.com/in/maxiswright/"
                         icon-pack="fab"
                         icon-name="linkedin"
                         label="LinkedIn"
-                    ></ButtonIcon>
-                    <ButtonIcon 
+                    ></ButtonIconExternal>
+                    <ButtonIconExternal 
                         link="https://www.instagram.com/theblukoi/"
                         icon-pack="fab"
                         icon-name="instagram"
                         label="Instagram"
-                    ></ButtonIcon>
-                    <ButtonIcon 
+                    ></ButtonIconExternal>
+                    <ButtonIconExternal 
                         link="https://us04web.zoom.us/j/3655627019?pwd=d0xZdXlyZVlGeTUyNUpaVkZIVFkyZz09"
                         icon-pack="fas"
                         icon-name="video"
                         label="Zoom"
-                    ></ButtonIcon>
-                    <ButtonIcon 
+                    ></ButtonIconExternal>
+                    <ButtonIconExternal 
                         link="https://calendly.com/max-wri/one-on-one-with-me"
                         icon-pack="fas"
                         icon-name="calendar"
                         label="Calendly"
-                    ></ButtonIcon>
+                    ></ButtonIconExternal>
                 </div>
             </div>
         </div>
@@ -68,13 +68,13 @@
                     <div class="w-full pl-8 space-y-4 font-main text-grayDarker">
                         <p class="text-sm">If you play Destiny feel free to add me on Xbox or Bungie for some raids. I’m also on Untappd from time to time; sometimes I put things on GitHub; you can also check out some of my other projects.</p>
                     </div>
-                    <ButtonIcon 
+                    <ButtonIconExternal 
                         link="https://www.xbox.com/en-US/play/user/Blu%20Koi"
                         icon-pack="fab"
                         icon-name="xbox"
                         label="Xbox"
-                    ></ButtonIcon>
-                    <nuxt-link to="https://www.bungie.net/7/en/User/Profile/1/4611686018429882790" class="h-16 p-4 rounded-md flex flex-row justify-start items-center bg-mint hover:bg-grayDarker text-white gap-4">
+                    ></ButtonIconExternal>
+                    <a href="https://www.bungie.net/7/en/User/Profile/1/4611686018429882790" class="h-16 p-4 rounded-md flex flex-row justify-start items-center bg-mint hover:bg-grayDarker text-white gap-4">
                         <div class="h-8 w-8 flex justify-center items-center text-white">
                             <svg width="485" height="146" viewBox="0 0 485 146" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1493_2966)">
@@ -95,31 +95,31 @@
                             </svg>
                         </div>
                         <h1 class="font-title text-xl">Bungie ID</h1>
-                    </nuxt-link>
+                    </a>
                     <!-- <ButtonIcon 
                         link="https://www.bungie.net/7/en/User/Profile/1/4611686018429882790"
                         icon-pack="fab"
                         icon-name="instagram"
                         label="Bungie ID"
                     ></ButtonIcon> -->
-                    <ButtonIcon 
+                    <ButtonIconExternal 
                         link="https://untappd.com/user/blukoi"
                         icon-pack="fab"
                         icon-name="untappd"
                         label="Untappd"
-                    ></ButtonIcon>
-                    <ButtonIcon 
+                    ></ButtonIconExternal>
+                    <ButtonIconExternal 
                         link="https://github.com/blukoi"
                         icon-pack="fab"
                         icon-name="github"
                         label="GitHub"
-                    ></ButtonIcon>
-                    <ButtonIcon 
+                    ></ButtonIconExternal>
+                    <ButtonIconExternal 
                         link="https://www.fonttouchthis.com/"
                         icon-pack="fas"
                         icon-name="font"
                         label="Font Touch This"
-                    ></ButtonIcon>
+                    ></ButtonIconExternal>
                 </div>
             </div>
         </div>

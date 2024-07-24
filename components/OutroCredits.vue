@@ -1,5 +1,5 @@
 <template>
-    <div class="relative z-20 bg-white pb-32 md:pb-64">
+    <div class="relative z-20 bg-grayLightPrimary py-32">
         <div class="w-full space-y-4">
             <div class="container mx-auto px-4 md:px-0">
                 <div class="flex flex-row justify-between text-grayDarkest">
@@ -9,9 +9,9 @@
                     </div>
                 </div>
             </div>
-            <ContentScroller>
+            <ContentSmallScroller>
                 <slot></slot>
-            </ContentScroller>
+            </ContentSmallScroller>
         </div>
     </div>
 </template>
