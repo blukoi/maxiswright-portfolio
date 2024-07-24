@@ -53,26 +53,20 @@ Legend
 │    └─ < ButtonSmall >
 │
 ├─ < IntroTitle >
-│    ├─ ++ Must haves
-│    │   ├─ "<template #title>{{ project.title }} —</template>"
-│    │   └─ in <script>
-│    │       ├─ import projects.json
-│    │       ├─ return "projects: require('~/Assets/projects.json')"
-│    │       └─ input project id to get the correct title for the case study ++
-│    └─ < Media (video or image component) >
+│    └─ ++ Must haves
+│        ├─ "<template #title>{{ project.title }} —</template>"
+│        └─ in <script>
+│            ├─ import projects.json
+│            ├─ return "projects: require('~/Assets/projects.json')"
+│            └─ input project id to get the correct title for the case study ++
 │
 ├─ < IntroStructure >
 │    ├─ < IntroWork > ++ 6 slots / child component choices are optional ++
-│    │   ├─ ( written content; can add spans for emphasis )
 │    │   ├─ < CopyPills >
 │    │   └─ < ConciseSwitch > ++ must be on every [ Work ] page ++
 │    └─ < IntroOverview > ++ 4 slots / child component choices are optional ++
-│        ├─ ( written content; must include parent tags like p or ul; can add spans for emphasis )
-│        └─ < PillsAlone > ++ pair with other tags to add caption, does not include a child title ++
 │
 ├─ < IntroHowMightWe > ++ has props to fill in text and append with a background color / 2 slots ++
-│    ├─ ( written subtitle and caption in #caption slot )
-│    └─ < Media (video or image component) > in #media slot
 │
 ├─ < IntroHighlights >
 │    ├─ ++ this is a parent to structure and title the ContentScroller component ++
@@ -82,6 +76,8 @@ Legend
 │        ├─ < ScrollerVideo >
 │        ├─ < ScrollerImage >
 │        └─ ++ more to come ++
+│
+├─ < OutroHighlightsWork > ++ 2 slots for centered or full-width content ++
 │
 ├─ < OutroCredits > ++ title prop / this is only required for group projects ++
 │    └─ < ContentSmallScroller > ++ 1 slot, fill with content/components ++

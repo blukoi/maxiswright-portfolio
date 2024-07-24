@@ -82,9 +82,9 @@
             </template>
             <template #media>
                 <ImagePrimary
-                    srcset-small="/Work/EV/0_Cockpit_Full.png"
+                    srcset-small="/Work/EV/0_Cockpit_Small.png"
                     srcset-medium="/Work/EV/0_Cockpit_Med.png"
-                    srcset-large="/Work/EV/0_Cockpit_Small.png"
+                    srcset-large="/Work/EV/0_Cockpit_Full.png"
                     alt-text="A mockup of the interior of an electric car, showing the dashboard with a prototype of newly designed screens."
                 />
             </template>
@@ -182,7 +182,41 @@
 
         <!-- OUTRO BEGINNING -->
         <OutroHighlightsWork bgColor="gradient-applecar">
-            <LottieParent bgColor="bg-applecarBlue" :animation-data="animationData"></LottieParent>
+            <template #central>
+                <div class="w-full space-y-64">
+                    <LottieParent bgColor="bg-applecarBlue" :animation-data="animationData"></LottieParent>
+                    <VideoPlayerControlled 
+                        :autoplay=false 
+                        :loop=false 
+                        :muted=false 
+                        :controls=true
+                        roundedLvl="rounded-md" 
+                        :videoSources="[
+                            { src: '/Work/EV/x_AppleVulcan_1080.mp4', type: 'video/mp4' },
+                            { src: '/Work/EV/x_AppleVulcan_720.mp4', type: 'video/mp4' },
+                            { src: '/Work/EV/x_AppleVulcan_480.mp4', type: 'video/mp4' }
+                        ]">
+                    </VideoPlayerControlled>
+                </div>
+            </template>
+            <template #full>
+                <ContentMediaWithCaption
+                    title="Final Thoughts & Next Steps"
+                >
+                    <template #caption>
+                        <p class="mb-4">Our original brief was to design for 2035. To be perfectly honest, we found it incredibly difficult to design for a release 10 years from now. Although we understand that the development timeline for cars is around 5 years, has so many moving parts, and can constantly change considerations, it’s completely atypical for most product/UX/UI design timelines. To be honest, it’s something that I would be really eager to explore more, simply because of the differences to other development pipelines.</p>
+                        <p>Regarding the design, we kept it a little closer to current design trends and features than will probably be in use in 2035. There are also a lot of aspects we wanted to keep iterating on, like more versions of the center screen’s Tab Bar, adding an information bar for things like battery info and range, utilizing secondary screens (e.g. a docked phone) as a controller for quick app access, and more. Some of my teammates decided to continue working on the project afterwards and you can see that on their respective websites.</p>
+                    </template>
+                    <template #media>
+                        <ImagePrimary
+                            srcset-small="/Work/EV/0_Cockpit_Small.png"
+                            srcset-medium="/Work/EV/0_Cockpit_Med.png"
+                            srcset-large="/Work/EV/0_Cockpit_Full.png"
+                            alt-text="A mockup of the interior of an electric car, showing the dashboard with a prototype of newly designed screens."
+                        />
+                    </template>
+                </ContentMediaWithCaption>
+            </template>
         </OutroHighlightsWork>
 
         <!-- TEAM CREDITS -->
