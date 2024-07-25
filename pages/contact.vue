@@ -8,9 +8,9 @@
             <div class="h-full col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-2 bg-grayDarkest rounded-md p-4 flex items-center">
                 <form
                     name="contact"
-                    action="/pages/success"
+                    action="/success"
                     method="POST"
-                    netlify-honeypot="bot-field"
+                    netlify-honeypot="favoritecolor"
                     data-netlify="true"
                     class="font-main flex flex-col"
                     >
