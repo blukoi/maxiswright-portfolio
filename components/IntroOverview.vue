@@ -44,7 +44,7 @@
             </div>
 
             <div class="col-span-1 md:col-span-2 flex flex-row justify-end items-center px-4 md:px-8 h-20">
-                <button class="button flex flex-row gap-4 pl-0 md:pl-1 text-grayMiddle items-center rounded-sm bg-transparent hover:bg-grayMiddle hover:text-white font-main" @click="toggle">
+                <button class="button flex flex-row gap-4 pl-0 md:pl-1 text-grayMiddle items-center rounded-sm bg-transparent hover:bg-grayMiddle hover:text-white font-main" @click="toggleAndMove">
                     <p class="uppercase text-xs tracking-widest">{{ isExpanded ? 'Hide' : 'Read More' }}</p>
                     <div class="h-6 w-6 flex justify-center items-center rounded-full bg-grayMiddle text-grayLightPrimary">
                         <FontAwesomeIcon :icon="['fas', isExpanded ? 'caret-up' : 'caret-down']" class="text-sm" />
@@ -64,6 +64,9 @@ export default {
     },
     methods: {
         toggle() {
+            this.isExpanded = !this.isExpanded;
+        },
+        toggleAndMove() {
             this.isExpanded = !this.isExpanded;
             this.$nextTick(() => {
                 if (!this.isExpanded && this.$refs.headerRef) {

@@ -38,7 +38,7 @@
                         <h1 class="font-title text-white text-2xl">Max Wright</h1>
                     </div>
                     <div class="font-main text-grayDarkest text-left md:text-right text-sm">
-                        <p>Copyright © 2017 — 2024 Max Wright</p>
+                        <p>Copyright © 2016 — 2024 Max Wright</p>
                     </div>
                 </div>
             </div>

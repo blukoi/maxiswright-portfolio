@@ -18,7 +18,7 @@
 
           <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 -mt-24 mb-24 pointer-events-none">
             <div class="col-span-1">
-              <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-md flex flex-row gap-4">
+              <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-full flex flex-row gap-4">
                 <div class="h-8 w-8 flex flex-row justify-center items-center">
                   <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-3xl" />
                 </div>

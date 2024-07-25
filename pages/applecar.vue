@@ -4,7 +4,7 @@
         <NavBar />
 
         <!-- TITLE AND VISUAL -->
-        <IntroTitle bgColor="gradient-applecar">
+        <IntroTitle :bgColor="bgColor">
             <template #title>{{ project.title }} —</template>
             <template #media>
                 <VideoCover
@@ -75,7 +75,7 @@
             how="How might we..."
             direction="...design seamless automotive experiences which support Apple’s existing ecosystem?"
             title="Extend Apple’s Current Design Philosophy"
-            bgColor="gradient-applecar"
+            :bgColor="bgColor"
         >
             <template #caption>
                 <p class="pl-0 md:pl-8 font-main text-sm">We tried to reflect Apple’s penchant for a seamless, thoughtful user experience. The dashboard utilizes MagSafe ports to enable owners to use whatever-sized screen they prefer, under the assumption that iPads would get MagSafe features at some point soon. We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
@@ -104,7 +104,7 @@
                     { src: '/Work/EV/0_SeamlessTransition480.mp4', type: 'video/mp4' },
                 ]"
                 title="Seamless Transitions Between Devices"
-                videoParent="h-80 w-60 md:h-160 md:w-120"
+                videoParent="h-80 w-60 md:h-128 md:w-120"
             >
                 <template #caption>
                     <p>We wanted to continue Apple’s penchant for supporting an interconnected ecosystem within their product line so that your Apple Car would connect with the rest of your Apple products. Your music, phone calls, GPS, and more would seamlessly transition to your Apple Car media screens (and vice versa) so you can keep moving.</p>
@@ -117,7 +117,7 @@
                     { src: '/Work/EV/0_PassengerID.mp4', type: 'video/mp4' }
                 ]"
                 title="Passenger ID"
-                videoParent="h-80 w-32 md:h-160 md:w-64"
+                videoParent="h-80 w-32 md:h-128 md:w-64"
             >
                 <template #caption>
                     <p>To extend the Apple Wallet and Apple ID, you can now make a Passenger ID which remembers your preferred climate and seat position. When entering a new Apple Car or other participating vehicle you can connect your Passenger ID and the car will accommodate your preferences.</p>
@@ -135,7 +135,7 @@
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
                 title="Spatial Computing" 
                 alt-text="A mockup of the interior of a car while sitting in the driver's seat; the driver is using AR glasses and using an AR menu hovering in the air in front of them." 
-                imageParent="h-80 md:h-160 w-60 md:w-120" 
+                imageParent="h-80 md:h-128 w-60 md:w-120" 
             >
                 <template #caption>
                     <p>More than simply adding AR/VR to the driving experience, we wanted to integrate spatial computing so that AR information appears seamlessly within your surroundings in the cockpit. Some menus adhere to physical surfaces for tactile feedback, and other elements intelligently move so they don’t cover necessities like the meter or streetview.</p>
@@ -152,7 +152,7 @@
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
                 title="Enforcing the “Third Space”" 
                 alt-text="A prototype of a dashboard center screen using an app to order a delivery with the car as the delivery option." 
-                imageParent="h-80 md:h-160 w-60 md:w-120" 
+                imageParent="h-80 md:h-128 w-60 md:w-120" 
             >
                 <template #caption>
                     <p>Your home and workspace are very often personalized to your needs and self expression. Even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
@@ -167,7 +167,7 @@
                     { src: '/Work/EV/0_MeterAutonomous_480.mp4', type: 'video/mp4' }
                 ]"
                 title="Using Color to Highlight Autonomous Driving Features"
-                videoParent="h-80 w-60 md:h-160 md:w-120"
+                videoParent="h-80 w-60 md:h-128 md:w-120"
             >
                 <template #caption>
                     <p>Apple, like many large technology companies (but not many car companies), uses highlight colors for important information. We continued that trend by using an Autonomous Violet as the indicator of autonomous driving mode and related features.</p>
@@ -180,8 +180,69 @@
 
         </IntroHighlights>
 
+        <!-- PROCESS CONTENT -->
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Vehicle Analysis"
+            iconPack="fas"
+            iconName="car"
+            :visibilityMode="1"
+            headerRef="1"
+            :isConcise="isConcise"
+        ></ProcessPrimary>
+
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Brand Research"
+            iconPack="fab"
+            iconName="apple"
+            :visibilityMode="1"
+            headerRef="2"
+            :isConcise="isConcise"
+        ></ProcessPrimary>
+
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Conceptualization"
+            iconPack="fas"
+            iconName="pencil"
+            :visibilityMode="1"
+            headerRef="3"
+            :isConcise="isConcise"
+        ></ProcessPrimary>
+
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Research & Prep"
+            iconPack="fas"
+            iconName="arrows-to-circle"
+            :visibilityMode="1"
+            headerRef="4"
+            :isConcise="isConcise"
+        ></ProcessPrimary>
+
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Prototyping"
+            iconPack="fas"
+            iconName="pen-to-square"
+            :visibilityMode="1"
+            headerRef="5"
+            :isConcise="isConcise"
+        ></ProcessPrimary>
+
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Visual Storytelling"
+            iconPack="fas"
+            iconName="video"
+            :visibilityMode="1"
+            headerRef="6"
+            :isConcise="isConcise"
+        ></ProcessPrimary>
+
         <!-- OUTRO BEGINNING -->
-        <OutroHighlightsWork bgColor="gradient-applecar">
+        <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
                 <div class="w-full space-y-64">
                     <LottieParent bgColor="bg-applecarBlue" :animation-data="animationData"></LottieParent>
@@ -288,6 +349,7 @@
             return {
                 projects: require('~/Assets/projects.json'),
                 isConcise: true,
+                bgColor: "gradient-applecar",
                 animationData
             };
         },
