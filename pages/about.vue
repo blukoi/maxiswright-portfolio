@@ -50,7 +50,7 @@
                     </div>
                 </div>
     
-                <div class="col-span-1 col-start-1 md:col-start-2 md:col-span-2 lg:col-span-1 lg:col-start-3 md:-mt-128 lg:-mt-40 font-main">
+                <div class="col-span-1 col-start-1 md:col-start-2 md:col-span-2 lg:col-span-1 lg:col-start-3 lg:-mt-40 font-main">
                     <div class="w-full bg-white text-grayDarker rounded-md p-4 text-sm space-y-4">
                         <h1 class="font-title text-xl">Digging a little deeper</h1>
                         <div class="p-4 bg-grayLightPrimary font-grayMiddle rounded-sm space-y-4">
@@ -100,43 +100,43 @@
                     </div>
                     <h1 class="text-2xl font-title">Core Competencies</h1>
                 </div>
-                <div class="col-span-1 bg-white rounded-md p-4 space-y-8">
+                <div class="col-span-1 bg-white rounded-md p-4 space-y-8 self-start">
                     <div class="w-full flex justify-center bg-transparent rounded-sm">
                         <img src="/Brand/Core_DesignResearch.svg" alt="Example Illustration Depicting Research via White Boarding and Post-Its" class="md:w-full">
                     </div>
-                    <div class="w-full pl-4">
+                    <div class="w-full">
                         <div class="w-full">
                             <h1 class="font-title text-xl text-grayDarker">Design Research</h1>
                         </div>
-                        <div>
+                        <div class="pl-4">
                             <ul class="list-none flex flex-row flex-wrap gap-1">
                                 <PillsPrimary :tags="designResearch"></PillsPrimary>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 bg-white rounded-md p-4 space-y-8">
+                <div class="col-span-1 bg-white rounded-md p-4 space-y-8 self-start">
                     <div class="w-full flex justify-center bg-transparent rounded-sm">
                         <img src="/Brand/Core_VisualDesign.svg" alt="Example Illustration Depicting the Visual Design and Alteration of a Design System" class="md:w-full">
                     </div>
-                    <div class="w-full pl-4">
+                    <div class="w-full">
                         <div class="w-full">
                             <h1 class="font-title text-xl text-grayDarker">Visual Design</h1>
                         </div>
-                        <div>
+                        <div class="pl-4">
                             <PillsPrimary :tags="visualDesign"></PillsPrimary>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 bg-white rounded-md p-4 space-y-8">
+                <div class="col-span-1 bg-white rounded-md p-4 space-y-8 self-start">
                     <div class="w-full flex justify-center bg-transparent rounded-sm">
                         <img src="/Brand/Core_Prototyping.svg" alt="Example Illustration Depicting the Connections Between Prototyped Wireframes" class="md:w-full">
                     </div>
-                    <div class="w-full pl-4">
+                    <div class="w-full">
                         <div class="w-full">
                             <h1 class="font-title text-xl text-grayDarker">High Fidelity Prototyping</h1>
                         </div>
-                        <div>
+                        <div class="pl-4">
                             <PillsPrimary :tags="highFidelityPrototyping"></PillsPrimary>
                         </div>
                     </div>

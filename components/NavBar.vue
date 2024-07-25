@@ -2,7 +2,7 @@
     <nav class="fixed z-50 top-0 w-full h-20 bg-whiteFaded backdrop-filter backdrop-blur-sm font-main">
       <div class="w-full h-full container mx-auto px-4 sm:px-0 flex flex-row space-between">
         <div class="w-full h-full flex flex-row justify-between">
-          <nuxt-link to="/" class="self-center px-8 py-2 rounded-md h-fit hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-black hover:text-white active:text-mint stroke-none focus:stroke-white flex flex-row gap-4">
+          <nuxt-link to="/" class="self-center px-2 sm:px-8 py-2 rounded-md h-fit hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-black hover:text-white active:text-mint stroke-none focus:stroke-white flex flex-row gap-4">
             <div class="w-12 h-12 self-center rounded-full">
               <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="rounded-full fill-current">
                 <defs>
@@ -15,7 +15,7 @@
                 <rect x="0" y="0" width="72" height="72" mask="url(#cutout-mask)"/>
               </svg>
             </div>
-            <h1 class="font-title text-2xl self-center">Max Wright</h1>
+            <h1 class="font-title text-2xl self-center hidden sm:block">Max Wright</h1>
           </nuxt-link>
           <ul class="flex flex-row gap-3 h-fill items-center uppercase text-xs font-bold tracking-wider">
             <li class="hidden">
