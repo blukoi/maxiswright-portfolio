@@ -49,7 +49,6 @@
                         <button type="submit" class="button px-4 py-2 bg-grayLightPrimary hover:bg-mint text-grayDarker hover:text-white rounded-sm">Send</button>
                     </p>
                 </form>
-                <nuxt-link to="/success">Test</nuxt-link>
             </div>
         </div>
       </div>
