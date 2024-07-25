@@ -14,6 +14,7 @@
                     data-netlify="true"
                     class="font-main flex flex-col"
                     >
+                    <input type="hidden" name="form-name" value="contact" />
                     <p class="-z-10 max-h-0 opacity-0 pointer-events-none" tabindex="-1">
                         <label class="max-h-0 opacity-0 pointer-events-none" tabindex="-1">
                         Don’t fill this out if you’re human: <input name="favoritecolor" class="max-h-0 opacity-0 pointer-events-none" tabindex="-1" />
