@@ -9,9 +9,9 @@
                     </div>
                 </div>
             </div>
-            <ContentScroller>
+            <IntroScroller>
                 <slot></slot>
-            </ContentScroller>
+            </IntroScroller>
         </div>
     </div>
 </template>

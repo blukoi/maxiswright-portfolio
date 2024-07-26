@@ -1,8 +1,8 @@
 <template>
     <picture>
-        <source :srcset="srcsetLarge" media="(min-width: 1024px)">
-        <source :srcset="srcsetMedium" media="(min-width: 768px)">
-        <source :srcset="srcsetSmall" media="(min-width: 480px)">
+        <source :srcset="srcsetLarge" media="(min-width: 768px)">
+        <source :srcset="srcsetMedium" media="(min-width: 480px)">
+        <source :srcset="srcsetSmall" media="(min-width: 0px)">
         <img :src="srcsetSmall" :alt="altText" :style="imageStyle" class="rounded-sm overflow-none">
     </picture>
 </template>
@@ -33,3 +33,16 @@ export default {
     }
 }
 </script>
+
+<!-- HOW TO USE
+
+
+<PictureComponent
+    srcset-small="/path/to/image-small.jpg"
+    srcset-medium="/path/to/image-medium.jpg"
+    srcset-large="/path/to/image-large.jpg"
+    alt-text="A descriptive alternative text for the image"
+    :image-style="{ width: '100%', height: 'auto' }"
+/>
+    
+ -->
