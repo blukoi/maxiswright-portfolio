@@ -181,6 +181,7 @@
         </IntroHighlights>
 
         <!-- PROCESS CONTENT -->
+        <!-- 1. Vehicle Analysis -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Vehicle Analysis"
@@ -413,6 +414,7 @@
 
         </ProcessPrimary>
 
+        <!-- 2. Brand Research -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Brand Research"
@@ -426,8 +428,81 @@
                 <p>Apple is a world-renowned brand and, as a team, we each have our own history and experiences with the company and its products. We wanted to take some time to get on the same page. To do that, we started by researching the brand and the brand identity but also by journaling different user experiences, from the customer experience to the ecosystem and also the design system.</p>
                 <p>The goal was to figure out the hallmarks of the brand, what drives it, and where we could push that brand identity for a brand strategy and user experiences for a vehicle in 2035.</p>
             </ContentBlurb>
+
+            <ContentCaptionWithPostits 
+                title="Mission Statements" 
+                gridCols="lg:grid-cols-4" 
+            >
+                <template #caption>
+                    <p>Apple doesn’t appear to have a specific, current mission statement, so we looked at some of the various mission, purpose, and vision statements released by the company over the years.</p>
+                    <p>These come from the company in the form of press releases, investor calls, the website, etc.</p>
+                </template>
+                <template #postits>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #title>Original Vision Statement:</template>
+                        <template #copy>
+                            <p>Apple is dedicated to the empowerment of man—to making personal computing accessible to each and every individual so as to help change the way we think, work, learn, and communicate.</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #title>Tim Cook in 2009:</template>
+                        <template #copy>
+                            <p>We believe that we are on the face of the earth to make great products and that's not changing. We are constantly focusing on innovating. We believe in the simple not the complex. We believe that we need to own and control the primary technologies behind the products that we make, and participate only in markets where we can make a significant contribution. We believe in saying no to thousands of projects, so that we can really focus on the few that are truly important and meaningful to us.</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #title>2016 SEC Form 10-K (Annual Financial Report):</template>
+                        <template #copy>
+                            <p>The Company is committed to bringing the best user experience to its customers through its innovative hardware, software and services. The Company’s business strategy leverages its unique ability to design and develop its own operating systems, hardware, application software and services to provide its customers products and solutions with innovative design, superior ease-of-use and seamless integration.</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #title>2022 Fourth Quarter Report:</template>
+                        <template #copy>
+                            <p>Apple’s more than 100,000 employees are dedicated to making the best products on earth, and to leaving the world better than we found it.</p>
+                        </template>
+                    </ContentPostit>
+                </template>
+            </ContentCaptionWithPostits>
+
+            <ContentScroller
+                title="All 13 Analyses"
+            >
+            <ScrollerImageMulti
+                :srcset="[
+                    {
+                        small: '/path/to/first-image-small.jpg',
+                        medium: '/path/to/first-image-medium.jpg',
+                        large: '/path/to/first-image-large.jpg',
+                        altText: 'Description of first image'
+                    },
+                    {
+                        small: '/path/to/second-image-small.jpg',
+                        medium: '/path/to/second-image-medium.jpg',
+                        large: '/path/to/second-image-large.jpg',
+                        altText: 'Description of second image'
+                    },
+                ]" 
+                title="Gallery of Designs" 
+                imageParent="h-80 md:h-160" 
+            >
+                <template #caption>
+                    <p>This gallery showcases various designs and concepts developed over the project.</p>
+                </template>
+            </ScrollerImageMulti>
+
+            </ContentScroller>
         </ProcessPrimary>
 
+        <!-- 3. Conceptualization -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Conceptualization"
