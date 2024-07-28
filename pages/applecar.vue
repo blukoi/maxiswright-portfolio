@@ -803,6 +803,38 @@
             <ContentBlurb>
                 <p>For conciseness and specificity, this section will only be detailing the work that I personally did on a singular concept: <span>seamless transition into the car</span>. Each concept was worked on by one person on the team so, if you’d like additional information on another of our concepts, please view the credits at the bottom of the page and you can visit my teammates’ websites.</p>
             </ContentBlurb>
+
+            <ContentCalloutWithCaption 
+                :bgColor="bgColor" 
+                iconPack="fas" 
+                iconName="lightbulb" 
+                title="A Seamless, Integrated Ecosystem" 
+                textColor="text-white"
+                iconSize="text-4xl"
+            >
+                <template #caption>
+                    <p>From our research, a major potential point of friction is moving into and out of your car. You can connect to Bluetooth, but you’ll be limited to music and phone calls. With Apple’s well-defined ecosystem, there’s an opportunity to improve this interaction tremendously.</p>
+                </template>
+                <template #callout>
+                    <p>A seamless transition when entering or exiting the vehicle</p>
+                </template>
+            </ContentCalloutWithCaption>
+
+            <ContentImagesWithCaption
+                title="Quick Proof"
+                spacing="space-x-4 md:space-x-8"
+                imgSizing="filter drop-shadow-2xl w-24 md:w-32 lg:w-40 rounded-md"
+                :images="[
+                    { src: '/Work/EV/5_Prototyping/Wireframe1_Small.png', alt: 'Low-fidelity wireframe of GPS directions' },
+                    { src: '/Work/EV/5_Prototyping/Wireframe2_Small.png', alt: 'Low-fidelity wireframe of GPS directions with a pop-up notification which says `Handoff: moving your music and navigation to your car.`' },
+                    { src: '/Work/EV/5_Prototyping/Wireframe3_Small.png', alt: 'From the previous pop-up notification, this low-fidelity screen shows the notification expanded with 2 options to select: cancel or okay' }
+                ]"
+            >
+                <template #caption>
+                    <p>One of the major things that people are averse to is seeing “Settings” pages when talking about a new feature or concept. A lot of this concept would happen there, potentially, so I made a quick proof of concept just to show what a user might actually encounter during the actual event.</p>
+                </template>
+            </ContentImagesWithCaption>
+
         </ProcessPrimary>
 
         <!-- 6. Visual Storytelling -->
