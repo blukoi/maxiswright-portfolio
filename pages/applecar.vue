@@ -429,6 +429,7 @@
                 <p>The goal was to figure out the hallmarks of the brand, what drives it, and where we could push that brand identity for a brand strategy and user experiences for a vehicle in 2035.</p>
             </ContentBlurb>
 
+            <!-- MISSION STATEMENTS -->
             <ContentCaptionWithPostits 
                 title="Mission Statements" 
                 gridCols="lg:grid-cols-4" 
@@ -473,33 +474,228 @@
                 </template>
             </ContentCaptionWithPostits>
 
+            <!-- PHOTO JOURNAL -->
             <ContentScroller
-                title="All 13 Analyses"
+                title="Customer Photo Journal"
             >
-            <ScrollerImageMulti
-                :srcset="[
-                    {
-                        small: '/path/to/first-image-small.jpg',
-                        medium: '/path/to/first-image-medium.jpg',
-                        large: '/path/to/first-image-large.jpg',
-                        altText: 'Description of first image'
-                    },
-                    {
-                        small: '/path/to/second-image-small.jpg',
-                        medium: '/path/to/second-image-medium.jpg',
-                        large: '/path/to/second-image-large.jpg',
-                        altText: 'Description of second image'
-                    },
-                ]" 
-                title="Gallery of Designs" 
-                imageParent="h-80 md:h-160" 
-            >
-                <template #caption>
-                    <p>This gallery showcases various designs and concepts developed over the project.</p>
-                </template>
-            </ScrollerImageMulti>
+
+                <!-- RETAIL STORES -->
+                <ScrollerImageMulti
+                    :srcset = "[
+                        {
+                            small: '/Work/EV/2_Research/Retail_1.jpg',
+                            medium: '/Work/EV/2_Research/Retail_1.jpg',
+                            large: '/Work/EV/2_Research/Retail_1.jpg',
+                            altText: 'The outside of Apple`s physical store in Santa Monica, California, which has an entire glass front',
+                        },
+                        {
+                            small: '/Work/EV/2_Research/Retail_2.jpg',
+                            medium: '/Work/EV/2_Research/Retail_2.jpg',
+                            large: '/Work/EV/2_Research/Retail_2.jpg',
+                            altText: 'The interior of Apple`s physical store in the Upper East Side in New York which inhabits a space which was previously a bank and has kept many of the architectural hallmarks of the original space',
+                        },
+                    ]" 
+                    title="Retail Stores" 
+                    imageParent="h-112 md:h-160 w-80 md:w-120" 
+                >
+                    <template #caption>
+                        <p>Apple’s physical retail spaces have gone through a variety of design philosophies over the years. Once they were sleek, ultra-modern, and almost sterile. Nowadays they try to incorporate architectural elements of the building or area to evoke a kind of harmony between the technology and the world around us, along with utilizing more plants and always a lot of windows and sunlight. Apple’s large catalog of physical stores also creates a remarkable advantage to enter the car market using sales strategies similar to Tesla, where the cars themselves don’t need to be immediately available like they would at a traditional car dealership.</p>
+                    </template>
+                </ScrollerImageMulti>
+
+                <!-- WEBSITE -->
+                <ScrollerVideo
+                :videoSources="[
+                        { src: '/Work/EV/2_Research/Website_480.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/2_Research/Website_720.mp4', type: 'video/mp4' },
+                    ]"
+                    title="Website"
+                    videoParent="h-112 md:h-160 w-80 md:w-120"
+                >
+                    <template #caption>
+                        <p>Apple’s website and online store are a masterclass in visual hierarchy and UX writing. The layouts themselves are typically pretty plain, with a strong separation between sections, expert use of progressive disclosure, and well-orchestrated interactions that can both capture a visitor’s attention and also dispense information.</p>
+                    </template>
+                </ScrollerVideo>
+            
+                <!-- ADVERTISING -->
+                <ScrollerImageMulti
+                    :srcset = "[
+                        {
+                            small: '/Work/EV/2_Research/Ads_1.jpg',
+                            medium: '/Work/EV/2_Research/Ads_1.jpg',
+                            large: '/Work/EV/2_Research/Ads_1.jpg',
+                            altText: 'An online photo ad for Apple`s iPhone, highlighting the privacy features by covering the owner`s face',
+                        },
+                        {
+                            small: '/Work/EV/2_Research/Ads_2.jpg',
+                            medium: '/Work/EV/2_Research/Ads_2.jpg',
+                            large: '/Work/EV/2_Research/Ads_2.jpg',
+                            altText: 'A billboard for Apple`s iPad mini showing the iPad taking up a small piece of the billboard with the rest of the space a stark white',
+                        },
+                    ]" 
+                    title="Advertising" 
+                    imageParent="h-112 md:h-160 w-80 md:w-120" 
+                >
+                    <template #caption>
+                        <p>Apple’s ads are usually deceptively simple, and often pick a singular aspect or feature to highlight. However, even though one feature may be highlighted, the ads always carry subtle implications about how that feature will actually improve your life or experience using the product.</p>
+                    </template>
+                </ScrollerImageMulti>
+
+                <!-- THIRD PARTY RETAIL -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/EV/2_Research/ThirdParty.jpg',
+                        medium: '/Work/EV/2_Research/ThirdParty.jpg',
+                        large: '/Work/EV/2_Research/ThirdParty.jpg',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Third Party Retail"
+                    alt-text="A photo of an Apple product display inside of a Best Buy"
+                    imageParent="h-112 md:h-160 w-96 md:w-128"
+                >
+                    <template #caption>
+                        <p>Apple also has dedicated product spaces at third party retailers and department stores. Apple makes efforts to bring some of their own retail spaces to these to create an extreme visual distinction compared to the many other brands also in these stores. There’s a not-so-subtle implication that Apple’s devices stand apart from the rest.</p>
+                    </template>
+                </ScrollerImage>
+            
+                <!-- HARDWARE -->
+                <ScrollerImageMulti
+                    :srcset = "[
+                        {
+                            small: '/Work/EV/2_Research/Hardware_1_Small.png',
+                            medium: '/Work/EV/2_Research/Hardware_1_Small.png',
+                            large: '/Work/EV/2_Research/Hardware_1.png',
+                            altText: 'An lineup of the Apple`s different products showing the variety of colors and materials being used',
+                        },
+                        {
+                            small: '/Work/EV/2_Research/Hardware_3_Small.jpg',
+                            medium: '/Work/EV/2_Research/Hardware_3_Med.jpg',
+                            large: '/Work/EV/2_Research/Hardware_3.jpg',
+                            altText: 'A photo of someone opening the packaging of an iPhone',
+                        },
+                    ]" 
+                    title="Hardware" 
+                    imageParent="h-112 md:h-160 w-80 md:w-120" 
+                >
+                    <template #caption>
+                        <p>The philosophy of Apple’s hardware is almost obsessive, from the materials being used all the way down to the opening experience. Apple has always been sympathetic to the way every product feels in our hand, as well as the fact that opening an expensive product should feel like an event in and of itself.</p>
+                    </template>
+                </ScrollerImageMulti>
+
+                <!-- SERVICES -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/EV/2_Research/Services_1.png',
+                        medium: '/Work/EV/2_Research/Services_1.png',
+                        large: '/Work/EV/2_Research/Services_1.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Services"
+                    alt-text="A photo of an Apple product display inside of a Best Buy"
+                    imageParent="h-112 md:h-160 w-96 md:w-128"
+                >
+                    <template #caption>
+                        <p>One of the most common complaints that I hear about Apple products is, “Wow your [Apple product] can’t do [this thing]? My [competitor] has been able to do that for years!” It’s a valid complaint in a fast-paced technological world, but Apple has never hidden the fact that they won’t release an app or service unless the work has been put into it to ensure that it’s a fully realized vision that can bring real impact, rather than simply a new app or service for the sake of having the new thing.</p>
+                    </template>
+                </ScrollerImage>
 
             </ContentScroller>
+
+            <!-- APPLE ECOSYSTEM -->
+            <ContentMediaWithCaption
+                title="Apple Ecosystem"
+            >
+                <template #caption>
+                    <p>One of Apple’s crowning achievements, and one of the driving forces of Apple’s development pipeline, is the product ecosystem they’ve created. The seamless integration of all their devices and the ease with which users can navigate between them is unmatched among their competitors. The Apple ecosystem scratches that, almost primal, desire for things to just work.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/EV/2_Research/Ecosystem_1_Small.png"
+                        srcset-medium="/Work/EV/2_Research/Ecosystem_1_Med.png"
+                        srcset-large="/Work/EV/2_Research/Ecosystem_1.png"
+                        alt-text="A rendering of different Apple products, including a phone, laptop, and iPad, with the same app working across them"
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- APPLE CONTINUITY -->
+            <ContentMediaWithCaption
+                title="Apple Continuity"
+            >
+                <template #caption>
+                    <p class="mb-4">In the pursuit of connected devices, we looked at how Apple currently handles transitioning between devices with a series of features under the umbrella of <span class="font-bold">Continuity</span>. It includes things like Messages and FaceTime being accessible on any of your devices.</p>
+                    <p>This particular feature, called Handoff, allows eligible apps to be moved, mid-process, to another associated device (e.g. from your iPad to MacBook) and became one of the large inspirations for one of our concepts to transition from your devices to your Apple Car.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/EV/2_Research/Handoff_Small.png"
+                        srcset-medium="/Work/EV/2_Research/Handoff_Med.png"
+                        srcset-large="/Work/EV/2_Research/Handoff.png"
+                        alt-text="A photo of an Apple iPhone next to an Apple iMac computer, with the same website open on both, under a headline reading, `Use Handoff to continue tasks on your other devices: With Handoff, you can start work on one device, then switch to another nearby device and pick up where you left off.`"
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- EVOLVING DESIGN SYSTEM -->
+            <ContentScroller
+                title="Evolving Design System"
+            >
+
+                <!-- IOS DESIGN -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/EV/2_Research/DesignSystem_1_Small.jpg',
+                        medium: '/Work/EV/2_Research/DesignSystem_1_Med.jpg',
+                        large: '/Work/EV/2_Research/DesignSystem_1.jpg',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="iOS Visual Design"
+                    alt-text="A graphic showing the variety of design elements being used for Apple's iOS design system"
+                    imageParent="h-96 md:h-128 w-120 md:w-180"
+                >
+                    <template #caption>
+                        <p>Every couple years Apple makes advancements and modifications to their macOS and iOS design systems. It’s an incredibly detailed design system that’s been defined and refined over decades, with a purpose-built font system, colors for every single context, and templates built for any situation. It’s built to be ultimately readable and clear and, since Apple (like Google) have an expansive library of their own Apps and Services, they’ve had to build this system to be flexible and open to modification in a way which is approachable for existing users without causing confusion.</p>
+                    </template>
+                </ScrollerImage>
+
+                <!-- SERVICES -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/EV/2_Research/DesignSystem_2_Small.png',
+                        medium: '/Work/EV/2_Research/DesignSystem_2_Med.png',
+                        large: '/Work/EV/2_Research/DesignSystem_2.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Evolved for Apple Vision"
+                    alt-text="A graphic showing the variety of design elements being used for Apple's Vision Pro design system"
+                    imageParent="h-96 md:h-128 w-120 md:w-180"
+                >
+                    <template #caption>
+                        <p>A huge source of inspiration for us, moving forward, became the way that Apple has approached redesigning their visual design system for future technologies like Apple Vision, their VR technology. This new system takes the existing one and makes it a little more spacious to account for AR/VR spaces and interactions, while also adding much more roundness for a little bit more of a friendly, easy to approach nature.</p>
+                    </template>
+                </ScrollerImage>
+
+            </ContentScroller>
+
+            <!-- SPATIAL COMPUTING -->
+            <ContentMediaWithCaption
+                title="Spatial Computing"
+            >
+                <template #caption>
+                    <p>Another huge source of inspiration for us became the R&D that Apple’s done into spatial computing to prepare to move into the VR space. Apple wants the VR space to be more than simply a screen attached to your face that can show you your surroundings, they want it to be it’s own, in a way, tangible space that can augment and empower both real-world and digital interactions. They’ve evolved their design system to work better in 3-dimensional spaces and have also researched real-world interactions, like how to utilize the series of outward-facing cameras for better perception and recognition of tiny hand gestures and motions.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/EV/2_Research/SpatialComputing_Small.png"
+                        srcset-medium="/Work/EV/2_Research/SpatialComputing_Med.png"
+                        srcset-large="/Work/EV/2_Research/SpatialComputing.png"
+                        alt-text="An array of still frames taken from a promotional video about Apple's Vision Pro VR headset and how the company envisioned the 3D and spatial aspects of computing for virtual space"
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- SUMMARY -->
+            <CaseStudyAppleCarBrandResearch />
         </ProcessPrimary>
 
         <!-- 3. Conceptualization -->
@@ -515,8 +711,63 @@
             <ContentBlurb>
                 <p>Taking our research, we started with a persona and then moved step by step through mapping exercises and brainstorming. The important thing is to brainstorm without restriction (as long as there's some relation to the persona and problems) so that nothing potentially great gets left unsaid.</p>
             </ContentBlurb>
+
+            <!-- PERSONA -->
+            <CaseStudyAppleCarPersona />
+
+            <!-- NEW BRAND STRATEGY -->
+             <CaseStudyAppleCarBrandStrategy />
+
+            <!-- PICKING DIRECTIONS -->
+            <ContentMediaWithCaption
+                title="Picking Directions"
+            >
+                <template #caption>
+                    <p>We went through a series of brainstorming exercises ranging from journey maps to lotus blossoms, and ended up writing out a variety of text-based scenarios. After several discussions, and refining some of these scenarios, these are the directions that we agreed were both the most exciting but also the most plausible.</p>
+                </template>
+                <template #media>
+                    <div class="rounded-sm md:rounded-md flex flex-col items-center justify-center space-y-4 md:space-y-8 p-4 px-16 md:px-32 lg:px-48 xl:px-64 bg-applecarBlue">
+                        <ImageSmall
+                            srcset-small="/Work/EV/3_Conceptualization/Concept1.jpg"
+                            srcset-medium="/Work/EV/3_Conceptualization/Concept1.jpg"
+                            srcset-large="/Work/EV/3_Conceptualization/Concept1.jpg"
+                            alt-text="A descriptive alternative text for the image"
+                            :image-style="{ width: '100%', height: 'auto' }"
+                        />
+                        <ImageSmall
+                            srcset-small="/Work/EV/3_Conceptualization/Concept2.jpg"
+                            srcset-medium="/Work/EV/3_Conceptualization/Concept2.jpg"
+                            srcset-large="/Work/EV/3_Conceptualization/Concept2.jpg"
+                            alt-text="A descriptive alternative text for the image"
+                            :image-style="{ width: '100%', height: 'auto' }"
+                        />
+                        <ImageSmall
+                            srcset-small="/Work/EV/3_Conceptualization/Concept3.jpg"
+                            srcset-medium="/Work/EV/3_Conceptualization/Concept3.jpg"
+                            srcset-large="/Work/EV/3_Conceptualization/Concept3.jpg"
+                            alt-text="A descriptive alternative text for the image"
+                            :image-style="{ width: '100%', height: 'auto' }"
+                        />
+                        <ImageSmall
+                            srcset-small="/Work/EV/3_Conceptualization/Concept4.jpg"
+                            srcset-medium="/Work/EV/3_Conceptualization/Concept4.jpg"
+                            srcset-large="/Work/EV/3_Conceptualization/Concept4.jpg"
+                            alt-text="A descriptive alternative text for the image"
+                            :image-style="{ width: '100%', height: 'auto' }"
+                        />
+                        <ImageSmall
+                            srcset-small="/Work/EV/3_Conceptualization/Concept5.jpg"
+                            srcset-medium="/Work/EV/3_Conceptualization/Concept5.jpg"
+                            srcset-large="/Work/EV/3_Conceptualization/Concept5.jpg"
+                            alt-text="A descriptive alternative text for the image"
+                            :image-style="{ width: '100%', height: 'auto' }"
+                        />
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
         </ProcessPrimary>
 
+        <!-- 4. Research & Prep -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Research & Prep"
@@ -529,8 +780,17 @@
             <ContentBlurb>
                 <p>Over several weeks, our team thoroughly analyzed 12 electric vehicles, inside and out, as well as an additional, deeper inspection of the digital experience in one of them. We didn’t necessarily have a goal in mind, but wanted to better understand design trends and postulate the reasons behind them. Then we did brand research about Apple, the customer experience, their product line, new features, and their design system in order to plan a brand strategy to support an electric vehicle.</p>
             </ContentBlurb>
+
+            <CaseStudyAppleCarVehicleAnalysis />
+
+            <CaseStudyAppleCarBrandResearch />
+
+            <CaseStudyAppleCarPersona />
+
+            <CaseStudyAppleCarBrandStrategy />
         </ProcessPrimary>
 
+        <!-- 5. Prototyping -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Prototyping"
@@ -545,6 +805,7 @@
             </ContentBlurb>
         </ProcessPrimary>
 
+        <!-- 6. Visual Storytelling -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Visual Storytelling"

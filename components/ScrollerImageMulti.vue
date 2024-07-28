@@ -1,7 +1,9 @@
 <template>
     <div class="space-y-16">
-        <div v-for="(image, index) in srcset" :key="index" class="flex flex-col justify-center rounded-sm" :class="imageParent">
-            <img :srcset="getImageSrcset(image)" :sizes="sizes" :src="image.small" :alt="image.altText || altText" class="rounded-sm"/>
+        <div class="space-y-4 flex flex-col justify-center" :class="imageParent">
+            <div v-for="(image, index) in srcset" :key="index" class="rounded-sm">
+                <img :srcset="getImageSrcset(image)" :sizes="sizes" :src="image.small" :alt="image.altText || altText" class="rounded-sm"/>
+            </div>
         </div>
         <div class="w-60 md:w-96 shrink-0 inline-block space-y-4">
             <h3 class="text-white font-bold uppercase">{{ title }}</h3>

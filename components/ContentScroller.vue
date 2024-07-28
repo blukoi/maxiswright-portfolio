@@ -2,7 +2,7 @@
     <div class="space-y-4">
         <div class="w-full">
             <div class="flex flex-row justify-between text-grayDarkest">
-                <h1 class="font-title text-xl">{{ title }}</h1>
+                <h1 class="font-main uppercase text-xl">{{ title }}</h1>
                 <div class="h-6 w-6 flex justify-center items-center rounded-full">
                     <FontAwesomeIcon :icon="['fas', 'arrows-left-right']" class="text-sm" />
                 </div>

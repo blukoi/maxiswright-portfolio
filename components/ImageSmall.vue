@@ -37,7 +37,7 @@ export default {
 <!-- HOW TO USE
 
 
-<PictureComponent
+<ImageSmall
     srcset-small="/path/to/image-small.jpg"
     srcset-medium="/path/to/image-medium.jpg"
     srcset-large="/path/to/image-large.jpg"
