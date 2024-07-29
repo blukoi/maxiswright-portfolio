@@ -1,6 +1,6 @@
 <template>
     <div class="rounded-md flex-auto w-full p-4 pl-8 flex flex-col space-y-4 text-grayDarkest font-main" :class="postitColor">
-        <h3 class="font-bold">
+        <h3 v-if="$slots.title" class="font-bold">
             <slot name="title"></slot>
         </h3>
         <div class="space-y-4">

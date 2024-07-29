@@ -17,7 +17,7 @@
 /* Prep for custom cursor */
 /* Prep for custom cursor */
 
-html, body, a, input, textarea, label {
+html, body, a, input, textarea, label, video {
     cursor: none;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -28,7 +28,7 @@ html, body, a, input, textarea, label {
 }
 
 body {
-    background-color: #2c2c2c;
+    background-color: #323232;
 }
 
 /* Tailwind's Base, Components, and Utilities */

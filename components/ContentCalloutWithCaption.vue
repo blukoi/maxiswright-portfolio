@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="col-span-1 md:col-span-2 rounded-sm md:rounded-md order-1 lg:order-2" :class="bgColor">
-            <div class="w-full px-16 py-16 flex flex-col text-center justify-center items-center font-title text-2xl space-y-4" :class="textColor">
+            <div class="w-full h-full px-16 py-16 flex flex-col text-center justify-center items-center font-title text-2xl space-y-4" :class="textColor">
                 <FontAwesomeIcon :icon="[iconPack, iconName]" :class="iconSize" />
                 <slot name="callout"></slot>
             </div>

@@ -187,7 +187,7 @@
             title="Vehicle Analysis"
             iconPack="fas"
             iconName="car"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="1"
             :isConcise="isConcise"
         >
@@ -420,7 +420,7 @@
             title="Brand Research"
             iconPack="fab"
             iconName="apple"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="2"
             :isConcise="isConcise"
         >
@@ -704,7 +704,7 @@
             title="Conceptualization"
             iconPack="fas"
             iconName="pencil"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="3"
             :isConcise="isConcise"
         >
@@ -773,7 +773,7 @@
             title="Research & Prep"
             iconPack="fas"
             iconName="arrows-to-circle"
-            :visibilityMode="1"
+            :visibilityMode="2"
             headerRef="4"
             :isConcise="isConcise"
         >
@@ -835,6 +835,321 @@
                 </template>
             </ContentImagesWithCaption>
 
+            <ContentImagesWithCaption
+                title="Home Screen Exploration"
+                spacing="space-x-4 md:space-x-8"
+                imgSizing="filter drop-shadow-2xl mb-4 md:mb-8 w-40 sm:w-48 md:w-64 lg:w-72 xl:w-96 rounded-sm md:rounded xl:rounded-md"
+                :images="[
+                    { src: '/Work/EV/5_Prototyping/HeroPass1_Small.png', alt: 'Low-fidelity wireframe of a car`s center screen showing some app icons' },
+                    { src: '/Work/EV/5_Prototyping/HeroPass2_Small.png', alt: 'Low-fidelity wireframe of a car`s center screen showing some app icons on one side and a preview of the car on the other side' },
+                    { src: '/Work/EV/5_Prototyping/HeroPass3_Small.png', alt: 'Low-fidelity wireframe of a car`s center screen showing some app icons on one side and a preview of the car on the other side, with some different visuals and bars to resize the sections' }
+                ]"
+            >
+                <template #caption>
+                    <p>As a team, we realized we would need a “home” for our concepts to work from, so to speak. As a team we all agreed on a long, narrow screen for the meter and an iPad-sized screen for the center console, with the feature of MagSafe connections to use whatever sized screens the owner would prefer. We all worked on some rough concepts for the “Home” of this center screen. These are the roughs I came up with.</p>
+                </template>
+            </ContentImagesWithCaption>
+
+            <ContentFeatureWithCaption
+                title="Inspiration Directly from Apple"
+            >
+                <template #media>
+                    <ImagePrimary 
+                        srcsetSmall="/Work/EV/5_Prototyping/Inspiration_Small.jpg"
+                        srcsetMedium="/Work/EV/5_Prototyping/Inspiration_Med.jpg"
+                        srcsetLarge="/Work/EV/5_Prototyping/Inspiration.jpg"
+                        altText="A promotional image from Apple showing the full capability of Apple's CarPlay to control all of the digital interfaces in a car, including the center screen and dashboard meter"
+                     />
+                </template>
+                <template #caption>
+                    <p>This is a mockup from Apple showing their vision for cars powered by CarPlay, where CarPlay is envisioned as the controller for all onboard, digital systems. We took direct inspiration from this mockup but, with Apple Vision in mind, we wanted to take it a little further into the future.</p>
+                    <p>It’s clear that the team working on CarPlay and Apple Vision are separated, as the design systems are also very different. Since our concept involves AR technology, we wanted to marry the two design systems more. However, you can see that we’ve largely maintained the layout design systems using cards, as well as the background gradients.</p>
+                </template>
+            </ContentFeatureWithCaption>
+
+            <ContentScroller
+                title="Revising Interaction"
+            >
+
+                <ScrollerVideoMulti 
+                    videosParentAndSpacing="w-96 h-96"
+                >
+                    <template #media>
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/Revision1_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision1_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision1_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/Revision2_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision2_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision2_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                    </template>
+                    <template #thumbs>
+                        <ThumbGood comment="Familiar interaction" />
+                        <ThumbGood comment="User has agency" />
+                        <ThumbBad comment="Too much friction" />
+                        <ThumbBad comment="Unnecessarily complicated" />
+                    </template>
+                    <template #caption>
+                        <p>I started these prototypes with the idea that, even though transitioning into your vehicle should be quick and easy, I was stuck on the idea that users should have agency within that process. The result is simply too much friction. In a world where people don’t close out their apps there could be dozens to scroll through. Our devices are good at figuring out what apps we’re actually using, and they’re smart enough to realize the ones we’ll need to keep using when switching devices, so the process should be a lot simpler and smarter than this.</p>
+                    </template>
+                </ScrollerVideoMulti>
+
+                <ScrollerVideoMulti 
+                    videosParentAndSpacing="w-160 h-96"
+                >
+                    <template #media>
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/RevisionHome1_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/RevisionHome1_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/RevisionHome1_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                    </template>
+                    <template #thumbs>
+                        <ThumbGood comment="Easy to read" />
+                        <ThumbBad comment="Expanding takes up too much room" />
+                        <ThumbBad comment="Complex to navigate" />
+                        <ThumbBad comment="Doesn't meet visual standard" />
+                    </template>
+                    <template #caption>
+                        <p>We realized pretty quickly that the control bar at the bottom of the screen shouldn’t have full access to apps like Music. It’s not within the purview of our project, but we decided to simplify these controls. Music would be replaced by simple volume and, in general, these controls would have to be simplified to fit within the control bar. We also realized that the visual design still needed a lot of improvement.</p>
+                    </template>
+                </ScrollerVideoMulti>
+
+                <ScrollerVideoMulti 
+                    videosParentAndSpacing="w-160 h-96"
+                >
+                    <template #media>
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/RevisionHome2_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/RevisionHome2_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/RevisionHome2_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                    </template>
+                    <template #thumbs>
+                        <ThumbGood comment="Improved visual design" />
+                        <ThumbBad comment="Still too much friction" />
+                        <ThumbBad comment="Too much compartmentalization" />
+                        <ThumbBad comment="Confusing hierarchy" />
+                    </template>
+                    <template #caption>
+                        <p>Although the visual design system is improved, I’ve relied too much on the card system to automatically organize content and apps. It’s too confusing to read now, because there’s too much happening on the screen. Additionally, the interaction itself has too much friction since it’s still just a visual variation of the previous version.</p>
+                    </template>
+                </ScrollerVideoMulti>
+
+            </ContentScroller>
+
+            <ContentCaptionWithCustom
+                title="Current Process"
+            >
+                <template #custom>
+                    <div class="flex flex-col lg:flex-row justify-between items-center">
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p>Device B notices that Device A is approaching</p>
+                            </template>
+                        </ContentPostit>
+                        <CustomIcon iconSize="h-8 w-8 transform rotate-90 lg:rotate-0" textSize="text-lg text-grayDarker" iconName="right-long" />
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p>Device B asks Device A which apps or processes will transfer</p>
+                            </template>
+                        </ContentPostit>
+                        <CustomIcon iconSize="h-8 w-8 transform rotate-90 lg:rotate-0" textSize="text-lg text-grayDarker" iconName="right-long" />
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p><span class="font-bold">User must select which apps or processes will transfer to Device B</span> (otherwise, nothing will transfer)</p>
+                            </template>
+                        </ContentPostit>
+                        <CustomIcon iconSize="h-8 w-8 transform rotate-90 lg:rotate-0" textSize="text-lg text-grayDarker" iconName="right-long" />
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p>Device B takes over selected apps and processes</p>
+                            </template>
+                        </ContentPostit>
+                    </div>
+                </template>
+            </ContentCaptionWithCustom>
+
+            <ContentCalloutWithCaption 
+                :bgColor="bgColor" 
+                iconPack="fas" 
+                iconName="lightbulb" 
+                title="Removing Friction" 
+                textColor="text-white"
+                iconSize="text-6xl"
+            >
+                <template #caption>
+                    <p>To actually make a “seamless” transition between devices, we realized that, in the years to come, not only would it become easier for our devices to recognize what apps or processes need to be moved but also that some of the process could be handled with selected settings. Although there’s the appearance of less user agency in the new concept it’s actually been moved to a Settings menu.</p>
+                </template>
+                <template #callout>
+                </template>
+            </ContentCalloutWithCaption>
+
+            <ContentCaptionWithCustom
+                title="Revised Process"
+            >
+                <template #custom>
+                    <div class="flex flex-col lg:flex-row justify-between items-center">
+                        <ContentPostit postitColor="bg-postitBlue w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <ul class="list-disc pl-4">
+                                    <li>Device has default settings for app/process transition</li>
+                                    <li>User has set options for app/process transition</li>
+                                </ul>
+                            </template>
+                        </ContentPostit>
+                        <CustomIcon iconSize="h-8 w-8 transform rotate-90 lg:rotate-0 opacity-0" textSize="text-lg text-grayDarker" iconName="right-long" />
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p>Device B notices that Device A is approaching</p>
+                            </template>
+                        </ContentPostit>
+                        <CustomIcon iconSize="h-8 w-8 transform rotate-90 lg:rotate-0" textSize="text-lg text-grayDarker" iconName="right-long" />
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p>Device B asks Device A which apps or processes will transfer</p>
+                            </template>
+                        </ContentPostit>
+                        <CustomIcon iconSize="h-8 w-8 transform rotate-90 lg:rotate-0" textSize="text-lg text-grayDarker" iconName="right-long" />
+                        <ContentPostit postitColor="bg-postitYellow w-64 md:w-40 lg:w-56">
+                            <template #copy>
+                                <p>Device B takes over selected apps and processes</p>
+                            </template>
+                        </ContentPostit>
+                    </div>
+                </template>
+            </ContentCaptionWithCustom>
+
+            <ContentScroller
+                title="Revised Process"
+            >
+
+                <ScrollerVideoMulti 
+                    videosParentAndSpacing="h-96"
+                >
+                    <template #media>
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/Revision3_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision3_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision3_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                    </template>
+                    <template #thumbs>
+                        <ThumbGood comment="Seamless interaction" />
+                        <ThumbGood comment="No manual steps required" />
+                    </template>
+                    <template #caption>
+                        <p>This new “prototype” shows a seamless interaction where the user doesn’t actually have to do anything. The devices realize they’re nearing each other and, at an optimal time, the active process (in this case, a FaceTime call) is automatically transferred over without the user needing to manually do anything.</p>
+                    </template>
+                </ScrollerVideoMulti>
+
+                <ScrollerVideoMulti 
+                    videosParentAndSpacing="h-96 w-160"
+                >
+                    <template #media>
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/RevisionHome3_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/RevisionHome3_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/RevisionHome3_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                    </template>
+                    <template #thumbs>
+                        <ThumbGood comment="Improved interaction" />
+                        <ThumbBad comment="Too much compartmentalization" />
+                    </template>
+                    <template #caption>
+                        <p>Although the actual interaction is much improved, there’s still a confusing hierarchy with too much compartmentalization. With the seamless transition interaction mostly solved, we decided to continue iterating on the Home screen to make better use of the available space.</p>
+                    </template>
+                </ScrollerVideoMulti>
+
+            </ContentScroller>
+
+            <ContentMediaWithCaption
+                title="Design System"
+            >
+                <template #caption>
+                    <p class="mb-4">It took some time for the design system to really come together. We started with colors, since Apple has a really well defined color system. In the context of vehicles, however, colors have really important meanings. We set up our color system to set aside alert colors (red, orange, and yellow) as well as the normal vs. autonomous colors (blue and purple) so we could start figuring out the rest of our available options and uses.</p>
+                    <p>To reflect the combined heritage of Apple’s iOS and Apple Vision design systems, there’s a strong use of cards to define layouts, iconography, and rounded visual language for clickable items.</p>
+                </template>
+                <template #media>
+                        <ImagePrimary
+                            srcset-small="/Work/EV/5_Prototyping/DesignSystem_Small.jpg"
+                            srcset-medium="/Work/EV/5_Prototyping/DesignSystem_Med.jpg"
+                            srcset-large="/Work/EV/5_Prototyping/DesignSystem_Full.jpg"
+                            alt-text="An array of visual design assets created for the project, including a series of selected colors, typography, icons, buttons, styling, and more"
+                            :image-style="{ width: '100%', height: 'auto' }"
+                        />
+                </template>
+            </ContentMediaWithCaption>
+
+            <ContentMediaWithCaption
+                title="Reducing Compartmentalization"
+            >
+                <template #caption>
+                    <p class="mb-4">With a revised concept of how the transition should actually occur, it quickly became apparent that the active process should take precedence over other tasks, i.e. a FaceTime call should become, hierarchically, the most important active app on the screen. With that in mind, we needed a way to move other apps out of the way.</p>
+                    <p>Since the phone can be placed on the MagSafe dock and used as an additional screen, we can move the clock off of the main screen’s Tab Bar. This gives us plentiful space to move apps to the Tab Bar to form the equivalent of the Dock, which is in familiar use on many other Apple devices. This change means that the active process can now utilize the entirety of the screen.</p>
+                </template>
+                <template #media>
+                    <div class="w-full rounded-sm md:rounded-md text-white bg-grayDarkest px-2 py-8 flex flex-col items-center space-y-8">
+                        <div class="w-32 md:w-48 xl:w-64">
+                            <ImagePrimary
+                                srcset-small="/Work/EV/5_Prototyping/Change1_1_Small.png"
+                                srcset-medium="/Work/EV/5_Prototyping/Change1_1_Med.png"
+                                srcset-large="/Work/EV/5_Prototyping/Change1_1.png"
+                                alt-text="A descriptive alternative text for the image"
+                                :image-style="{ width: '100%', height: 'auto' }"
+                            />
+                        </div>
+                        <div class="w-32 md:w-48 xl:w-64 flex flex-col items-center">
+                            <CustomIcon iconSize="h-12 w-12 transform rotate-90" textSize="text-4xl text-white" iconName="minus" />
+                            <p>With the clock moved to the phone, we have space to move and rearrange app icons and shortcuts into the equivalent of a Dock within the existing Tab Bar.</p>
+                            <CustomIcon iconSize="h-12 w-12 transform" textSize="text-4xl text-white" iconName="arrow-down-long" />
+                        </div>
+                        <div class="w-full">
+                            <ImagePrimary
+                                srcset-small="/Work/EV/5_Prototyping/Change1_2_Small.png"
+                                srcset-medium="/Work/EV/5_Prototyping/Change1_2_Med.png"
+                                srcset-large="/Work/EV/5_Prototyping/Change1_2.png"
+                                alt-text="A descriptive alternative text for the image"
+                                :image-style="{ width: '100%', height: 'auto' }"
+                            />
+                        </div>
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <ContentMediaWithCaption
+                title="Finalizing"
+            >
+                <template #caption>
+                    <p>Like many of Apple’s features (such as Apple ID and Continuity) the magic is happening behind the scenes, and adjustments have to be made in Settings and Profiles. Showing a Settings page is a boring way to promote a new concept, especially because it’s not the part that will be most interacted with. This prototype shows how the actual user experience will play out.</p>
+                </template>
+                <template #media>
+                    <VideoPlayer
+                    :videoSources="[
+                        { src: '/Work/EV/5_Prototyping/Final1_Full.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/5_Prototyping/Final1_720.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/5_Prototyping/Final1_480.mp4', type: 'video/mp4' }
+                        ]">
+                    </VideoPlayer>
+                </template>
+            </ContentMediaWithCaption>
+
         </ProcessPrimary>
 
         <!-- 6. Visual Storytelling -->
@@ -843,13 +1158,67 @@
             title="Visual Storytelling"
             iconPack="fas"
             iconName="video"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="6"
             :isConcise="isConcise"
         >
             <ContentBlurb>
                 <p>Creating a storyboard and animatic occurred alongside our other work, starting with our initial persona and accompanying journey map. With several concepts being developed we wanted a way to show, more than how the concepts work, how the value of our concepts could improve user’s experiences and lives.</p>
             </ContentBlurb>
+
+            <ContentCaptionWithCustom
+                title="Beat Board"
+            >
+                <template #caption>
+                    <p>Based on our concepts, we started to come up with a way to fit our ideas into real life. After all, our concepts are meaningless if they can’t be used for anything. We made this beat board to figure out the basic story points of where and how our concepts could improve daily life.</p>
+                </template>
+                <template #custom>
+                    <ContentMediaWithThumbs>
+                        <template #thumbs>
+                            <ThumbSmallGood comment="Realistic scenarios" />
+                            <ThumbSmallBad comment="Too many disconnected people involved" />
+                        </template>
+                        <template #media>
+                            <ImagePrimary 
+                                srcsetLarge="/Work/EV/6_Story/BeatBoard1.png"
+                                srcsetMedium="/Work/EV/6_Story/BeatBoard1_Med.png"
+                                srcsetSmall="/Work/EV/6_Story/BeatBoard1_Small.png"
+                                altText="A text-based storyboard breaking down the story into four individual scenes with each important `beat` listed"
+                            />
+                        </template>
+                    </ContentMediaWithThumbs>
+                    <ContentMediaWithThumbs>
+                        <template #thumbs>
+                            <ThumbSmallGood comment="Realistic scenarios" />
+                            <ThumbSmallGood comment="All concepts improving one person’s day" />
+                        </template>
+                        <template #media>
+                            <ImagePrimary 
+                                srcsetLarge="/Work/EV/6_Story/BeatBoard2.png"
+                                srcsetMedium="/Work/EV/6_Story/BeatBoard2_Med.png"
+                                srcsetSmall="/Work/EV/6_Story/BeatBoard2_Small.png"
+                                altText="A text-based storyboard breaking down the story into four individual scenes with each important `beat` listed"
+                            />
+                        </template>
+                    </ContentMediaWithThumbs>
+                </template>
+            </ContentCaptionWithCustom>
+
+            <ContentImagesWithCaption
+                title="Storyboard"
+                spacing="space-x-0 md:space-x-8"
+                imgSizing="filter drop-shadow-2xl mb-4 md:mb-8 w-80 md:w-64 lg:w-72 xl:w-96 rounded-sm md:rounded xl:rounded-md"
+                :images="[
+                    { src: '/Work/EV/6_Story/Storyboard1.jpg', alt: 'A whiteboard with a series of video frames drawn in succession to visualize a video' },
+                    { src: '/Work/EV/6_Story/Storyboard2.jpg', alt: 'A whiteboard with a series of video frames drawn in succession to visualize a video, continued' },
+                    { src: '/Work/EV/6_Story/Storyboard3.jpg', alt: 'A whiteboard with a series of video frames drawn in succession to visualize a video, continued' }
+                ]"
+            >
+                <template #caption>
+                    <p class="mb-4">Working on the storyboard for the animatic was an hours-long process figuring out the best and easiest way to frame our illustrations with the concepts we were building. The discussion actually helped us to figure out additional details of the concepts themselves.</p>
+                    <p>For example, as we were discussing how to show the driver turning on “Autonomous Driving Mode” we went back and forth about how best to show the physical interaction from the driver and feedback to illustrate the mode change. That discussion is how we ended up agreeing on the use of color and the other visual changes in the Meter to indicate the use or availability of the “Autonomous Driving Mode” to the driver.</p>
+                </template>
+            </ContentImagesWithCaption>
         </ProcessPrimary>
 
         <!-- OUTRO BEGINNING -->

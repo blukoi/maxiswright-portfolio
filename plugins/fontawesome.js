@@ -58,6 +58,9 @@ import {
     faSquareCaretDown,
     faSquareCaretUp,
     faArrowsLeftRight,
+    faRightLong,
+    faMinus,
+    faArrowDownLong,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -126,6 +129,9 @@ library.add(
     faSquareCaretDown,
     faSquareCaretUp,
     faArrowsLeftRight,
+    faRightLong,
+    faMinus,
+    faArrowDownLong,
     faFontAwesome,
     faLinkedin,
     faInstagram,

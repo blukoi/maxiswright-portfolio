@@ -6,7 +6,7 @@
             <slot name="caption"></slot>
             </div>
         </div>
-        <div class="col-span-1 md:col-span-2 rounded-sm md:rounded-md bg-white md:bg-transparent order-1 lg:order-2 flex flex-wrap justify-center items-center p-4" :class="spacing">
+        <div class="col-span-1 md:col-span-2 rounded-sm md:rounded-md bg-white md:bg-transparent order-1 lg:order-2 flex flex-wrap justify-center items-center p-4 overflow-none" :class="spacing">
             <div 
                 v-for="(image, index) in images" 
                 :key="index" 
