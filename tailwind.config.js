@@ -45,7 +45,7 @@ module.exports = {
         // EXPERIMENT CASE STUDIES
 
         // Rethinking Car Controls
-        'highlight': '#B80F36',
+        'highlightCarControls': '#B80F36',
       },
 
       backgroundImage: {

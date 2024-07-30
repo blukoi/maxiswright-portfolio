@@ -4,7 +4,7 @@
         <NavBar />
 
         <!-- TITLE AND VISUAL -->
-        <IntroTitle :bgColor="bgColor">
+        <IntroTitle :bgColor="bgColor" mediaBackground="bg-grayDarkest">
             <template #title>{{ project.title }} —</template>
             <template #media>
                 <VideoCover
@@ -78,7 +78,7 @@
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">We tried to reflect Apple’s penchant for a seamless, thoughtful user experience. The dashboard utilizes MagSafe ports to enable owners to use whatever-sized screen they prefer, under the assumption that iPads would get MagSafe features at some point soon. We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
+                <p class="pl-0 md:pl-8 font-main text-sm">We tried to reflect Apple’s penchant for a seamless user experience by utilizing MagSafe ports to enable owners to use whatever-sized screen they prefer (under the assumption that iPads would get MagSafe features at some point soon). We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
             </template>
             <template #media>
                 <ImagePrimary
@@ -155,7 +155,7 @@
                 imageParent="h-80 md:h-128 w-60 md:w-120" 
             >
                 <template #caption>
-                    <p>Your home and workspace are very often personalized to your needs and self expression. Even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
+                    <p>Your home and workspace are very often personalized to your needs and self expression but even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
                 </template>
             </ScrollerImage>
 
@@ -192,7 +192,7 @@
             :isConcise="isConcise"
         >
             <ContentBlurb>
-                <p>As a team we analyzed 12 different vehicles, including a second, closer inspection of one of them. We took our time investigating each car, inside and out, documenting positives, negatives, and taking notes without a particular goal in mind.</p>
+                <p>As a team we analyzed 12 different vehicles (plus a second, closer inspection of one of them), taking our time, inside and out, to document positives, negatives, and take notes without a particular goal in mind.</p>
                 <p>We really just wanted to see the different perspectives of each manufacturer and how they approach problems, their priorities (and what that means for customer experiences), the use of materials, etc.</p>
             </ContentBlurb>
 

@@ -17,14 +17,16 @@
 /* Prep for custom cursor */
 /* Prep for custom cursor */
 
-html, body, a, input, textarea, label, video {
-    cursor: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
+@media (pointer: fine) {
+    html, body, a, input, textarea, label, video {
+        cursor: none;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+    }
 
-.button {
-    cursor: none;
+    .button {
+        cursor: none;
+    }
 }
 
 body {

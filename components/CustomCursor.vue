@@ -1,5 +1,6 @@
 <template>
     <div 
+      v-if="!isTouchDevice"
       :class="['custom-cursor', { 'custom-cursor--link': isLinkHovered }, { 'custom-cursor--input': isLinkHoveredInput }]"
       :style="cursorStyle"
     ></div>
@@ -14,6 +15,7 @@
         isLinkHovered: false,
         isLinkHoveredInput: false,
         initCursor: false,
+        isTouchDevice: false, // Flag to determine if the device is touch capable
       };
     },
     computed: {
@@ -27,18 +29,23 @@
       }
     },
     mounted() {
-      document.addEventListener('mousemove', this.handleMouseMove);
-      document.addEventListener('mouseover', this.handleMouseOver);
-      document.addEventListener('mouseout', this.handleMouseOut);
-      document.addEventListener('mouseover', this.handleMouseOverInput);
-      document.addEventListener('mouseout', this.handleMouseOutInput);
+      this.isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      if (!this.isTouchDevice) {
+        document.addEventListener('mousemove', this.handleMouseMove);
+        document.addEventListener('mouseover', this.handleMouseOver);
+        document.addEventListener('mouseout', this.handleMouseOut);
+        document.addEventListener('mouseover', this.handleMouseOverInput);
+        document.addEventListener('mouseout', this.handleMouseOutInput);
+      }
     },
     beforeDestroy() {
-      document.removeEventListener('mousemove', this.handleMouseMove);
-      document.removeEventListener('mouseover', this.handleMouseOver);
-      document.removeEventListener('mouseout', this.handleMouseOut);
-      document.removeEventListener('mouseover', this.handleMouseOverInput);
-      document.removeEventListener('mouseout', this.handleMouseOutInput);
+      if (!this.isTouchDevice) {
+        document.removeEventListener('mousemove', this.handleMouseMove);
+        document.removeEventListener('mouseover', this.handleMouseOver);
+        document.removeEventListener('mouseout', this.handleMouseOut);
+        document.removeEventListener('mouseover', this.handleMouseOverInput);
+        document.removeEventListener('mouseout', this.handleMouseOutInput);
+      }
     },
     methods: {
       handleMouseMove(e) {

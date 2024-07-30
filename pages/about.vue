@@ -283,8 +283,8 @@
             { label: 'KeyShot', level: 'Beginner' }
         ],
         tagList2: [
-            { label: 'Vue.js', level: 'Beginner' },
-            { label: 'Nuxt.js', level: 'Beginner' },
+            { label: 'Vue.js', level: 'Intermediate' },
+            { label: 'Nuxt.js', level: 'Intermediate' },
             { label: 'Python', level: 'Beginner' }
         ],
         tagList3: [

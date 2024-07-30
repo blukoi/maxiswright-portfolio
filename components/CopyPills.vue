@@ -2,7 +2,7 @@
     <div class="col-span-1 grid grid-cols-1 gap-4">
         <h1 class="font-title text-2xl text-grayDarkest">{{ sectionName }}</h1>
         <ul class="ml-8 text-grayDarker font-main text-sm list-none flex flex-row flex-wrap gap-1">
-            <li v-for="(item, index) in items" :key="index" class="px-4 py-2 rounded-full bg-mint font-main text-xs text-white inline-block">
+            <li v-for="(item, index) in items" :key="index" class="px-4 py-2 rounded-full bg-grayDarkest font-main text-xs text-white inline-block">
                 {{ item }}
             </li>
         </ul>

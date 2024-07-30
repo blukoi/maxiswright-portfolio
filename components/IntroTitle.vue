@@ -10,7 +10,7 @@
                         </h1>
                     </div>
                 </div>
-                <div class="w-full h-112 bg-grayDarkest flex z-0 relative">
+                <div class="w-full h-112 flex z-0 relative" :class="mediaBackground">
                     <slot name="media"></slot>
                 </div>
             </div>
@@ -26,6 +26,10 @@ export default{
             type: String,
             default: ' '
         },
+        mediaBackground: {
+            type: String,
+            default: "bg-grayDarkest"
+        }
     }
 }
 </script>
