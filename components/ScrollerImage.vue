@@ -5,7 +5,9 @@
         </div>
         <div class="w-60 md:w-96 shrink-0 inline-block space-y-4">
             <h3 class="text-white font-bold uppercase">{{ title }}</h3>
-            <slot name="caption"></slot> <!-- Slots for flexible caption content -->
+            <div v-if="$slots.title">
+                <slot name="caption"></slot>
+            </div>
         </div>
     </div>
 </template>

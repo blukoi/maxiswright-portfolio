@@ -8,7 +8,7 @@
             <template #title>{{ project.title }} —</template>
             <template #media>
                 <div class="w-full flex justify-center">
-                    <LottieParent bgColor="bg-fontfacingGreen" :animation-data="animationData"></LottieParent>
+                    <LottieParent bgColor="bg-fontfacingGreen" :animation-data="animationData" alt="An animation showing an interpretation of how artificial intelligence might go about analyzing a vector image for typography; the image has a capital letter A and begins by using squares to generally highlight areas, then begins to specifically portion areas out within the shape itself."></LottieParent>
                 </div>
             </template>
         </IntroTitle>
@@ -161,6 +161,7 @@
                 <p>After also doing some research into AI platforms working with vector graphics, I solidified the concept I had in mind: a design and editing platform working with SVGs, supported and driven by AI to make it faster and easier for designers to build out the entirety of a typeface.</p>
             </ContentBlurb>
 
+            <!-- Training Model 1 -->
             <ContentMediaWithCaption
                 title="First Training Models"
             >
@@ -186,6 +187,7 @@
                 </template>
             </ContentMediaWithCaption>
 
+            <!-- Training Model 2 -->
             <ContentMediaWithCaption
                 title="Type-Specific Training Model"
             >
@@ -212,6 +214,7 @@
                 </template>
             </ContentMediaWithCaption>
 
+            <!-- Testing Existing AI -->
             <ContentMediaWithCaption
                 title="Testing Existing AI-Generation"
             >
@@ -235,6 +238,56 @@
                 </template>
             </ContentMediaWithCaption>
 
+            <!-- Existing Research -->
+            <ContentMediaWithCaption
+                title="Existing Research in this Space"
+            >
+                <template #caption>
+                    <p>I did an extensive search to see if this was already being worked on and, as expected, there are various image generation and SVG tools already. Since I’d been testing with basic letterforms, I searched for typeface generators and none existed at the time of this project. There were a lot of copy/text generators, but none for typeface design. In my search, I read through the work of Erik Bern, Måns Grebäck, and Jean Böhm, all of whom had conducted research and experiments into the capabilities of AI to generate letterforms.</p>
+                </template>
+                <template #media>
+                    <div class="flex flex-col space-y-4">
+                        <div class="flex flex-col space-y-1">
+                            <div class="bg-white rounded-sm md:rounded-md">
+                                <div class="flex flex-row space-x-8">
+                                    <ImagePrimary 
+                                        srcsetLarge="/Work/Fontfacing/1_PrimaryResearch/1_Insp_BernErik.gif"
+                                        srcsetMedium="/Work/Fontfacing/1_PrimaryResearch/1_Insp_BernErik.gif"
+                                        srcsetSmall="/Work/Fontfacing/1_PrimaryResearch/1_Insp_BernErik.gif"
+                                        altText="An animated gif of the alphabet and numbers as they morph, matching, through a variety of visual styles."
+                                    />
+                                    <ImagePrimary 
+                                        srcsetLarge="/Work/Fontfacing/1_PrimaryResearch/1_Insp_BoehmJean.png"
+                                        srcsetMedium="/Work/Fontfacing/1_PrimaryResearch/1_Insp_BoehmJean.png"
+                                        srcsetSmall="/Work/Fontfacing/1_PrimaryResearch/1_Insp_BoehmJean.png"
+                                        altText="A vast array of different AI-generated versions of a lowercase letter `a`, all appearing along the spectrum from `perfect` to `odd` or `unrecognizable`."
+                                    />
+                                </div>
+                            </div>
+                            <div class="pl-4 md:pl-8">
+                                <p class="font-main text-grayDarker italic text-xs">Left: experiments from Erik Bern to generate whole typefaces; Right: in-depth and extensive experiment from Jean Böhm to generate letterforms as actual vector graphics.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col space-y-1">
+                            <div class="bg-white rounded-sm md:rounded-md">
+                                <ImagePrimary 
+                                    srcsetLarge="/Work/Fontfacing/1_PrimaryResearch/1_Insp_GrebackMans.png"
+                                    srcsetMedium="/Work/Fontfacing/1_PrimaryResearch/1_Insp_GrebackMans.png"
+                                    srcsetSmall="/Work/Fontfacing/1_PrimaryResearch/1_Insp_GrebackMans.png"
+                                    altText="A series of typecase pairs with the uppercase of a font next to a lowercase generated by AI, and vice versa."
+                                />
+                            </div>
+                            <div class="pl-4 md:pl-8">
+                                <p class="font-main text-grayDarker italic text-xs">Above: Experiments from Måns Grebäck to see the abilities of AI to generate the lowercase of a typeface if given the uppercase, and vice versa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Insights -->
+             <CaseStudyFontfacingPrimaryResearch />
+
         </ProcessPrimary>
 
         <!-- 2. Exploring Low Fidelity -->
@@ -250,6 +303,95 @@
             <ContentBlurb>
                 <p>My initial concept was to create a web-based app where designers could experiment with AI to create typefaces. The idea would’ve acted similarly to something like Dall•e, where there would be pre-trained models that users could use for generation.</p>
             </ContentBlurb>
+
+            <!-- Low Fidelity Exploration -->
+            <ContentScroller
+                title="Low Fidelity Exploration"
+            >
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Fontfacing/2_LowFidelity/LowFi_1.png',
+                        medium: '/Work/Fontfacing/2_LowFidelity/LowFi_1.png',
+                        large: '/Work/Fontfacing/2_LowFidelity/LowFi_1.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Basic text prompt input"
+                    alt-text="A low fidelity wireframe of an AI-generating website, with a text input and a Generate button"
+                    imageParent="h-56 md:h-72 w-96 md:w-128"
+                >
+                </ScrollerImage>
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Fontfacing/2_LowFidelity/LowFi_2.png',
+                        medium: '/Work/Fontfacing/2_LowFidelity/LowFi_2.png',
+                        large: '/Work/Fontfacing/2_LowFidelity/LowFi_2.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Uploading images as the prompt"
+                    alt-text="A low fidelity wireframe of an AI-generating website, with a file selector and a Generate button"
+                    imageParent="h-56 md:h-72 w-96 md:w-128"
+                >
+                </ScrollerImage>
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Fontfacing/2_LowFidelity/LowFi_3.png',
+                        medium: '/Work/Fontfacing/2_LowFidelity/LowFi_3.png',
+                        large: '/Work/Fontfacing/2_LowFidelity/LowFi_3.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Letting users input text or start with drawing tools"
+                    alt-text="A low fidelity wireframe of an AI-generating website, with a text input and a Generate button, as well as a button that says `Start Drawing`"
+                    imageParent="h-56 md:h-72 w-96 md:w-128"
+                >
+                </ScrollerImage>
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Fontfacing/2_LowFidelity/LowFi_4.png',
+                        medium: '/Work/Fontfacing/2_LowFidelity/LowFi_4.png',
+                        large: '/Work/Fontfacing/2_LowFidelity/LowFi_4.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Letting users select an existing typeface before drawing"
+                    alt-text="A low fidelity wireframe of an AI-generating website, but instead of a text input there are drawing options, a dropdown selector for typefaces, and the Generate button"
+                    imageParent="h-56 md:h-72 w-96 md:w-128"
+                >
+                </ScrollerImage>
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Fontfacing/2_LowFidelity/LowFi_5.png',
+                        medium: '/Work/Fontfacing/2_LowFidelity/LowFi_5.png',
+                        large: '/Work/Fontfacing/2_LowFidelity/LowFi_5.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Using keyword selection to make text input easier"
+                    alt-text="A low fidelity wireframe of an AI-generating website, with a Style selector and a text input for Keywords next to a Generate button"
+                    imageParent="h-56 md:h-72 w-96 md:w-128"
+                >
+                </ScrollerImage>
+
+            </ContentScroller>
+
+            <!-- Exclamation -->
+            <ContentCalloutWithCaption 
+                :bgColor="bgColor" 
+                iconPack="fas" 
+                iconName="triangle-exclamation" 
+                title="These explorations ignore the research" 
+                textColor="text-white"
+                iconSize="text-6xl"
+            >
+                <template #caption>
+                    <p class="mb-4">I quickly realized that I wasn’t designing with my insights in mind, but rather letting existing applications decide the direction of my design exploration and user interactions.</p>
+                    <p>After realizing this, I scrapped these ideas and started over by mapping the current workflow of typeface design. This would allow me to consider where AI could support the current process.</p>
+                </template>
+                <template #callout>
+                </template>
+            </ContentCalloutWithCaption>
         </ProcessPrimary>
 
         <!-- 3. Mapping the WOrkflow -->
@@ -266,6 +408,9 @@
                 <p><span class="font-bold">I should’ve done this before starting to wireframe</span> but, to be honest, my original concept was more explorative than it was purposeful.</p>
                 <p>The current process to design a typeface (if we ignore the researching, brainstorming, and briefing, which is it’s own in-depth preparatory process) is a long, back and forth workflow. As one would expect, it’s more in-depth than I can adequately convey in a simple process flow and can take anywhere from months, for a single font style with a [relatively] small character set, or years, in the case of multiple font styles, special characters, ligatures, etc.</p>
             </ContentBlurb>
+
+            <CaseStudyFontfacingMappingWorkflow />
+
         </ProcessPrimary>
 
         <!-- 4. Back to Designing -->
@@ -389,7 +534,7 @@
                 projects: require('~/Assets/projects.json'),
                 isConcise: true,
                 bgColor: "gradient-fontfacing",
-                animationData
+                animationData,
             };
         },
         head: {

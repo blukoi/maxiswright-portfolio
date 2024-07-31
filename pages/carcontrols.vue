@@ -58,7 +58,7 @@
             </template>
             <template #media>
                 <ImagePrimary
-                    srcset-small="/Experiments/CarControls/0_Cover_Small.png"
+                    srcset-small="/Experiments/CarControls/0_Cover_Sm.png"
                     srcset-medium="/Experiments/CarControls/0_Cover_Med.png"
                     srcset-large="/Experiments/CarControls/0_Cover_Full.png"
                     alt-text="A mockup of the interior and dashboard of a car, showing the center screen accompanied by two circular touch screens below, the outer edges of which also act as physical knobs."
