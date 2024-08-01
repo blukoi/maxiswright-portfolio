@@ -152,7 +152,7 @@
             title="Foundational Research"
             iconPack="fas"
             iconName="magnifying-glass"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="1"
             :isConcise="isConcise"
         >
@@ -188,31 +188,7 @@
             </ContentMediaWithCaption>
 
             <!-- Training Model 2 -->
-            <ContentMediaWithCaption
-                title="Type-Specific Training Model"
-            >
-                <template #caption>
-                    <p>I realized pretty quickly that I wanted to use this project to work with vector graphics, so I took the opportunity to make a training model to test more basic shape creation. Since RunwayML’s resources are limited to more straightforward image/video tools, rather than vector graphics, I created 30 jpgs showing a singular, capital, letter ‘A’ in different typefaces. The resulting output recognizes the shapes and patterns, but not that they’re letters.</p>
-                </template>
-                <template #media>
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-8">
-                        <VideoPlayer
-                        :videoSources="[
-                            { src: '/Work/Fontfacing/1_PrimaryResearch/1_3_Input2.mp4', type: 'video/mp4' },
-                            { src: '/Work/Fontfacing/1_PrimaryResearch/1_3_Input2.mp4', type: 'video/mp4' },
-                            { src: '/Work/Fontfacing/1_PrimaryResearch/1_3_Input2.mp4', type: 'video/mp4' }
-                            ]">
-                        </VideoPlayer>
-                        <VideoPlayer
-                        :videoSources="[
-                            { src: '/Work/Fontfacing/1_PrimaryResearch/1_3_Output2.mp4', type: 'video/mp4' },
-                            { src: '/Work/Fontfacing/1_PrimaryResearch/1_3_Output2.mp4', type: 'video/mp4' },
-                            { src: '/Work/Fontfacing/1_PrimaryResearch/1_3_Output2.mp4', type: 'video/mp4' }
-                            ]">
-                        </VideoPlayer>
-                    </div>
-                </template>
-            </ContentMediaWithCaption>
+            <CaseStudyFontfacingTrainingModels />
 
             <!-- Testing Existing AI -->
             <ContentMediaWithCaption
@@ -286,7 +262,7 @@
             </ContentMediaWithCaption>
 
             <!-- Insights -->
-             <CaseStudyFontfacingPrimaryResearch />
+            <CaseStudyFontfacingPrimaryResearch />
 
         </ProcessPrimary>
 
@@ -296,7 +272,7 @@
             title="Exploring Low Fidelity"
             iconPack="fas"
             iconName="pencil"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="2"
             :isConcise="isConcise"
         >
@@ -400,7 +376,7 @@
             title="Mapping the WOrkflow"
             iconPack="fas"
             iconName="map"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="3"
             :isConcise="isConcise"
         >
@@ -419,7 +395,7 @@
             title="Back to Designing"
             iconPack="fas"
             iconName="object-group"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="4"
             :isConcise="isConcise"
         >
@@ -427,6 +403,90 @@
                 <p>With my initial insights and the typeface design workflow firmly in mind, I went back to my  wire framing process. At this point I decided that <span class="font-bold">my concept should be firmly designed for designers to complement the typeface design process</span>, rather than a simplistic, explorative experience.</p>
                 <p>This would allow the AI features to be used as an actual tool within the design process, making use of the AI and potentially improving the technology, instead of a novelty or side project.</p>
             </ContentBlurb>
+
+            <!-- Lightbulb -->
+            <ContentCalloutWithCaption 
+                :bgColor="bgColor" 
+                iconPack="fas" 
+                iconName="lightbulb" 
+                title="Identifying the Concept" 
+                textColor="text-white"
+                iconSize="text-6xl"
+            >
+                <template #caption>
+                    <p>Since AI is fantastic at pattern recognition and reproduction, and the typeface design process is a back and forth dance of refining the consistency and visual design of the elements which will invariably end up repeated throughout a typeface, it was an almost natural leap to the refined concept behind the application: <span class="font-bold">the AI can analyze the pattern of your design, while you design, and use that pattern to build out and make alterations to the rest of the character set.</span></p>
+                </template>
+                <template #callout>
+                </template>
+            </ContentCalloutWithCaption>
+
+            <!-- Iteration 1 -->
+            <ContentMediaWithCaption
+                title="More Detailed Iteration"
+            >
+                <template #caption>
+                    <p>Moving towards medium fidelity, I introduced a sidebar which gives a preview into how the AI is interpreting and processing data. It also allows designers to have manual input via supervised learning, allowing or disallowing interpretations of the data.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/Fontfacing/4_Designing/Iteration_1.png"
+                        srcset-medium="/Work/Fontfacing/4_Designing/Iteration_1.png"
+                        srcset-large="/Work/Fontfacing/4_Designing/Iteration_1.png"
+                        alt-text="A medium fidelity wireframe of the app, the toolbar is at the top of the work area, the work area itself is an infinite space with a paper texture which is currently zoomed into one letter, there's a context bar below the current letter, and there's a sidebar featuring an active analysis window and a live view of the entire working font."
+                        :image-style="{ width: '100%', height: 'auto' }"
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Existing Platforms -->
+            <CaseStudyFontfacingDesigning />
+
+            <!-- Iteration 2 -->
+            <ContentMediaWithCaption
+                title="Moving from a Browser to the Desktop"
+            >
+                <template #caption>
+                    <p class="mb-4">Since my concept has evolved with the target audience becoming designers, at this stage it’s necessary to iterate towards a desktop application instead of a webapp.</p>
+                    <p>This iteration also features the introduction of the “Stage” slider to tell the platform which stage of the process you’re in.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/Fontfacing/4_Designing/Iteration_2.png"
+                        srcset-medium="/Work/Fontfacing/4_Designing/Iteration_2.png"
+                        srcset-large="/Work/Fontfacing/4_Designing/Iteration_2.png"
+                        alt-text="A medium fidelity wireframe of the app, the toolbar is at the top of the work area, the work area itself is an infinite space with a paper texture which is currently zoomed into one letter, there's a context bar below the current letter, and there's a sidebar featuring an active analysis window and a live view of the entire working font."
+                        :image-style="{ width: '100%', height: 'auto' }"
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Modal -->
+            <ContentMediaWithCaption
+                title="Starting Pop-Up"
+            >
+                <template #caption>
+                    <p class="mb-4">In an effort to highlight that there are AI features, I experimented with the idea of a pop-up modal which would appear whenever starting a new file.</p>
+                    <p class="mb-4">Unfortunately, this precludes the idea of designers having differing workflows and forces them, potentially, into thinking they must select one particular way to work.</p>
+                    <p>Although the modal wouldn’t end up staying, <span class="font-bold">the use of color to indicate AI features ended up being a great highlight.</span></p>
+                </template>
+                <template #media>
+                    <div class="bg-white rounded-sm md:rounded-md flex flex-col space-y-4 md:space-y-8 p-4 md:py-0 md:px-8 lg:px-16 xl:px-48">
+                        <ImagePrimary 
+                            srcsetLarge="/Work/Fontfacing/4_Designing/Iteration_3.png"
+                            srcsetMedium="/Work/Fontfacing/4_Designing/Iteration_3.png"
+                            srcsetSmall="/Work/Fontfacing/4_Designing/Iteration_3.png"
+                            altText="An AI-generated image of 2 glasses of beer on a misshapen table with a completely inaccurate hand."
+                        />
+                        <ImagePrimary 
+                            srcsetLarge="/Work/Fontfacing/4_Designing/Iteration_4.png"
+                            srcsetMedium="/Work/Fontfacing/4_Designing/Iteration_4.png"
+                            srcsetSmall="/Work/Fontfacing/4_Designing/Iteration_4.png"
+                            altText="An AI-generated image of 2 beer cans on a white table with a white background."
+                        />
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
         </ProcessPrimary>
 
         <!-- 5. Research & Prep -->
@@ -435,13 +495,22 @@
             title="Research & Prep"
             iconPack="fas"
             iconName="arrows-to-circle"
-            :visibilityMode="1"
+            :visibilityMode="2"
             headerRef="5"
             :isConcise="isConcise"
         >
             <ContentBlurb>
                 <p>I entered into this project with a very cursory knowledge of AI tools, never having used any myself. To begin, I created a few training models using Runway ML’s easy to use AI tools for insight into how AI parses information and what comes from the resulting training model. I then mapped out the process of creating a typeface and looked at existing tools within the space.</p>
             </ContentBlurb>
+
+            <CaseStudyFontfacingTrainingModels />
+
+            <CaseStudyFontfacingPrimaryResearch />
+
+            <CaseStudyFontfacingMappingWorkflow />
+
+            <CaseStudyFontfacingDesigning />
+
         </ProcessPrimary>
 
         <!-- 6. Prototyping -->
@@ -457,6 +526,125 @@
             <ContentBlurb>
                 <p>I could feel the final versions beginning to take shape, but there are still some details to figure out. The modal was perplexing me. It’s a good introduction to the AI features, but perhaps only for a new user or for a casual designer. For the experienced designer the modal could simply be obstructive to beginning work.</p>
             </ContentBlurb>
+
+            <!-- Workflow -->
+            <ContentMediaWithCaption
+                title="Rethinking the Workflow"
+            >
+                <template #caption>
+                    <p class="mb-4">This platform should be seeking to empower the designer, however they want to work. To obstruct their design process with a pop-up goes against that. I mapped out a more circular workflow for the design process with AI seamlessly integrated into it.</p>
+                    <p>This workflow assumes that the designer is going to be moving back and forth and, therefore, should have access to the AI features at all times, for whenever they might need them.</p>
+                </template>
+                <template #media>
+                    <div class="bg-white md:bg-transparent rounded-sm md:rounded-md p-4 md:py-0">
+                        <img src="/Work/Fontfacing/6_Prototyping/Workflow.svg" alt="A map of the ideal workflow for the platform, showing a kind of circular path where the user can go back and forth between different tools and the AI tools are meant to fit seamlessly into the different steps.">
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Exploration & Iteration -->
+            <ContentScroller
+                title="Exploration & Iteration"
+            >
+
+                <!-- Toolbars -->
+                <ScrollerVideo
+                :videoSources="[
+                        { src: '/Work/Fontfacing/6_Prototyping/Toolbars_720.mp4', type: 'video/mp4' },
+                        { src: '/Work/Fontfacing/6_Prototyping/Toolbars_Full.mp4', type: 'video/mp4' },
+                    ]"
+                    title="Exploring Toolbars"
+                    videoParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180"
+                >
+                    <template #caption>
+                        <p>To be able to access all of the AI features at any time, I explored a variety of layouts and placement for them. This included iteration on the various toolbars.</p>
+                    </template>
+                </ScrollerVideo>
+
+                <!-- Context Bar -->
+                <ScrollerVideo
+                :videoSources="[
+                        { src: '/Work/Fontfacing/6_Prototyping/ContextBars_Half.mp4', type: 'video/mp4' },
+                        { src: '/Work/Fontfacing/6_Prototyping/ContextBars_Full.mp4', type: 'video/mp4' },
+                    ]"
+                    title="Context Bar"
+                    videoParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120"
+                >
+                    <template #caption>
+                        <p>To further empower designer workflows, I explored some of the functionality behind the contextual toolbar.</p>
+                    </template>
+                </ScrollerVideo>
+
+                <!-- Iterating -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Fontfacing/6_Prototyping/Revision_1.png',
+                        medium: '/Work/Fontfacing/6_Prototyping/Revision_1.png',
+                        large: '/Work/Fontfacing/6_Prototyping/Revision_1.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Putting the Elements Together"
+                    alt-text="A medium fidelity prototype combining the previously explored elements with the current concept; the sidebar has been simplified and the infinite canvas has been replaced with an artboard system to focus on singular glyphs while working; the toolbar has also been simplified with some tools removed and AI tools moved to an Options Bar at the top of the app."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180"
+                >
+                    <template #caption>
+                        <p>This version changes the previously “infinite” canvas, with the whole character set next to each other, into more of an artboard or frame where you can work on one character at a time, more familiar to the graphic designers who use Adobe products. The AI also has a permanent home in the Options Bar and there are additional elements to access the rest of the character set and working layers of the currently selected character.</p>
+                    </template>
+                </ScrollerImage>
+
+            </ContentScroller>
+
+            <!-- Visual Design -->
+            <ContentImagesWithCaption
+                title="Visual Design Elements"
+                spacing="space-x-4 md:space-x-8"
+                imgSizing="filter drop-shadow-md w-28 md:w-48 lg:w-44 xl:w-60 2xl:w-72 rounded-sm"
+                :images="[
+                    { src: '/Work/Fontfacing/6_Prototyping/VisDes_1.png', alt: 'Low-fidelity wireframe of GPS directions' },
+                    { src: '/Work/Fontfacing/6_Prototyping/VisDes_2.png', alt: 'Low-fidelity wireframe of GPS directions with a pop-up notification which says `Handoff: moving your music and navigation to your car.`' },
+                    { src: '/Work/Fontfacing/6_Prototyping/VisDes_3.png', alt: 'From the previous pop-up notification, this low-fidelity screen shows the notification expanded with 2 options to select: cancel or okay' }
+                ]"
+            >
+                <template #caption>
+                    <p>I conducted a brief exercise to figure out the visual design language I wanted to carry forward for the next revisions.</p>
+                </template>
+            </ContentImagesWithCaption>
+
+            <!-- Final Layout-->
+            <ContentMediaWithCaption
+                title="Finalized Layout"
+            >
+                <template #caption>
+                    <p>This exploration represents what would become the finalized layout of the interface. The previous buttons to access Layers and Character Set have become a separate sidebar on the left of the interface. I tried to depart from the primarily gray color palettes of most design platforms, but it’s overbearing here. There's too much color.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/Fontfacing/6_Prototyping/Final_1.png"
+                        srcset-medium="/Work/Fontfacing/6_Prototyping/Final_1.png"
+                        srcset-large="/Work/Fontfacing/6_Prototyping/Final_1.png"
+                        alt-text="A high fidelity wireframe with a more colorful interface which has replaced the predominantly gray interface; some of the buttons have been moved into a second sidebar so that the analysis and navigation are on one side and the glyph selection and layers are on the opposite side. There's too much color."
+                        :image-style="{ width: '100%', height: 'auto' }"
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Final Interface-->
+            <ContentMediaWithCaption
+                title="Finalized Interface"
+            >
+                <template #caption>
+                    <p>I pared back the use of color from the previous version and explored more ways to use the blue and purple to highlight the AI features.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/Fontfacing/6_Prototyping/Final_2.png"
+                        srcset-medium="/Work/Fontfacing/6_Prototyping/Final_2.png"
+                        srcset-large="/Work/Fontfacing/6_Prototyping/Final_2.png"
+                        alt-text="A high fidelity wireframe building off the previous version; most of the color has been replaced with the shades of gray and there's a selective use of violet and blue (and the gradient between them) to highlight the AI tools and related features (like AI history and the Analysis window)."
+                        :image-style="{ width: '100%', height: 'auto' }"
+                    />
+                </template>
+            </ContentMediaWithCaption>
         </ProcessPrimary>
 
         <!-- OUTRO BEGINNING -->

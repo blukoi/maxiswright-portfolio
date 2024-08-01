@@ -46,7 +46,7 @@
                 <div class="w-full rounded-sm md:rounded-md text-grayDarkest bg-white px-8 py-8 flex flex-col items-center text-center space-y-8">
                     <div class="font-title text-2xl flex flex-col justify-center space-y-1 items-center">
                         <h1>With the process in mind</h1>
-                        <h1 class="px-2 py-1 gradient-fontfacing text-white rounded-sm w-max">what is a typeface?</h1>
+                        <h1 class="px-4 py-1 gradient-fontfacing text-white rounded-sm w-max">what is a typeface?</h1>
                     </div>
                     <div class="text-grayMiddle">
                         <svg width="212" height="213" viewBox="0 0 212 213" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">

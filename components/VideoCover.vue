@@ -30,8 +30,14 @@ export default {
 .video-container {
     position: relative;
     width: 100%; /* Container width - can be adjusted or responsive */
-    height: 100vh; /* Container height - can be viewport height or another value */
+    height: 75vh; /* Container height - can be viewport height or another value */
     overflow: visible;
+}
+
+@media (min-width: 768px) {
+    .video-container {
+        height: 100vh; /* Increased height for medium devices */
+    }
 }
 
 .video-cover {
