@@ -27,7 +27,7 @@
             <li class="hidden sm:block">
                 <ButtonSmall label="Experiments" link="/experiments" />
             </li>
-            <li>
+            <li class="hidden sm:block">
                 <ButtonSmall label="About" link="/about" />
             </li>
             <li>

@@ -5,7 +5,7 @@
         </div>
         <div class="w-60 md:w-96 shrink-0 inline-block space-y-4">
             <h3 class="text-white font-bold uppercase">{{ title }}</h3>
-            <div v-if="$slots.title">
+            <div v-if="$slots.caption">
                 <slot name="caption"></slot>
             </div>
         </div>

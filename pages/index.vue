@@ -33,7 +33,7 @@
                 </div>
                 <div class="flex flex-col space-y-6">
                   <WorkAvailability />
-                  <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max hidden" />
+                  <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max block sm:hidden" />
                 </div>
               </div>
             </div>

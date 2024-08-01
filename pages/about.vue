@@ -2,9 +2,9 @@
     <div>
       <CustomCursor />
       <NavBar />
-      <!-- <TestComponent /> -->
-      <div class="fixed w-full h-51vh z-0 flex justify-center items-center overflow-visible">
-        <img src="/Brand/About_Background.jpg" alt="Max having a discussion with his team about a visual storyboard." class="w-full h-full object-cover overflow-visible">
+
+      <div class="fixed w-screen sm:w-full h-51vh z-0 flex justify-center items-center">
+        <img src="/Brand/About_Background.jpg" alt="Max having a discussion with his team about a visual storyboard." class="flex-1 w-full h-full object-cover overflow-hidden">
       </div>
       <div class="w-full h-50vh bg-transparent inline-block"></div>
       <div class="w-full content-center z-10 bg-grayLighter relative">
@@ -27,7 +27,10 @@
                         <div>
                         <p class="font-normal font-main text-sm text-grayDarker">I’m an LA-based designer using my expertise in visual communication and graphic design to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
                         </div>
-                        <WorkAvailability />
+                        <div class="flex flex-col space-y-6">
+                            <WorkAvailability />
+                            <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max" />
+                        </div>
                     </div>
                     </div>
                 </div>
