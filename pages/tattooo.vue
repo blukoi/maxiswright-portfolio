@@ -4,11 +4,11 @@
         <NavBar />
 
         <!-- TITLE AND VISUAL -->
-        <IntroTitle :bgColor="bgColor" mediaBackground="bg-tattoooBlue">
+        <IntroTitle :bgColor="bgColor" mediaBackground="bg-tattoooSecondaryDarker">
             <template #title>{{ project.title }} —</template>
             <template #media>
                 <div class="w-full flex justify-center">
-                    
+                    <LottieParent bgColor="bg-tattoooSecondaryDarker" :animation-data="animationData" alt="An animation showing a quick snapshot of what this app can help facilitate: when you get a tattoo idea, you can use this app to post about it, talk to an artist about it, and get the tattoo of your dreams with the artist that's right for you."></LottieParent>
                 </div>
             </template>
         </IntroTitle>
@@ -68,18 +68,18 @@
         <IntroHowMightWe
             how="How might we..."
             direction="...streamline the experience of building a trusting relationship with a tattoo artist?"
-            title="Color Highlights Within the Interface"
+            title="Centralize Resources into a Social Communication and Connection Platform"
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">The majority of the interface involves shades of gray, as with most major design apps. The introduction of any color would be a highlight. A bright blue and a middle purple are used to bring attention to the AI features, sometimes alone (active/history) and sometimes as a linear gradient (generate something).</p>
+                <p class="pl-0 md:pl-8 font-main text-sm">Tattoos are (mostly) a lifelong commitment, but Tatt.ooo simplifies the process, making it more accessible and less stressful for both first-timers and experienced enthusiasts. Tatt.ooo is a communication and search platform, with some social aspects, designed to streamline the connection between tattoo artists and their customers. This platform centralizes key resources and tools to facilitate an easier, more transparent interaction—from artist discovery to finished body art. Users can post their ideas, search for artists, explore flash art, and utilize an enhanced messaging system to discuss details and scheduling, ensuring all parties are aligned before the appointment.</p>
             </template>
             <template #media>
                 <ImagePrimary
-                    srcset-small="/Work/Fontfacing/0_Cover_Small.png"
-                    srcset-medium="/Work/Fontfacing/0_Cover_Med.png"
-                    srcset-large="/Work/Fontfacing/0_Cover_Full.png"
-                    alt-text="A mockup of a desktop app meant for typeface design, showing a working canvas with one glyph, toolbars, live view of the entire typeface, and an analysis window showing the training model as it analyzes inputs in real time."
+                    srcset-small="/Work/Tattooo/0_Cover_Med.png"
+                    srcset-medium="/Work/Tattooo/0_Cover_Med.png"
+                    srcset-large="/Work/Tattooo/0_Cover_Full.png"
+                    alt-text="A mockup of 2 phones showing 2 different screens from a mobile app; on the left is a home screen of a blue/white/gray app with a banner that says `Have an idea for a tattoo?` next to a button that says `Post it`; on the right is a screen showing a social media-like post with a description of a tattoo, an example image "
                 />
             </template>
         </IntroHowMightWe>
@@ -94,49 +94,69 @@
 
             <ScrollerImage
                 :srcset = "{
-                    small: '/Work/Fontfacing/0_TabBar.png',
-                    medium: '/Work/Fontfacing/0_TabBar.png',
-                    large: '/Work/Fontfacing/0_TabBar.png',
+                    small: '/Work/Tattooo/0_TattoooHome_Small.png',
+                    medium: '/Work/Tattooo/0_TattoooHome_Med.png',
+                    large: '/Work/Tattooo/0_TattoooHome_Full.png',
                 }" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="A tab bar to select process stage" 
-                alt-text="One detail of the app interface which shows a series of buttons (Sketch, Live Generation, Focus, Letterspacing) which users can use to move between working stages" 
-                imageParent="h-64 md:h-96 w-80 md:w-128" 
+                title="Put everything in one place" 
+                alt-text="A mobile app home page with a banner that says `Have an idea for a tattoo?` next to a button to `Post it`. There are also buttons for Notifications, FAQs About Tattoos, Messages, and more." 
+                imageParent="h-120 md:h-160 w-56 md:w-72" 
             >
                 <template #caption>
-                    <p>Since the typeface design process works in well defined stages, albeit with some back and forth, this tab bar allows the designer to indicate where in the process they are and to see when the native AI platform will be actively learning versus actively generating or adjusting.</p>
+                    <p>So much of the friction from this process comes from the wide variety of touchpoints which are inconsistent between artists and studios. Why can’t we make all of this easier by putting it all in one platform? The artist can maintain a portfolio, post flash artwork, communicate with their customers, connect with potential customers, schedule appointments, and proof artwork using one service.</p>
                 </template>
             </ScrollerImage>
 
-            <ScrollerImage
-                :srcset = "{
-                    small: '/Work/Fontfacing/0_AnalysisWindow.png',
-                    medium: '/Work/Fontfacing/0_AnalysisWindow.png',
-                    large: '/Work/Fontfacing/0_AnalysisWindow.png',
-                }" 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="Show how the platform analyzes" 
-                alt-text="One detail of the app interface which shows a window within the sidebar, Analysis, with some realtime AI analysis" 
-                imageParent="h-64 md:h-96 w-60 md:w-72" 
+            <ScrollerCustom
+                imageParent="h-120 md:h-160 w-max" 
+                title="Accountability & Additional Messaging Features"
             >
-                <template #caption>
-                    <p>A specific window displays how the AI is processing input and also gives designers the opportunity to for manual input within that process.</p>
+                <template #media>
+                    <div class="flex flex-col space-y-8  w-56 md:w-72 h-full items-center justify-center mr-8">
+                        <ImageStylable
+                            srcset-small="/Work/Tattooo/0_Messaging2.png"
+                            srcset-medium="/Work/Tattooo/0_Messaging2.png"
+                            srcset-large="/Work/Tattooo/0_Messaging2.png"
+                            alt-text="The Title bar of the app when using the messaging features. There's the name of the person you're messaging, a left-to-right check list with Basics, Design, Schedule, and Complete listed in order, and a button to go to the Project, so that the tattoo project can be tracked responsibly." 
+                            imageStyles="rounded-sm"
+                        />
+                        <ImageStylable
+                            srcset-small="/Work/Tattooo/0_Messaging1.png"
+                            srcset-medium="/Work/Tattooo/0_Messaging1.png"
+                            srcset-large="/Work/Tattooo/0_Messaging1.png"
+                            alt-text="The text entry bar used in the messaging feature. Below the text entry box there are also features to add a link to something and start a new tattoo project, as well as disabled options to schedule an appointment, add an image, and more." 
+                            imageStyles="rounded-none p-1.5"
+                        />
+                    </div>
+                    <div class="flex flex-col space-y-8  w-56 md:w-72 h-full items-center justify-center p-2">
+                        <ImageStylable
+                            srcset-small="/Work/Tattooo/0_ProofArtwork.png"
+                            srcset-medium="/Work/Tattooo/0_ProofArtwork.png"
+                            srcset-large="/Work/Tattooo/0_ProofArtwork.png"
+                            alt-text="The artwork proofing page within the messaging feature, titled `Feedback Request`. The tattoo artwork is featured and there's a text entry tool to add comments and feedback onto the artwork." 
+                            imageStyles="rounded-sm"
+                        />
+                    </div>
                 </template>
-            </ScrollerImage>
+                <template #caption>
+                    <p>When artists and customers communicate, they can start a “New Tattoo” which will require certain information to be passed along, such as the idea, location, budget, style, and would require the art to be approved by the customer before scheduling an appointment. So often, the art isn’t seen until you show up to get the tattoo but, this way, customers get some assurance and can express their needs more reasonably without the same pressure.</p>
+                </template>
+            </ScrollerCustom>
 
             <ScrollerImage
                 :srcset = "{
-                    small: '/Work/Fontfacing/0_ContextToolbar.png',
-                    medium: '/Work/Fontfacing/0_ContextToolbar.png',
-                    large: '/Work/Fontfacing/0_ContextToolbar.png',
+                    small: '/Work/Tattooo/0_TattoooIdeas.png',
+                    medium: '/Work/Tattooo/0_TattoooIdeas.png',
+                    large: '/Work/Tattooo/0_TattoooIdeas.png',
                 }" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="Context Bar" 
-                alt-text="One detail of the app interface which shows the canvas with a glyph being edited; below the canvas is a toolbar with options that are specific to what the user's currently doing on the canvas; this canvas has a completed letter but nothing's selected, so the context bar has a text input with the label text reading, `Describe what you'd like to generate or change about this letterform`, along with a `Generate` button and another button for additional options" 
-                imageParent="h-64 md:h-96 w-80 md:w-128" 
+                title="Provide an alternative to the stress of approaching a tattoo artist" 
+                alt-text="A different screen of the app titled `Tattoo Ideas` with a slider to switch to `Flash Artwork` and social media-like posts with descriptions of tattoo ideas" 
+                imageParent="h-120 md:h-160 w-56 md:w-72" 
             >
                 <template #caption>
-                    <p>As is being used more and more often in design programs, a contextual toolbar moves around the interface depending on what you’re interacting with and gives you context-specific options that may be particularly relevant. This allows AI features to be front-and-center without obstructing the workflow.</p>
+                    <p>Instead of putting all of the responsibility on customers to approach tattoo artists to get the ball rolling, they can publicly post the tattoo that they want, with all of the details. This way, artists can look through the ideas they find interesting and work on the tattoos they’re passionate about.</p>
                 </template>
             </ScrollerImage>
 
@@ -158,74 +178,358 @@
             :isConcise="isConcise"
         >
             <ContentBlurb>
-                <p>I started this project by researching how training models are made and making a couple myself. By using the available tools at RunwayML I was able to train image generating models in order to see, firsthand, how an AI system analyzes the material its given and, thereafter, what it can produce.</p>
-                <p>After also doing some research into AI platforms working with vector graphics, I solidified the concept I had in mind: a design and editing platform working with SVGs, supported and driven by AI to make it faster and easier for designers to build out the entirety of a typeface.</p>
+                <p>I had an idea for a platform to improve the process of finding a tattoo artist. However, it was based on my personal experiences from getting tattoos. To begin working on this platform, I started by looking at the existing tools to help connect with tattoo artists, then spoke with other tattoo enthusiasts to understand more perspectives and experiences. This helped me map customer journeys in several different ways.</p>
             </ContentBlurb>
+
+            <!-- Competitive Research -->
+            <ContentMediaWithCaption
+                title="Competitive Research"
+            >
+                <template #caption>
+                    <p class="mb-4">From my own experiences, I knew some of the methods used to search for tattoo artists. You could start on a listicle of artists, find the studio they look at, visit the studio’s website and find that it’s not updated, then go to the artist’s Instagram page and look at their work. You might use a website like Tattoos Wizard which is a directory of artists, but they have to register for the service to show up. You might find an amazing artist on Instagram but find out they’re not located near you.</p>
+                    <p>The opportunity is to create an entirely tattoo-focused platform which allows you to do everything related to tattooing, including searching for artists and studios, hours and scheduling, messaging and tracking, viewing art and providing feedback, and even researching the tattooing process.</p>
+                </template>
+                <template #media>
+                    <ImagePrimary 
+                        srcsetLarge="/Work/Tattooo/1_FoundationalResearch/Competitive.png"
+                        srcsetMedium="/Work/Tattooo/1_FoundationalResearch/Competitive.png"
+                        srcsetSmall="/Work/Tattooo/1_FoundationalResearch/Competitive.png"
+                        altText="A quadrant matrix showing different positions of competitive platforms; the x-axis shows General on the left and Focused on the right, while the y-axis shows Centralized at the top and Decentralized at the bottom."
+                    />
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Interviews -->
+            <ContentMediaWithCaption
+                title="Interviews"
+            >
+                <template #caption>
+                    <p>I only had 1 week for interviews, so was only able to get 3 done. My plan was to speak with people who had just one or two tattoos as well as people with many tattoos. Ideally, I would’ve also spoken with some people who didn’t have tattoos but were planning to get one. I would also like to note that my research is missing a notable perspective: customers who’ve had poor tattoo experiences.</p>
+                </template>
+                <template #media>
+                    <div class="flex flex-wrap justify-center items-center bg-tattoooBlue rounded-sm md:rounded-md h-full py-16">
+                        <div class="p-4 md:p-8 w-40 md:w-48">
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Interview1.png" alt="An emoji representation vaguely depicting an interview participant.">
+                        </div>
+                        <div class="p-4 md:p-8 w-40 md:w-48">
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Interview2.png" alt="An emoji representation vaguely depicting an interview participant.">
+                        </div>
+                        <div class="p-4 md:p-8 w-40 md:w-48">
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Interview3.png" alt="An emoji representation vaguely depicting an interview participant.">
+                        </div>
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Blockquote -->
+            <CaseStudyTattoooBlockquote />
+
+            <!-- Confirmation -->
+            <ContentCaptionWithPostits 
+                title="Confirmation" 
+                gridCols="md:grid-cols-2 lg:grid-cols-4" 
+            >
+                <template #caption>
+                </template>
+                <template #postits>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #copy>
+                            <p>The “problems” typically end once the tattooing process starts (with obvious exceptions)</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #copy>
+                            <p>The experience overall is very personal, from the meaningfulness of the artwork to the aftercare routine which follows</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #copy>
+                            <p>Approaching an artist for the first time is a source of anxiety</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitYellow"
+                    >
+                        <template #copy>
+                            <p>Too many different websites</p>
+                        </template>
+                    </ContentPostit>
+                </template>
+            </ContentCaptionWithPostits>
+
+            <!-- Pain Points -->
+            <ContentCaptionWithPostits 
+                title="Pain Points" 
+                gridCols="md:grid-cols-2 lg:grid-cols-4" 
+            >
+                <template #caption>
+                </template>
+                <template #postits>
+                    <ContentPostit
+                        postitColor="bg-postitBlue"
+                    >
+                        <template #copy>
+                            <p>Lack of timely communication</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitBlue"
+                    >
+                        <template #copy>
+                            <p>Too much information about tattooing from different sources</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitBlue"
+                    >
+                        <template #copy>
+                            <p>Not seeing artwork until late in the process</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitBlue"
+                    >
+                        <template #copy>
+                            <p>Artwork isn’t always as expected</p>
+                        </template>
+                    </ContentPostit>
+                </template>
+            </ContentCaptionWithPostits>
+
+            <!-- Discovery -->
+            <ContentCaptionWithPostits 
+                title="Discovery" 
+                gridCols="md:grid-cols-2 lg:grid-cols-5" 
+            >
+                <template #caption>
+                </template>
+                <template #postits>
+                    <ContentPostit
+                        postitColor="bg-postitPink"
+                    >
+                        <template #copy>
+                            <p>The most important parts of getting a tattoo are:</p>
+                            <ol class="list-decimal pl-4 space-y-4">
+                                <li>an artist who communicates, answers questions, asks questions, and welcomes feedback</li>
+                                <li>feeling comfortable with the artist and in the space in which they work</li>
+                            </ol>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitPink"
+                    >
+                        <template #copy>
+                            <p>The first tattoo is the most important, a “make or break” situation</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitPink"
+                    >
+                        <template #copy>
+                            <p>Being tattooed is very meditative; although there may be pain it isn’t necessarily a painful experience</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitPink"
+                    >
+                        <template #copy>
+                            <p>Very rarely do people leave a review or go out of their way to comment on their experience</p>
+                        </template>
+                    </ContentPostit>
+                    <ContentPostit
+                        postitColor="bg-postitPink"
+                    >
+                        <template #copy>
+                            <p>There’s always an understanding that quality tattoos come with a certain cost so this isn’t usually a concern</p>
+                        </template>
+                    </ContentPostit>
+                </template>
+            </ContentCaptionWithPostits>
+
+            <!-- Journey Maps -->
+            <ContentMediaWithCaption
+                title="Journey Maps"
+            >
+                <template #caption>
+                    <p>The typical journey map covers actions, touchpoints, and feelings across a given time period. I started there, but it wasn’t helping me move forward, so I made more journey maps to explore additional perspectives of the user journey. In this case, the break came from looking at the touchpoints in terms of the different levels of technology available.</p>
+                </template>
+                <template #media>
+                    <div class="flex flex-col justify-center items-center space-y-4 bg-tattoooBlue rounded-sm md:rounded-md h-full p-4">
+                        <div>
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey1.png" alt="A complex graph showing the customer journey through the tattoo process and the user's thoughts, feelings, and actions.">
+                        </div>
+                        <div>
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey2.png" alt="A complex graph showing the customer journey through the tattoo process and the touchpoints, goals, pain points, and opportunities.">
+                        </div>
+                        <div>
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey3.png" alt="A complex graph showing the customer journey through the tattoo process and the different levels of technology available or possible at each juncture, including no tech, low tech, current tech, high tech, and extreme tech.">
+                        </div>
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Research Summary -->
+             <CaseStudyTattoooResearch />
 
         </ProcessPrimary>
 
-        <!-- 2. Exploring Low Fidelity -->
+        <!-- 2. Flows & Wireframing -->
         <ProcessPrimary
             :bgColor="bgColor"
-            title="Exploring Low Fidelity"
+            title="Flows & Wireframing"
             iconPack="fas"
-            iconName="pencil"
+            iconName="diagram-project"
             :visibilityMode="1"
             headerRef="2"
             :isConcise="isConcise"
         >
             <ContentBlurb>
-                <p>My initial concept was to create a web-based app where designers could experiment with AI to create typefaces. The idea would’ve acted similarly to something like Dall•e, where there would be pre-trained models that users could use for generation.</p>
+                <p>The first version of my information architecture was fairly limited. As I explored task flows and started wireframing, it necessarily expanded... a lot.</p>
+                <p>I started with just a few of the basic features, like Search and Messaging pages. As I expanded the system, through wireframing and prototyping, I discovered a slew of additional pages, functions, and processes that would need to be considered, such as Scheduling.</p>
             </ContentBlurb>
+
+            <!-- Planning & Wireframes -->
+            <ContentScroller
+                title="Planning & Wireframes"
+            >
+
+                <!-- Information Architecture -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/2_Wireframing/IA.png',
+                        medium: '/Work/Tattooo/2_Wireframing/IA.png',
+                        large: '/Work/Tattooo/2_Wireframing/IA.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Information Architecture"
+                    alt-text="A sitemap of the app to start planning out layout, structures, and interactions."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-white"
+                >
+                    <template #caption>
+                        <p>Pictured is the final information architecture that I reached by the end of the project. The first version was extremely simple, comparatively.</p>
+                    </template>
+                </ScrollerImage>
+
+                <!-- Wireframing -->
+                <ScrollerCustom
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-max" 
+                    title="Wireframing"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-8 w-32 sm:w-40 md:w-48 lg:w-56 h-full items-center justify-center mr-8">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/2_Wireframing/Wireframing1.png"
+                                srcset-medium="/Work/Tattooo/2_Wireframing/Wireframing1.png"
+                                srcset-large="/Work/Tattooo/2_Wireframing/Wireframing1.png"
+                                alt-text="Low fidelity wireframe of a mobile app with a tab bar at the bottom, a content box for a hero image, and placeholder buttons below." 
+                                imageStyles="rounded-sm"
+                            />
+                        </div>
+                        <div class="flex flex-col space-y-8 w-32 sm:w-40 md:w-48 lg:w-56 h-full items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/2_Wireframing/Wireframing2.png"
+                                srcset-medium="/Work/Tattooo/2_Wireframing/Wireframing2.png"
+                                srcset-large="/Work/Tattooo/2_Wireframing/Wireframing2.png"
+                                alt-text="Low fidelity wireframe of a form which appears as a modal over the previous home page wireframe; its one page of text entry inputs." 
+                                imageStyles="rounded-sm"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>My first attempt at wireframing was off the cuff, trying to accomplish too many things without enough thought. On the left is the home page, where there’s a primary call to action (“Post [Your Idea]”) above a social feature. The social feature, in this version, functions similarly to an Instagram feed, which wouldn’t necessarily work underneath other content since it would scroll infinitely.</p>
+                        <p>On the right is the first version of the “Post Your Tattoo Idea” feature, which is the most basic, one-page form.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- User Flows -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/2_Wireframing/UserFlow.png',
+                        medium: '/Work/Tattooo/2_Wireframing/UserFlow.png',
+                        large: '/Work/Tattooo/2_Wireframing/UserFlow.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="User Flows"
+                    alt-text="Based off of the sitemap structure, this user flow maps out the different tasks/interactions to complete a specific task."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-white"
+                >
+                    <template #caption>
+                        <p>I started exploring user flows to try and figure out specific steps & processes to complete the necessary tasks. A few of them start with pop-up notifications, but this one, posting a tattoo idea, turned into one of the driving features of the platform. This user flow helped me to consider all of the relevant details of getting a tattoo, from art style to physical location. </p>
+                    </template>
+                </ScrollerImage>
+
+                <!-- Expanding Feature Form -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/2_Wireframing/Wireframing3.png',
+                        medium: '/Work/Tattooo/2_Wireframing/Wireframing3.png',
+                        large: '/Work/Tattooo/2_Wireframing/Wireframing3.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Expanding Feature Form"
+                    alt-text="Based off of the sitemap structure, this user flow maps out the different tasks/interactions to complete a specific task."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180"
+                >
+                    <template #caption>
+                        <p>The previous form was too basic and didn’t feel empathetic enough, so I expanded it. Breaking apart each form field/question into a separate page gives each step of the process its own level of gravitas. Tattoo ideas are, often, serious and personal, and the process of getting a tattoo is a commitment to a lifelong piece of body art [for many people]. This expanded idea for the “Post Your Idea” form tries to pay the utmost respect to that truth by giving users the most thoughtful but functional way to describe their perfect tattoo in a way that anyone can understand.</p>
+                    </template>
+                </ScrollerImage>
+
+            </ContentScroller>
 
         </ProcessPrimary>
 
-        <!-- 3. Mapping the WOrkflow -->
+        <!-- 3. Branding & Visual Design -->
         <ProcessPrimary
             :bgColor="bgColor"
-            title="Mapping the WOrkflow"
+            title="Branding & Visual Design"
             iconPack="fas"
-            iconName="map"
+            iconName="swatchbook"
             :visibilityMode="1"
             headerRef="3"
             :isConcise="isConcise"
         >
             <ContentBlurb>
-                <p><span class="font-bold">I should’ve done this before starting to wireframe</span> but, to be honest, my original concept was more explorative than it was purposeful.</p>
-                <p>The current process to design a typeface (if we ignore the researching, brainstorming, and briefing, which is it’s own in-depth preparatory process) is a long, back and forth workflow. As one would expect, it’s more in-depth than I can adequately convey in a simple process flow and can take anywhere from months, for a single font style with a [relatively] small character set, or years, in the case of multiple font styles, special characters, ligatures, etc.</p>
+                <p>From the beginning, I was sketching random thoughts to try to get a feel for the branding and visual design. This constituted sketching for branding, iconography, abstract shapes, as well as brainstorming for a name.</p>
+                <p>My initial idea was to come up with some combination of a name and logomark where one could speak specifically to tattoos and the other could speak to connection or communication. In the end, I abandoned a logomark because they were just too abstract and pursued a logotype.</p>
             </ContentBlurb>
 
         </ProcessPrimary>
 
-        <!-- 4. Back to Designing -->
-        <ProcessPrimary
-            :bgColor="bgColor"
-            title="Back to Designing"
-            iconPack="fas"
-            iconName="object-group"
-            :visibilityMode="1"
-            headerRef="4"
-            :isConcise="isConcise"
-        >
-            <ContentBlurb>
-                <p>With my initial insights and the typeface design workflow firmly in mind, I went back to my  wire framing process. At this point I decided that <span class="font-bold">my concept should be firmly designed for designers to complement the typeface design process</span>, rather than a simplistic, explorative experience.</p>
-                <p>This would allow the AI features to be used as an actual tool within the design process, making use of the AI and potentially improving the technology, instead of a novelty or side project.</p>
-            </ContentBlurb>
-
-        </ProcessPrimary>
-
-        <!-- 5. Research & Prep -->
+        <!-- 4. Research & Prep -->
         <ProcessPrimary
             :bgColor="bgColor"
             title="Research & Prep"
             iconPack="fas"
             iconName="arrows-to-circle"
             :visibilityMode="1"
+            headerRef="4"
+            :isConcise="isConcise"
+        >
+            <ContentBlurb>
+                <p>After competitive research and a short series of interviews, I mapped the customer journey and ended up with this series of pain points and opportunities. I was able to create a persona and start mapping out the customer experience which, in turn, helped me to figure out tasks and user flows. I spent several weeks working on the branding and logo design, then set about figuring out the visual design attributes.</p>
+            </ContentBlurb>
+
+        </ProcessPrimary>
+
+        <!-- 5. Design System -->
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Design System"
+            iconPack="fas"
+            iconName="layer-group"
+            :visibilityMode="1"
             headerRef="5"
             :isConcise="isConcise"
         >
             <ContentBlurb>
-                <p>I entered into this project with a very cursory knowledge of AI tools, never having used any myself. To begin, I created a few training models using Runway ML’s easy to use AI tools for insight into how AI parses information and what comes from the resulting training model. I then mapped out the process of creating a typeface and looked at existing tools within the space.</p>
+                <p>Since I’d realized fairly early on that this would be a more complex platform than I’d first assumed, I approached the basic construction of Tatt.ooo’s design system from the viewpoint of having reusable components where small changes, like swapping out an icon, could make it easy to reuse or remix the pieces when adding a feature, function, or page.</p>
             </ContentBlurb>
 
         </ProcessPrimary>
@@ -241,7 +545,8 @@
             :isConcise="isConcise"
         >
             <ContentBlurb>
-                <p>I could feel the final versions beginning to take shape, but there are still some details to figure out. The modal was perplexing me. It’s a good introduction to the AI features, but perhaps only for a new user or for a casual designer. For the experienced designer the modal could simply be obstructive to beginning work.</p>
+                <p>Prototyping is really where I started to work out the kinks. Some pages and flows worked out without issue once I figured out the correct starting point. Other issues needed a little more finessing and iteration.</p>
+                <p>However, one of my beliefs is to test early and test often, so when I had one version ready to go, I tested the working prototype and ran it by some of my associates for their thoughts.</p>
             </ContentBlurb>
 
         </ProcessPrimary>
@@ -250,26 +555,44 @@
         <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
                 <div class="w-full flex flex-col space-y-64">
-                    <div class="bg-tattoooBlue w-full flex justify-center p-32 rounded-md">
-                        <div class="w-48 text-white flex flex-col space-y-32">
-                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.68 216" class="fill-current" alt="Simplistic logo of a capital letter F, the bottom has serifs but the top doesn't; one corner is empty with a square moving into the space to fill it, like a brick being placed into an empty spot in a wall.">
+                    <div class="bg-tattoooBlue w-full flex justify-center px-16 py-32 md:p-32 rounded-md">
+                        <div class="w-64 text-white flex justify-center">
+                            <svg width="256" height="57" viewBox="0 0 256 57" class="fill-current" xmlns="http://www.w3.org/2000/svg" alt="A logo of the name of the app `Tattooo` in a heavyweight, geometric font with a dot before the `ooo` like a URL.">
+                                <g clip-path="url(#clip0_1631_6078)">
+                                <path d="M26.0887 12.1883V55.352H11.7692V12.1883H0V0H37.858V12.1883H26.0887V12.1883Z"/>
+                                <path d="M61.1681 17.6937H74.4675V55.352H61.1681V51.1694C58.3438 54.7403 54.5146 56.5295 49.6957 56.5295C46.9628 56.5295 44.4582 56.0248 42.1668 55.0232C39.8753 54.0215 37.8808 52.6146 36.1756 50.8024C34.4703 48.9902 33.1457 46.8645 32.1941 44.4177C31.2425 41.9708 30.7706 39.3023 30.7706 36.4196C30.7706 33.7281 31.2349 31.1742 32.1561 28.7503C33.0772 26.3264 34.3714 24.2084 36.0309 22.4038C37.6829 20.5916 39.6622 19.1618 41.9536 18.1066C44.245 17.0514 46.7801 16.5314 49.5511 16.5314C54.2253 16.5314 58.1002 18.1754 61.1681 21.448V17.7013V17.6937ZM44.5039 36.4119C44.5039 37.6354 44.7246 38.7747 45.1586 39.8222C45.6001 40.8774 46.1939 41.795 46.9475 42.5749C47.7012 43.3548 48.5995 43.9665 49.6501 44.41C50.7006 44.8535 51.8273 45.0676 53.0453 45.0676C54.2634 45.0676 55.3215 44.8459 56.3721 44.41C57.4226 43.9665 58.3209 43.3548 59.0746 42.5749C59.8282 41.795 60.4373 40.8851 60.9016 39.8605C61.366 38.8358 61.5944 37.7348 61.5944 36.5572C61.5944 35.3797 61.366 34.271 60.9016 33.2158C60.4373 32.1606 59.8282 31.243 59.0746 30.4631C58.3209 29.6832 57.415 29.0714 56.3721 28.628C55.3215 28.1845 54.2177 27.9704 53.0453 27.9704C51.873 27.9704 50.693 28.1921 49.6501 28.628C48.5995 29.0714 47.7012 29.6832 46.9475 30.4631C46.1939 31.243 45.5925 32.1376 45.1586 33.1393C44.717 34.141 44.5039 35.2344 44.5039 36.4043V36.4119Z"/>
+                                <path d="M95.882 28.7732V55.3443H82.6511V28.7732H78.2662V17.686H82.6511V6.38471H95.882V17.686H103.411V28.7732H95.882V28.7732Z"/>
+                                <path d="M124.239 28.7732V55.3443H111.008V28.7732H106.624V17.686H111.008V6.38471H124.239V17.686H131.768V28.7732H124.239V28.7732Z"/>
+                                <path d="M127.893 48.302C127.893 47.1245 128.114 46.0158 128.548 44.9606C128.99 43.9054 129.599 42.9878 130.375 42.2079C131.152 41.428 132.065 40.8162 133.116 40.3728C134.166 39.9293 135.27 39.7152 136.442 39.7152C137.615 39.7152 138.719 39.9369 139.769 40.3728C140.82 40.8162 141.733 41.428 142.51 42.2079C143.286 42.9878 143.895 43.9054 144.337 44.9606C144.778 46.0158 144.992 47.1245 144.992 48.302C144.992 49.4796 144.771 50.5883 144.337 51.6435C143.895 52.6987 143.286 53.6162 142.51 54.3962C141.733 55.1761 140.82 55.7878 139.769 56.2313C138.719 56.6748 137.615 56.8889 136.442 56.8889C135.27 56.8889 134.166 56.6671 133.116 56.2313C132.065 55.7878 131.152 55.1761 130.375 54.3962C129.599 53.6162 128.99 52.6987 128.548 51.6435C128.107 50.5883 127.893 49.4796 127.893 48.302V48.302Z"/>
+                                <path d="M146.674 36.1902C146.674 33.3993 147.23 30.7919 148.356 28.3756C149.475 25.9517 151.036 23.849 153.031 22.0597C155.025 20.2705 157.4 18.8636 160.156 17.8389C162.912 16.8143 165.919 16.2944 169.185 16.2944C172.451 16.2944 175.381 16.799 178.137 17.8007C180.885 18.8024 183.276 20.2017 185.301 21.9833C187.326 23.7725 188.894 25.8982 190.013 28.368C191.132 30.8378 191.695 33.5675 191.695 36.5496C191.695 39.5317 191.125 42.2614 189.975 44.7312C188.833 47.201 187.257 49.3343 185.263 51.1159C183.268 52.9051 180.863 54.2815 178.061 55.2602C175.26 56.2389 172.222 56.7283 168.964 56.7283C165.706 56.7283 162.775 56.2389 160.049 55.2602C157.324 54.2815 154.972 52.8898 153 51.0777C151.028 49.2655 149.483 47.1015 148.356 44.5783C147.237 42.055 146.674 39.2564 146.674 36.1749V36.1902ZM160.636 36.3355C160.636 37.6048 160.864 38.767 161.328 39.8222C161.793 40.8774 162.402 41.795 163.155 42.5749C163.909 43.3548 164.815 43.9665 165.858 44.41C166.909 44.8535 168.012 45.0676 169.185 45.0676C170.357 45.0676 171.461 44.8459 172.511 44.41C173.562 43.9665 174.46 43.3548 175.214 42.5749C175.968 41.795 176.577 40.8774 177.041 39.8222C177.505 38.767 177.734 37.6354 177.734 36.4119C177.734 35.1885 177.505 34.1257 177.041 33.0705C176.577 32.0153 175.968 31.0977 175.214 30.3178C174.46 29.5379 173.554 28.9262 172.511 28.4827C171.461 28.0392 170.357 27.8251 169.185 27.8251C168.012 27.8251 166.909 28.0468 165.858 28.4827C164.807 28.9262 163.909 29.5379 163.155 30.3178C162.402 31.0977 161.793 32.0076 161.328 33.0323C160.864 34.0569 160.636 35.1579 160.636 36.3355Z"/>
+                                <path d="M178.83 36.1902C178.83 33.3993 179.386 30.7919 180.512 28.3756C181.632 25.9517 183.192 23.849 185.187 22.0597C187.181 20.2705 189.556 18.8636 192.312 17.8389C195.068 16.8143 198.075 16.2944 201.341 16.2944C204.607 16.2944 207.538 16.799 210.293 17.8007C213.042 18.8024 215.432 20.2017 217.457 21.9833C219.482 23.7725 221.05 25.8982 222.169 28.368C223.288 30.8378 223.852 33.5675 223.852 36.5496C223.852 39.5317 223.281 42.2614 222.131 44.7312C220.989 47.201 219.413 49.3343 217.419 51.1159C215.424 52.9051 213.019 54.2815 210.217 55.2602C207.416 56.2389 204.378 56.7283 201.12 56.7283C197.862 56.7283 194.931 56.2389 192.206 55.2602C189.48 54.2815 187.128 52.8898 185.156 51.0777C183.184 49.2655 181.639 47.1015 180.512 44.5783C179.393 42.055 178.83 39.2564 178.83 36.1749V36.1902ZM192.792 36.3355C192.792 37.6048 193.02 38.767 193.484 39.8222C193.949 40.8774 194.558 41.795 195.312 42.5749C196.065 43.3548 196.971 43.9665 198.014 44.41C199.065 44.8535 200.168 45.0676 201.341 45.0676C202.513 45.0676 203.617 44.8459 204.668 44.41C205.718 43.9665 206.616 43.3548 207.37 42.5749C208.124 41.795 208.733 40.8774 209.197 39.8222C209.661 38.767 209.89 37.6354 209.89 36.4119C209.89 35.1885 209.661 34.1257 209.197 33.0705C208.733 32.0153 208.124 31.0977 207.37 30.3178C206.616 29.5379 205.71 28.9262 204.668 28.4827C203.617 28.0392 202.513 27.8251 201.341 27.8251C200.168 27.8251 199.065 28.0468 198.014 28.4827C196.963 28.9262 196.065 29.5379 195.312 30.3178C194.558 31.0977 193.949 32.0076 193.484 33.0323C193.02 34.0569 192.792 35.1579 192.792 36.3355Z"/>
+                                <path d="M210.986 36.1902C210.986 33.3993 211.542 30.7919 212.668 28.3756C213.788 25.9517 215.348 23.849 217.343 22.0597C219.337 20.2705 221.712 18.8636 224.468 17.8389C227.224 16.8143 230.231 16.2944 233.497 16.2944C236.763 16.2944 239.694 16.799 242.449 17.8007C245.198 18.8024 247.588 20.2017 249.613 21.9833C251.638 23.7725 253.206 25.8982 254.325 28.368C255.444 30.8378 256.008 33.5675 256.008 36.5496C256.008 39.5317 255.437 42.2614 254.287 44.7312C253.145 47.201 251.569 49.3343 249.575 51.1159C247.58 52.9051 245.175 54.2815 242.373 55.2602C239.572 56.2389 236.534 56.7283 233.276 56.7283C230.018 56.7283 227.087 56.2389 224.362 55.2602C221.636 54.2815 219.284 52.8898 217.312 51.0777C215.341 49.2655 213.795 47.1015 212.668 44.5783C211.549 42.055 210.986 39.2564 210.986 36.1749V36.1902ZM224.948 36.3355C224.948 37.6048 225.176 38.767 225.641 39.8222C226.105 40.8774 226.714 41.795 227.468 42.5749C228.221 43.3548 229.127 43.9665 230.17 44.41C231.221 44.8535 232.324 45.0676 233.497 45.0676C234.669 45.0676 235.773 44.8459 236.824 44.41C237.874 43.9665 238.772 43.3548 239.526 42.5749C240.28 41.795 240.889 40.8774 241.353 39.8222C241.818 38.767 242.046 37.6354 242.046 36.4119C242.046 35.1885 241.818 34.1257 241.353 33.0705C240.889 32.0153 240.28 31.0977 239.526 30.3178C238.772 29.5379 237.867 28.9262 236.824 28.4827C235.773 28.0392 234.669 27.8251 233.497 27.8251C232.324 27.8251 231.221 28.0468 230.17 28.4827C229.12 28.9262 228.221 29.5379 227.468 30.3178C226.714 31.0977 226.105 32.0076 225.641 33.0323C225.176 34.0569 224.948 35.1579 224.948 36.3355Z"/>
+                                </g>
                                 <defs>
+                                    <clipPath id="clip0_1631_6078">
+                                        <rect width="256" height="56.8889"/>
+                                    </clipPath>
                                 </defs>
-                                <rect class="cls-1" x="9.47" y="6.52" width="57.99" height="57.99" transform="translate(-7.88 11.17) rotate(-15)"/>
-                                <rect class="cls-1" x="75.95" y="13.03" width="108.73" height="57.99"/>
-                                <path class="cls-1" d="M75.95,149.23v42.4c0,6.65.85,10.94,5.45,13.24,5.04,2.51,12,2.38,12.3,3.03.4.82.13,7.02,0,7.44-.16.56-1.32.66-12.05.66s-15.33-1.24-34.7-1.24-23.96,1.24-34.69,1.24-11.89-.1-12.05-.66c-.13-.42-.4-6.62,0-7.44.3-.65,7.26-.52,12.3-3.03,4.6-2.3,5.45-6.59,5.45-13.24v-120.61h57.99v27.02h86.99v51.19h-86.99Z"/>
-                            </svg>
-                            <svg width="205" height="22" viewBox="0 0 205 22" class="fill-current" xmlns="http://www.w3.org/2000/svg" alt="Simplistic logo of the word Fontfacing; the leftmost letters are thick and wide and, as they move right, they get lighter and skinnier.">
-                                <path d="M8.13612 6.12219V8.84219H17.5441V14.3782H8.13612V21.4502H0.168123V0.618195H23.6561V6.12219H8.13612ZM35.5746 0.298195C37.5373 0.298195 39.3293 0.543528 40.9506 1.03419C42.572 1.52486 43.9693 2.23953 45.1426 3.17819C46.316 4.11686 47.2226 5.24753 47.8626 6.57019C48.5026 7.87153 48.8226 9.34353 48.8226 10.9862C48.8226 11.9249 48.7053 12.8102 48.4706 13.6422C48.2573 14.4529 47.948 15.2209 47.5426 15.9462C47.1373 16.6502 46.636 17.3009 46.0386 17.8982C45.4413 18.4955 44.78 19.0182 44.0546 19.4662C42.8813 20.2129 41.5693 20.7889 40.1186 21.1942C38.6893 21.5782 37.1533 21.7702 35.5106 21.7702C33.4413 21.7702 31.5853 21.5142 29.9426 21.0022C28.3213 20.4689 26.9453 19.7435 25.8146 18.8262C24.684 17.8875 23.82 16.7782 23.2226 15.4982C22.6466 14.1969 22.3586 12.7782 22.3586 11.2422C22.3586 10.6662 22.4013 10.1115 22.4866 9.57819C22.572 9.04486 22.6893 8.53286 22.8386 8.04219C23.0093 7.53019 23.212 7.03953 23.4466 6.57019C23.7026 6.10086 23.98 5.66353 24.2786 5.25819C24.5986 4.83153 24.9506 4.43686 25.3346 4.07419C25.7186 3.69019 26.124 3.32753 26.5506 2.98619C27.7026 2.11153 29.036 1.45019 30.5506 1.00219C32.0866 0.532861 33.7613 0.298195 35.5746 0.298195ZM35.4786 5.4502C34.5186 5.4502 33.644 5.56753 32.8546 5.80219C32.0653 6.03686 31.3826 6.37819 30.8066 6.82619C30.5933 6.97553 30.3906 7.14619 30.1986 7.33819C30.0066 7.53019 29.836 7.74353 29.6866 7.97819C29.5373 8.19153 29.3986 8.42619 29.2706 8.68219C29.1426 8.91686 29.036 9.16219 28.9506 9.41819C28.8866 9.67419 28.8333 9.95153 28.7906 10.2502C28.748 10.5275 28.7266 10.8155 28.7266 11.1142C28.7266 11.9889 28.8973 12.7782 29.2386 13.4822C29.58 14.1649 30.0493 14.7515 30.6466 15.2422C31.2653 15.7115 31.9906 16.0742 32.8226 16.3302C33.676 16.5649 34.5933 16.6822 35.5746 16.6822C36.044 16.6822 36.492 16.6609 36.9186 16.6182C37.3666 16.5542 37.7826 16.4582 38.1666 16.3302C38.572 16.2022 38.9346 16.0529 39.2546 15.8822C39.596 15.7115 39.916 15.5089 40.2146 15.2742C40.5773 15.0395 40.8866 14.7729 41.1426 14.4742C41.3986 14.1542 41.612 13.8235 41.7826 13.4822C41.9746 13.1195 42.1133 12.7355 42.1986 12.3302C42.3053 11.9035 42.3586 11.4769 42.3586 11.0502C42.3586 10.1542 42.2093 9.36486 41.9106 8.68219C41.612 7.97819 41.164 7.39153 40.5666 6.92219C39.9693 6.45286 39.244 6.09019 38.3906 5.83419C37.5373 5.57819 36.5666 5.4502 35.4786 5.4502ZM66.4164 13.8662V0.618195H71.6964L71.6644 21.4502H66.4164L56.1764 7.94619L56.1444 21.4502H50.8964L50.9284 0.618195H56.2084L66.4164 13.8662ZM84.9524 21.4502H80.6964V4.17019H74.1364V0.618195H91.5444V4.17019H84.9524V21.4502ZM99.2701 3.75419V9.57819H106.246V12.6502H99.2701V21.4502H95.6861V0.618195H109.19V3.75419H99.2701ZM116.354 21.4502H113.218L120.226 0.618195H123.522L130.498 21.4502H127.234L125.762 16.8422H117.794L116.354 21.4502ZM124.962 14.2502L121.762 4.58619L118.562 14.2502H124.962ZM147.601 5.51419C147.388 4.98086 147.153 4.5222 146.897 4.1382C146.662 3.75419 146.406 3.44486 146.129 3.21019C145.852 2.95419 145.542 2.77286 145.201 2.66619C144.881 2.53819 144.54 2.47419 144.177 2.47419C143.708 2.47419 143.27 2.55953 142.865 2.73019C142.481 2.90086 142.14 3.15686 141.841 3.49819C141.542 3.83953 141.276 4.26619 141.041 4.77819C140.806 5.26886 140.604 5.83419 140.433 6.47419C140.284 7.11419 140.166 7.81819 140.081 8.58619C140.017 9.35419 139.985 10.1862 139.985 11.0822C139.985 12.4689 140.081 13.6955 140.273 14.7622C140.465 15.8075 140.742 16.6929 141.105 17.4182C141.468 18.1222 141.916 18.6555 142.449 19.0182C143.004 19.3809 143.633 19.5622 144.337 19.5622C144.7 19.5622 145.041 19.4982 145.361 19.3702C145.702 19.2422 146.022 19.0502 146.321 18.7942C146.641 18.5169 146.929 18.1862 147.185 17.8022C147.462 17.3969 147.708 16.9489 147.921 16.4582C147.942 16.4795 147.996 16.5222 148.081 16.5862C148.188 16.6502 148.305 16.7249 148.433 16.8102C148.582 16.8742 148.732 16.9489 148.881 17.0342C149.03 17.1195 149.169 17.2049 149.297 17.2902C149.446 17.3542 149.564 17.4182 149.649 17.4822C149.734 17.5249 149.798 17.5569 149.841 17.5782C149.585 18.2182 149.276 18.8049 148.913 19.3382C148.572 19.8502 148.156 20.2875 147.665 20.6502C147.196 21.0129 146.673 21.2902 146.097 21.4822C145.521 21.6742 144.881 21.7702 144.177 21.7702C143.11 21.7702 142.161 21.5462 141.329 21.0982C140.497 20.6289 139.793 19.9462 139.217 19.0502C138.662 18.1329 138.236 17.0022 137.937 15.6582C137.66 14.3142 137.521 12.7782 137.521 11.0502C137.521 9.91953 137.585 8.87419 137.713 7.9142C137.841 6.93286 138.033 6.04753 138.289 5.25819C138.545 4.44753 138.865 3.74353 139.249 3.14619C139.633 2.52753 140.07 2.00486 140.561 1.57819C141.052 1.15153 141.596 0.831528 142.193 0.618195C142.812 0.404861 143.473 0.298195 144.177 0.298195C144.881 0.298195 145.5 0.404861 146.033 0.618195C146.588 0.810195 147.068 1.09819 147.473 1.48219C147.9 1.84486 148.273 2.27153 148.593 2.76219C148.913 3.23153 149.19 3.75419 149.425 4.33019C149.404 4.33019 149.34 4.36219 149.233 4.4262C149.148 4.49019 149.041 4.56486 148.913 4.65019C148.785 4.73553 148.646 4.83153 148.497 4.93819C148.369 5.02353 148.241 5.10886 148.113 5.19419C147.985 5.2582 147.868 5.3222 147.761 5.38619C147.676 5.45019 147.622 5.49286 147.601 5.51419ZM159.276 21.4502V0.618195H161.196V21.4502H159.276ZM181.455 17.9942L181.487 0.618195H182.799L182.767 21.4502H181.135L175.151 3.75419H175.055L175.023 21.4502H173.711L173.743 0.618195H175.503L181.327 17.9942H181.455ZM203.403 19.8182C203.275 20.1169 203.115 20.3942 202.923 20.6502C202.752 20.8849 202.55 21.0875 202.315 21.2582C202.08 21.4289 201.824 21.5569 201.547 21.6422C201.27 21.7275 200.96 21.7702 200.619 21.7702C199.915 21.7702 199.307 21.5782 198.795 21.1942C198.304 20.7889 197.899 20.1595 197.579 19.3062C197.259 18.4315 197.024 17.3222 196.875 15.9782C196.747 14.6129 196.683 12.9702 196.683 11.0502C196.683 9.85553 196.715 8.76753 196.779 7.78619C196.864 6.78353 196.982 5.88753 197.131 5.09819C197.28 4.28753 197.462 3.58353 197.675 2.98619C197.91 2.38886 198.176 1.89819 198.475 1.51419C198.795 1.10886 199.136 0.810195 199.499 0.618195C199.883 0.404861 200.31 0.298195 200.779 0.298195C201.27 0.298195 201.696 0.404861 202.059 0.618195C202.443 0.831528 202.774 1.11953 203.051 1.48219C203.35 1.84486 203.595 2.27153 203.787 2.76219C203.979 3.23153 204.15 3.74353 204.299 4.29819L203.563 4.65019C203.392 3.96753 203.2 3.40219 202.987 2.9542C202.774 2.48486 202.539 2.11153 202.283 1.83419C202.048 1.55686 201.792 1.35419 201.515 1.22619C201.259 1.09819 201.003 1.03419 200.747 1.03419C200.384 1.03419 200.043 1.13019 199.723 1.3222C199.424 1.5142 199.158 1.80219 198.923 2.18619C198.688 2.57019 198.475 3.03953 198.283 3.59419C198.112 4.14886 197.963 4.79953 197.835 5.5462C197.728 6.29286 197.643 7.12486 197.579 8.04219C197.515 8.93819 197.483 9.9302 197.483 11.0182C197.483 12.7035 197.536 14.1755 197.643 15.4342C197.75 16.6715 197.92 17.7062 198.155 18.5382C198.411 19.3702 198.742 19.9995 199.147 20.4262C199.552 20.8315 200.043 21.0342 200.619 21.0342C201.152 21.0342 201.6 20.8955 201.963 20.6182C202.326 20.3195 202.614 19.9142 202.827 19.4022C203.062 18.8902 203.222 18.2929 203.307 17.6102C203.414 16.9062 203.467 16.1489 203.467 15.3382V12.7462H201.067V11.9782H204.267V21.4502H203.531L203.403 19.8182Z"/>
                             </svg>
                         </div>
                     </div>
-                    <ImagePrimary 
-                        srcsetLarge="/Work/Fontfacing/0_Cover_Full.png"
-                        srcsetMedium="/Work/Fontfacing/0_Cover_Med.png"
-                        srcsetSmall="/Work/Fontfacing/0_Cover_Small.png"
-                        altText="A mockup of a desktop app meant for typeface design, showing a working canvas with one glyph, toolbars, live view of the entire typeface, and an analysis window showing the training model as it analyzes inputs in real time."
-                    />
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="rounded-md w-full" height="640px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLa9a3mCGaD9Lbfmxg5a0k0%2FTatt.ooo%3Fpage-id%3D562%253A1467%26node-id%3D562-1468%26viewport%3D225%252C189%252C0.15%26t%3DEuitzyi9jjUYrayT-1%26scaling%3Dscale-down%26content-scaling%3Dresponsive%26starting-point-node-id%3D562%253A1468" allowfullscreen></iframe>
+                    <div class="flex flex-col space-y-1">
+                        <VideoPlayerControlled 
+                            :autoplay=false 
+                            :loop=false 
+                            :muted=false 
+                            :controls=true
+                            roundedLvl="rounded-md" 
+                            alt="A 3-minute video showing a scenario of the Jenny persona finally getting a tattoo. She can handle all of her needs through the Tatt.ooo platform from messaging to scheduling and even proofing the artwork." 
+                            :videoSources="[
+                                { src: '/Work/Tattooo/x_TattoooScenario_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/Tattooo/x_TattoooScenario_Med.mp4', type: 'video/mp4' },
+                                { src: '/Work/Tattooo/x_TattoooScenario_Med.mp4', type: 'video/mp4' }
+                            ]">
+                        </VideoPlayerControlled>
+                        <p class="pl-8 italic font-main text-xs text-grayMiddle">Some designs continued to be worked on after this video was rendered so they may not be an exact match for some of the images you see elsewhere on the page.</p>
+                    </div>
                 </div>
             </template>
             <template #full>
@@ -277,15 +600,15 @@
                     title="Final Thoughts & Next Steps"
                 >
                     <template #caption>
-                        <p class="mb-4">As developed, the concept itself is structurally sound and I firmly believe that it could successfully empower designers. There would be a lot of difficulty surrounding the base training sets, since the platform would need extensive training on typefaces to understand the anatomy and character sets. Typefaces are intellectual property and their use for AI training could be contentious.</p>
-                        <p>Given the opportunity, I would love to continue exploring this concept. The opportunities to explore micro-interactions are endless. Some of the areas I’d like to continue iterating on are the Options Bar and the Stage Slider, since there isn’t a clear indication that they’re stages of the design process meant to be moved through towards an end goal. This is also, roughly, the bare minimum the application would require to be considered a serious design application. Professional typeface design has a plethora of functions which aren’t represented here that would need to be worked into the interface in some way. Not everything can be folded into a menu.</p>
+                        <p class="mb-4">Tatt.ooo wasn’t designed for people who go and get tattoos on a whim. It was designed around tattoo enthusiasts and hopefuls who need some time to think about it beforehand. (That’s not to say there’s anything wrong with people who just want to go to a shop and pick a cute flash tattoo, this app just wasn't designed around those needs.) On the other hand, although I tried to make this a thoughtful experience for customers, there isn’t a truly compelling reason for artists to use this service, as it creates more work for them than simply posting to their existing social media and/or other page(s). The features to help create accountability and improve communication for customers could also prove to be hurdles for artists who don’t want to be constrained in such ways or on stricter schedules.</p>
+                        <p>Although I return to this Figma prototype now and then to make design changes, to truly iterate on this concept I would need to do additional research with tattoo artists. There’s a level of balance and appeal that Tatt.ooo still needs to reach, otherwise its like ordering a pizza from a restaurant that doesn’t exist. It's a good lesson that just solving around one group's need doesn't always mean a service will succeed.</p>
                     </template>
                     <template #media>
                         <ImagePrimary
-                            srcset-small="/Work/Fontfacing/7_Mockup3_Small.png"
-                            srcset-medium="/Work/Fontfacing/7_Mockup3_Med.png"
-                            srcset-large="/Work/Fontfacing/7_Mockup3_Full.png"
-                            alt-text="A mockup of a MacBook with the Fontfacing app opened to fullscreen to start a new project, with buttons available to start a new file, Open a file, as well as alternate open options, plus a featured banner for a trending font."
+                            srcset-small="/Work/Tattooo/x_MockupThrees_Small.png"
+                            srcset-medium="/Work/Tattooo/x_MockupThrees_Med.png"
+                            srcset-large="/Work/Tattooo/x_MockupThrees_Full.png"
+                            alt-text="A mockup of 3 different screens in the Messaging process, while proofing artwork from an artist, side by side."
                         />
                     </template>
                 </ContentMediaWithCaption>
@@ -300,6 +623,7 @@
   
 <script>
     import projects from '~/Assets/projects.json';
+    import animationData from '~/Assets/animations/Tattooo_Short.json';
 
     export default {
         name: 'CaseStudyTattooo',
@@ -308,6 +632,7 @@
                 projects: require('~/Assets/projects.json'),
                 isConcise: true,
                 bgColor: "gradient-tattooo",
+                animationData
             };
         },
         head: {

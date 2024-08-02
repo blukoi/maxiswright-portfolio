@@ -71,7 +71,7 @@
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">The majority of the interface involves shades of gray, as with most major design apps. The introduction of any color would be a highlight. A bright blue and a middle purple are used to bring attention to the AI features, sometimes alone (active/history) and sometimes as a linear gradient (generate something).</p>
+                <p class="pl-0 md:pl-8 font-main text-sm">Designers are familiar with design interfaces and there are already a myriad of expectations when using a new design application. In this case, the majority of the interface involves shades of gray, as with most major design apps. The introduction of any color would be a highlight. A bright blue and a middle purple are used to bring attention to the AI features, sometimes alone (active/history) and sometimes as a linear gradient (generate something).</p>
             </template>
             <template #media>
                 <ImagePrimary
