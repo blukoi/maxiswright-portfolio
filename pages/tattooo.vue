@@ -500,6 +500,117 @@
                 <p>My initial idea was to come up with some combination of a name and logomark where one could speak specifically to tattoos and the other could speak to connection or communication. In the end, I abandoned a logomark because they were just too abstract and pursued a logotype.</p>
             </ContentBlurb>
 
+            <!-- Sketching Immediately -->
+            <ContentMediaWithCaption
+                title="Sketching Immediately"
+            >
+                <template #caption>
+                    <p>From the moment I decided to work on a tattoo-focused platform for searching and communication, I worked out a mind map and started sketching some vague shapes and ideas to get the ball rolling.</p>
+                </template>
+                <template #media>
+                    <div class="flex flex-row justify-center items-center space-x-4 rounded-sm md:rounded-md h-full">
+                        <ImagePrimary 
+                            srcsetLarge="/Work/Tattooo/3_VisualDesign/Sketching1_Full.png"
+                            srcsetMedium="/Work/Tattooo/3_VisualDesign/Sketching1_Med.png"
+                            srcsetSmall="/Work/Tattooo/3_VisualDesign/Sketching1_Small.png"
+                            altText="A notebook page with a rough mind map drawn on it. `Tattoo` is at the center with links arrayed outward to topics like Self-Expression, Art, Communication, Inspiration, Methods, and more, and more connections from each of those to further connections."
+                        />
+                        <ImagePrimary 
+                            srcsetLarge="/Work/Tattooo/3_VisualDesign/Sketching2_Full.png"
+                            srcsetMedium="/Work/Tattooo/3_VisualDesign/Sketching2_Med.png"
+                            srcsetSmall="/Work/Tattooo/3_VisualDesign/Sketching2_Small.png"
+                            altText="A notebook page of rough sketches of abstract shapes, motifs like a ribbon and interlocking shapes, iconographic shapes like a starburst, and more."
+                        />
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Brand Design Process -->
+            <ContentScroller
+                title="Brand Design Process"
+            >
+
+                <!-- Names -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/3_VisualDesign/Names.png',
+                        medium: '/Work/Tattooo/3_VisualDesign/Names.png',
+                        large: '/Work/Tattooo/3_VisualDesign/Names.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Names"
+                    alt-text="A typed out list of 40 names including some puns, translations from English, and meaningful solo words. 4 of the names are highlighted."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
+                >
+                    <template #caption>
+                        <p class="pb-4">In many ways, naming a project is the most difficult part. The right name can carry a mediocre project in the same way that a bad name can doom an amazing project. Highlighted are the 4 names that I shortlisted:</p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><span class="font-bold">Tatt.ooo</span> — a literal name that also works as a URL</li>
+                            <li><span class="font-bold">Ink Different</span> — pointing to a change in the tattoo process</li>
+                            <li><span class="font-bold">Cwtch</span> — a Welsh word for "an embrace which brings a feeling of warmth and safety"</li>
+                            <li><span class="font-bold">Conversate</span> — "this platform is for messaging"</li>
+                        </ul>
+                    </template>
+                </ScrollerImage>
+
+                <!-- Exploring Type -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/3_VisualDesign/Names2.svg',
+                        medium: '/Work/Tattooo/3_VisualDesign/Names2.svg',
+                        large: '/Work/Tattooo/3_VisualDesign/Names2.svg',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Exploring Type"
+                    alt-text="The 4 highlighted names are typed out in different fashions using a variety of fonts, styles, and playing with basic visual design and layout, like horizontal versus vertical."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
+                >
+                    <template #caption>
+                        <p>I plugged in different typefaces to explore the feeling of them. I went through dozens and some work really nicely. I didn’t want a caricature of tattooing, so I tried to stick to more humanistic, geometric, modern typefaces.</p>
+                    </template>
+                </ScrollerImage>
+
+                <!-- Abstraction -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/3_VisualDesign/Abstraction.png',
+                        medium: '/Work/Tattooo/3_VisualDesign/Abstraction.png',
+                        large: '/Work/Tattooo/3_VisualDesign/Abstraction.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Abstraction"
+                    alt-text="An array of different abstracted logo experiments, each one using some combination of geometric shapes and polygons, like 3 rings transposed on top of each other or a slice cut out from a circle."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
+                >
+                    <template #caption>
+                        <p class="mb-4">At the same time that I explored names I was also playing with shapes. I was trying to describe the feelings, the space, and the purposes that the platform was relating to: connection, completeness, safety, and more.</p>
+                        <p>After a few weeks I came to the conclusion that abstraction isn’t quite working for this project. None of these feel like a tattoo platform’s logo.</p>
+                    </template>
+                </ScrollerImage>
+
+                <!-- Trying a Different Tactic -->
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/Tattooo/3_VisualDesign/Names3.png',
+                        medium: '/Work/Tattooo/3_VisualDesign/Names3.png',
+                        large: '/Work/Tattooo/3_VisualDesign/Names3.png',
+                    }"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    title="Trying a Different Tactic"
+                    alt-text="A series of new explorations using the temporary working name of `Tatt.ooo` along with some geometric shape explorations, all which use variations on a circular theme, such as an incomplete ring with dots filling the space."
+                    imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
+                >
+                    <template #caption>
+                        <p class="mb-4">Abstracted shapes weren’t really working so I wanted to try something a little more literal. I took some time to explore the visual patterning that happens with tattoo machines since the way they work is that they don’t create lines but, rather, series of dots.</p>
+                        <p>This, again, isn’t quit right. At a certain level it looks great and really touches on the platform and purpose, but on another level, when you’re dealing with technology and digital experiences, these explorations look like loader animations.</p>
+                    </template>
+                </ScrollerImage>
+
+            </ContentScroller>
+
+            <!-- Final Logo & Visual Design -->
+             <CaseStudyTattoooVisualDesign />
+
         </ProcessPrimary>
 
         <!-- 4. Research & Prep -->
@@ -516,6 +627,12 @@
                 <p>After competitive research and a short series of interviews, I mapped the customer journey and ended up with this series of pain points and opportunities. I was able to create a persona and start mapping out the customer experience which, in turn, helped me to figure out tasks and user flows. I spent several weeks working on the branding and logo design, then set about figuring out the visual design attributes.</p>
             </ContentBlurb>
 
+            <CaseStudyTattoooBlockquote />
+
+            <CaseStudyTattoooResearch />
+
+            <CaseStudyTattoooVisualDesign />
+
         </ProcessPrimary>
 
         <!-- 5. Design System -->
@@ -531,6 +648,34 @@
             <ContentBlurb>
                 <p>Since I’d realized fairly early on that this would be a more complex platform than I’d first assumed, I approached the basic construction of Tatt.ooo’s design system from the viewpoint of having reusable components where small changes, like swapping out an icon, could make it easy to reuse or remix the pieces when adding a feature, function, or page.</p>
             </ContentBlurb>
+
+            <!-- Complex Cards -->
+            <ContentMediaWithCaption
+                title="Complex Cards"
+            >
+                <template #caption>
+                    <p class="mb-4">I was originally trying to carry the small card styles through to the complex card styles, with a hero image at the top of the card. However, I realized that my concept, at its core, would keep open the possibility of having posts without images. Therefore, I wanted the titles, text, and images to have similar levels of visual hierarchy.</p>
+                    <p>Since these two card styles can appear next to each other within the app, I wanted some visual consistency in their design language. This solution not only allows for that visual consistency, it also carries the styling from the previous complex button styles.</p>
+                </template>
+                <template #media>
+                    <div class="flex flex-col md:flex-row justify-center items-center bg-tattoooBlue rounded-sm md:rounded-md space-y-8 md:space-y-0 space-x-0 md:space-x-8 p-8 px-32">
+                        <ImageStylable 
+                            srcsetLarge="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
+                            srcsetMedium="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
+                            srcsetSmall="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
+                            altText="A mockup showing the visual design of `complex cards` which include a variety of different elements on them, such as a title, copy text, smaller buttons, images, and more. This complex card is a social style, which includes profile elements at the top, such as tattoo artist profile picture, name, and location at the top, with a hero image and description in the middle, then hashtag-style pills at the bottom." 
+                            imageStyles="" 
+                        />
+                        <ImageStylable 
+                            srcsetLarge="/Work/Tattooo/5_DesignSystem/5_Cards5.png"
+                            srcsetMedium="/Work/Tattooo/5_DesignSystem/5_Cards5.png"
+                            srcsetSmall="/Work/Tattooo/5_DesignSystem/5_Cards5.png"
+                            altText="A mockup showing the visual design of `complex cards` which include a variety of different elements on them, such as a title, copy text, smaller buttons, images, and more. This complex card is a post style, with a title at the top followed by a description, then thumbnail images, and at the bottom are hashtag-style pills." 
+                            imageStyles="" 
+                        />
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
 
         </ProcessPrimary>
 
