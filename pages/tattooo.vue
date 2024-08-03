@@ -173,7 +173,7 @@
             title="Foundational Research"
             iconPack="fas"
             iconName="magnifying-glass"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="1"
             :isConcise="isConcise"
         >
@@ -385,7 +385,7 @@
             title="Flows & Wireframing"
             iconPack="fas"
             iconName="diagram-project"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="2"
             :isConcise="isConcise"
         >
@@ -491,7 +491,7 @@
             title="Branding & Visual Design"
             iconPack="fas"
             iconName="swatchbook"
-            :visibilityMode="1"
+            :visibilityMode="3"
             headerRef="3"
             :isConcise="isConcise"
         >
@@ -619,7 +619,7 @@
             title="Research & Prep"
             iconPack="fas"
             iconName="arrows-to-circle"
-            :visibilityMode="1"
+            :visibilityMode="2"
             headerRef="4"
             :isConcise="isConcise"
         >
@@ -649,6 +649,225 @@
                 <p>Since I’d realized fairly early on that this would be a more complex platform than I’d first assumed, I approached the basic construction of Tatt.ooo’s design system from the viewpoint of having reusable components where small changes, like swapping out an icon, could make it easy to reuse or remix the pieces when adding a feature, function, or page.</p>
             </ContentBlurb>
 
+            <!-- Interface Elements -->
+            <ContentScroller
+                title="Interface Elements"
+            >
+
+                <!-- Title & Tab Bars -->
+                <ScrollerCustom
+                    imageParent="h-120 md:h-160 w-max p-8" 
+                    title="Title & Tab Bars"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-4 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_NavBar1.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_NavBar1.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_NavBar1.png"
+                                alt-text="A title bar, which would go at the top of the app, containing the logotype on the left and 2 buttons, one to Create a Post and one for Notifications, on the right." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_NavBar2.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_NavBar2.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_NavBar2.png"
+                                alt-text="A title bar, which would go at the top of the app, but the logo on the left has been replaced by a `Back` button and page title and on the right is now a `Close` button." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_NavBar3.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_NavBar3.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_NavBar3.png"
+                                alt-text="A title bar, which would go at the top of the app, with the same `Back` button but a username instead of page title, and the `Create a Post` and `Notification` buttons are back." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_NavBar4.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_NavBar4.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_NavBar4.png"
+                                alt-text="A title bar, which would go at the top of the app, that's similar to the previous, with a username at the top, but the right side now has a button to go to the current Project, and underneath the bar is a small, horizontal checklist with list items for Basics, Design, Schedule, and Complete, to track the current tattoo process." 
+                                imageStyles="w-64 md:w-80 mb-4"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_TabBar1.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_TabBar1.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_TabBar1.png"
+                                alt-text="A title bar, which would go at the top of the app, containing the logotype on the left and 2 buttons, one to Create a Post and one for Notifications, on the right." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_TabBar2.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_TabBar2.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_TabBar2.png"
+                                alt-text="A title bar, which would go at the top of the app, containing the logotype on the left and 2 buttons, one to Create a Post and one for Notifications, on the right." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>Taking cues from Apple’s iOS design guidelines, there is a separate navigation bar at the top of the screen with different states to help users navigate between hierarchical content, while a tab bar persists [most of the time] at the bottom of the screen for primary page navigation.</p>
+                        <p>I opted to lean more into the iOS design system because I wanted, as much as possible, to refrain from folding extra navigation options into a “more” or hamburger-type menu in the navigation.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Minor State Changes vs Page Movement -->
+                <ScrollerCustom
+                    imageParent="h-120 md:h-160 w-max p-8" 
+                    title="Minor State Changes vs Page Movement"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-8 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Search1.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Search1.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Search1.png"
+                                alt-text="A Search bar; contained inside, on the left, is a 'magnifying glass' icon and, on the right, is an icon of sliders to signify 'Filters'." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Search2.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Search2.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Search2.png"
+                                alt-text="A slider component with 2 options to choose between, Ideas and Available Art, with Ideas being currently selected. To the right of the sliders is a button for 'Filters' and another of a 'Magnifying Glass'." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Search3.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Search3.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Search3.png"
+                                alt-text="A Search bar; contained inside, on the left, is a 'magnifying glass' icon and, on the right, is an icon of sliders to signify 'Filters'. To the left of the Search bar is a 'Close' button." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>As much as possible, I tried to indicate with the visual design language a difference between elements which would lead to a minor state change (fully rounded elements) versus those which would lead to a separate page (rectangular elements). These search bars, for instance, are contextual and have multiple states. Interacting with these elements will open a keyboard, expand a dropdown, etc.</p>
+                        <p>The only exceptions to these rules are social profile pictures, multi-line text entry fields, and one particular “More” button.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Familiar Design -->
+                <ScrollerCustom
+                    imageParent="h-120 md:h-160 w-max p-8" 
+                    title="Familiar Design"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-8 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Message1.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Message1.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Message1.png"
+                                alt-text="A Messaging Bar, like would be in a texting or messaging app, with a text-entry field sandwiched between a 'Plus' button' and a 'Send' button." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Message2.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Message2.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Message2.png"
+                                alt-text="A Messaging Bar, like the previous one, but the 'Plus' button has changed to a 'Close' button and below the bar is a row of additional buttons, such as to add a link, image, etc." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Message3.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Message3.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Message3.png"
+                                alt-text="A Messaging Bar, like the previous ones but, above the bar is now an example, additional form labeled 'Budget Request' with 2 entry fields labeled 'Low end' and 'High end'." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>I struggled with the messaging elements for a while. Eventually, I realized that some digital interactions are so engrained that they’re very difficult to change. Tatt.ooo isn’t meant to define a new way of operating digital experiences, so I tried to design these elements to feel familiar and relate to existing task flows.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Basic, Expanded, & Complex Buttons -->
+                <ScrollerCustom
+                    imageParent="h-120 md:h-160 w-max p-8" 
+                    title="Basic, Expanded, & Complex Buttons"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-8 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Buttons1.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Buttons1.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Buttons1.png"
+                                alt-text="A pop-up modal with an example of basic buttons. Below the title of the modal are 2 different, simple buttons for 'Cancel' and 'I`m Sure', with one being the primary (filled in with color) and the other being secondary (only outlined)." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Buttons2.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Buttons2.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Buttons2.png"
+                                alt-text="An expanded style button in the form of a full-width button, label on the left, with an 'arrow' on the right to continue to the labeled page." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Buttons3.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Buttons3.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Buttons3.png"
+                                alt-text="An expanded style button in the form of a full-width button, label on the left, with an 'arrow' on the right to continue to the labeled page. This version has additional space to the left of the button for a smaller icon, in this case a 'Notification' icon." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Buttons4.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Buttons4.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Buttons4.png"
+                                alt-text="A complex-style button, primarily for profile/social purposes, with a profile picture on the left, name and additional information next to it, complete with a 'Message' button on the right." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Buttons5.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Buttons5.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Buttons5.png"
+                                alt-text="A complex-style button, primarily for profile/social purposes, with a profile picture on the left, name and additional information next to it, complete with a 'More' button on the right." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>Because there are multiple instances to highlight artists and studios, I wanted to create a kind of button style which can fulfill multiple roles depending on the context. Using the profile pictures as a basis, the complex button style has enough room for multiple text lines and a dedicated space for a contextual button. (This is the instance of a “More” button which doesn’t follow the previously mentioned minor state change logic.)</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Card Styles -->
+                <ScrollerCustom
+                    imageParent="h-120 md:h-160 w-max p-8" 
+                    title="Card Styles"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-8 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Cards1.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Cards1.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Cards1.png"
+                                alt-text="An example of a hero card style, with an image at the top and two buttons underneath, one primary and one secondary." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Cards2.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Cards2.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Cards2.png"
+                                alt-text="An example of a basic card style, with an image at the top and a Title/Label underneath." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/5_DesignSystem/5_Cards3.png"
+                                srcset-medium="/Work/Tattooo/5_DesignSystem/5_Cards3.png"
+                                srcset-large="/Work/Tattooo/5_DesignSystem/5_Cards3.png"
+                                alt-text="An example of a basic card style, with an image at the top and a checkbox and Label underneath." 
+                                imageStyles="w-64 md:w-80"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>Because tattoos (as visual art) necessitate imagery, working with cards is also a necessity.</p>
+                    </template>
+                </ScrollerCustom>
+
+            </ContentScroller>
+
             <!-- Complex Cards -->
             <ContentMediaWithCaption
                 title="Complex Cards"
@@ -658,20 +877,20 @@
                     <p>Since these two card styles can appear next to each other within the app, I wanted some visual consistency in their design language. This solution not only allows for that visual consistency, it also carries the styling from the previous complex button styles.</p>
                 </template>
                 <template #media>
-                    <div class="flex flex-col md:flex-row justify-center items-center bg-tattoooBlue rounded-sm md:rounded-md space-y-8 md:space-y-0 space-x-0 md:space-x-8 p-8 px-32">
+                    <div class="flex flex-col md:flex-row justify-center items-center bg-tattoooBlue rounded-sm md:rounded-md space-y-8 md:space-y-0 space-x-0 md:space-x-8 p-8 px-32 md:px-24 lg:px-32">
                         <ImageStylable 
                             srcsetLarge="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
                             srcsetMedium="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
                             srcsetSmall="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
                             altText="A mockup showing the visual design of `complex cards` which include a variety of different elements on them, such as a title, copy text, smaller buttons, images, and more. This complex card is a social style, which includes profile elements at the top, such as tattoo artist profile picture, name, and location at the top, with a hero image and description in the middle, then hashtag-style pills at the bottom." 
-                            imageStyles="" 
+                            imageStyles="filter drop-shadow-md" 
                         />
                         <ImageStylable 
                             srcsetLarge="/Work/Tattooo/5_DesignSystem/5_Cards5.png"
                             srcsetMedium="/Work/Tattooo/5_DesignSystem/5_Cards5.png"
                             srcsetSmall="/Work/Tattooo/5_DesignSystem/5_Cards5.png"
                             altText="A mockup showing the visual design of `complex cards` which include a variety of different elements on them, such as a title, copy text, smaller buttons, images, and more. This complex card is a post style, with a title at the top followed by a description, then thumbnail images, and at the bottom are hashtag-style pills." 
-                            imageStyles="" 
+                            imageStyles="filter drop-shadow-md" 
                         />
                     </div>
                 </template>
@@ -693,6 +912,208 @@
                 <p>Prototyping is really where I started to work out the kinks. Some pages and flows worked out without issue once I figured out the correct starting point. Other issues needed a little more finessing and iteration.</p>
                 <p>However, one of my beliefs is to test early and test often, so when I had one version ready to go, I tested the working prototype and ran it by some of my associates for their thoughts.</p>
             </ContentBlurb>
+
+            <!-- Iteration & High Fidelity -->
+            <ContentScroller
+                title="Iteration & High Fidelity"
+            >
+
+                <!-- Bringing Wireframes into High Fidelity -->
+                <ScrollerCustom
+                    imageParent="h-120 md:h-160 w-max p-8" 
+                    title="Bringing Wireframes into High Fidelity"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-16 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_HighDef1.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_HighDef1.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_HighDef1.png"
+                                alt-text="A series of low fidelity wireframes going page by page through a multi-page form. Everything is filler content, with gray rectangles instead of buttons, words in place of icons, and a black 'X' in place of each image." 
+                                imageStyles="w-80 md:w-120"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_HighDef2.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_HighDef2.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_HighDef2.png"
+                                alt-text="A series of high fidelity wireframes going page by page through a multi-page form. The grays have all been filled in with the white, blue, and gray color palette, icons have been put in place, and image spaces have been filled in." 
+                                imageStyles="w-80 md:w-120"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>As mentioned, some of my flows were worked out pretty well by the time I moved to prototyping in high fidelity. This is one of the tasks that moved into high fidelity fairly easily. The initial concept, a one-page form, was way off target. Iterating on that concept from the jump meant a more fleshed out flow and easier time moving into high fidelity.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Bad UI -->
+                <ScrollerImageThumbs 
+                    imageParent="h-120 md:h-160 w-max p-8 flex justify-center items-center"
+                >
+                    <template #media>
+                        <ImageStylable
+                            srcset-small="/Work/Tattooo/6_Prototyping/6_Fixing1.png"
+                            srcset-medium="/Work/Tattooo/6_Prototyping/6_Fixing1.png"
+                            srcset-large="/Work/Tattooo/6_Prototyping/6_Fixing1.png"
+                            alt-text="A page showing the beginning of the 'Artwork Feedback' Request process. In the messaging space, the screen has been grayed out and a pop-up modal is above everything. The title on the pop-up says 'Feedback', an image is below it, and there's a text entry field under that." 
+                            imageStyles="w-48 md:w-64 rounded-sm"
+                        />
+                    </template>
+                    <template #thumbs>
+                        <ThumbBad comment="Restricted Space" />
+                        <ThumbBad comment="Limited Visibility" />
+                        <ThumbBad comment="Interrupts Workflow" />
+                        <ThumbBad comment="Clunky Interaction" />
+                    </template>
+                    <template #caption>
+                        <p>This was the original concept to provide feedback on artwork from a tattoo artist: a modal comes up over the messaging interface.</p>
+                    </template>
+                </ScrollerImageThumbs>
+
+                <!-- Fixed UI -->
+                <ScrollerImageThumbs 
+                    imageParent="h-120 md:h-160 w-max p-8 flex justify-center items-center"
+                >
+                    <template #media>
+                        <ImageStylable
+                            srcset-small="/Work/Tattooo/6_Prototyping/6_Fixing2.png"
+                            srcset-medium="/Work/Tattooo/6_Prototyping/6_Fixing2.png"
+                            srcset-large="/Work/Tattooo/6_Prototyping/6_Fixing2.png"
+                            alt-text="A page showing the beginning of the 'Artwork Feedback' Request process. Instead of a pop-up modal, the keyboard and messages have disappeared and the title 'Feedback Request' is now at the top of the screen, under the username being messaged, and the image takes up most of the space on the page, with the text entry box  below it still." 
+                            imageStyles="w-48 md:w-64 rounded-sm"
+                        />
+                    </template>
+                    <template #thumbs>
+                        <ThumbGood comment="Enhanced Visibility" />
+                        <ThumbGood comment="Improved Workflow" />
+                        <ThumbGood comment="Streamlined" />
+                        <ThumbGood comment="More User Friendly" />
+                    </template>
+                    <template #caption>
+                        <p>The solution is to replace the messaging space by a new feedback space and hide the keyboard away until it’s needed.</p>
+                    </template>
+                </ScrollerImageThumbs>
+
+            </ContentScroller>
+
+            <!-- In Context -->
+            <ContentScroller
+                title="In Context"
+            >
+
+                <!-- Start & End Points -->
+                <ScrollerCustom
+                    imageParent="h-96 md:h-120 w-max p-8" 
+                    title="Start & End Points"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-4 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_Flows.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_Flows.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_Flows.png"
+                                alt-text="A series of screens showing a user flow starting from a pop-up notification." 
+                                imageStyles="w-120 md:w-160"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>I wouldn’t normally work on a prototype with a pop-up notification as a starting point for a task flow. However, in this case, I think its important for real-world context and processes to show how the app operates within a busy lifestyle and also to highlight how it function from the mobile app perspective.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Putting Everything in Context -->
+                <ScrollerCustom
+                    imageParent="h-96 md:h-120 w-max p-8" 
+                    title="Putting Everything in Context"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-4 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_SB_Text1.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_SB_Text1.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_SB_Text1.png"
+                                alt-text="A series of text boxes running through a text-based scenario depicting several situations of a customer using the app to communicate with a tattoo artist and get a tattoo." 
+                                imageStyles="w-120 md:w-160"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_SB_Text2.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_SB_Text2.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_SB_Text2.png"
+                                alt-text="A series of text boxes running through a text-based scenario depicting several situations of a customer using the app to communicate with a tattoo artist and get a tattoo." 
+                                imageStyles="w-120 md:w-160"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_SB_Text3.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_SB_Text3.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_SB_Text3.png"
+                                alt-text="A series of text boxes running through a text-based scenario depicting several situations of a customer using the app to communicate with a tattoo artist and get a tattoo." 
+                                imageStyles="w-120 md:w-160"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_SB_Text4.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_SB_Text4.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_SB_Text4.png"
+                                alt-text="A series of text boxes running through a text-based scenario depicting several situations of a customer using the app to communicate with a tattoo artist and get a tattoo." 
+                                imageStyles="w-120 md:w-160 pr-2 md:pr-3"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>Taking those task flows, journey maps, and the persona from earlier, I put them into the context of what a real user experience could look like. I broke every step and touchpoint down into steps to get a better picture of how the actual app should operate. Essentially it becomes a story to help understand the value of these tasks and how to accomplish them in Tatt.ooo.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Visualize -->
+                <ScrollerCustom
+                    imageParent="h-96 md:h-120 w-max p-8" 
+                    title="Visualize"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-2 md:space-y-4 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_SB_Visual1.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_SB_Visual1.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_SB_Visual1.png"
+                                alt-text="A series of roughly sketched storyboards running through a visual scenario depicting several situations of a customer using the app to communicate with a tattoo artist and get a tattoo." 
+                                imageStyles="w-96 md:w-128"
+                            />
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_SB_Visual2.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_SB_Visual2.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_SB_Visual2.png"
+                                alt-text="A series of roughly sketched storyboards running through a visual scenario depicting several situations of a customer using the app to communicate with a tattoo artist and get a tattoo." 
+                                imageStyles="w-96 md:w-128"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>I was working on a video to help explain the value of Tatt.ooo, so I took that story from earlier and turned it into a storyboard.</p>
+                    </template>
+                </ScrollerCustom>
+
+                <!-- Adding a Few Things -->
+                <ScrollerCustom
+                    imageParent="h-96 md:h-120 w-max p-8" 
+                    title="Adding a Few Things"
+                >
+                    <template #media>
+                        <div class="flex flex-col space-y-8 items-center justify-center">
+                            <ImageStylable
+                                srcset-small="/Work/Tattooo/6_Prototyping/6_ipad.png"
+                                srcset-medium="/Work/Tattooo/6_Prototyping/6_ipad.png"
+                                srcset-large="/Work/Tattooo/6_Prototyping/6_ipad.png"
+                                alt-text="A mockup of an iPad showing a photo-taking screen associated with the app. At the top of the screen is a title navigation bar with the logo and most of the screen is a camera view with indicators instructing the user to position themselves in a certain space in the camera view." 
+                                imageStyles="w-64 md:w-80 rounded-sm"
+                            />
+                        </div>
+                    </template>
+                    <template #caption>
+                        <p>From that storyboard I made, I realized there were a few things to add. (Actually, from that first story there was a lot to add, like the feedback and review system, but that’s for another time.) I added some screens to animate for use in the video I was working on.</p>
+                    </template>
+                </ScrollerCustom>
+
+            </ContentScroller>
 
         </ProcessPrimary>
 
