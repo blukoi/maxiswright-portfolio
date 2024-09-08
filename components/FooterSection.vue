@@ -22,6 +22,11 @@
                         <li>
                             <ButtonSecondary label="Contact" link="/contact" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
                         </li>
+                        <li>
+                            <a href="/WrightMax_Resume.pdf" class="px-2 py-1 rounded-sm bg-transparent hover:bg-white text-white hover:text-mint focus:text-white active:text-white hover:font-semibold" target="_blank" rel="noopener noreferrer">
+                                Resume
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
