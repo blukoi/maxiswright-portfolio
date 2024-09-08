@@ -34,7 +34,7 @@
                 <ButtonSmall label="Contact" link="/contact" />
             </li>
             <li class="hidden sm:block">
-                <ButtonSmallExternal label="Resume" link="/Wright_Max_Resume.pdf" />
+                <ButtonSmallExternal label="Resume" link="/WrightMax_Resume.pdf" />
             </li>
           </ul>
         </div>
