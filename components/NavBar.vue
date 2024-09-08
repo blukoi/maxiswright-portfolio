@@ -34,7 +34,9 @@
                 <ButtonSmall label="Contact" link="/contact" />
             </li>
             <li class="hidden sm:block">
-                <ButtonSmallExternal label="Resume" link="/WrightMax_Resume.pdf" />
+              <a href="/WrightMax_Resume.pdf" class="px-3 py-2 font-main bg-transparent hover:bg-black focus:bg-black active:bg-mint focus:border-white text-black hover:text-white focus:text-white active:text-white rounded-sm" target="_blank" rel="noopener noreferrer">
+                  Resume
+              </a>
             </li>
           </ul>
         </div>
