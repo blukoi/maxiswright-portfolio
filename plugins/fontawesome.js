@@ -61,6 +61,7 @@ import {
     faRightLong,
     faMinus,
     faArrowDownLong,
+    faTag,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -132,6 +133,7 @@ library.add(
     faRightLong,
     faMinus,
     faArrowDownLong,
+    faTag,
     faFontAwesome,
     faLinkedin,
     faInstagram,

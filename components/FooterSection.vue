@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full content-center z-10 bg-grayDarker relative">
+    <div class="w-full content-center z-10 bg-black relative">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1">
             <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8 md:gap-16 my-16 md:my-64">
                 <div class="col-span-1 col-start-1">
@@ -11,7 +11,7 @@
                             <ButtonSecondary label="Work" link="/work" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
                         </li>
                         <li>
-                            <ButtonSecondary label="Experiments" link="/experiments" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="Side Projects" link="/sideprojects" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
                         </li>
                         <li>
                             <ButtonSecondary label="About" link="/about" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>

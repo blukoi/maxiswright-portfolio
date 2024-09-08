@@ -9,10 +9,10 @@
                     <div class="col-span-1">
                         <CopyTitle>
                             <template #title>
-                                <span>Experiments —</span>
+                                <span>Side Projects —</span>
                             </template>
                             <template #content>
-                                These projects are primarily experimental in nature, and constitute new topic exploration or just playing with areas I like. For my more substantial projects with more research, prep, and dedication check out my 
+                                These projects are usually passion projects but some constitute new topic exploration (not really experimental as much as just trying to learn). For my more substantial projects with more research, prep, and dedication check out my 
                                 <nuxt-link to="/work" class="font-bold hover:text-mint hover:bg-white rounded-sm">Work</nuxt-link> page.
                             </template>
                         </CopyTitle>
@@ -42,7 +42,7 @@
 export default {
 name: 'ExperimentsPage',
 head: {
-    title: 'Max is Wright - Experiments',
+    title: 'Max is Wright - Side Projects',
     meta: [
     {
         hid: 'description',

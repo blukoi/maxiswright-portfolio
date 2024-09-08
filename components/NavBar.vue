@@ -25,13 +25,16 @@
                 <ButtonSmall label="Work" link="/work" />
             </li>
             <li class="hidden sm:block">
-                <ButtonSmall label="Experiments" link="/experiments" />
+                <ButtonSmall label="Side Projects" link="/sideprojects" />
             </li>
             <li class="hidden sm:block">
                 <ButtonSmall label="About" link="/about" />
             </li>
             <li>
                 <ButtonSmall label="Contact" link="/contact" />
+            </li>
+            <li class="hidden sm:block">
+                <ButtonSmallExternal label="Resume" link="/Wright_Max_Resume.pdf" />
             </li>
           </ul>
         </div>

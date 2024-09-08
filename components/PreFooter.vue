@@ -26,13 +26,13 @@
                         </div>
                     </nuxt-link>
                     
-                    <nuxt-link v-if="linksVisibility[2]" to="/experiments" class="col-span-1 button-link block overflow-hidden relative rounded-md hover:border-mint hover:border-2">
+                    <nuxt-link v-if="linksVisibility[2]" to="/sideprojects" class="col-span-1 button-link block overflow-hidden relative rounded-md hover:border-mint hover:border-2">
                         <div class="relative w-full h-20">
                             <img src="/Generic/gradient2.png" alt="Background" class="background-image">
                             <img src="/Generic/gradient2.png" alt="Foreground" class="foreground-image">
                         </div>
                         <div class="title-container absolute w-full h-full left-8 top-0 flex items-center">
-                            <h1 class="text-white">Experiments</h1>
+                            <h1 class="text-white">Side Projects</h1>
                         </div>
                     </nuxt-link>
                     

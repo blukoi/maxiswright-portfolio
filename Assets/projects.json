@@ -9,7 +9,16 @@
         "buttonLink": "/applecar",
         "highlight": true,
         "completed": true,
-        "type": "Work"
+        "type": "Work",
+        "researchtags":{
+
+        },
+        "designtags":{
+
+        },
+        "impacttags":{
+            
+        }
     },
     {
         "id": "2",
@@ -21,7 +30,16 @@
         "buttonLink": "/carcontrols",
         "highlight": false,
         "completed": true,
-        "type": "Experiment"
+        "type": "Experiment",
+        "researchtags":{
+
+        },
+        "designtags":{
+
+        },
+        "impacttags":{
+            
+        }
     },
     {
         "id": "3",
@@ -33,7 +51,16 @@
         "buttonLink": "/fontfacing",
         "highlight": true,
         "completed": true,
-        "type": "Work"
+        "type": "Work",
+        "researchtags":{
+
+        },
+        "designtags":{
+
+        },
+        "impacttags":{
+            
+        }
     },
     {
         "id": "4",
@@ -45,7 +72,37 @@
         "buttonLink": "/tattooo",
         "highlight": true,
         "completed": true,
-        "type": "Work"
+        "type": "Work",
+        "researchtags":{
+
+        },
+        "designtags":{
+
+        },
+        "impacttags":{
+            
+        }
+    },
+    {
+        "id": "5",
+        "image": "/Experiments/Hyperbole/",
+        "title": "Beer Labels Based on Movies",
+        "caption": "Applying UX research principals to product packaging to start a personal project for graphic design based on the movies I'm watching",
+        "category": "Packaging Design",
+        "categoryIcon": "fas fa-tag",
+        "buttonLink": "/hyperbole",
+        "highlight": true,
+        "completed": false,
+        "type": "Experiment",
+        "researchtags":{
+
+        },
+        "designtags":{
+
+        },
+        "impacttags":{
+            
+        }
     }
 ]
   
