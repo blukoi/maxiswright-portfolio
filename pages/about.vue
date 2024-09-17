@@ -111,7 +111,7 @@
                         <div class="w-full">
                             <h1 class="font-title text-xl text-grayDarker">Design Research</h1>
                         </div>
-                        <div class="pl-4">
+                        <div class="pl-4 pt-4">
                             <ul class="list-none flex flex-row flex-wrap gap-1">
                                 <PillsPrimary :tags="designResearch"></PillsPrimary>
                             </ul>
@@ -126,7 +126,7 @@
                         <div class="w-full">
                             <h1 class="font-title text-xl text-grayDarker">Visual Design</h1>
                         </div>
-                        <div class="pl-4">
+                        <div class="pl-4 pt-4">
                             <PillsPrimary :tags="visualDesign"></PillsPrimary>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                         <div class="w-full">
                             <h1 class="font-title text-xl text-grayDarker">High Fidelity Prototyping</h1>
                         </div>
-                        <div class="pl-4">
+                        <div class="pl-4 pt-4">
                             <PillsPrimary :tags="highFidelityPrototyping"></PillsPrimary>
                         </div>
                     </div>

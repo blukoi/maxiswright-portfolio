@@ -64,7 +64,7 @@ export default {
   background-color: #505050;
   -webkit-transition: .4s;
   transition: .4s;
-  border-radius: 24px;
+  border-radius: 6px;
 }
 
 .slider:before {
@@ -77,7 +77,7 @@ export default {
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
 input:checked + .slider {
@@ -85,7 +85,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #00AB8F;
+  box-shadow: 0 0 1px #FFF;
 }
 
 input:checked + .slider:before {
