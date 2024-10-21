@@ -28,8 +28,8 @@
               </div>
               <div class="pl-8 mt-6 space-y-6">
                 <div class="space-y-6">
-                  <p class="font-medium font-main text-2xl text-gray-Darker">I craft thoughtful digital UX, design scalable UI, and I'm eager to take on complex challenges.</p>
-                  <p class="font-normal font-main text-base text-gray-Darker">As a versatile product designer, I use my flair for visual design and product + systems thinking to achieve business goals while driving tangible change.</p>
+                  <p class="font-medium font-main text-2xl text-gray-Darker">I craft thoughtful user experiences, scale interfaces, and am eager to take on complex challenges.</p>
+                  <p class="font-normal font-main text-base text-gray-Darker">As a versatile product designer, I use my flair for visual communication and product + systems thinking to achieve business goals while driving tangible change.</p>
                 </div>
                 <div class="flex flex-col space-y-6">
                   <WorkAvailability />

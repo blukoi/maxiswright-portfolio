@@ -1,24 +1,27 @@
 [
     {
         "id": "1",
-        "image": "/Work/EV/0_Cockpit_Med.png",
-        "title": "UX Design for the Apple Car",
-        "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
-        "category": "Automotive UX",
-        "categoryIcon": "fas fa-car-side",
-        "buttonLink": "/applecar",
+        "image": "/Work/Tattooo/0_Cover_Med.png",
+        "title": "A More Comfortable Approach to Tattooing",
+        "caption": "Designing a quasi-social platform for tattoo artists and enthusiasts, especially first-timers, with a tailored visual design language and information architecture",
+        "category": "Mobile App",
+        "categoryIcon": "fas fa-mobile-screen",
+        "buttonLink": "/tattooo",
         "highlight": true,
         "completed": true,
         "type": "Work",
-        "researchtags":{
+        "researchtags":[
+            "User Interviews",
+            "Journey Maps"
+        ],
+        "designtags":[
+            "Wireframing",
+            "Design System",
+            "Figma Prototype"
+        ],
+        "impacttags":[
 
-        },
-        "designtags":{
-
-        },
-        "impacttags":{
-            
-        }
+        ]
     },
     {
         "id": "2",
@@ -31,15 +34,16 @@
         "highlight": false,
         "completed": true,
         "type": "Experiment",
-        "researchtags":{
+        "researchtags":[
 
-        },
-        "designtags":{
+        ],
+        "designtags":[
+            "ProCreate",
+            "Figma Prototype"
+        ],
+        "impacttags":[
 
-        },
-        "impacttags":{
-            
-        }
+        ]
     },
     {
         "id": "3",
@@ -52,36 +56,41 @@
         "highlight": true,
         "completed": true,
         "type": "Work",
-        "researchtags":{
+        "researchtags":[
+            "Primary Research",
+            "Heuristic Analysis"
+        ],
+        "designtags":[
+            "Wireframing",
+            "Figma Prototype"
+        ],
+        "impacttags":[
 
-        },
-        "designtags":{
-
-        },
-        "impacttags":{
-            
-        }
+        ]
     },
     {
         "id": "4",
-        "image": "/Work/Tattooo/0_Cover_Med.png",
-        "title": "A More Comfortable Approach to Tattooing",
-        "caption": "Designing a quasi-social platform for tattoo artists and enthusiasts, especially first-timers, with a tailored visual design language and information architecture",
-        "category": "Mobile App",
-        "categoryIcon": "fas fa-mobile-screen",
-        "buttonLink": "/tattooo",
+        "image": "/Work/EV/0_Cockpit_Med.png",
+        "title": "UX Design for the Apple Car",
+        "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
+        "category": "Automotive UX",
+        "categoryIcon": "fas fa-car-side",
+        "buttonLink": "/applecar",
         "highlight": true,
         "completed": true,
         "type": "Work",
-        "researchtags":{
+        "researchtags":[
+            "Product Analysis",
+            "Brand Research"
+        ],
+        "designtags":[
+            "Brand Strategy",
+            "Storyboards",
+            "Figma Prototype"
+        ],
+        "impacttags":[
 
-        },
-        "designtags":{
-
-        },
-        "impacttags":{
-            
-        }
+        ]
     },
     {
         "id": "5",
@@ -94,15 +103,15 @@
         "highlight": true,
         "completed": false,
         "type": "Experiment",
-        "researchtags":{
+        "researchtags":[
 
-        },
-        "designtags":{
+        ],
+        "designtags":[
 
-        },
-        "impacttags":{
-            
-        }
+        ],
+        "impacttags":[
+
+        ]
     }
 ]
   

@@ -1,41 +1,74 @@
 <template>
-    <div>
+    <div class="bg-white">
       <CustomCursor />
       <NavBar />
 
-      <div class="fixed w-screen sm:w-full h-51vh z-0 flex justify-center items-center">
+      <!-- <div class="fixed w-screen sm:w-full h-100vh z-0 flex justify-center items-center text-center font-main italic font-bold px-4 sm:px-0">
+        <span id="GoodUX">
+            <span id="AboutQuote">Good UX is like CG in movies: <br>when applied well, <br>no one will notice it.</span>
+        </span>
         <img src="/Brand/About_Background.jpg" alt="Max having a discussion with his team about a visual storyboard." class="flex-1 w-full h-full object-cover overflow-hidden">
+      </div> -->
+        <svg id="Blur" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="width:100vw; height:100vh;" class="fixed">
+            <defs>
+                <pattern id="backgroundImage" patternUnits="userSpaceOnUse" width="800" height="600">
+                    <image href="/Brand/About_Background.jpg" width="800" height="600"/>
+                </pattern>
+                <mask id="textMask">
+                    <text text-anchor="middle" x="400" y="300" font-size="40" class="font-main" font-weight="bold" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" fill="#FFFFFF">
+                        <tspan x="400" dy="-0.6em">Good UX is like CG in movies:</tspan>
+                        <tspan x="400" dy="1.2em">when applied well,</tspan>
+                        <tspan x="400" dy="1.2em">no one will notice it.</tspan>
+                    </text>
+                </mask>
+            </defs>
+            <rect width="800" height="600" fill="url(#backgroundImage)" mask="url(#textMask)" filter="url(#blurFilter)"/>
+            <text text-anchor="middle" x="400" y="300" font-size="40" class="font-main" font-weight="bold" fill="#000000" fill-opacity="0">
+                <tspan x="400" dy="-0.6em">Good UX is like CG in movies:</tspan>
+                <tspan x="400" dy="1.2em">when applied well,</tspan>
+                <tspan x="400" dy="1.2em">no one will notice it.</tspan>
+            </text>
+        </svg>
+        <div class="fixed bg-transparent bottom-16 h-12 w-screen flex justify-center">
+            <div id="mouseScroll"></div>
+        </div>
+      <div class="w-full h-100vh bg-transparent inline-block mb-12">
       </div>
-      <div class="w-full h-50vh bg-transparent inline-block"></div>
       <div class="w-full content-center z-10 bg-grayLighter relative">
-        <div class="container px-4 sm:px-0 mx-auto pt-16 pb-32 md:pb-64 relative">
+        <div class="container px-4 sm:px-0 mx-auto pt-16 pb-32 relative">
 
-            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-y-32 md:gap-y-0 gap-x-16">
-                <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 pointer-events-none -mt-48 lg:-mt-40">
-                    <div class="col-span-1">
-                    <div class="w-max lg:w-full bg-white text-mint h-64 lg:h-48 items-start lg:items-center rounded-md flex flex-col-reverse lg:flex-row justify-end lg:justify-between overflow-hidden">
-                        <div class="h-full flex items-center">
-                            <h1 class="ml-8 font-title text-2xl justify-self-center lg:justify-self-start self-center">
-                            About Me —
-                            </h1>
+            <div class="static w-full grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-y-32 lg:gap-y-0 gap-x-0 lg:gap-x-16">
+                <div class="z-40 static container col-span-1 sm:col-span-2 lg:col-span-1 col-start-1 sm:col-start-2 lg:col-start-1 lg:grid lg:grid-cols-3 pointer-events-none gap-x-0 lg:gap-x-16 -mt-24 overflow-visible h-48">
+                    <div class="lg:col-span-3 lg:col-start-1 pl-8">
+                        <div 
+                        class="bg-white text-mint rounded-md 
+                        w-full 
+                        h-16 
+                        items-center 
+                        flex flex-row-reverse 
+                        justify-end">
+                            <div class="h-full flex items-center">
+                                <h1 class="ml-2 font-title text-2xl justify-self-start self-center">
+                                About Me —
+                                </h1>
+                            </div>
+                            <div class="w-28 h-28 -ml-8 flex justify-center rounded-full overflow-hidden border-white border-4">
+                                <img src="/Brand/WrightMax_Portrait.png" alt="Portrait of Max. Look at that forehead!" class="h-28 object-cover overflow-hidden">
+                            </div>
                         </div>
-                        <div class="lg:w-32 lg:h-48 flex justify-center">
-                            <img src="/Brand/WrightMax_Portrait.png" alt="Portrait of Max. Look at that forehead!" class="h-48 object-cover overflow-hidden">
+                        <div class="mt-12 space-y-6">
+                            <div>
+                                <p class="font-normal font-main text-sm text-grayDarker">I’m an LA-based designer using my expertise in visual communication and graphic design to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
+                            </div>
+                            <div class="flex flex-col space-y-6">
+                                <WorkAvailability />
+                                <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="pl-8 mt-6 space-y-6">
-                        <div>
-                        <p class="font-normal font-main text-sm text-grayDarker">I’m an LA-based designer using my expertise in visual communication and graphic design to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
-                        </div>
-                        <div class="flex flex-col space-y-6">
-                            <WorkAvailability />
-                            <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max" />
-                        </div>
-                    </div>
                     </div>
                 </div>
         
-                <div class="col-span-1 col-start-1 md:col-start-2 md:col-span-2 lg:col-span-1 lg:col-start-2 md:-mt-72 lg:-mt-72">
+                <!-- <div class="col-span-1 col-start-1 sm:col-span-4 lg:col-span-2 lg:col-start-2">
                     <div class="w-full flex flex-col bg-mint rounded-md md:rounded-bl-none md:rounded-r-xl md:rounded-tl-xl px-8 py-4">
                         <div class="w-full grid justify-items-start text-white opacity-50">
                             <div class="h-10 w-10 flex flex-row justify-center items-center">
@@ -51,15 +84,16 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
     
-                <div class="col-span-1 col-start-1 md:col-start-2 md:col-span-2 lg:col-span-1 lg:col-start-3 lg:-mt-40 font-main">
+                <div class="col-span-1 col-start-1 sm:col-span-2 lg:col-span-2 lg:col-start-2 font-main">
                     <div class="w-full bg-white text-grayDarker rounded-md p-4 text-sm space-y-4">
-                        <h1 class="font-title text-xl">Digging a little deeper</h1>
+                        <h1 class="font-title text-xl">What drives me</h1>
                         <div class="p-4 bg-grayLightPrimary font-grayMiddle rounded-sm space-y-4">
                             <div :class="{'space-y-4 expandable-content': true, 'space-y-4 is-expanded': isExpanded}">
-                                <p>While I was completing my Associate of Science in Graphic Design I took a UX class. Taking that UX class changed everything. It gave me an avenue to do all of the things I was good at: ask questions, explore a new topic or problem, synthesize and analyze data, create a visual design system, and apply that design to create a well-informed and thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
-                                <p>After completing my AS in Graphic Design in my free time, I decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
+                                <p>After dropping out of my first college I ended up working retail for many years. I worked my way up to a management position and worked as a buyer, pushing store sales to ~10% increases year over year. For a while, I hadn't known what to do with myself but having a supportive management team which saw fit to trust, train, and promote me instilled a particular confidence that I was capable of doing more.</p>
+                                <p>I had decided to go back to school and try my hand at an Associate of Science degree in Graphic Design, whereupon I took a UX class. Taking that UX class changed everything. It gave me an avenue to do all of the things I was good at: ask questions, explore new topics and areas, synthesize and analyze data, create a visual design system, and apply that design to create a well-informed and thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
+                                <p>After completing my AS in Graphic Design on my days off, I decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
                                 <ul class="list-disc pl-4">
                                     <li>In 2010 I was a college dropout with a 1.5 GPA</li>
                                     <li>In 2023 I completed a 4-year degree in 2 years with a 3.9 GPA</li>
@@ -86,7 +120,7 @@
                                 </button>
                             </div>
                         </div>
-                        <p class="ml-4">What I’ve learned and strive to embody in my work is that with thoughtful research, empathetically balancing user needs, and regular testing of new iterations we can create products that enhance the way we live and interact. We don’t have to rely on dark patterns that can alienate people who feel like they’re being preyed upon, or create experiences that are visually appealing but fail to help people understand the information.</p>
+                        <p class="ml-4"><span class="font-bold">I resolved to always try my best to contribute to meaningful work.</span> What I’ve learned and strive to embody in my work is that with thoughtful research, empathetically balancing user needs, and regular testing of new iterations we can create products that enhance the way we live and interact. We don’t have to rely on dark patterns that can alienate people who feel like they’re being preyed upon, or create experiences that are visually appealing but fail to help people understand the information.</p>
                     </div>
                 </div>
             </div>
@@ -208,7 +242,7 @@
         </div>
       </div>
       <div class="w-full content-center z-20 bg-grayLightPrimary relative">
-        <div class="container px-4 sm:px-0 mx-auto py-32 bg-transparent">
+        <div class="container px-4 sm:px-0 mx-auto py-32 bg-transparent space-y-16 md:space-y-32">
 
             <div class="w-full grid gap-16 md:gap-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div class="col-span-1">
@@ -255,6 +289,18 @@
                             <PillsPrimary :tags="freeTime"></PillsPrimary>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="w-full grid gap-16 md:gap-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="col-span-1 flex justify-center">
+                    <img src="/Brand/About_Charlie.jpg" alt="Charlie is a short-haired, mostly dark gray cat, with a little white moustache." class="flex-initial w-full h-full object-cover rounded-full overflow-hidden">
+                </div>
+                <div class="col-span-1 flex justify-center">
+                    <img src="/Brand/About_Burger.jpg" alt="A fig-and-bacon cheeseburger with arugula and a side of fries from Firestone Walker." class="flex-initial w-full h-full object-cover rounded-full overflow-hidden">
+                </div>
+                <div class="col-span-1 flex justify-center">
+                    <img src="/Brand/About_Zeus.jpg" alt="Zeus is a long-haired, fluffy white cat with a large gray splotch on his back that comes over the top of his head like a mask." class="flex-initial w-full h-full object-cover rounded-full overflow-hidden">
                 </div>
             </div>
 
@@ -317,6 +363,13 @@
             return Object.values(this.isExpanded2).some(status => status);
         }
     },
+    mounted() {
+        this.updateSVGProperties(); // Initial update in case the page is not starting at the top
+        window.addEventListener('scroll', this.updateSVGProperties);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.updateSVGProperties);
+    },
     methods: {
         toggleOne() {
             this.isExpanded = !this.isExpanded
@@ -329,12 +382,26 @@
                 'code': newState,
                 'misc': newState
         };
+        },
+        updateSVGProperties() {
+        const strokeMax = 550;  // Maximum stroke width
+        const scrollRange = 2000;  // Range of scroll in pixels to reach full effect
+
+        const scrollAmount = Math.min(window.scrollY, scrollRange); // Current scroll, capped at range
+        const strokeAmount = (scrollAmount / scrollRange) * strokeMax;
+
+        const textMask = document.querySelector('#textMask text');
+
+        if (textMask) {
+            textMask.setAttribute('stroke-width', strokeAmount);
+        }
         }
     },
   }
   </script>
   
-  <style>
+    <style>
+
     /* Target the div that has conditional classes for expand/collapse */
     .expandable-content {
         max-height: 1rem; /* Initial max-height for collapsed state */
@@ -346,4 +413,58 @@
     .is-expanded {
         max-height: 50rem; /* Adjust based on the maximum content size you expect */
     }
-  </style>
+
+    #GoodUX {
+        color: transparent;
+        background-image: url("/Brand/About_Background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100vw auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 2rem;
+    }
+
+    #AboutQuote {
+        transform-origin: center;
+        transform: scale(2.0, 1.0);
+    }
+
+    #mouseScroll, #mouseScroll:before {
+        position: absolute;
+        left: 50%;
+    }
+
+    #mouseScroll {
+        width: 24px;
+        height: 36px;
+        margin-left: -12px;
+        top: 75%;
+        margin-top: -16px;
+        box-shadow: inset 0 0 0 .5px #000000;
+        border-radius: 8px 8px 12px 12px;
+    }
+
+    #mouseScroll:before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: #000000;
+        margin-left: -2px;
+        top: 12px;
+        border-radius: 2px;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-name: mouseScrollAnim;
+    }
+
+    @keyframes mouseScrollAnim {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-12px);
+        }
+    }
+    </style>

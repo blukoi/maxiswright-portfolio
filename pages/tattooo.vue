@@ -1213,7 +1213,7 @@
         },
         computed: {
             project() {
-                const id = '4'
+                const id = '1'
                 // Find the project that matches the ID
                 return projects.find(p => p.id === id) || {};
             }

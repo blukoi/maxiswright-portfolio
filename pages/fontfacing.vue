@@ -647,6 +647,74 @@
             </ContentMediaWithCaption>
         </ProcessPrimary>
 
+        <!-- 6. Validation -->
+        <ProcessPrimary
+            :bgColor="bgColor"
+            title="Project Validation"
+            iconPack="fas"
+            iconName="square-check"
+            :visibilityMode="1"
+            headerRef="7"
+            :isConcise="isConcise"
+        >
+            <ContentBlurb>
+                <p>After working on this project and developing the AI-related features, some interesting updates came to ChatGPT which helped to validate that, at least in part, I had correctly pursued aspects of providing feedback to the use of AI features.</p>
+            </ContentBlurb>
+
+            <ContentMediaWithCaption
+                title="ChatGPT-4"
+            >
+                <template #caption>
+                    <p>This is how ChatGPT worked at the time I conceived of FontFacing. You enter a prompt then see a small dot, amounting to a "Loading" animation, then get your generated response.</p>
+                </template>
+                <template #media>
+                    <VideoPlayer
+                    :videoSources="[
+                        { src: '/Work/Fontfacing/x_Validation/ChatGPT_4_Legacy_640.mp4', type: 'video/mp4' },
+                        { src: '/Work/Fontfacing/x_Validation/ChatGPT_4_Legacy_480.mp4', type: 'video/mp4' },
+                        { src: '/Work/Fontfacing/x_Validation/ChatGPT_4_Legacy_320.mp4', type: 'video/mp4' }
+                        ]">
+                    </VideoPlayer>
+                </template>
+            </ContentMediaWithCaption>
+
+            <!-- Modal -->
+            <ContentMediaWithCaption
+                title="Insights for FontFacing"
+            >
+                <template #caption>
+                    <p>This is a concept I'd come up with for FontFacing, specifically as a solution to a particular insight revolving around a startling lack of feedback and transparency in existing AI tools which often make AI seem like magical interactions. They also make it difficult to refine or iterate your prompts/interactions because there's no way to see how the previous interaction was analyzed.</p>
+                </template>
+                <template #media>
+                    <div class="bg-fontfacingBlue rounded-sm md:rounded-md p-4 px-8 sm:px-16 md:px-48 lg:px-48 xl:px-64 2xl:px-80">
+                        <ImagePrimary 
+                            srcsetLarge="/Work/Fontfacing/0_AnalysisWindow.png"
+                            srcsetMedium="/Work/Fontfacing/0_AnalysisWindow.png"
+                            srcsetSmall="/Work/Fontfacing/0_AnalysisWindow.png"
+                            altText="One detail of the app interface which shows a window within the sidebar, Analysis, with some realtime AI analysis."
+                        />
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <ContentMediaWithCaption
+                title="ChatGPT-o1 Preview"
+            >
+                <template #caption>
+                    <p>As if to validate some of my conceptual work, late in 2024 OpenAI released a preview of their newest model, ChatGPT-o1. After entering a prompt, there's a flash of feedback which relates to parts of the prompt as if to say, "This is what you asked for, let me think about it."</p>
+                </template>
+                <template #media>
+                    <VideoPlayer
+                    :videoSources="[
+                        { src: '/Work/Fontfacing/x_Validation/ChatGPT_o1_Preview_640.mp4', type: 'video/mp4' },
+                        { src: '/Work/Fontfacing/x_Validation/ChatGPT_o1_Preview_480.mp4', type: 'video/mp4' },
+                        { src: '/Work/Fontfacing/x_Validation/ChatGPT_o1_Preview_320.mp4', type: 'video/mp4' }
+                        ]">
+                    </VideoPlayer>
+                </template>
+            </ContentMediaWithCaption>
+        </ProcessPrimary>
+
         <!-- OUTRO BEGINNING -->
         <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
