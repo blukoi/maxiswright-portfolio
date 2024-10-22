@@ -41,7 +41,7 @@
                 <div class="z-40 static container col-span-1 sm:col-span-2 lg:col-span-1 col-start-1 sm:col-start-2 lg:col-start-1 lg:grid lg:grid-cols-3 pointer-events-none gap-x-0 lg:gap-x-16 -mt-24 overflow-visible h-48">
                     <div class="lg:col-span-3 lg:col-start-1 pl-8">
                         <div 
-                        class="bg-white text-mint rounded-md 
+                        class="bg-white text-mint rounded-full 
                         w-full 
                         h-16 
                         items-center 
