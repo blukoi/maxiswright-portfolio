@@ -120,7 +120,7 @@
                                 </button>
                             </div>
                         </div>
-                        <p class="ml-4"><span class="font-bold">I resolved to always try my best to contribute to meaningful work.</span> What I’ve learned and strive to embody in my work is that with thoughtful research, empathetically balancing user needs, and regular testing of new iterations we can create products that enhance the way we live and interact. We don’t have to rely on dark patterns that can alienate people who feel like they’re being preyed upon, or create experiences that are visually appealing but fail to help people understand the information.</p>
+                        <p class="ml-4"><span class="font-bold">I've resolved to always try my best to contribute to meaningful work</span> and what I’ve learned and strive to embody is that by empathetically balancing user needs and regularly testing new iterations we can create products that enhance the way we live and interact. We don’t have to rely on dark patterns that can alienate people or create experiences that are visually appealing but slow down or confuse interactions.</p>
                     </div>
                 </div>
             </div>
