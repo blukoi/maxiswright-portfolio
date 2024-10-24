@@ -3,8 +3,8 @@
         <h1 class="text-2xl font-title text-grayDarkest mt-0 md:-mt-3.5">Highlights —</h1>
         <div v-for="project in highlightedProjects" :key="project.title" class="project-thumbnail">
             <div class="w-full rounded-md bg-white p-4 space-y-8 overflow-hidden">
-                <div class="flex flex-col -space-y-6 -mt-4">
-                    <div class="-ml-4 w-max h-10 pl-4 pr-4 flex flex-row items-center bg-mint text-white ring-white ring-2 rounded-br-sm space-x-4 z-30">
+                <div class="flex flex-col -space-y-10">
+                    <div class="-ml-4 w-max h-10 pl-4 pr-4 flex flex-row items-center bg-mint text-white ring-white ring-2 rounded-r-full space-x-4 z-30">
                         <FontAwesomeIcon :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]" class="text-xl" />
                         <p class="font-main uppercase tracking-widest text-sm font-bold">{{ project.category }}</p>
                     </div>
