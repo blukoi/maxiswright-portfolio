@@ -1,22 +1,22 @@
 [
     {
-        "id": "1",
-        "image": "/Work/Tattooo/0_Cover_Med.png",
-        "title": "A More Comfortable Approach to Tattooing",
-        "caption": "Designing a quasi-social platform for tattoo artists and enthusiasts, especially first-timers, with a tailored visual design language and information architecture",
-        "category": "Mobile App",
-        "categoryIcon": "fas fa-mobile-screen",
-        "buttonLink": "/tattooo",
+        "id": "4",
+        "image": "/Work/EV/0_Cockpit_Med.png",
+        "title": "UX Design for the Apple Car",
+        "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
+        "category": "Automotive UX",
+        "categoryIcon": "fas fa-car-side",
+        "buttonLink": "/applecar",
         "highlight": true,
         "completed": true,
         "type": "Work",
         "researchtags":[
-            "User Interviews",
-            "Journey Maps"
+            "Product Analysis",
+            "Brand Research"
         ],
         "designtags":[
-            "Wireframing",
-            "Design System",
+            "Brand Strategy",
+            "Storyboards",
             "Figma Prototype"
         ],
         "impacttags":[
@@ -69,23 +69,23 @@
         ]
     },
     {
-        "id": "4",
-        "image": "/Work/EV/0_Cockpit_Med.png",
-        "title": "UX Design for the Apple Car",
-        "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
-        "category": "Automotive UX",
-        "categoryIcon": "fas fa-car-side",
-        "buttonLink": "/applecar",
+        "id": "1",
+        "image": "/Work/Tattooo/0_Cover_Med.png",
+        "title": "A More Comfortable Approach to Tattooing",
+        "caption": "Designing a quasi-social platform for tattoo artists and enthusiasts, especially first-timers, with a tailored visual design language and information architecture",
+        "category": "Mobile App",
+        "categoryIcon": "fas fa-mobile-screen",
+        "buttonLink": "/tattooo",
         "highlight": true,
         "completed": true,
         "type": "Work",
         "researchtags":[
-            "Product Analysis",
-            "Brand Research"
+            "User Interviews",
+            "Journey Maps"
         ],
         "designtags":[
-            "Brand Strategy",
-            "Storyboards",
+            "Wireframing",
+            "Design System",
             "Figma Prototype"
         ],
         "impacttags":[
