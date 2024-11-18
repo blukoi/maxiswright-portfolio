@@ -58,11 +58,11 @@
                         </div>
                         <div class="mt-12 space-y-6">
                             <div>
-                                <p class="font-normal font-main text-sm text-grayDarker">I’m an LA-based designer using my expertise in visual communication and graphic design to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
+                                <p class="font-normal font-main text-sm text-grayDarker">I’m a UX designer applying my expertise in visual communication and systems thinking to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
                             </div>
                             <div class="flex flex-col space-y-6">
-                                <WorkAvailability />
-                                <ButtonSmall label="Contact Me" link="/contact" class="content-center pointer-events-auto w-max" />
+                                <!-- <WorkAvailability /> -->
+                                <ButtonSmall label="Let's Collaborate" link="/contact" class="content-center pointer-events-auto w-max" />
                             </div>
                         </div>
                     </div>
@@ -91,13 +91,14 @@
                         <h1 class="font-title text-xl">What drives me</h1>
                         <div class="p-4 bg-grayLightPrimary font-grayMiddle rounded-sm space-y-4">
                             <div :class="{'space-y-4 expandable-content': true, 'space-y-4 is-expanded': isExpanded}">
-                                <p>After dropping out of my first college I ended up working retail for many years. I worked my way up to a management position and worked as a buyer, pushing store sales to ~10% increases year over year. For a while, I hadn't known what to do with myself but having a supportive management team which saw fit to trust, train, and promote me instilled a particular confidence that I was capable of doing more.</p>
-                                <p>I had decided to go back to school and try my hand at an Associate of Science degree in Graphic Design, whereupon I took a UX class. Taking that UX class changed everything. It gave me an avenue to do all of the things I was good at: ask questions, explore new topics and areas, synthesize and analyze data, create a visual design system, and apply that design to create a well-informed and thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
-                                <p>After completing my AS in Graphic Design on my days off, I decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
+                                <p>After dropping out of my first college I ended up working retail for many years. I worked my way up to a management position and worked as a buyer, pushing store sales to ~10% increases year over year by applying performance data to purchase orders. For a while, I hadn't known what to do with myself but having a supportive management team which saw fit to trust, train, and promote me instilled a particular confidence that I was capable of doing more.</p>
+                                <p>On my days off I started taking classes to finish an Associate of Science degree in Graphic Design, whereupon I took a UX class. Taking that UX class changed everything. It gave me an avenue to do all of the things I was good at: ask questions, explore new topics and areas, collect and analyze data, create a visual design system, and combine all of these aspects to create a well-informed and thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
+                                <p>I felt like I'd found my calling and decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
                                 <ul class="list-disc pl-4">
                                     <li>In 2010 I was a college dropout with a 1.5 GPA</li>
                                     <li>In 2023 I completed a 4-year degree in 2 years with a 3.9 GPA</li>
                                 </ul>
+                                <p>Now I pursue interesting challenges across a variety of touchpoints to create human-focused solutions.</p>
                             </div>
                             <div class="w-full flex flex-row justify-end mt-4">
                                 <!-- <button v-if="!isExpanded" id="ReadMore" class="flex flex-row gap-4 pl-1 text-grayMiddle items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white button" tabindex="0" type="button" @click="isExpanded = true">
@@ -322,8 +323,8 @@
             'code': false,
             'misc': false
         },
-        designResearch: ['User Interviews', 'Contextual Analysis', 'Affinity Mapping', 'Surveys', 'Insights'],
-        visualDesign: ['Design Systems', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe AfterEffects'],
+        designResearch: ['User Interviews', 'Contextual Analysis', 'Affinity Mapping', 'Competitive Research', 'Surveys', 'Insights', 'Usability Testing'],
+        visualDesign: ['Design Systems', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe AfterEffects', 'Sketching', 'Storyboarding'],
         highFidelityPrototyping: ['Figma', 'Wireframing', 'Interface Design', 'Microinteractions', 'Animations', 'Front-end Development', 'Visual Studio Code', 'GitHub'],
         tagList1: [
             { label: 'Cinema4D', level: 'Intermediate' },
