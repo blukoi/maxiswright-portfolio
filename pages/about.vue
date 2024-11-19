@@ -62,7 +62,7 @@
                             </div>
                             <div class="flex flex-col space-y-6">
                                 <!-- <WorkAvailability /> -->
-                                <ButtonSmall label="Let's Collaborate" link="/contact" class="content-center pointer-events-auto w-max" />
+                                <ButtonDark label="Let's Collaborate" link="/contact" class="content-center pointer-events-auto w-max" />
                             </div>
                         </div>
                     </div>
