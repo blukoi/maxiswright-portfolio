@@ -31,9 +31,12 @@
                   <p class="font-medium font-main text-2xl text-gray-Darker">I craft thoughtful user experiences, scale interfaces, and I'm eager to take on interesting challenges.</p>
                   <p class="font-normal font-main text-base text-gray-Darker">As a versatile product designer, I use my flair for visual communication and product + systems thinking to achieve business goals while driving tangible change.</p>
                 </div>
-                <div class="flex flex-col space-y-6">
+                <div class="flex flex-row items-center space-x-2 -ml-8">
                   <!-- <WorkAvailability /> -->
-                  <ButtonDark label="Let's Collaborate" link="/contact" class="content-center pointer-events-auto w-max" />
+                  <div class="w-6 text-mint text-2xl">
+                    <font-awesome-icon :icon="['fas', 'arrow-right-long']" />
+                  </div>
+                  <ButtonDark label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
                 </div>
               </div>
             </div>

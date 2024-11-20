@@ -60,9 +60,12 @@
                             <div>
                                 <p class="font-normal font-main text-sm text-grayDarker">I’m a UX designer applying my expertise in visual communication and systems thinking to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
                             </div>
-                            <div class="flex flex-col space-y-6">
+                            <div class="flex flex-row items-center space-x-2 -ml-8">
                                 <!-- <WorkAvailability /> -->
-                                <ButtonDark label="Let's Collaborate" link="/contact" class="content-center pointer-events-auto w-max" />
+                                <div class="w-6 text-mint text-2xl">
+                                    <font-awesome-icon :icon="['fas', 'arrow-right-long']" />
+                                </div>
+                                <ButtonDark label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
                             </div>
                         </div>
                     </div>
