@@ -3,21 +3,17 @@
     <CustomCursor />
     <NavBar />
     <!-- <TestComponent /> -->
-    <div class="fixed top-10 w-full content-center h-50vh z-0">
-      <div class="container mx-auto grid grid-cols-1 md:grid-cols-12">
-        <div class="col-span-1 col-start-1 md:col-span-4 md:col-start-5">
-          <JumbotronHome class="z-0" />
-        </div>
-      </div>
-    </div>
-    <div class="w-full h-50vh bg-transparent inline-block"></div>
-    <div class="w-full content-center z-10 bg-grayLighter relative">
-      <div class="container px-4 sm:px-0 mx-auto pt-16 pb-16 md:pb-32 bg-grayLighter relative">
+    <div class="w-full content-center z-10 bg-black relative">
+      <div class="container px-4 sm:px-0 mx-auto pt-32 lg:pt-0 pb-16 lg:pb-32 relative">
 
-        <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
 
-          <div class="z-40 static md:fixed container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 -mt-24 mb-24 pointer-events-none">
-            <div class="col-span-1">
+          <div class="z-40 lg:pt-24 lg:pb-24 static col-span-1 lg:col-span-2 col-start-1 lg:col-start-2 flex flex-row justify-center mx-0 lg:mx-24 xl:mx-32 2xl:mx-56">
+            <JumbotronHome class="z-0 w-full md:w-1/2 lg:w-full" />
+          </div>
+
+          <div class="z-40 static lg:fixed h-max lg:h-full container grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 my-32 lg:my-0 pointer-events-none">
+            <div class="col-span-1 flex flex-col lg:justify-end lg:pb-16">
               <div class="w-max bg-white text-mint h-16 px-8 items-center rounded-full flex flex-row gap-4">
                 <div class="h-8 w-8 flex flex-row justify-center items-center">
                   <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-3xl" />
@@ -28,21 +24,21 @@
               </div>
               <div class="pl-8 mt-6 space-y-6">
                 <div class="space-y-6">
-                  <p class="font-medium font-main text-2xl text-gray-Darker">I craft thoughtful user experiences, scale interfaces, and I'm eager to take on interesting challenges.</p>
-                  <p class="font-normal font-main text-base text-gray-Darker">As a versatile product designer, I use my flair for visual communication and product + systems thinking to achieve business goals while driving tangible change.</p>
+                  <p class="font-medium font-main text-2xl text-grayMiddle">I craft thoughtful user experiences, scale interfaces, and I'm eager to take on interesting challenges.</p>
+                  <p class="font-normal font-main text-base text-grayMiddle">As a versatile product designer, I use my flair for visual communication and product + systems thinking to achieve business goals while driving tangible change.</p>
                 </div>
                 <div class="flex flex-row items-center space-x-2 -ml-8">
                   <!-- <WorkAvailability /> -->
                   <div class="w-6 text-mint text-2xl">
                     <font-awesome-icon :icon="['fas', 'arrow-right-long']" />
                   </div>
-                  <ButtonDark label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
+                  <ButtonLight label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-span-1 md:col-span-2 col-start-1 md:col-start-2">
+          <div class="col-span-1 lg:col-span-2 col-start-1 lg:col-start-2">
             <CoverHome />
           </div>
       

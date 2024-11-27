@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="fixed top-0 w-full h-50vh z-0">
-            <div class="w-full h-20 bg-grayLightPrimary relative z-10"></div>
-            <div class="w-full bg-grayLightPrimary">
-                <div class="w-full bg-grayLightPrimary relative z-10">
+            <div class="w-full h-20 bg-black relative z-10"></div>
+            <div class="w-full bg-black">
+                <div class="w-full bg-black relative z-10">
                     <div class="container mx-auto px-4 md:px-0 pt-4 md:pt-20 pb-4">
                         <h1 class="font-title text-3xl gradient-text" :class="bgColor">
                             <slot name="title"></slot>

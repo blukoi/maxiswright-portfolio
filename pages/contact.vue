@@ -2,8 +2,8 @@
     <div>
       <CustomCursor />
       <NavBar />
-      <div class="w-screen h-20 bg-grayLighter"></div>
-      <div class="w-screen h-screen content-center z-10 bg-grayLighter flex items-center">
+      <div class="w-screen h-20 bg-white"></div>
+      <div class="w-screen h-screen content-center z-10 bg-white flex items-center">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 lg:gap-16 mb-16 md:mb-32">
             <div class="h-full col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-2 bg-grayDarkest rounded-md p-4 flex items-center">
                 <form

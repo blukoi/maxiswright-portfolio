@@ -34,7 +34,7 @@
         </div>
       <div class="w-full h-100vh bg-transparent inline-block mb-12">
       </div>
-      <div class="w-full content-center z-10 bg-grayLighter relative">
+      <div class="w-full content-center z-10 bg-black relative">
         <div class="container px-4 sm:px-0 mx-auto pt-16 pb-32 relative">
 
             <div class="static w-full grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-y-32 lg:gap-y-0 gap-x-0 lg:gap-x-16">
@@ -58,14 +58,14 @@
                         </div>
                         <div class="mt-12 space-y-6">
                             <div>
-                                <p class="font-normal font-main text-sm text-grayDarker">I’m a UX designer applying my expertise in visual communication and systems thinking to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
+                                <p class="font-normal font-main text-sm text-grayMiddle">I’m a UX designer applying my expertise in visual communication and systems thinking to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
                             </div>
                             <div class="flex flex-row items-center space-x-2 -ml-8">
                                 <!-- <WorkAvailability /> -->
                                 <div class="w-6 text-mint text-2xl">
                                     <font-awesome-icon :icon="['fas', 'arrow-right-long']" />
                                 </div>
-                                <ButtonDark label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
+                                <ButtonLight label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
                             </div>
                         </div>
                     </div>
@@ -94,9 +94,9 @@
                         <h1 class="font-title text-xl">What drives me</h1>
                         <div class="p-4 bg-grayLightPrimary font-grayMiddle rounded-sm space-y-4">
                             <div :class="{'space-y-4 expandable-content': true, 'space-y-4 is-expanded': isExpanded}">
-                                <p>After dropping out of my first college I ended up working retail for many years. I worked my way up to a management position and worked as a buyer, pushing store sales to ~10% increases year over year by applying performance data to purchase orders. For a while, I hadn't known what to do with myself but having a supportive management team which saw fit to trust, train, and promote me instilled a particular confidence that I was capable of doing more.</p>
-                                <p>On my days off I started taking classes to finish an Associate of Science degree in Graphic Design, whereupon I took a UX class. Taking that UX class changed everything. It gave me an avenue to do all of the things I was good at: ask questions, explore new topics and areas, collect and analyze data, create a visual design system, and combine all of these aspects to create a well-informed and thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
-                                <p>I felt like I'd found my calling and decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
+                                <p>I started my career in retail and worked my way up to a management position, where I pushed store sales to ~10% increases year over year by applying data analysis to purchase orders. Having a supportive management team which saw fit to trust & train me, whereupon I would earn successive promotions, instilled a particular confidence that I was capable of doing more.</p>
+                                <p>On my days off, I started taking classes to finish an Associate of Science degree in Graphic Design, one of which was an introductory UX class. It changed everything, giving me an avenue to do all of the things I was good at: ask questions, explore new topics, collect and synthesize data, create a visual design system & rules, and combine all of these aspects to create a  thoughtful digital experience. It also helped me realize that my work can have a tangible impact on real people.</p>
+                                <p>I decided to knuckle down and make a transition to UX. I stopped taking freelance clients, quit my job, and went to ArtCenter College of Design to study Interaction Design. I worked harder and studied more than I ever had before.</p>
                                 <ul class="list-disc pl-4">
                                     <li>In 2010 I was a college dropout with a 1.5 GPA</li>
                                     <li>In 2023 I completed a 4-year degree in 2 years with a 3.9 GPA</li>
@@ -124,14 +124,14 @@
                                 </button>
                             </div>
                         </div>
-                        <p class="ml-4"><span class="font-bold">I've resolved to always try my best to contribute to meaningful work</span> and what I’ve learned and strive to embody is that by empathetically balancing user needs and regularly testing new iterations we can create products that enhance the way we live and interact. We don’t have to rely on dark patterns that can alienate people or create experiences that are visually appealing but slow down or confuse interactions.</p>
+                        <p class="ml-4"><span class="font-bold">I've resolved to always try my best to contribute to meaningful work</span> and what I strive to embody is that by empathetically balancing user needs and regularly testing iterations we can create products that enhance the way we live and interact.</p>
                     </div>
                 </div>
             </div>
 
         </div>
       </div>
-      <div class="w-full content-center z-20 bg-grayDarkest relative">
+      <div class="w-full content-center z-20 bg-black relative">
         <div class="container px-4 sm:px-0 mx-auto py-32">
 
             <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -186,12 +186,12 @@
 
         </div>
       </div>
-      <div class="w-full content-center z-20 bg-grayDarkest relative">
+      <div class="w-full content-center z-20 bg-black relative">
         <div class="container px-4 sm:px-0 mx-auto">
             <div class="h-px w-full bg-grayMiddle"></div>
         </div>
       </div>
-      <div class="w-full content-center z-20 bg-grayDarkest relative">
+      <div class="w-full content-center z-20 bg-black relative">
         <div class="container px-4 sm:px-0 mx-auto py-32">
             <div class="w-full pb-4 bg-transparent md:bg-mint rounded-md space-y-6">
                 <div class="w-full h-14 md:h-20 pl-0 md:pl-8 flex flex-row text-white items-center space-x-6">
@@ -245,7 +245,7 @@
             </div>
         </div>
       </div>
-      <div class="w-full content-center z-20 bg-grayLightPrimary relative">
+      <div class="w-full content-center z-20 bg-white relative">
         <div class="container px-4 sm:px-0 mx-auto py-32 bg-transparent space-y-16 md:space-y-32">
 
             <div class="w-full grid gap-16 md:gap-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

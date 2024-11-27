@@ -1142,7 +1142,11 @@
                             </svg>
                         </div>
                     </div>
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="rounded-md w-full" height="640px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLa9a3mCGaD9Lbfmxg5a0k0%2FTatt.ooo%3Fpage-id%3D562%253A1467%26node-id%3D562-1468%26viewport%3D225%252C189%252C0.15%26t%3DEuitzyi9jjUYrayT-1%26scaling%3Dscale-down%26content-scaling%3Dresponsive%26starting-point-node-id%3D562%253A1468" allowfullscreen></iframe>
+                    <iframe 
+                        style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                        class="rounded-md w-full" 
+                        height="640px" 
+                        src="https://embed.figma.com/proto/La9a3mCGaD9Lbfmxg5a0k0/Tatt.ooo?page-id=562%3A1467&node-id=562-1468&node-type=canvas&viewport=810%2C349%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=562%3A1468&embed-host=share&client-id=LgwX9A9zrjrhXIrAKxjivZ" allowfullscreen></iframe>
                     <div class="flex flex-col space-y-1">
                         <VideoPlayerControlled 
                             :autoplay=false 
@@ -1182,7 +1186,7 @@
         </OutroHighlightsWork>
 
         <!-- END OF THE PAGE -->
-        <PreFooter :currentProjectId="'1'" :linksVisibility="[true, true, true, false]" class="relative"/>
+        <PreFooter :currentProjectId="'4'" :linksVisibility="[true, true, true, false]" class="relative"/>
         <FooterSection />
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div class="col-span-1 grid grid-cols-1 gap-4">
         <div class="w-full flex flex-row justify-between">
-            <h1 class="font-title text-2xl text-grayDarkest">Concise</h1>
+            <h1 class="font-title text-2xl text-grayLightPrimary">Concise</h1>
             <button class="w-12 h-6 rounded-full bg-transparent" @click="toggle">
                 <label class="switch">
                     <input type="checkbox" :checked="value" @change="$emit('input', !value)">
@@ -9,7 +9,7 @@
                 </label>
             </button>
         </div>
-        <p class="ml-8 text-grayDarker font-main text-sm">To only see the highlights and most important information, keep the toggle <span class="font-bold">ON</span>. If you’d like to read about every step of the process, turn the toggle <span class="font-bold">OFF</span>.</p>
+        <p class="ml-8 text-grayMiddle font-main text-sm">To only see the highlights and most important information, keep the toggle <span class="font-bold">ON</span>. If you’d like to read about every step of the process, turn the toggle <span class="font-bold">OFF</span>.</p>
     </div>
 </template>
 

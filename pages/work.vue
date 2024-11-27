@@ -3,7 +3,7 @@
         <CustomCursor />
         <NavBar />
 
-        <div class="w-full content-center z-10 bg-grayLighter">
+        <div class="w-full content-center z-10 bg-white">
             <div class="container px-4 sm:px-0 mx-auto pt-40 pb-16 md:pb-32">
                 <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
                     <div class="col-span-1">

@@ -1,7 +1,7 @@
 <template>
     <div class="col-span-1 grid grid-cols-1 gap-4">
-        <h1 class="font-title text-2xl text-grayDarkest">{{ sectionName }}</h1>
-        <p class="ml-8 text-grayDarker font-main text-sm">
+        <h1 class="font-title text-2xl text-grayLightPrimary">{{ sectionName }}</h1>
+        <p class="ml-8 text-grayMiddle font-main text-sm">
             <slot name="copy"> </slot>
         </p>
     </div>

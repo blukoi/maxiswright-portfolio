@@ -1,7 +1,7 @@
 <template>
-    <div id="overviewSection" ref="headerRef" class="col-span-1 md:col-span-2 border border-white rounded-md font-main text-grayDarker text-sm">
+    <div id="overviewSection" ref="headerRef" class="col-span-1 md:col-span-2 border border-grayDarkest rounded-md font-main text-grayMiddle text-sm">
         <div class="w-full flex flex-row justify-between items-center px-4 md:px-8 h-20">
-            <h1 class="font-title text-2xl text-grayDarkest">Overview</h1>
+            <h1 class="font-title text-2xl text-grayLightPrimary">Overview</h1>
             <button class="button flex flex-row gap-4 pl-0 md:pl-1 text-grayDarker items-center rounded-sm bg-transparent hover:bg-grayDarker hover:text-white font-main" @click="toggle">
                 <p class="uppercase text-xs tracking-widest hidden md:inline-block">{{ isExpanded ? 'Hide' : 'Read More' }}</p>
                 <div class="h-6 w-6 flex justify-center items-center rounded-full bg-grayDarker text-grayLightPrimary">
@@ -11,7 +11,7 @@
         </div>
 
         <div v-show="isExpanded" class="grid grid-cols-1 md:grid-cols-2">
-            <div class="col-span-1 md:col-span-2 h-px mx-4 md:mx-8 bg-white"></div>
+            <div class="col-span-1 md:col-span-2 h-px mx-4 md:mx-8 bg-grayDarkest"></div>
 
             <div class="col-span-1 flex flex-col p-4 md:p-8 space-y-8">
                 <div class="space-y-4">
