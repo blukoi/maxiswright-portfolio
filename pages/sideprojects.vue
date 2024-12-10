@@ -13,7 +13,7 @@
                             </template>
                             <template #content>
                                 These projects are usually passion projects but some constitute new topic exploration (not really experimental as much as just trying to learn). For my more substantial projects with more research, prep, and dedication check out my 
-                                <nuxt-link to="/work" class="font-bold hover:text-mint hover:bg-white rounded-sm">Work</nuxt-link> page.
+                                <nuxt-link to="/work" class="font-bold hover:text-mint border-transparent border-solid border-b-2 hover:border-mint">Work</nuxt-link> page.
                             </template>
                         </CopyTitle>
                     </div>

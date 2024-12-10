@@ -2,7 +2,7 @@
     <ul class="list-none flex flex-row flex-wrap gap-1">
         <li v-for="(tag, index) in tags" :key="index" class="h-8 px-4 bg-mint rounded-full font-main text-xs text-white inline-block flex flex-row content-center">
             <span class="h-full flex pr-2 border-r"><p class="self-center">{{ tag.label }}</p></span>
-            <span class="h-full flex pl-2 text-whiteFaded"><p class="self-center">{{ tag.level }}</p></span>
+            <span class="h-full flex pl-2 text-blackFaded"><p class="self-center">{{ tag.level }}</p></span>
         </li>
     </ul>
 </template>

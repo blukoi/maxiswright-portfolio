@@ -1,7 +1,7 @@
 <template>
     <div class="col-span-1 grid grid-cols-1 gap-4">
-        <ul class="text-grayDarker font-main text-sm list-none flex flex-row flex-wrap gap-1">
-            <li v-for="(item, index) in items" :key="index" class="px-4 py-2 rounded-full bg-mint font-main text-xs text-white inline-block">
+        <ul class="text-black font-main text-sm list-none flex flex-row flex-wrap gap-1">
+            <li v-for="(item, index) in items" :key="index" class="px-4 py-2 rounded-full bg-white font-main text-xs text-black inline-block">
                 {{ item }}
             </li>
         </ul>

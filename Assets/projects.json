@@ -2,6 +2,7 @@
     {
         "id": "4",
         "image": "/Work/EV/0_Cockpit_Med.png",
+        "animation": "",
         "title": "UX Design for the Apple Car",
         "caption": "Industry research and branding to create a concept exploring evolved experiences for next-gen electric vehicles",
         "category": "Automotive UX",
@@ -21,11 +22,13 @@
         ],
         "impacttags":[
 
-        ]
+        ],
+        "color": "bg-applecarBlue"
     },
     {
         "id": "2",
         "image": "/Experiments/CarControls/0_Cover_Med.png",
+        "animation": "",
         "title": "Rethinking Physical Car Controls",
         "caption": "Exploring ways to reintroduce physical controls to the touchscreen interactions which currently dominate the vehicle dashboard landscape",
         "category": "Automotive UX",
@@ -43,11 +46,13 @@
         ],
         "impacttags":[
 
-        ]
+        ],
+        "color": "bg-highlightCarControls"
     },
     {
         "id": "3",
         "image": "/Work/Fontfacing/0_Cover_Med.png",
+        "animation": "",
         "title": "Innovating Typeface Design",
         "caption": "Creating a concept for an AI-driven design app, and exploring how AI features are visually incorporated into complex interfaces, to streamline the design process of typography",
         "category": "Desktop App",
@@ -66,13 +71,15 @@
         ],
         "impacttags":[
 
-        ]
+        ],
+        "color": "bg-fontfacingGreen"
     },
     {
         "id": "1",
         "image": "/Work/Tattooo/0_Cover_Med.png",
-        "title": "A More Comfortable Approach to Tattooing",
-        "caption": "Designing a quasi-social platform for tattoo artists and enthusiasts, especially first-timers, with a tailored visual design language and information architecture",
+        "animation": "Tattooo_Layers.json",
+        "title": "Designing a Mobile Experience for Tattoo Enthusiasts",
+        "caption": "A conceptual mobile app that aims to redesign the way tattoo artists and clients connect, featuring intuitive user interfaces that streamline communication, enhance visibility and searchability, and build trust between users.",
         "category": "Mobile App",
         "categoryIcon": "fas fa-mobile-screen",
         "buttonLink": "/tattooo",
@@ -90,11 +97,13 @@
         ],
         "impacttags":[
 
-        ]
+        ],
+        "color": "bg-grayDarker"
     },
     {
         "id": "5",
         "image": "/Experiments/Hyperbole/",
+        "animation": "",
         "title": "Beer Labels Based on Movies",
         "caption": "Applying UX research principals to product packaging to start a personal project for graphic design based on the movies I'm watching",
         "category": "Packaging Design",
@@ -111,7 +120,8 @@
         ],
         "impacttags":[
 
-        ]
+        ],
+        "color": ""
     }
 ]
   

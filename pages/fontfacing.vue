@@ -11,54 +11,45 @@
                     <LottieParent bgColor="bg-fontfacingGreen" :animation-data="animationData" alt="An animation showing an interpretation of how artificial intelligence might go about analyzing a vector image for typography; the image has a capital letter A and begins by using squares to generally highlight areas, then begins to specifically portion areas out within the shape itself."></LottieParent>
                 </div>
             </template>
+            <template #info>
+                <PillsAlone 
+                    :items="['Desktop App', '14 Weeks', 'May - August 2023', 'Solo Project']">
+                </PillsAlone>
+            </template>
+            <template #tools>
+                <PillsAlone 
+                    :items="['Figma', 'RunwayML']">
+                </PillsAlone>
+            </template>
         </IntroTitle>
 
         <!-- CASE STUDY INTRO -->
-        <IntroStructure>
-            <IntroWork :showDisclaimer="false">
-                <template #project>
-                    <span class="font-bold">FontFacing</span>: an AI-Driven Typography Design Application
-                </template>
-                <template #direction>
-                    How might we visually integrate AI features into the experience of a design platform?
-                </template>
-                <template #disclaimer>
-                </template>
-                <template #info>
-                    <CopyPills 
-                        section-name="Info"
-                        :items="['Desktop App', '14 Weeks', 'May - August 2023', 'Solo Project']">
-                    </CopyPills>
-                </template>
-                <template #tools>
-                    <CopyPills 
-                        section-name="Tools"
-                        :items="['Figma', 'RunwayML']">
-                    </CopyPills>
-                </template>
-                <template #concise>
-                    <ConciseSwitch v-model="isConcise"></ConciseSwitch>
-                </template>
-            </IntroWork>
-
-            <IntroOverview v-if="!isConcise">
-                <template #challenges>
-                    <ul class="list-disc list-outside pl-4 space-y-4">
-                        <li>Current practice seems to incorporate AI features using simplistic inputs, as if they’re an add-on to the experience, an expression of feature creep. The biggest challenge, therefore, was thinking of a way to take the interface beyond the typical design software with a text prompt box tacked onto it.</li>
-                        <li>I solved this by making AI the driving force of the app, rather than an additional feature. This includes interface elements like an analysis window, which shows how the training model is analyzing the designer’s drawn shapes, as well as color highlights to indicate where/how to interact with the AI-specific features.</li>
-                    </ul>
-                </template>
-                <template #concept>
-                    <p>The concept is based on the idea that FontFacing (and the underlying AI) will analyze your digital design/inputs and create a training model as you work. When you make changes to one character, FontFacing would be able to analyze them and make the same changes, if necessary, to the rest of the typeface. This is reflected in the visual design of the interface, making it easier for designers to understand when, where, why, and how the AI features are operating within their workflow.</p>
-                </template>
-                <template #role>
-                    <p>As a solo project, I was responsible for all aspects of the project, ranging from research to conceptualization, as well as wireframing, designing, and prototyping.</p>
-                </template>
-                <template #process>
-                    <p>I did some firsthand research on AI by creating training models (to test AI pattern recognition and the resulting output) then did rounds of ideation. I iterated my designs, tested the interface with some designers, and created a visual design system and prototype in Figma.</p>
-                    <PillsAlone :items="['Primary Research', 'Low Fidelity', 'Workflow Map', 'Wireframing', 'Comparative Analysis', 'Iteration', 'Heuristic Analysis', 'Design System', 'Prototyping']"></PillsAlone>
-                </template>
-            </IntroOverview>
+        <IntroStructure :showDisclaimer="false">
+            <template #overview>
+                <p class="mb-4"><span class="font-bold">FontFacing</span> is a desktop app concept for typography design driven by AI. It will analyze your digital design/inputs and create a training model as you work. When you make changes to the path of one letterform FontFacing will analyze the change and reproduce it, if necessary, to the rest of the typeface. There exist multiple features within the interface to provide feedback about when, where, why, and how the AI is working so that designers can utilize them to their full potential. FontFacing represents the possibility of AI to vastly streamline the processes of repetitive tasks without taking away human agency or control.</p>
+                <p><span class="font-bold">After completing the project, OpenAI notably added a new feature to ChatGPT which validates, in part, the insights and direction of this project. This feature is a feedback system which is part of what I explored in FontFacing. For more details, see below.</span></p>
+            </template>
+            <template #problem>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Designing all of the glyphs of a typeface is a laborious and repetitive process that can take several weeks or even months to complete.</li>
+                    <li>Ensuring consistency across letterforms is a time-intensive process and, through development, there are limited opportunities to experiment, iterate, and refine possibilities.</li>
+                    <li>Current integration of AI features into existing design tools is limited, at best, and intelligent refinement has to be done manually.</li>
+                </ul>
+            </template>
+            <template #goals>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Reduce the manual workload of typeface design by utilizing the strengths of AI and machine learning's pattern recognition.</li>
+                    <li>Utilize AI to maintain stylistic rules across characters to reduce repetitive adjustments.</li>
+                    <li>Provide designers clear modes and controls so they can influence or override AI decisions whenever necessary.</li>
+                </ul>
+            </template>
+            <template #solution>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Introduce a mode-based workflow with selections like Live Generation, Details, and more to toggle between AI-driven automation and hands-on manual refinement.</li>
+                    <li>Provide feedback within the interface so designers can see how the AI interprets their inputs, understand changes made by AI generation, and confirm or deny AI suggestions.</li>
+                    <li>Allow designers to input through flexible methods to guide the AI, ensuring the outcome aligns closely with their vision.</li>
+                </ul>
+            </template>
         </IntroStructure>
 
         <!-- INTRO HIGHLIGHTS -->
@@ -66,12 +57,12 @@
         <!-- HOW MIGHT WE & HERO IMAGE -->
         <IntroHowMightWe
             how="How might we..."
-            direction="...visually integrate artificial intelligence features into the user interface of a design platform?"
-            title="Color Highlights Within the Interface"
+            direction="How can we help type designers create a complete, consistent typeface in less time without losing their creative vision?"
+            title="The problem of designing a typeface"
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">Designers are familiar with design interfaces and there are already a myriad of expectations when using a new design application. In this case, the majority of the interface involves shades of gray, as with most major design apps. The introduction of any color would be a highlight. A bright blue and a middle purple are used to bring attention to the AI features, sometimes alone (active/history) and sometimes as a linear gradient (generate something).</p>
+                <p class="font-main text-sm">Designing an entire, cohesive typeface is a demanding, time-intensive task that often requires weeks or months of meticulous work. Each glyph must harmonize with the entire character set, making it difficult for designers to maintain visual consistency and experiment freely. Without intelligent support, the complexity of the process stifles creative exploration and increases the risk of creative burnout.</p>
             </template>
             <template #media>
                 <ImagePrimary
@@ -152,14 +143,13 @@
             title="Foundational Research"
             iconPack="fas"
             iconName="magnifying-glass"
-            :visibilityMode="3"
+            totalProcess="6"
             headerRef="1"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>I started this project by researching how training models are made and making a couple myself. By using the available tools at RunwayML I was able to train image generating models in order to see, firsthand, how an AI system analyzes the material its given and, thereafter, what it can produce.</p>
                 <p>After also doing some research into AI platforms working with vector graphics, I solidified the concept I had in mind: a design and editing platform working with SVGs, supported and driven by AI to make it faster and easier for designers to build out the entirety of a typeface.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Training Model 1 -->
             <ContentMediaWithCaption
@@ -272,13 +262,12 @@
             title="Exploring Low Fidelity"
             iconPack="fas"
             iconName="pencil"
-            :visibilityMode="3"
+            totalProcess="6"
             headerRef="2"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>My initial concept was to create a web-based app where designers could experiment with AI to create typefaces. The idea would’ve acted similarly to something like Dall•e, where there would be pre-trained models that users could use for generation.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Low Fidelity Exploration -->
             <ContentScroller
@@ -370,20 +359,19 @@
             </ContentCalloutWithCaption>
         </ProcessPrimary>
 
-        <!-- 3. Mapping the WOrkflow -->
+        <!-- 3. Mapping the Workflow -->
         <ProcessPrimary
             :bgColor="bgColor"
-            title="Mapping the WOrkflow"
+            title="Mapping the Workflow"
             iconPack="fas"
             iconName="map"
-            :visibilityMode="3"
+            totalProcess="6"
             headerRef="3"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p><span class="font-bold">I should’ve done this before starting to wireframe</span> but, to be honest, my original concept was more explorative than it was purposeful.</p>
                 <p>The current process to design a typeface (if we ignore the researching, brainstorming, and briefing, which is it’s own in-depth preparatory process) is a long, back and forth workflow. As one would expect, it’s more in-depth than I can adequately convey in a simple process flow and can take anywhere from months, for a single font style with a [relatively] small character set, or years, in the case of multiple font styles, special characters, ligatures, etc.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <CaseStudyFontfacingMappingWorkflow />
 
@@ -395,14 +383,13 @@
             title="Back to Designing"
             iconPack="fas"
             iconName="object-group"
-            :visibilityMode="3"
+            totalProcess="6"
             headerRef="4"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>With my initial insights and the typeface design workflow firmly in mind, I went back to my  wire framing process. At this point I decided that <span class="font-bold">my concept should be firmly designed for designers to complement the typeface design process</span>, rather than a simplistic, explorative experience.</p>
                 <p>This would allow the AI features to be used as an actual tool within the design process, making use of the AI and potentially improving the technology, instead of a novelty or side project.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Lightbulb -->
             <ContentCalloutWithCaption 
@@ -490,7 +477,7 @@
         </ProcessPrimary>
 
         <!-- 5. Research & Prep -->
-        <ProcessPrimary
+        <!-- <ProcessPrimary
             :bgColor="bgColor"
             title="Research & Prep"
             iconPack="fas"
@@ -511,7 +498,7 @@
 
             <CaseStudyFontfacingDesigning />
 
-        </ProcessPrimary>
+        </ProcessPrimary> -->
 
         <!-- 6. Prototyping -->
         <ProcessPrimary
@@ -519,13 +506,12 @@
             title="Prototyping"
             iconPack="fas"
             iconName="pen-to-square"
-            :visibilityMode="1"
-            headerRef="6"
-            :isConcise="isConcise"
+            totalProcess="6"
+            headerRef="5"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>I could feel the final versions beginning to take shape, but there are still some details to figure out. The modal was perplexing me. It’s a good introduction to the AI features, but perhaps only for a new user or for a casual designer. For the experienced designer the modal could simply be obstructive to beginning work.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Workflow -->
             <ContentMediaWithCaption
@@ -653,9 +639,8 @@
             title="Project Validation"
             iconPack="fas"
             iconName="square-check"
-            :visibilityMode="1"
-            headerRef="7"
-            :isConcise="isConcise"
+            totalProcess="6"
+            headerRef="6"
         >
             <ContentBlurb>
                 <p>After working on this project and developing the AI-related features, some interesting updates came to ChatGPT which helped to validate that, at least in part, I had correctly pursued aspects of providing feedback to the use of AI features.</p>

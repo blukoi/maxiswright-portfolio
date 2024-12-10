@@ -22,6 +22,7 @@ module.exports = {
         'postitPink': '#F9BCEE',
         'homeGray': '#2c2c2c',
         'whiteFaded': 'rgba(255,255,255,0.48)',
+        'blackFaded': 'rgba(0,0,0,0.48)',
 
 
         // WORK CASE STUDIES
@@ -55,8 +56,8 @@ module.exports = {
       },
 
       fontFamily: {
-        'main': ['brother-1816', 'sans-serif'], // Primary sans-serif font
-        'title': ['Optician Sans', 'sans-serif'] // Specialized title font
+        'main': ['neue-haas-unica', 'sans-serif'], // Primary sans-serif font
+        'title': ['fractul-variable', 'sans-serif'], // Specialized title font
       },
 
       height: {
@@ -352,14 +353,14 @@ module.exports = {
     },
     fontWeight: {
       thin: '100',
-      extralight: '100',
-      light: '200',
-      normal: '300',
-      medium: '400',
-      semibold: '500',
-      bold: '600',
-      extrabold: '700',
-      black: '800',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800',
+      black: '900',
     },
     gap: (theme) => theme('spacing'),
     gradientColorStops: (theme) => theme('colors'),

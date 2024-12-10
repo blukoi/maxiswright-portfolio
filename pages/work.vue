@@ -13,7 +13,7 @@
                             </template>
                             <template #content>
                                 These case studies constitute work to which I was able to devote or approximate a project cycle. For smaller scale projects which allowed me to explore or try new things, check out my 
-                                <nuxt-link to="/sideprojects" class="font-bold hover:text-mint hover:bg-white rounded-sm">Side Projects</nuxt-link> page.
+                                <nuxt-link to="/sideprojects" class="font-bold hover:text-mint border-transparent border-solid border-b-2 hover:border-mint">Side Projects</nuxt-link> page.
                             </template>
                         </CopyTitle>
                     </div>

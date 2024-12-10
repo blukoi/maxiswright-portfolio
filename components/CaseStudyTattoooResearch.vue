@@ -1,7 +1,7 @@
 <template>
     <div class="w-full space-y-32 md:space-y-64">
         <!-- Pain Points -->
-        <ContentCaptionWithPostits 
+        <!-- <ContentCaptionWithPostits 
             title="Pain Points" 
             gridCols="md:grid-cols-2 lg:grid-cols-4" 
         >
@@ -37,7 +37,7 @@
                     </template>
                 </ContentPostit>
             </template>
-        </ContentCaptionWithPostits>
+        </ContentCaptionWithPostits> -->
 
         <!-- Opportunities -->
         <ContentCaptionWithPostits 
@@ -92,7 +92,7 @@
                 </ul>
             </template>
             <template #media>
-                <div class="flex flex-col justify-center items-center space-y-4 bg-tattoooBlue rounded-sm md:rounded-md h-full p-4">
+                <div class="flex flex-col justify-center items-center space-y-4 bg-tattoooBlue h-full p-4">
                     <ImagePrimary 
                         srcsetLarge="/Work/Tattooo/1_FoundationalResearch/Persona.png"
                         srcsetMedium="/Work/Tattooo/1_FoundationalResearch/Persona.png"

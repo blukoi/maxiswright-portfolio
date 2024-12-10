@@ -2,7 +2,7 @@
     <div class="space-y-4">
         <div class="w-full">
             <div class="flex flex-row justify-between text-grayDarkest">
-                <h1 class="font-title uppercase text-xl">{{ title }}</h1>
+                <h1 class="font-title title-bold uppercase text-xl">{{ title }}</h1>
                 <div class="h-6 w-6 flex justify-center items-center rounded-full">
                     <FontAwesomeIcon :icon="['fas', 'arrows-left-right']" class="text-sm" />
                 </div>
@@ -10,7 +10,7 @@
         </div>
         <div class="w-full relative">
             <div class="w-full overflow-x-auto relative px-8 hidescrollbar">
-                <div class="relative bg-black rounded-md p-8 flex flex-nowrap justify-start space-x-32 md:space-x-64 block w-max font-main text-sm text-grayLightPrimary">
+                <div class="relative bg-black notch-large p-8 flex flex-nowrap justify-start space-x-32 md:space-x-64 block w-max font-main text-sm text-grayLightPrimary">
                     <!-- Slots for dynamic content -->
                     <slot></slot>
                 </div>

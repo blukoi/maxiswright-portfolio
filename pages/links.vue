@@ -6,7 +6,7 @@
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32 pt-20">
             <div class="col-span-1 md:col-start-2">
                 <div class="space-y-8">
-                    <h1 class="font-title text-xl text-grayDarkest">
+                    <h1 class="font-title title-bold text-xl text-grayDarkest">
                         Links and Contact —
                     </h1>
                     <div class="w-full pl-8 space-y-4 font-main text-grayDarker">
@@ -19,11 +19,11 @@
                         icon-name="message"
                         label="Contact Form"
                     ></ButtonIcon>
-                    <a href="mailto:max.wri@gmail.com" class="h-16 p-4 rounded-md flex flex-row justify-start items-center bg-mint hover:bg-grayDarker text-white gap-4">
+                    <a href="mailto:max.wri@gmail.com" class="notch h-16 p-4 flex flex-row justify-start items-center bg-mint hover:bg-black text-white gap-4">
                         <div class="h-8 w-8 flex flex-row justify-center items-center">
                             <FontAwesomeIcon :icon="['fas', 'envelope']" class="text-xl" />
                         </div>
-                        <h1 class="font-title text-xl">Email</h1>
+                        <h1 class="font-title title-bold pt-1 text-xl">Email</h1>
                     </a>
                     <ButtonIconExternal 
                         link="https://www.linkedin.com/in/maxiswright/"
@@ -62,7 +62,7 @@
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32 pt-20">
             <div class="col-span-1 md:col-start-2">
                 <div class="space-y-8">
-                    <h1 class="font-title text-xl text-grayDarkest">
+                    <h1 class="font-title title-bold text-xl text-grayDarkest">
                         Other Links —
                     </h1>
                     <div class="w-full pl-8 space-y-4 font-main text-grayDarker">
@@ -74,7 +74,7 @@
                         icon-name="xbox"
                         label="Xbox"
                     ></ButtonIconExternal>
-                    <a href="https://www.bungie.net/7/en/User/Profile/1/4611686018429882790" class="h-16 p-4 rounded-md flex flex-row justify-start items-center bg-mint hover:bg-grayDarker text-white gap-4">
+                    <a href="https://www.bungie.net/7/en/User/Profile/1/4611686018429882790" class="notch h-16 p-4 flex flex-row justify-start items-center bg-mint hover:bg-black text-white gap-4">
                         <div class="h-8 w-8 flex justify-center items-center text-white">
                             <svg width="485" height="146" viewBox="0 0 485 146" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1493_2966)">
@@ -94,7 +94,7 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h1 class="font-title text-xl">Bungie ID</h1>
+                        <h1 class="font-title title-bold pt-1 text-xl">Bungie ID</h1>
                     </a>
                     <!-- <ButtonIcon 
                         link="https://www.bungie.net/7/en/User/Profile/1/4611686018429882790"

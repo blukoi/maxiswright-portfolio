@@ -4,12 +4,12 @@
 /* Define custom fonts */
 /* Define custom fonts */
 
-@font-face {
+/* @font-face {
     font-family: 'Optician Sans';
     src: url('~/Assets/fonts/Optician-Sans.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 /* Prep for custom cursor */
 /* Prep for custom cursor */
@@ -30,7 +30,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 /* Tailwind's Base, Components, and Utilities */
@@ -63,4 +63,77 @@ body {
 
 .gradient-tattooo {
     @apply bg-gradient-to-r from-tattoooBlue via-tattoooSecondaryDarker to-tattoooAlert;
+}
+
+/* Adding Font Variation for Variable Fonts */
+/* Adding Font Variation for Variable Fonts */
+/* Adding Font Variation for Variable Fonts */
+/* Adding Font Variation for Variable Fonts */
+/* Adding Font Variation for Variable Fonts */
+
+.title-normal {
+    font-family: 'fractul-variable', sans-serif;
+    font-variation-settings: "wght" 400;
+}
+
+.title-bold {
+    font-family: 'fractul-variable', sans-serif;
+    font-variation-settings: "wght" 700;
+}
+
+.title-black {
+    font-family: 'fractul-variable', sans-serif;
+    font-variation-settings: "wght" 900;
+}
+
+/* Notch & Other Custom Visuals */
+/* Notch & Other Custom Visuals */
+/* Notch & Other Custom Visuals */
+/* Notch & Other Custom Visuals */
+/* Notch & Other Custom Visuals */
+
+.notch {
+    clip-path: polygon(0 16px, 0 100%, 100% 100%, 100% 0, 16px 0);
+}
+
+.notch-large {
+    clip-path: polygon(0 24px, 0 100%, 100% 100%, 100% 0, 24px 0);
+}
+
+.notch-small {
+    clip-path: polygon(0 8px, 0 100%, 100% 100%, 100% 0, 8px 0);
+}
+
+.notch-border {
+    background-image: linear-gradient(135deg, black 0 10.75px, transparent 0 10.75px);
+    clip-path: polygon(0 16px, 0 100%, 100% 100%, 100% 0, 16px 0);
+}
+
+.notch-border-white {
+    background-image: linear-gradient(135deg, white 0 10.75px, transparent 0 10.75px);
+    clip-path: polygon(0 16px, 0 100%, 100% 100%, 100% 0, 16px 0);
+}
+
+.notch-bottom {
+    clip-path: polygon(0 0, 0 100%, calc(100% - 16px) 100%, 100% calc(100% - 16px), 100% 0);
+}
+
+.notch-bottom-border {
+    background-image: linear-gradient(315deg, black 0 10.75px, transparent 0 10.75px);
+    clip-path: polygon(0 0, 0 100%, calc(100% - 16px) 100%, 100% calc(100% - 16px), 100% 0);
+}
+
+/* Hash Marks */
+/* Hash Marks */
+/* Hash Marks */
+/* Hash Marks */
+/* Hash Marks */
+
+.top-hash-mark-lightgray::before {
+    width: 32px;
+    height: 4px;
+    background: #d9d9d9;
+    display: block;
+    content: '';
+    margin: 0 0 16px 0;
 }

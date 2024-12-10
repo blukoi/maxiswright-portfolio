@@ -4,62 +4,57 @@
         <NavBar />
 
         <!-- TITLE AND VISUAL -->
-        <IntroTitle :bgColor="bgColor" mediaBackground="bg-tattoooSecondaryDarker">
+        <IntroTitle :bgColor="bgColor" mediaBackground="bg-tattoooBlue">
             <template #title>{{ project.title }} —</template>
             <template #media>
-                <div class="w-full flex justify-center">
-                    <LottieParent bgColor="bg-tattoooSecondaryDarker" :animation-data="animationData" alt="An animation showing a quick snapshot of what this app can help facilitate: when you get a tattoo idea, you can use this app to post about it, talk to an artist about it, and get the tattoo of your dreams with the artist that's right for you."></LottieParent>
+                <div class="w-full h-full flex justify-center">
+                    <ImagePrimary 
+                        srcsetLarge="/Work/Tattooo/0_Background_Full.png"
+                        srcsetMedium="/Work/Tattooo/0_Background_Med.png"
+                        srcsetSmall="/Work/Tattooo/0_Background_Med.png"
+                        altText="A quadrant matrix showing different positions of competitive platforms; the x-axis shows General on the left and Focused on the right, while the y-axis shows Centralized at the top and Decentralized at the bottom."
+                        additionalStyles="min-w-full min-h-full object-cover"
+                    />
+                    <!-- <LottieParent bgColor="bg-tattoooSecondaryDarker" :animation-data="animationData" alt="An animation showing a quick snapshot of what this app can help facilitate: when you get a tattoo idea, you can use this app to post about it, talk to an artist about it, and get the tattoo of your dreams with the artist that's right for you."></LottieParent> -->
                 </div>
+            </template>
+            <template #info>
+                <PillsAlone 
+                    :items="['Role: UX Researcher, Product Designer', 'Mobile App', '14 Weeks', 'Sept - December 2022', 'Solo Project']">
+                </PillsAlone>
+            </template>
+            <template #tools>
+                <PillsAlone 
+                    :items="['Figma', 'Adobe Illustrator', 'Adobe AfterEffects']">
+                </PillsAlone>
             </template>
         </IntroTitle>
 
         <!-- CASE STUDY INTRO -->
-        <IntroStructure>
-            <IntroWork :showDisclaimer="false">
-                <template #project>
-                    <span class="font-bold">Tatt.ooo</span>: a Quasi-Social Tattoo Platform
-                </template>
-                <template #direction>
-                    How might we streamline the experience of finding and building a trusting relationship with a tattoo artist?
-                </template>
-                <template #disclaimer>
-                </template>
-                <template #info>
-                    <CopyPills 
-                        section-name="Info"
-                        :items="['Mobile App', '14 Weeks', 'Sept - December 2022', 'Solo Project']">
-                    </CopyPills>
-                </template>
-                <template #tools>
-                    <CopyPills 
-                        section-name="Tools"
-                        :items="['Figma', 'Adobe Illustrator', 'Adobe AfterEffects']">
-                    </CopyPills>
-                </template>
-                <template #concise>
-                    <ConciseSwitch v-model="isConcise"></ConciseSwitch>
-                </template>
-            </IntroWork>
-
-            <IntroOverview v-if="!isConcise">
-                <template #challenges>
-                    <ul class="list-disc list-outside pl-4 space-y-4">
-                        <li>All of the responsibility for beginning the process is on the customer to find and reach out to an artist. There are so many touchpoints and it can be intimidating to reach out to an artist. I created a posting board and accompanying form so that people can post their tattoo ideas to a community of tattoo artists.</li>
-                        <li>The aforementioned form, used for the details of a tattoo idea, includes many details. It needs to be more understanding than a series of text fields or dropdowns. I solved this by separating the form into a few steps, allowing customers to focus on each aspect individually with some more empathetic inputs, such as a 3D model of the body that can be drawn on to indicate the desired size and location of the tattoo.</li>
-                        <li>There isn’t always enough time or effort put into building a comfortable relationship between the artist and customer. Oftentimes, the artwork for a tattoo isn’t seen until the customer shows up for their appointment. I expanded the normal messaging system with multiple kinds of requests, additions, and a job tracker.</li>
-                    </ul>
-                </template>
-                <template #concept>
-                    <p>Tatt.ooo is meant to make it easier and more comfortable, especially for newcomers, to approach tattoo artists, start a conversation, and communicate their needs. Although there are features of social networks, I refer to it as quasi-social because that’s not necessarily the purpose of the platform. It’s a simplified, centralized platform for tattoo artists (rather than creating multiple social accounts in addition maintaining a website, Yelp, etc.) and a way for their customers to find, message, schedule, and hold them accountable.</p>
-                </template>
-                <template #role>
-                    <p>As a solo project, I was responsible for all aspects of the project, ranging from research to conceptualization, as well as wireframing, designing, and prototyping.</p>
-                </template>
-                <template #process>
-                    <p>I conducted interviews to better understand the experience of getting a tattoo before, during, and after. I mapped the current customer journey, identified opportunities, and made a persona to design for. I quickly realized this would be a complex system with numerous features and pages so I spent some time working on the branding and figuring out the visual design system so that building out additional pages, as needed, would be faster. I built a high-fidelity prototype in Figma, then an animated video with Adobe Illustrator and Adobe AfterEffects to help explain the system and experience.</p>
-                    <PillsAlone :items="['Primary Research', 'Journey Map', 'Persona', 'Task Flows', 'Low Fidelity', 'Branding', 'Iteration', 'Design System', 'Prototyping']"></PillsAlone>
-                </template>
-            </IntroOverview>
+        <IntroStructure :showDisclaimer="false">
+            <template #overview>
+                <span class="font-bold">Tatt.ooo</span> is a mobile app concept meant to make it easier to find tattoo artists/customers, start a conversation, and communicate your needs. Although there are features of social networks, that’s not necessarily the purpose of the platform. It’s a simplified, centralized platform for tattoo artists (rather than creating multiple social accounts in addition to maintaining a website, Yelp, etc.) and a way for their customers to find, message, schedule, and hold them accountable.
+            </template>
+            <template #problem>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>The process of planning a new tattoo has too many different touchpoints to figure out whether an artist is the right fit.</li>
+                    <li>Pricing & other details are often not discussed until after a conversation has started, which can be a barrier to entry for many people.</li>
+                    <li>Tattoo artists will often only show the work that they're most proud of and viewing an artist’s work doesn't indicate whether or not the process was worthwhile for the customer. Additionally, good, local artists can be overshadowed by more popular ones due to their social media presence.</li>
+                </ul>
+            </template>
+            <template #goals>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Decrease the number of touchpoints that customers have to utilize and put more of the necessary information and tools in one place.</li>
+                    <li>Make the process more comfortable and streamlined for customers to approach and build rapport/trust with a tattoo artist. Provide an avenue for tattoo artists to be more discoverable and responsible to their customers.</li>
+                </ul>
+            </template>
+            <template #solution>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Centralize the various touchpoints so that customers can do their searching, viewing, and contacting in one place, while also giving artists an easier, singular platform to maintain.</li>
+                    <li>Create a gallery and profile system that allows for artists and their customers to both post images in a way that's connected.</li>
+                    <li>Incorporate features to increase responsibility and transparency.</li>
+                </ul>
+            </template>
         </IntroStructure>
 
         <!-- INTRO HIGHLIGHTS -->
@@ -67,30 +62,28 @@
         <!-- HOW MIGHT WE & HERO IMAGE -->
         <IntroHowMightWe
             how="How might we..."
-            direction="...streamline the experience of building a trusting relationship with a tattoo artist?"
-            title="Centralize Resources into a Social Communication and Connection Platform"
+            direction="How can we make finding and working with tattoo artists easier and more trustworthy?"
+            title="The problem of trying to get a tattoo"
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">Tattoos are (mostly) a lifelong commitment, but Tatt.ooo simplifies the process, making it more accessible and less stressful for both first-timers and experienced enthusiasts. Tatt.ooo is a communication and search platform, with some social aspects, designed to streamline the connection between tattoo artists and their customers. This platform centralizes key resources and tools to facilitate an easier, more transparent interaction—from artist discovery to finished body art. Users can post their ideas, search for artists, explore flash art, and utilize an enhanced messaging system to discuss details and scheduling, ensuring all parties are aligned before the appointment.</p>
+                <p class="font-main text-sm">Finding the right tattoo artist can be a daunting, time-consuming process.</p>
+                <p class="font-main text-sm mt-4">Tattoo enthusiasts typically have to navigate through multiple platforms such as Google, Yelp, and Instagram, sifting through countless search results and social media profiles. This disjointed process can lead to frustration, insufficient information, and questionable quality. Tattoo artists, similarly, struggle with effectively showcasing their skills and managing client expectations across these varied channels.</p>
             </template>
             <template #media>
                 <ImagePrimary
-                    srcset-small="/Work/Tattooo/0_Cover_Med.png"
-                    srcset-medium="/Work/Tattooo/0_Cover_Med.png"
-                    srcset-large="/Work/Tattooo/0_Cover_Full.png"
-                    alt-text="A mockup of 2 phones showing 2 different screens from a mobile app; on the left is a home screen of a blue/white/gray app with a banner that says `Have an idea for a tattoo?` next to a button that says `Post it`; on the right is a screen showing a social media-like post with a description of a tattoo, an example image "
+                    srcset-small="/Work/Tattooo/0_Problem_Small.jpg"
+                    srcset-medium="/Work/Tattooo/0_Problem_Med.jpg"
+                    srcset-large="/Work/Tattooo/0_Problem_Full.jpg"
+                    alt-text="Screenshots showing different mobile touchpoints when researching tattoos: Google search results, Apple Maps search results, Instagram search results, and Yelp search results."
                 />
             </template>
         </IntroHowMightWe>
 
         <!-- SIDE SCROLLER WITH FEATURE CALL-OUTS -->
-        <IntroHighlights 
+        <!-- <IntroHighlights 
             title="Highlights"
         >
-
-            <!-- SCROLLER CONTENT START -->
-
 
             <ScrollerImage
                 :srcset = "{
@@ -99,7 +92,7 @@
                     large: '/Work/Tattooo/0_TattoooHome_Full.png',
                 }" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="Put everything in one place" 
+                title="Post, search, get informed, message, and schedule in one place" 
                 alt-text="A mobile app home page with a banner that says `Have an idea for a tattoo?` next to a button to `Post it`. There are also buttons for Notifications, FAQs About Tattoos, Messages, and more." 
                 imageParent="h-120 md:h-160 w-56 md:w-72" 
             >
@@ -110,7 +103,7 @@
 
             <ScrollerCustom
                 imageParent="h-120 md:h-160 w-max" 
-                title="Accountability & Additional Messaging Features"
+                title="Accountability, tracking, and additional messaging features"
             >
                 <template #media>
                     <div class="flex flex-col space-y-8  w-56 md:w-72 h-full items-center justify-center mr-8">
@@ -151,7 +144,7 @@
                     large: '/Work/Tattooo/0_TattoooIdeas.png',
                 }" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="Provide an alternative to the stress of approaching a tattoo artist" 
+                title="An alternative to the stress of approaching a tattoo artist" 
                 alt-text="A different screen of the app titled `Tattoo Ideas` with a slider to switch to `Flash Artwork` and social media-like posts with descriptions of tattoo ideas" 
                 imageParent="h-120 md:h-160 w-56 md:w-72" 
             >
@@ -160,11 +153,7 @@
                 </template>
             </ScrollerImage>
 
-
-            <!-- SCROLLER CONTENT END -->
-
-
-        </IntroHighlights>
+        </IntroHighlights> -->
 
         <!-- PROCESS CONTENT -->
         <!-- 1. Foundational Research -->
@@ -173,21 +162,20 @@
             title="Foundational Research"
             iconPack="fas"
             iconName="magnifying-glass"
-            :visibilityMode="3"
+            totalProcess="5"
             headerRef="1"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>I had an idea for a platform to improve the process of finding a tattoo artist. However, it was based on my personal experiences from getting tattoos. To begin working on this platform, I started by looking at the existing tools to help connect with tattoo artists, then spoke with other tattoo enthusiasts to understand more perspectives and experiences. This helped me map customer journeys in several different ways.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Competitive Research -->
-            <ContentMediaWithCaption
+            <!-- <ContentMediaWithCaption
                 title="Competitive Research"
             >
                 <template #caption>
                     <p class="mb-4">From my own experiences, I knew some of the methods used to search for tattoo artists. You could start on a listicle of artists, find the studio they look at, visit the studio’s website and find that it’s not updated, then go to the artist’s Instagram page and look at their work. You might use a website like Tattoos Wizard which is a directory of artists, but they have to register for the service to show up. You might find an amazing artist on Instagram but find out they’re not located near you.</p>
-                    <p>The opportunity is to create an entirely tattoo-focused platform which allows you to do everything related to tattooing, including searching for artists and studios, hours and scheduling, messaging and tracking, viewing art and providing feedback, and even researching the tattooing process.</p>
+                    <p>The opportunity here is to create an entirely tattoo-focused platform which allows you to do everything related to tattooing, including searching for artists and studios, hours and scheduling, messaging and tracking, viewing art and providing feedback, and even researching the tattooing process.</p>
                 </template>
                 <template #media>
                     <ImagePrimary 
@@ -195,12 +183,13 @@
                         srcsetMedium="/Work/Tattooo/1_FoundationalResearch/Competitive.png"
                         srcsetSmall="/Work/Tattooo/1_FoundationalResearch/Competitive.png"
                         altText="A quadrant matrix showing different positions of competitive platforms; the x-axis shows General on the left and Focused on the right, while the y-axis shows Centralized at the top and Decentralized at the bottom."
+                        additionalStyles="md:px-32 lg:px-64"
                     />
                 </template>
-            </ContentMediaWithCaption>
+            </ContentMediaWithCaption> -->
 
             <!-- Interviews -->
-            <ContentMediaWithCaption
+            <!-- <ContentMediaWithCaption
                 title="Interviews"
             >
                 <template #caption>
@@ -219,13 +208,35 @@
                         </div>
                     </div>
                 </template>
+            </ContentMediaWithCaption> -->
+
+            <!-- User Interviews & Journey Maps -->
+            <ContentMediaWithCaption
+                title="User Interviews & Journey Maps"
+            >
+                <template #caption>
+                    <p>Based on some user interviews with people who've gone through the tattooing process, ranging from just once to several times, I was able to make some well-defined journey maps. The break came from looking at the journey touchpoints in terms of the different levels of technology available.</p>
+                </template>
+                <template #media>
+                    <div class="flex flex-col justify-center items-center space-y-4 bg-tattoooBlue h-full p-4">
+                        <div>
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey1.png" alt="A complex graph showing the customer journey through the tattoo process and the user's thoughts, feelings, and actions.">
+                        </div>
+                        <div>
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey2.png" alt="A complex graph showing the customer journey through the tattoo process and the touchpoints, goals, pain points, and opportunities.">
+                        </div>
+                        <div>
+                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey3.png" alt="A complex graph showing the customer journey through the tattoo process and the different levels of technology available or possible at each juncture, including no tech, low tech, current tech, high tech, and extreme tech.">
+                        </div>
+                    </div>
+                </template>
             </ContentMediaWithCaption>
 
             <!-- Blockquote -->
             <CaseStudyTattoooBlockquote />
 
             <!-- Confirmation -->
-            <ContentCaptionWithPostits 
+            <!-- <ContentCaptionWithPostits 
                 title="Confirmation" 
                 gridCols="md:grid-cols-2 lg:grid-cols-4" 
             >
@@ -261,10 +272,10 @@
                         </template>
                     </ContentPostit>
                 </template>
-            </ContentCaptionWithPostits>
+            </ContentCaptionWithPostits> -->
 
             <!-- Pain Points -->
-            <ContentCaptionWithPostits 
+            <!-- <ContentCaptionWithPostits 
                 title="Pain Points" 
                 gridCols="md:grid-cols-2 lg:grid-cols-4" 
             >
@@ -300,10 +311,10 @@
                         </template>
                     </ContentPostit>
                 </template>
-            </ContentCaptionWithPostits>
+            </ContentCaptionWithPostits> -->
 
             <!-- Discovery -->
-            <ContentCaptionWithPostits 
+            <!-- <ContentCaptionWithPostits 
                 title="Discovery" 
                 gridCols="md:grid-cols-2 lg:grid-cols-5" 
             >
@@ -350,32 +361,10 @@
                         </template>
                     </ContentPostit>
                 </template>
-            </ContentCaptionWithPostits>
-
-            <!-- Journey Maps -->
-            <ContentMediaWithCaption
-                title="Journey Maps"
-            >
-                <template #caption>
-                    <p>The typical journey map covers actions, touchpoints, and feelings across a given time period. I started there, but it wasn’t helping me move forward, so I made more journey maps to explore additional perspectives of the user journey. In this case, the break came from looking at the touchpoints in terms of the different levels of technology available.</p>
-                </template>
-                <template #media>
-                    <div class="flex flex-col justify-center items-center space-y-4 bg-tattoooBlue rounded-sm md:rounded-md h-full p-4">
-                        <div>
-                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey1.png" alt="A complex graph showing the customer journey through the tattoo process and the user's thoughts, feelings, and actions.">
-                        </div>
-                        <div>
-                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey2.png" alt="A complex graph showing the customer journey through the tattoo process and the touchpoints, goals, pain points, and opportunities.">
-                        </div>
-                        <div>
-                            <img src="/Work/Tattooo/1_FoundationalResearch/Journey3.png" alt="A complex graph showing the customer journey through the tattoo process and the different levels of technology available or possible at each juncture, including no tech, low tech, current tech, high tech, and extreme tech.">
-                        </div>
-                    </div>
-                </template>
-            </ContentMediaWithCaption>
+            </ContentCaptionWithPostits> -->
 
             <!-- Research Summary -->
-             <CaseStudyTattoooResearch />
+            <CaseStudyTattoooResearch />
 
         </ProcessPrimary>
 
@@ -385,14 +374,13 @@
             title="Flows & Wireframing"
             iconPack="fas"
             iconName="diagram-project"
-            :visibilityMode="3"
+            totalProcess="5"
             headerRef="2"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>The first version of my information architecture was fairly limited. As I explored task flows and started wireframing, it necessarily expanded... a lot.</p>
                 <p>I started with just a few of the basic features, like Search and Messaging pages. As I expanded the system, through wireframing and prototyping, I discovered a slew of additional pages, functions, and processes that would need to be considered, such as Scheduling.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Planning & Wireframes -->
             <ContentScroller
@@ -407,19 +395,19 @@
                         large: '/Work/Tattooo/2_Wireframing/IA.png',
                     }"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                    title="Information Architecture"
+                    title="Information Architecture (Final)"
                     alt-text="A sitemap of the app to start planning out layout, structures, and interactions."
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-white"
                 >
                     <template #caption>
-                        <p>Pictured is the final information architecture that I reached by the end of the project. The first version was extremely simple, comparatively.</p>
+                        <!-- <p>Pictured is the final information architecture that I reached by the end of the project. The first version was extremely simple, comparatively.</p> -->
                     </template>
                 </ScrollerImage>
 
                 <!-- Wireframing -->
                 <ScrollerCustom
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-max" 
-                    title="Wireframing"
+                    title="Rough Wireframing"
                 >
                     <template #media>
                         <div class="flex flex-col space-y-8 w-32 sm:w-40 md:w-48 lg:w-56 h-full items-center justify-center mr-8">
@@ -428,7 +416,7 @@
                                 srcset-medium="/Work/Tattooo/2_Wireframing/Wireframing1.png"
                                 srcset-large="/Work/Tattooo/2_Wireframing/Wireframing1.png"
                                 alt-text="Low fidelity wireframe of a mobile app with a tab bar at the bottom, a content box for a hero image, and placeholder buttons below." 
-                                imageStyles="rounded-sm"
+                                imageStyles=""
                             />
                         </div>
                         <div class="flex flex-col space-y-8 w-32 sm:w-40 md:w-48 lg:w-56 h-full items-center justify-center">
@@ -437,13 +425,13 @@
                                 srcset-medium="/Work/Tattooo/2_Wireframing/Wireframing2.png"
                                 srcset-large="/Work/Tattooo/2_Wireframing/Wireframing2.png"
                                 alt-text="Low fidelity wireframe of a form which appears as a modal over the previous home page wireframe; its one page of text entry inputs." 
-                                imageStyles="rounded-sm"
+                                imageStyles=""
                             />
                         </div>
                     </template>
                     <template #caption>
-                        <p>My first attempt at wireframing was off the cuff, trying to accomplish too many things without enough thought. On the left is the home page, where there’s a primary call to action (“Post [Your Idea]”) above a social feature. The social feature, in this version, functions similarly to an Instagram feed, which wouldn’t necessarily work underneath other content since it would scroll infinitely.</p>
-                        <p>On the right is the first version of the “Post Your Tattoo Idea” feature, which is the most basic, one-page form.</p>
+                        <!-- <p>My first attempt at wireframing was off the cuff, trying to accomplish too many things without enough thought. On the left is the home page, where there’s a primary call to action (“Post [Your Idea]”) above a social feature. The social feature, in this version, functions similarly to an Instagram feed, which wouldn’t necessarily work underneath other content since it would scroll infinitely.</p> -->
+                        <!-- <p>On the right is the first version of the “Post Your Tattoo Idea” feature, which is the most basic, one-page form.</p> -->
                     </template>
                 </ScrollerCustom>
 
@@ -460,7 +448,7 @@
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-white"
                 >
                     <template #caption>
-                        <p>I started exploring user flows to try and figure out specific steps & processes to complete the necessary tasks. A few of them start with pop-up notifications, but this one, posting a tattoo idea, turned into one of the driving features of the platform. This user flow helped me to consider all of the relevant details of getting a tattoo, from art style to physical location. </p>
+                        <!-- <p>I started exploring user flows to try and figure out specific steps & processes to complete the necessary tasks. A few of them start with pop-up notifications, but this one, posting a tattoo idea, turned into one of the driving features of the platform. This user flow helped me to consider all of the relevant details of getting a tattoo, from art style to physical location. </p> -->
                     </template>
                 </ScrollerImage>
 
@@ -472,12 +460,12 @@
                         large: '/Work/Tattooo/2_Wireframing/Wireframing3.png',
                     }"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                    title="Expanding Feature Form"
+                    title="Revised Wireframe of a Primary Form"
                     alt-text="Based off of the sitemap structure, this user flow maps out the different tasks/interactions to complete a specific task."
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180"
                 >
                     <template #caption>
-                        <p>The previous form was too basic and didn’t feel empathetic enough, so I expanded it. Breaking apart each form field/question into a separate page gives each step of the process its own level of gravitas. Tattoo ideas are, often, serious and personal, and the process of getting a tattoo is a commitment to a lifelong piece of body art [for many people]. This expanded idea for the “Post Your Idea” form tries to pay the utmost respect to that truth by giving users the most thoughtful but functional way to describe their perfect tattoo in a way that anyone can understand.</p>
+                        <!-- <p>The previous form was too basic and didn’t feel empathetic enough, so I expanded it. Breaking apart each form field/question into a separate page gives each step of the process its own level of gravitas. Tattoo ideas are, often, serious and personal, and the process of getting a tattoo is a commitment to a lifelong piece of body art [for many people]. This expanded idea for the “Post Your Idea” form tries to pay the utmost respect to that truth by giving users the most thoughtful but functional way to describe their perfect tattoo in a way that anyone can understand.</p> -->
                     </template>
                 </ScrollerImage>
 
@@ -491,14 +479,13 @@
             title="Branding & Visual Design"
             iconPack="fas"
             iconName="swatchbook"
-            :visibilityMode="3"
+            totalProcess="5"
             headerRef="3"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>From the beginning, I was sketching random thoughts to try to get a feel for the branding and visual design. This constituted sketching for branding, iconography, abstract shapes, as well as brainstorming for a name.</p>
                 <p>My initial idea was to come up with some combination of a name and logomark where one could speak specifically to tattoos and the other could speak to connection or communication. In the end, I abandoned a logomark because they were just too abstract and pursued a logotype.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Sketching Immediately -->
             <ContentMediaWithCaption
@@ -526,11 +513,11 @@
             </ContentMediaWithCaption>
 
             <!-- Brand Design Process -->
-            <ContentScroller
-                title="Brand Design Process"
+            <!-- <ContentScroller
+                title="Brand Design Exploration"
             >
 
-                <!-- Names -->
+                Names
                 <ScrollerImage
                     :srcset = "{
                         small: '/Work/Tattooo/3_VisualDesign/Names.png',
@@ -538,7 +525,7 @@
                         large: '/Work/Tattooo/3_VisualDesign/Names.png',
                     }"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                    title="Names"
+                    title="Potential Names"
                     alt-text="A typed out list of 40 names including some puns, translations from English, and meaningful solo words. 4 of the names are highlighted."
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
                 >
@@ -553,7 +540,7 @@
                     </template>
                 </ScrollerImage>
 
-                <!-- Exploring Type -->
+                Exploring Type
                 <ScrollerImage
                     :srcset = "{
                         small: '/Work/Tattooo/3_VisualDesign/Names2.svg',
@@ -561,7 +548,7 @@
                         large: '/Work/Tattooo/3_VisualDesign/Names2.svg',
                     }"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                    title="Exploring Type"
+                    title="Exploring Logotype"
                     alt-text="The 4 highlighted names are typed out in different fashions using a variety of fonts, styles, and playing with basic visual design and layout, like horizontal versus vertical."
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
                 >
@@ -570,7 +557,7 @@
                     </template>
                 </ScrollerImage>
 
-                <!-- Abstraction -->
+                Abstraction
                 <ScrollerImage
                     :srcset = "{
                         small: '/Work/Tattooo/3_VisualDesign/Abstraction.png',
@@ -578,7 +565,7 @@
                         large: '/Work/Tattooo/3_VisualDesign/Abstraction.png',
                     }"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                    title="Abstraction"
+                    title="Shape Abstraction"
                     alt-text="An array of different abstracted logo experiments, each one using some combination of geometric shapes and polygons, like 3 rings transposed on top of each other or a slice cut out from a circle."
                     imageParent="h-64 sm:h-80 md:h-112 lg:h-120 w-96 sm:w-120 md:w-160 lg:w-180 bg-tattoooBlue"
                 >
@@ -588,7 +575,7 @@
                     </template>
                 </ScrollerImage>
 
-                <!-- Trying a Different Tactic -->
+                Trying a Different Tactic
                 <ScrollerImage
                     :srcset = "{
                         small: '/Work/Tattooo/3_VisualDesign/Names3.png',
@@ -606,7 +593,7 @@
                     </template>
                 </ScrollerImage>
 
-            </ContentScroller>
+            </ContentScroller> -->
 
             <!-- Final Logo & Visual Design -->
              <CaseStudyTattoooVisualDesign />
@@ -614,26 +601,7 @@
         </ProcessPrimary>
 
         <!-- 4. Research & Prep -->
-        <ProcessPrimary
-            :bgColor="bgColor"
-            title="Research & Prep"
-            iconPack="fas"
-            iconName="arrows-to-circle"
-            :visibilityMode="2"
-            headerRef="4"
-            :isConcise="isConcise"
-        >
-            <ContentBlurb>
-                <p>After competitive research and a short series of interviews, I mapped the customer journey and ended up with this series of pain points and opportunities. I was able to create a persona and start mapping out the customer experience which, in turn, helped me to figure out tasks and user flows. I spent several weeks working on the branding and logo design, then set about figuring out the visual design attributes.</p>
-            </ContentBlurb>
-
-            <CaseStudyTattoooBlockquote />
-
-            <CaseStudyTattoooResearch />
-
-            <CaseStudyTattoooVisualDesign />
-
-        </ProcessPrimary>
+        <!-- Removed in edits -->
 
         <!-- 5. Design System -->
         <ProcessPrimary
@@ -641,13 +609,12 @@
             title="Design System"
             iconPack="fas"
             iconName="layer-group"
-            :visibilityMode="1"
-            headerRef="5"
-            :isConcise="isConcise"
+            totalProcess="5"
+            headerRef="4"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>Since I’d realized fairly early on that this would be a more complex platform than I’d first assumed, I approached the basic construction of Tatt.ooo’s design system from the viewpoint of having reusable components where small changes, like swapping out an icon, could make it easy to reuse or remix the pieces when adding a feature, function, or page.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Interface Elements -->
             <ContentScroller
@@ -706,15 +673,15 @@
                         </div>
                     </template>
                     <template #caption>
-                        <p>Taking cues from Apple’s iOS design guidelines, there is a separate navigation bar at the top of the screen with different states to help users navigate between hierarchical content, while a tab bar persists [most of the time] at the bottom of the screen for primary page navigation.</p>
-                        <p>I opted to lean more into the iOS design system because I wanted, as much as possible, to refrain from folding extra navigation options into a “more” or hamburger-type menu in the navigation.</p>
+                        <!-- <p>Taking cues from Apple’s iOS design guidelines, there is a separate navigation bar at the top of the screen with different states to help users navigate between hierarchical content, while a tab bar persists [most of the time] at the bottom of the screen for primary page navigation.</p>
+                        <p>I opted to lean more into the iOS design system because I wanted, as much as possible, to refrain from folding extra navigation options into a “more” or hamburger-type menu in the navigation.</p> -->
                     </template>
                 </ScrollerCustom>
 
                 <!-- Minor State Changes vs Page Movement -->
                 <ScrollerCustom
                     imageParent="h-120 md:h-160 w-max p-8" 
-                    title="Minor State Changes vs Page Movement"
+                    title="Minor State Changes"
                 >
                     <template #media>
                         <div class="flex flex-col space-y-8 items-center justify-center">
@@ -742,8 +709,8 @@
                         </div>
                     </template>
                     <template #caption>
-                        <p>As much as possible, I tried to indicate with the visual design language a difference between elements which would lead to a minor state change (fully rounded elements) versus those which would lead to a separate page (rectangular elements). These search bars, for instance, are contextual and have multiple states. Interacting with these elements will open a keyboard, expand a dropdown, etc.</p>
-                        <p>The only exceptions to these rules are social profile pictures, multi-line text entry fields, and one particular “More” button.</p>
+                        <!-- <p>As much as possible, I tried to indicate with the visual design language a difference between elements which would lead to a minor state change (fully rounded elements) versus those which would lead to a separate page (rectangular elements). These search bars, for instance, are contextual and have multiple states. Interacting with these elements will open a keyboard, expand a dropdown, etc.</p>
+                        <p>The only exceptions to these rules are social profile pictures, multi-line text entry fields, and one particular “More” button.</p> -->
                     </template>
                 </ScrollerCustom>
 
@@ -778,7 +745,7 @@
                         </div>
                     </template>
                     <template #caption>
-                        <p>I struggled with the messaging elements for a while. Eventually, I realized that some digital interactions are so engrained that they’re very difficult to change. Tatt.ooo isn’t meant to define a new way of operating digital experiences, so I tried to design these elements to feel familiar and relate to existing task flows.</p>
+                        <!-- <p>I struggled with the messaging elements for a while. Eventually, I realized that some digital interactions are so engrained that they’re very difficult to change. Tatt.ooo isn’t meant to define a new way of operating digital experiences, so I tried to design these elements to feel familiar and relate to existing task flows.</p> -->
                     </template>
                 </ScrollerCustom>
 
@@ -827,14 +794,14 @@
                         </div>
                     </template>
                     <template #caption>
-                        <p>Because there are multiple instances to highlight artists and studios, I wanted to create a kind of button style which can fulfill multiple roles depending on the context. Using the profile pictures as a basis, the complex button style has enough room for multiple text lines and a dedicated space for a contextual button. (This is the instance of a “More” button which doesn’t follow the previously mentioned minor state change logic.)</p>
+                        <!-- <p>Because there are multiple instances to highlight artists and studios, I wanted to create a kind of button style which can fulfill multiple roles depending on the context. Using the profile pictures as a basis, the complex button style has enough room for multiple text lines and a dedicated space for a contextual button. (This is the instance of a “More” button which doesn’t follow the previously mentioned minor state change logic.)</p> -->
                     </template>
                 </ScrollerCustom>
 
                 <!-- Card Styles -->
                 <ScrollerCustom
                     imageParent="h-120 md:h-160 w-max p-8" 
-                    title="Card Styles"
+                    title="Different Card Styles"
                 >
                     <template #media>
                         <div class="flex flex-col space-y-8 items-center justify-center">
@@ -862,7 +829,7 @@
                         </div>
                     </template>
                     <template #caption>
-                        <p>Because tattoos (as visual art) necessitate imagery, working with cards is also a necessity.</p>
+                        <!-- <p>Because tattoos (as visual art) necessitate imagery, working with cards is also a necessity.</p> -->
                     </template>
                 </ScrollerCustom>
 
@@ -873,11 +840,11 @@
                 title="Complex Cards"
             >
                 <template #caption>
-                    <p class="mb-4">I was originally trying to carry the small card styles through to the complex card styles, with a hero image at the top of the card. However, I realized that my concept, at its core, would keep open the possibility of having posts without images. Therefore, I wanted the titles, text, and images to have similar levels of visual hierarchy.</p>
-                    <p>Since these two card styles can appear next to each other within the app, I wanted some visual consistency in their design language. This solution not only allows for that visual consistency, it also carries the styling from the previous complex button styles.</p>
+                    <p class="mb-4">I realized that my concept would keep open the possibility of having posts without images. Therefore, I wanted the titles, text, and images to have similar levels of visual hierarchy.</p>
+                    <!-- <p>Since these two card styles can appear next to each other within the app, I wanted some visual consistency in their design language. This solution not only allows for that visual consistency, it also carries the styling from the previous complex button styles.</p> -->
                 </template>
                 <template #media>
-                    <div class="flex flex-col md:flex-row justify-center items-center bg-tattoooBlue rounded-sm md:rounded-md space-y-8 md:space-y-0 space-x-0 md:space-x-8 p-8 px-32 md:px-24 lg:px-32">
+                    <div class="flex flex-col md:flex-row justify-center items-center bg-tattoooBlue space-y-8 md:space-y-0 space-x-0 md:space-x-8 p-8 px-32 md:px-24 lg:px-32">
                         <ImageStylable 
                             srcsetLarge="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
                             srcsetMedium="/Work/Tattooo/5_DesignSystem/5_Cards4.png"
@@ -904,14 +871,13 @@
             title="Prototyping"
             iconPack="fas"
             iconName="pen-to-square"
-            :visibilityMode="1"
-            headerRef="6"
-            :isConcise="isConcise"
+            totalProcess="5"
+            headerRef="5"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>Prototyping is really where I started to work out the kinks. Some pages and flows worked out without issue once I figured out the correct starting point. Other issues needed a little more finessing and iteration.</p>
                 <p>However, one of my beliefs is to test early and test often, so when I had one version ready to go, I tested the working prototype and ran it by some of my associates for their thoughts.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- Iteration & High Fidelity -->
             <ContentScroller
@@ -942,7 +908,7 @@
                         </div>
                     </template>
                     <template #caption>
-                        <p>As mentioned, some of my flows were worked out pretty well by the time I moved to prototyping in high fidelity. This is one of the tasks that moved into high fidelity fairly easily. The initial concept, a one-page form, was way off target. Iterating on that concept from the jump meant a more fleshed out flow and easier time moving into high fidelity.</p>
+                        <!-- <p>As mentioned, some of my flows were worked out pretty well by the time I moved to prototyping in high fidelity. This is one of the tasks that moved into high fidelity fairly easily. The initial concept, a one-page form, was way off target. Iterating on that concept from the jump meant a more fleshed out flow and easier time moving into high fidelity.</p> -->
                     </template>
                 </ScrollerCustom>
 
@@ -961,12 +927,10 @@
                     </template>
                     <template #thumbs>
                         <ThumbBad comment="Restricted Space" />
-                        <ThumbBad comment="Limited Visibility" />
-                        <ThumbBad comment="Interrupts Workflow" />
                         <ThumbBad comment="Clunky Interaction" />
                     </template>
                     <template #caption>
-                        <p>This was the original concept to provide feedback on artwork from a tattoo artist: a modal comes up over the messaging interface.</p>
+                        <!-- <p>This was the original concept to provide feedback on artwork from a tattoo artist: a modal comes up over the messaging interface.</p> -->
                     </template>
                 </ScrollerImageThumbs>
 
@@ -986,22 +950,20 @@
                     <template #thumbs>
                         <ThumbGood comment="Enhanced Visibility" />
                         <ThumbGood comment="Improved Workflow" />
-                        <ThumbGood comment="Streamlined" />
-                        <ThumbGood comment="More User Friendly" />
                     </template>
                     <template #caption>
-                        <p>The solution is to replace the messaging space by a new feedback space and hide the keyboard away until it’s needed.</p>
+                        <!-- <p>The solution is to replace the messaging space by a new feedback space and hide the keyboard away until it’s needed.</p> -->
                     </template>
                 </ScrollerImageThumbs>
 
             </ContentScroller>
 
             <!-- In Context -->
-            <ContentScroller
+            <!-- <ContentScroller
                 title="In Context"
             >
 
-                <!-- Start & End Points -->
+                Start & End Points
                 <ScrollerCustom
                     imageParent="h-96 md:h-120 w-max p-8" 
                     title="Start & End Points"
@@ -1022,7 +984,7 @@
                     </template>
                 </ScrollerCustom>
 
-                <!-- Putting Everything in Context -->
+                Putting Everything in Context
                 <ScrollerCustom
                     imageParent="h-96 md:h-120 w-max p-8" 
                     title="Putting Everything in Context"
@@ -1064,7 +1026,7 @@
                     </template>
                 </ScrollerCustom>
 
-                <!-- Visualize -->
+                Visualize
                 <ScrollerCustom
                     imageParent="h-96 md:h-120 w-max p-8" 
                     title="Visualize"
@@ -1092,7 +1054,7 @@
                     </template>
                 </ScrollerCustom>
 
-                <!-- Adding a Few Things -->
+                Adding a Few Things
                 <ScrollerCustom
                     imageParent="h-96 md:h-120 w-max p-8" 
                     title="Adding a Few Things"
@@ -1113,15 +1075,15 @@
                     </template>
                 </ScrollerCustom>
 
-            </ContentScroller>
+            </ContentScroller> -->
 
         </ProcessPrimary>
 
         <!-- OUTRO BEGINNING -->
         <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
-                <div class="w-full flex flex-col space-y-64">
-                    <div class="bg-tattoooBlue w-full flex justify-center px-16 py-32 md:p-32 rounded-md">
+                <div class="w-full flex flex-col space-y-16">
+                    <div class="bg-tattoooBlue w-full flex justify-center px-16 py-32 md:p-32">
                         <div class="w-64 text-white flex justify-center">
                             <svg width="256" height="57" viewBox="0 0 256 57" class="fill-current" xmlns="http://www.w3.org/2000/svg" alt="A logo of the name of the app `Tattooo` in a heavyweight, geometric font with a dot before the `ooo` like a URL.">
                                 <g clip-path="url(#clip0_1631_6078)">
@@ -1144,7 +1106,7 @@
                     </div>
                     <iframe 
                         style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                        class="rounded-md w-full" 
+                        class="notch w-full" 
                         height="640px" 
                         src="https://embed.figma.com/proto/La9a3mCGaD9Lbfmxg5a0k0/Tatt.ooo?page-id=562%3A1467&node-id=562-1468&node-type=canvas&viewport=810%2C349%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=562%3A1468&embed-host=share&client-id=LgwX9A9zrjrhXIrAKxjivZ" allowfullscreen></iframe>
                     <div class="flex flex-col space-y-1">
@@ -1153,7 +1115,7 @@
                             :loop=false 
                             :muted=false 
                             :controls=true
-                            roundedLvl="rounded-md" 
+                            roundedLvl="notch" 
                             alt="A 3-minute video showing a scenario of the Jenny persona finally getting a tattoo. She can handle all of her needs through the Tatt.ooo platform from messaging to scheduling and even proofing the artwork." 
                             :videoSources="[
                                 { src: '/Work/Tattooo/x_TattoooScenario_Full.mp4', type: 'video/mp4' },
@@ -1170,8 +1132,8 @@
                     title="Final Thoughts & Next Steps"
                 >
                     <template #caption>
-                        <p class="mb-4">Tatt.ooo wasn’t designed for people who go and get tattoos on a whim. It was designed around tattoo enthusiasts and hopefuls who need some time to think about it beforehand. (That’s not to say there’s anything wrong with people who just want to go to a shop and pick a cute flash tattoo, this app just wasn't designed around those needs.) On the other hand, although I tried to make this a thoughtful experience for customers, there isn’t a truly compelling reason for artists to use this service, as it creates more work for them than simply posting to their existing social media and/or other page(s). The features to help create accountability and improve communication for customers could also prove to be hurdles for artists who don’t want to be constrained in such ways or on stricter schedules.</p>
-                        <p>Although I return to this Figma prototype now and then to make design changes, to truly iterate on this concept I would need to do additional research with tattoo artists. There’s a level of balance and appeal that Tatt.ooo still needs to reach, otherwise its like ordering a pizza from a restaurant that doesn’t exist. It's a good lesson that just solving around one group's need doesn't always mean a service will succeed.</p>
+                        <p class="mb-4">Tatt.ooo wasn’t designed for people who go and get tattoos on a whim; it was designed around tattoo enthusiasts and first timers who need some time to think about it beforehand. (That’s not to say there’s anything wrong with people who just want to go to a shop and pick a cute flash tattoo, this app just wasn't designed around those needs.) <!-- On the other hand, although I tried to make this a thoughtful experience for customers, there isn’t a truly compelling reason for artists to use this service, as it creates more work for them than simply posting to their existing social media and/or other page(s). The features to help create accountability and improve communication for customers could also prove to be hurdles for artists who don’t want to be constrained in such ways or on stricter schedules. --></p>
+                        <p>To truly refine this concept I would need to do additional research with tattoo artists. It's a good lesson that just solving around one group's need doesn't always mean a service will succeed.</p>
                     </template>
                     <template #media>
                         <ImagePrimary
@@ -1179,6 +1141,7 @@
                             srcset-medium="/Work/Tattooo/x_MockupThrees_Med.png"
                             srcset-large="/Work/Tattooo/x_MockupThrees_Full.png"
                             alt-text="A mockup of 3 different screens in the Messaging process, while proofing artwork from an artist, side by side."
+                            additionalStyles="md:px-24 xl:px-48"
                         />
                     </template>
                 </ContentMediaWithCaption>
@@ -1200,7 +1163,7 @@
         data() {
             return {
                 projects: require('~/Assets/projects.json'),
-                isConcise: true,
+                isConcise: false,
                 bgColor: "gradient-tattooo",
                 animationData
             };

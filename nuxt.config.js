@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    link: [{ rel: 'stylesheet', href:'https://use.typekit.net/ngx6nxn.css'}],
+    link: [{ rel: 'stylesheet', href:'https://use.typekit.net/mdm2dyb.css'}],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -25,7 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/fontawesome.js',
+    { src: '@/plugins/fontawesome.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

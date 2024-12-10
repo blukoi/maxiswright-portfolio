@@ -15,33 +15,38 @@
                     ]">
                 </VideoCover>
             </template>
+            <template #info>
+                <PillsAlone 
+                    :items="['Automotive UX', '2 Weeks', 'October 2023', 'Solo Project']">
+                </PillsAlone>
+            </template>
+            <template #tools>
+                <PillsAlone 
+                    :items="['ProCreate', 'Figma']">
+                </PillsAlone>
+            </template>
         </IntroTitle>
 
         <!-- CASE STUDY INTRO -->
-        <IntroStructure>
-            <IntroExperiment :showDisclaimer="true">
-                <template #project>
-                    Exploring ways to reintroduce physical controls to the touchscreen interactions which currently dominate the vehicle dashboard landscape
-                </template>
-                <template #info>
-                    <CopyPills 
-                        section-name="Info"
-                        :items="['Automotive UX', '2 Weeks', 'October 2023', 'Solo Project']">
-                    </CopyPills>
-                </template>
-                <template #tools>
-                    <CopyPills 
-                        section-name="Tools"
-                        :items="['ProCreate', 'Figma']">
-                    </CopyPills>
-                </template>
-                <template #outcome>
-                    <ul class="list-disc list-outside pl-4 space-y-4">
-                        <li>Its entirely possible, today, to reintroduce physical controls to improve user satisfaction by offering the tactile feedback that’s been removed by the dominance of touchscreens.</li>
-                        <li>The prototype demonstrates that we can consolidate multiple physical controls into singular, multifunctional knobs to reduce manufacturing costs while maintaining user-friendly interactions.</li>
-                    </ul>
-                </template>
-            </IntroExperiment>
+        <IntroStructure :showDisclaimer="false">
+            <template #overview>
+                <p class="mb-4">A brief project exploring how to improve the relationship that drivers have with their car through a combination of both touchscreen and physical controls, rather than simply replacing physical controls as much as possible by housing everything in a touchscreen.</p>
+            </template>
+            <template #problem>
+                <p class="text-sm text-grayMiddle ml-8">
+                    Many car owners are frustrated by the lack of physical controls, like knobs and buttons, that have been replaced by touch screens which can be slow, inconvenient, unresponsive, and even unsafe to use.
+                </p>
+            </template>
+            <template #goals>
+                <p class="text-sm text-grayMiddle ml-8">
+                    Maintain cost-savings while reintroducing a physical control system of some kind.
+                </p>
+            </template>
+            <template #solution>
+                <p class="text-sm text-grayMiddle ml-8">
+                    Combine touchscreen and physical controls into some kind of cheap but multifunctional interaction.
+                </p>
+            </template>
         </IntroStructure>
 
         <!-- INTRO HIGHLIGHTS -->

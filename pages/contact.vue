@@ -5,14 +5,14 @@
       <div class="w-screen h-20 bg-white"></div>
       <div class="w-screen h-screen content-center z-10 bg-white flex items-center">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 lg:gap-16 mb-16 md:mb-32">
-            <div class="h-full col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-2 bg-grayDarkest rounded-md p-4 flex items-center">
+            <div class="notch notch-border h-full col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-2 bg-black p-4 flex items-center">
                 <form
                     name="contact"
                     action="/success"
                     method="POST"
                     netlify-honeypot="favoritecolor"
                     data-netlify="true"
-                    class="font-main flex flex-col"
+                    class="font-main w-full flex flex-col"
                     >
                     <input type="hidden" name="form-name" value="contact" />
                     <p class="-z-10 max-h-0 opacity-0 pointer-events-none" tabindex="-1">
@@ -22,11 +22,11 @@
                     </p>
                     <p class="w-full flex flex-col text-grayLightPrimary text-sm mb-8 gap-1">
                         <label for="email">Email —</label>
-                        <input id="email" type="email" maxlength="320" name="email" class="rounded-sm text-base text-grayDarker p-2" required>
+                        <input id="email" type="email" maxlength="320" name="email" class="rounded-sm text-base text-grayDarkest p-2" required>
                     </p>
                     <p class="w-full flex flex-col text-grayLightPrimary text-sm mb-8 gap-1">
                         <label for="subject">Subject —</label>
-                        <input id="subject" type="text" maxlength="100" name="subject" class="rounded-sm text-base text-grayDarker p-2" required>
+                        <input id="subject" type="text" maxlength="100" name="subject" class="rounded-sm text-base text-grayDarkest p-2" required>
                     </p>
                     <p class="w-full flex flex-col text-grayLightPrimary text-sm mb-8 gap-1">
                         <label for="message">Message —</label>
@@ -35,7 +35,7 @@
                             v-model="messageText" 
                             name="message" 
                             maxlength="500" 
-                            class="rounded-sm text-base text-grayDarker p-2" 
+                            class="rounded-sm text-base text-grayDarkest p-2" 
                             required 
                             @input="updateCharacterCount">
                         </textarea>
@@ -46,7 +46,7 @@
                         </span>
                     </p>
                     <p class="w-full flex justify-end">
-                        <button type="submit" class="button px-4 py-2 bg-grayLightPrimary hover:bg-mint text-grayDarker hover:text-white rounded-sm">Send</button>
+                        <button type="submit" class="button notch px-4 py-2 bg-white hover:bg-mint text-grayDarker hover:text-black">Send</button>
                     </p>
                 </form>
             </div>

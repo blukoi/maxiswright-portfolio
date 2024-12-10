@@ -1,9 +1,10 @@
 <template>
-    <nav class="fixed z-50 top-0 w-full h-20 bg-whiteFaded backdrop-filter backdrop-blur-sm lg:bg-transparent lg:backdrop-filter-none font-main">
-      <div class="w-full h-full container mx-auto px-4 sm:px-0 lg:py-2 flex flex-row space-between content-center">
-        <div class="w-full h-full lg:h-max lg:bg-whiteFaded lg:backdrop-filter lg:backdrop-blur-sm lg:overflow-hidden lg:rounded-md lg:pr-4 flex flex-row justify-between">
-          <nuxt-link to="/" class="self-center px-2 sm:px-8 py-2 rounded-sm lg:rounded-none h-fit hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-black hover:text-white active:text-mint stroke-none focus:stroke-white flex flex-row gap-4">
-            <div class="w-12 h-12 self-center rounded-full">
+  <div>
+    <nav class="fixed z-50 top-0 w-full h-max bg-transparent font-main">
+      <div class="w-full h-full container mx-auto px-4 sm:px-0 py-4 flex flex-row space-between content-center">
+        <div class="notch notch-border w-full h-10 h-max border border-black bg-whiteFaded backdrop-filter backdrop-blur-sm overflow-hidden flex flex-row justify-between">
+          <nuxt-link to="/" class="notch self-center px-8 py-2 rounded-none h-fit border-r border-black hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-black hover:text-white active:text-mint stroke-none focus:stroke-white flex flex-row gap-2">
+            <div class="w-6 h-6 self-center rounded-full">
               <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="rounded-full fill-current">
                 <defs>
                   <mask id="cutout-mask" x="0" y="0" width="72" height="72">
@@ -15,33 +16,46 @@
                 <rect x="0" y="0" width="72" height="72" mask="url(#cutout-mask)"/>
               </svg>
             </div>
-            <h1 class="font-title text-2xl self-center hidden sm:block">Max Wright</h1>
+            <h1 class="font-title title-bold self-center hidden sm:block pt-px">Max Wright</h1>
           </nuxt-link>
-          <ul class="flex flex-row gap-3 h-fill items-center uppercase text-xs font-bold tracking-wider">
+          <ul class="border-l border-black flex flex-row h-full items-center uppercase text-xs font-semibold tracking-widest">
             <li class="hidden">
-                <ButtonSmall label="Home" link="/" />
+                <NavButton label="Home" link="/" />
             </li>
             <li>
-                <ButtonSmall label="Work" link="/work" />
+                <NavButton label="Work" link="/work" />
             </li>
             <li class="hidden md:block">
-                <ButtonSmall label="Side Projects" link="/sideprojects" />
+                <NavButton label="Side Projects" link="/sideprojects" />
             </li>
             <li class="hidden sm:block">
-                <ButtonSmall label="About" link="/about" />
+                <NavButton label="About" link="/about" />
             </li>
             <li>
-                <ButtonSmall label="Contact" link="/contact" />
+                <NavButton label="Contact" link="/contact" />
             </li>
             <li class="hidden lg:block">
-              <a href="/WrightMax_Resume.pdf" class="px-3 py-2 font-main bg-transparent hover:bg-black focus:bg-black active:bg-mint focus:border-white text-black hover:text-white focus:text-white active:text-white rounded-sm" target="_blank" rel="noopener noreferrer">
-                  Resume
+              <a href="/WrightMax_Resume.pdf" class="px-4 py-5 h-full font-main bg-transparent hover:bg-mint focus:bg-mint active:border-b-2 active:border-black focus:border-white text-black hover:text-white focus:text-white active:text-white" target="_blank" rel="noopener noreferrer">
+                Resume
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="decoration-window hidden md:block z-40 font-mono mix-blend-difference">
+      <div class="decoration">
+        <div id="topLeft"></div>
+        <div id="topRight">
+          <p class="top-right-text"><span></span></p>
+        </div>
+        <div id="bottomLeft">
+          <p class="bottom-left-text"><span></span></p>
+        </div>
+        <div id="bottomRight"></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,3 +63,123 @@ export default {
   name: 'NavBar',
 }
 </script>
+
+<style>
+.decoration-window {
+  position: fixed;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.decoration {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+}
+
+#topLeft, #topRight, #bottomLeft, #bottomRight {
+  position: absolute;
+  width: 16px;
+  height:16px;
+  border: solid #000000;
+  filter: invert(1);
+}
+
+#topLeft {
+  top: 16px;
+  left: 16px;
+  border-width: 1px 0 0 1px;
+}
+
+#topRight {
+  top: 16px;
+  right: 16px;
+  border-width: 1px 1px 0 0;
+}
+
+#bottomLeft {
+  left: 16px;
+  bottom: 16px;
+  border-width: 0 0 1px 1px;
+}
+
+#bottomRight {
+  right: 16px;
+  bottom: 16px;
+  border-width: 0 1px 1px 0;
+}
+
+.top-right-text {
+  position: relative;
+  top: 8px;
+  right: -8px;
+  transform: rotate(90deg);
+}
+
+.bottom-left-text {
+  position: relative;
+  bottom: 16px;
+  left: -8px;
+  transform: rotate(-90deg);
+}
+
+.top-right-text span::before {
+  white-space: no-wrap;
+  content: "01000001.00100000.01110100.01100001.01100011.01101111";
+  animation: top-right-text infinite 6s;
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+.bottom-left-text span::before {
+  white-space: no-wrap;
+  content: "01001001.01100110.00100000.01111001.01101111.01110101.00100111.01110010.01100101";
+  animation: bottom-left-text infinite 5s;
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+@keyframes top-right-text {
+  
+  0% {
+    content: "01000001.00100000.01110100.01100001.01100011.01101111";
+  }
+
+  33.33% {
+    content: "01101001.01110011.00100000.01100001";
+  }
+
+  66.66% {
+    content: "01110011.01100001.01101110.01100100.01110111.01101001.01100011.01101000.00101110";
+  }
+  
+}
+
+@keyframes bottom-left-text {
+
+  0% {
+    content: "01001001.01100110.00100000.01111001.01101111.01110101.00100111.01110010.01100101";
+  }
+
+  20% {
+    content: "01110010.01100101.01100001.01100100.01101001.01101110.01100111";
+  }
+
+  40% {
+    content: "01110100.01101000.01101001.01110011";
+  }
+
+  60% {
+    content: "01110000.01101100.01100101.01100001.01110011.01100101";
+  }
+
+  80% {
+    content: "01101000.01101001.01110010.01100101.00100000.01101101.01100101.00101110";
+  }
+  
+}
+</style>

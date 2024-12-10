@@ -5,25 +5,25 @@
                 <div class="col-span-1 col-start-1">
                     <ul class="font-main font uppercase text-xs tracking-widest space-y-6">
                         <li>
-                            <ButtonSecondary label="Home" link="/" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="Home" link="/" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <ButtonSecondary label="Work" link="/work" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="Work" link="/work" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <ButtonSecondary label="Side Projects" link="/sideprojects" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="Side Projects" link="/sideprojects" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <ButtonSecondary label="About" link="/about" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="About" link="/about" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <ButtonSecondary label="Links" link="/links" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="Links" link="/links" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <ButtonSecondary label="Contact" link="/contact" class="px-2 py-1 hover:bg-white text-white hover:text-mint rounded-sm"/>
+                            <ButtonSecondary label="Contact" link="/contact" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <a href="/WrightMax_Resume.pdf" class="px-2 py-1 rounded-sm bg-transparent hover:bg-white text-white hover:text-mint focus:text-white active:text-white hover:font-semibold" target="_blank" rel="noopener noreferrer">
+                            <a href="/WrightMax_Resume.pdf" class="notch-small px-2 py-1 bg-transparent text-white hover:bg-mint hover:text-black focus:text-white active:text-white hover:font-semibold" target="_blank" rel="noopener noreferrer">
                                 Resume
                             </a>
                         </li>
@@ -31,8 +31,8 @@
                 </div>
 
                 <div class="col-span-1 col-start-1 md:col-start-2 flex flex-col justify-between space-y-6 mt-6 md:mt-0">
-                    <div class="flex flex-row items-center justify-start md:justify-end space-x-4">
-                        <div class="h-12 w-12 rounded-full bg-grayDarkest text-white">
+                    <div class="flex flex-row items-center justify-start md:justify-end md:items-center space-x-4">
+                        <div class="h-16 w-16 rounded-full bg-white text-black">
                             <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="fill-current">
                             <g id="Layer_1-2">
                                 <path class="cls-2" d="M39,16.31l1.25-1.2c2.09-2,4.86-3.11,7.75-3.11h0v48h-6l.3-34.88c.01-1.25-1.43-1.95-2.41-1.18h0c-2.29,1.8-5.51,1.8-7.8,0h0c-.98-.77-2.42-.06-2.41,1.18l.3,34.88h-6V12s0,0,0,0c2.89,0,5.66,1.11,7.75,3.11l1.25,1.2c1.68,1.6,4.32,1.6,5.99,0Z"/>
@@ -40,10 +40,20 @@
                             </g>
                             </svg>
                         </div>
-                        <h1 class="font-title text-white text-2xl">Max Wright</h1>
+                        <!-- <h1 class="font-title title-bold pt-1 text-white text-2xl">Max Wright</h1> -->
                     </div>
-                    <div class="font-main text-grayDarkest text-left md:text-right text-sm">
-                        <p>Copyright © 2016 — 2024 Max Wright</p>
+                    <!-- <div class="font-main text-grayMiddle text-left md:text-right text-sm">
+                        <p>Copyright © 2016-2024 <span class="text-white">「</span> Designed in Figma & Coded in Vue.js by Max Wright <span class="text-white">」</span></p>
+                    </div> -->
+                </div>
+
+                <div class="col-span-1 col-start-1 md:col-span-2 mt-6 md:mt-0 h1 border-b border-grayDarkest">
+                </div>
+
+                <div class="col-span-1 col-start-1 md:col-span-2 flex flex-col justify-between space-y-6 mt-6 md:mt-0">
+                    <div class="font-main text-grayDarker text-left md:text-center text-sm">
+                        <p>Copyright © 2016-2024</p>
+                        <p><span class="text-white">「</span> Designed in Figma & Coded in Vue.js by Max Wright <span class="text-white">」</span></p>
                     </div>
                 </div>
             </div>

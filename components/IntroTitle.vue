@@ -1,21 +1,31 @@
 <template>
     <div>
-        <div class="fixed top-0 w-full h-50vh z-0">
-            <div class="w-full h-20 bg-black relative z-10"></div>
-            <div class="w-full bg-black">
-                <div class="w-full bg-black relative z-10">
-                    <div class="container mx-auto px-4 md:px-0 pt-4 md:pt-20 pb-4">
-                        <h1 class="font-title text-3xl gradient-text" :class="bgColor">
-                            <slot name="title"></slot>
+        <div class="w-full relative h-160 md:h-180">
+            <div ref="parallaxImage" :class="mediaBackground" class="absolute top-0 left-0 w-full h-full h-64 flex place-items-center">
+                <slot name="media" />
+            </div>
+            <div class="absolute top-0 left-0 w-full h-full bg-transparent">
+                <div class="container mx-auto px-4 sm:px-0 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-x-16">
+                    <div class="col-span-1 lg:col-span-2 bg-white border border-black border-t-4 mt-20 p-4 pl-8">
+                        <h1 class="font-title title-bold text-xl md:text-3xl gradient-text pt-1" :class="bgColor">
+                            <slot name="title" />
                         </h1>
                     </div>
-                </div>
-                <div class="w-full h-80 md:h-112 flex z-0 relative" :class="mediaBackground">
-                    <slot name="media"></slot>
+                    <div class="col-span-1 lg:col-span-2 flex flex-col md:flex-row space-y-1 space-x-0 md:space-y-0 md:space-x-4 filter drop-shadow-md">
+                        <h3 class="border-0 md:border-l-4 border-white pl-0 md:pl-4 w-max h-full font-bold text-white place-items-center pt-1">
+                            Info
+                        </h3>
+                        <slot name="info" />
+                    </div>
+                    <div class="col-span-1 lg:col-span-2 flex flex-col md:flex-row space-y-1 space-x-0 md:space-y-0 md:space-x-4 filter drop-shadow-md">
+                        <h3 class="border-0 md:border-l-4 border-white pl-0 md:pl-4 w-max h-full font-bold text-white place-items-center pt-1">
+                            Tools
+                        </h3>
+                        <slot name="tools" />
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="w-full h-112 md:h-160 bg-transparent inline-block"></div>
     </div>
 </template>
 
@@ -30,7 +40,22 @@ export default{
             type: String,
             default: "bg-grayDarkest"
         }
-    }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            const scrolled = window.scrollY;
+            const offset = scrolled * 0.5;
+            if (this.$refs.parallaxImage) {
+                this.$refs.parallaxImage.style.transform = `translateY(${offset}px)`;
+            }
+        }
+    },
 }
 </script>
 

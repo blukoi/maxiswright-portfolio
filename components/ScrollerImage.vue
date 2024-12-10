@@ -1,12 +1,12 @@
 <template>
     <div class="space-y-16">
-        <div class="flex flex-col justify-center rounded-sm" :class="imageParent">
-            <img :srcset="getSrcset" :sizes="sizes" :src="srcset.small" :alt="altText" class="rounded-sm"/>
+        <div class="flex flex-col justify-center" :class="imageParent">
+            <img :srcset="getSrcset" :sizes="sizes" :src="srcset.small" :alt="altText"/>
         </div>
         <div class="w-60 md:w-96 shrink-0 inline-block space-y-4">
             <h3 class="text-white font-bold uppercase">{{ title }}</h3>
             <div v-if="$slots.caption">
-                <slot name="caption"></slot>
+                <slot name="caption" />
             </div>
         </div>
     </div>

@@ -15,57 +15,47 @@
                     ]">
                 </VideoCover>
             </template>
+            <template #info>
+                <PillsAlone 
+                    :items="['Automotive UX', '9 Weeks', 'October - December 2023', '5 Team Members']">
+                </PillsAlone>
+            </template>
+            <template #tools>
+                <PillsAlone 
+                    :items="['Miro', 'Figma', 'SolidWorks', 'KeyShot', 'Adobe Premiere', 'Adobe Audition', 'ElevenLabs']">
+                </PillsAlone>
+            </template>
         </IntroTitle>
 
         <!-- CASE STUDY INTRO -->
-        <IntroStructure>
-            <IntroWork :showDisclaimer="true">
-                <template #project>
-                    The 2035 Apple Car: imagining evolved experiences for next-gen electric vehicles
-                </template>
-                <template #direction>
-                    How might we design seamless automotive experiences which support Apple’s existing ecosystem?
-                </template>
-                <template #disclaimer>
-                    <span class="italic">This project is a conceptual design exercise and is not officially affiliated with or endorsed by Apple Inc. In addition, myself and my team are not employed by, or affiliated with, Apple Inc. All trademarks and copyrights are the property of their respective owners. Any images used are displayed for illustrative and/or research purposes.</span>
-                </template>
-                <template #info>
-                    <CopyPills 
-                        section-name="Info"
-                        :items="['Automotive UX', '9 Weeks', 'October - December 2023', '5 Team Members']">
-                    </CopyPills>
-                </template>
-                <template #tools>
-                    <CopyPills 
-                        section-name="Tools"
-                        :items="['Miro', 'Figma', 'SolidWorks', 'KeyShot', 'Adobe Premiere', 'Adobe Audition', 'ElevenLabs']">
-                    </CopyPills>
-                </template>
-                <template #concise>
-                    <ConciseSwitch v-model="isConcise"></ConciseSwitch>
-                </template>
-            </IntroWork>
-
-            <IntroOverview v-if="!isConcise">
-                <template #challenges>
-                    <ul class="list-disc list-outside pl-4 space-y-4">
-                        <li>Because Apple is a technology company, rather than a car company, there was not a lot of existing design language in the context of a vehicle (other than CarPlay) in the same way that companies like Ford or BMW would have existing design & UI patterns. We had to look at how Apple approaches new technologies, like VR, to create updated brand-appropriate UI and prototypes.</li>
-                        <li>We faced significant pressure to imagine experiences for future technologies which was a little difficult for us. Given Apple's reputation for innovation, rather than creating entirely new technologies, we focused on enhancing seamless user experiences with a strong emphasis on human factors.</li>
-                    </ul>
-                </template>
-                <template #concept>
-                    <p>Our concept for the Apple Car involves multiple explorations. Among them are seamless transitions between your devices and your vehicle, exploring visual design language and UX for meter design involving autonomous driving, integrating apps in media screens to help enforce your personal vehicle as a “third space”, and exploring practical uses of integrated AR/VR within your personal vehicle. To bolster all of these concepts, we also created a rough interior model for the dashboard, windshield, center console, and steering wheel to give us a better spatial understanding of the cockpit. All together, this created a unified concept of our vision for a 2035 Apple Car, nicknamed Apple Vulcan.</p>
-                </template>
-                <template #role>
-                    <p>We did all of our preparatory work, including research, concept development, and storyboarding, as a team. As we refined our concepts we had more defined individual roles.</p>
-                    <p>I was responsible for iterating and creating the high fidelity prototype for one of our concepts (seamlessly transitioning devices when entering or exiting an EV), writing the script for the animatic video, recording and editing all of the dialogue, and some smaller duties.</p>
-                    <p class="italic">Any overview will detail the entire concept as created by the team. For in-depth prototype information, I will only be detailing the work I personally did on a singular concept (seamless transition into the car). You can see the full credits at the end and visit my teammates’ websites if you’d like more information about the other concepts we worked on.</p>
-                </template>
-                <template #process>
-                    <p>We started by personally analyzing vehicles to better understand current trends in automotive UX design. Next, we dived into brand research, exploring Apple’s current vision and customer experience, creating a mind map for future expansion, then came up with a new brand strategy and persona. We used a lotus blossom exercise to come up with a variety of concept iterations quickly, then made multiple scenarios and storyboards to contextualize our concepts. Finally, we created high fidelity prototypes and an animated video to act simultaneously as a promotional video and explainer.</p>
-                    <PillsAlone :items="['Primary Research', 'Product Analysis', 'Heuristic Analysis', 'Brand Research', 'Comparative Analysis', 'Mind Map', 'Brand Strategy', 'Conceptualization', 'Iteration', 'Beat Board', 'Storyboard', 'Prototyping', 'Animatic']"></PillsAlone>
-                </template>
-            </IntroOverview>
+        <IntroStructure :showDisclaimer="false">
+            <template #overview>
+                <p class="mb-4"><span class="font-bold">The 2035 Vulcan</span> is an Apple-branded EV concept incorporating forward-thinking, seamless user experiences that maintain support for Apple's existing product/software ecosystem. The incorporated features include a profile system on your phone, similar to the Apple Wallet, to remember your personal preferences when getting into an Apple Car, a fleshed out design system for the dashboard screens that even highlights autonomous features, and a seamless transition between Apple devices and your car, such as ongoing phone calls, GPS navigation, and music, when you enter or exit the vehicle.</p>
+                <p><span class="font-bold"></span></p>
+            </template>
+            <template #problem>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Drivers experience a disconnect when moving from their personal devices into their car. Preferences and ongoing activities (calls, media, navigation) must often be manually reconfigured.</li>
+                    <li>Even with advanced infotainment systems, users often face complicated interfaces that disrupt ease of use.</li>
+                    <li>While Apple products are renowned for their intuitive integration, the car space remains largely untapped for seamless Apple ecosystem transitions, limiting the brand’s promise of connectedness and accessibility.</li>
+                </ul>
+            </template>
+            <template #goals>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Create a user interface that requires minimal learning curve, aligning with Apple’s brand values of accessibility and intuitiveness, so that anyone can quickly understand and interact with the system.</li>
+                    <li>Strengthen the feeling of a unified Apple ecosystem by making the transition from phone to car as effortless and integrated as moving from an iPhone to a MacBook.</li>
+                </ul>
+            </template>
+            <template #solution>
+                <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
+                    <li>Develop a consistent visual and interaction design language—familiar icons, gestures, and layouts that echo iOS and macOS—ensuring users feel at home with the car’s interface.</li>
+                    <li>Integrate the car’s IVI and AR features with Apple’s suite of apps so that ongoing FaceTime calls, playlists, and navigation routes instantly resume in the car’s environment.</li>
+                    <li>Implement a profile system linked to a user’s Apple ID and stored on their phone. When detected by the car’s system, it automatically configures seating, climate, dashboard preferences, and entertainment options.</li>
+                </ul>
+            </template>
+            <template #disclaimer>
+                <p class="text-grayMiddle inline">This project is a conceptual design exercise and is not officially affiliated with or endorsed by Apple Inc. In addition, myself and my team are not employed by, or affiliated with, Apple Inc. All trademarks and copyrights are the property of their respective owners. Any images used are displayed for illustrative and/or research purposes.</p>
+            </template>
         </IntroStructure>
 
         <!-- INTRO HIGHLIGHTS -->

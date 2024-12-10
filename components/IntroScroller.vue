@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto px-4 md:px-0 relative">
         <div class="w-full overflow-x-auto relative px-8 hidescrollbar">
-            <div class="relative bg-black rounded-md p-8 flex flex-nowrap justify-start space-x-32 md:space-x-64 block w-max font-main text-sm text-grayLightPrimary">
+            <div class="relative bg-black notch-large p-8 flex flex-nowrap justify-start space-x-32 md:space-x-64 block w-max font-main text-sm text-grayLightPrimary">
                 <!-- Slots for dynamic content -->
                 <slot></slot>
             </div>

@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="link" class="bg-transparent text-black hover:text-white focus:text-white active:text-white hover:font-semibold">
+    <nuxt-link :to="link" class="bg-transparent text-black hover:bg-mint hover:text-black focus:text-white active:text-white">
         {{ label }}
     </nuxt-link>
 </template>

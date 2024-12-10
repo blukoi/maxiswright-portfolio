@@ -1,44 +1,51 @@
 <template>
-    <div class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8">
+    <div class="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16">
+        <div class="col-span-1 md:col-span-2 space-y-8">
+
+            <div class="border-black border border-t-4 bg-white -mt-24 p-4 md:px-8">
+                <CopyIntro section-name="Overview">
+                    <template #copy>
+                        <slot name="overview"></slot>
+                    </template>
+                </CopyIntro>
+            </div>
+
+        </div>
+        <div class="hidden md:block md:col-span-1 h-full"></div>
         <div class="col-span-1 space-y-8">
 
-            <CopyIntro section-name="Project">
-                <template #copy>
-                    <slot name="project"></slot>
-                </template>
-            </CopyIntro>
-            <CopyIntro section-name="Direction">
-                <template #copy>
-                    <slot name="direction"></slot>
-                </template>
-            </CopyIntro>
-            <CopyIntro v-if="showDisclaimer" section-name="Disclaimer">
-                <template #copy>
-                    <slot name="disclaimer"></slot>
-                </template>
-            </CopyIntro>
+            <h3 class="font-title title-normal text-grayDarkest text-2xl top-hash-mark-lightgray">
+                Problem
+            </h3>
+            <slot name="problem"></slot>
 
         </div>
         <div class="col-span-1 space-y-8">
 
-            <slot name="info"></slot>
-            <slot name="tools"></slot>
-            <slot name="concise"></slot>
+            <h3 class="font-title title-normal text-grayDarkest text-2xl top-hash-mark-lightgray">
+                Goals
+            </h3>
+            <slot name="goals"></slot>
+
+        </div>
+        <div class="col-span-1 space-y-8">
+
+            <h3 class="font-title title-normal text-grayDarkest text-2xl top-hash-mark-lightgray">
+                Solution
+            </h3>
+            <slot name="solution"></slot>
+
+        </div>
+        <div v-if="$slots.disclaimer" class="col-span-1 md:col-span-3 space-y-8 text-xs">
+
+            <h3 class="font-main font-bold text-grayDarkest inline">
+                Disclaimer — 
+            </h3>
+            <slot name="disclaimer" class="inline"></slot>
 
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    props: {
-        showDisclaimer: {
-            type: Boolean,
-            default: true  // Default value to show, change as needed
-        }
-    }
-}
-</script>
 
 <!-- EXAMPLE OF HOW TO USE
 

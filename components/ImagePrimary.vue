@@ -3,7 +3,7 @@
         <source :srcset="srcsetLarge" media="(min-width: 1024px)">
         <source :srcset="srcsetMedium" media="(min-width: 768px)">
         <source :srcset="srcsetSmall" media="(min-width: 480px)">
-        <img :src="srcsetSmall" :alt="altText" :style="imageStyle" class="rounded-sm md:rounded-md overflow-none" :class="additionalStyles">
+        <img :src="srcsetSmall" :alt="altText" :style="imageStyle" class="overflow-none" :class="additionalStyles">
     </picture>
 </template>
 
