@@ -61,15 +61,6 @@
 <script>
 export default {
   name: 'NavBar',
-  mounted() {
-  this.$nextTick(() => {
-    if (typeof FontAwesome !== 'undefined') {
-      FontAwesome.dom.i2svg();
-    } else {
-      console.error("FontAwesome is not defined on window.");
-    }
-  });
-}
 }
 </script>
 
