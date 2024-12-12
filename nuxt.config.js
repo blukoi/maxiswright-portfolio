@@ -23,7 +23,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/Assets/css/tailwind.css'
+    '~/Assets/css/tailwind.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -53,6 +54,7 @@ export default {
       minify: {
         decodeEntities: false
       }
-    }
+    },
+    transpile: ['@fortawesome/vue-fontawesome']
   },
 }
