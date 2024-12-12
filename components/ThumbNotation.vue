@@ -1,9 +1,9 @@
 <template>
     <div class="bg-transparent rounded-sm flex flex-row justify-start items-start w-full space-x-4 text-grayDarker">
-        <div class="w-10 h-10 relative rounded-sm" :class="colorOptions">
-            <FontAwesomeIcon :icon="[iconPack, iconName]" class="text-xl absolute top-1/2 left-1/2" style="transform: translateX(-50%) translateY(-50%);" />
+        <div class="w-8 h-8 relative rounded-full" :class="colorOptions">
+            <FontAwesomeIcon :icon="[iconPack, iconName]" class="text-md absolute top-1/2 left-1/2" style="transform: translateX(-50%) translateY(-50%);" />
         </div>
-        <div class="my-0.5 pt-2 flex-1 min-w-0">
+        <div class="my-0.5 pt-1 flex-1 min-w-0">
             <p class="font-main break-words" :class="textStyles">
                 <slot></slot>
             </p>

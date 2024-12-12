@@ -7,17 +7,26 @@
         <IntroTitle :bgColor="bgColor" mediaBackground="bg-grayDarkest">
             <template #title>{{ project.title }} —</template>
             <template #media>
-                <VideoCover
+                <div class="w-full h-full flex justify-center">
+                    <ImagePrimary 
+                        srcsetLarge="/Experiments/CarControls/0_Background_Full.png"
+                        srcsetMedium="/Experiments/CarControls/0_Background_Med.png"
+                        srcsetSmall="/Experiments/CarControls/0_Background_Small.png"
+                        altText="A mockup of a modern car dashboard with a singular large touchscreen in the center; below the screen are 2 knobs but the center of each knob is also a touchscreen."
+                        additionalStyles="min-w-full min-h-full object-cover"
+                    />
+                </div>
+                <!-- <VideoCover
                 :videoSources="[
                     { src: '/Experiments/CarControls/0_Animated_Full.mp4', type: 'video/mp4' },
                     { src: '/Experiments/CarControls/0_Animated_720.mp4', type: 'video/mp4' },
                     { src: '/Experiments/CarControls/0_Animated_480.mp4', type: 'video/mp4' },
                     ]">
-                </VideoCover>
+                </VideoCover> -->
             </template>
             <template #info>
                 <PillsAlone 
-                    :items="['Automotive UX', '2 Weeks', 'October 2023', 'Solo Project']">
+                    :items="['Automotive UX', 'Role: UX Designer', '2 Weeks', 'October 2023', 'Solo Project']">
                 </PillsAlone>
             </template>
             <template #tools>
@@ -30,11 +39,11 @@
         <!-- CASE STUDY INTRO -->
         <IntroStructure :showDisclaimer="false">
             <template #overview>
-                <p class="mb-4">A brief project exploring how to improve the relationship that drivers have with their car through a combination of both touchscreen and physical controls, rather than simply replacing physical controls as much as possible by housing everything in a touchscreen.</p>
+                <p class="mb-4">A brief project exploring how to improve the relationship that drivers have with their car through a combination of both touchscreen and physical controls, rather than the preferred method of replacing physical controls as much as possible by housing everything in a touchscreen.</p>
             </template>
             <template #problem>
                 <p class="text-sm text-grayMiddle ml-8">
-                    Many car owners are frustrated by the lack of physical controls, like knobs and buttons, that have been replaced by touch screens which can be slow, inconvenient, unresponsive, and even unsafe to use.
+                    Many car owners are frustrated by the lack of physical controls, like knobs and buttons, that have been replaced by touchscreens which can be slow, inconvenient, unresponsive, and even unsafe to use.
                 </p>
             </template>
             <template #goals>
@@ -54,20 +63,22 @@
         <!-- HOW MIGHT WE & HERO IMAGE -->
         <IntroHowMightWe
             how="Core focus"
-            direction="Explore ways that physical controls can be combined with touchscreens to consolidate and centralize interactions"
-            title="Unifying Screens with Physical Controls"
+            direction="Goal: explore ways that physical controls can be combined with touchscreens to consolidate and centralize interactions"
+            title="The problem with touchscreens"
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">The prototype and interaction I ended up with is a combination of 2 physical knobs with integrated touchscreens that can work together with the IVI system to control multiple aspects at once.</p>
+                <p class="pl-0 font-main text-sm">A growing number of vehicles have looked for ways to reduce costs, understandably. One such ethos reduces the complexity of a typical dashboard as much as possible by removing all of the physical controls; some manufacturers have even gone as far as removing the entire gauge cluster from behind the steering wheel. All of those controls and displays are then housed in one or more touchscreens.</p>
+                <p class="pl-0 pt-4 font-main text-sm">Not only can this be dangerous, its also slower to navigate through layers of controls, even more so while driving, and introduces other problems. Some touchscreens have issues with multi-touch interactions, and designing singular screens to be interactive for 2 people at once (like a driver and passenger) introduces even more room for mistakes.</p>
             </template>
             <template #media>
                 <ImagePrimary
-                    srcset-small="/Experiments/CarControls/0_Cover_Sm.png"
-                    srcset-medium="/Experiments/CarControls/0_Cover_Med.png"
-                    srcset-large="/Experiments/CarControls/0_Cover_Full.png"
-                    alt-text="A mockup of the interior and dashboard of a car, showing the center screen accompanied by two circular touch screens below, the outer edges of which also act as physical knobs."
+                    srcset-small="/Experiments/CarControls/0_Problem.jpg"
+                    srcset-medium="/Experiments/CarControls/0_Problem.jpg"
+                    srcset-large="/Experiments/CarControls/0_Problem.jpg"
+                    alt-text="A mockup of a 2017 Tesla Model 3 interior, showing the entire dashboard. To the left is the steering wheel, in the center is a large touchscreen, but there's no other controls or displays, not even a speedometer gauge."
                 />
+                <p class="pl-4 md:pl-8 font-main text-xs text-grayMiddle">©Reuters 2017</p>
             </template>
         </IntroHowMightWe>
 
@@ -78,13 +89,12 @@
             title="Concept & Feedback"
             iconPack="fas"
             iconName="lightbulb"
-            :visibilityMode="1"
+            totalProcess="2"
             headerRef="1"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>When learning about automotive UX, one of my first inclinations was to try to figure out a better solution than a singular touch screen to house the myriad of controls normally arrayed on the dashboard. Since the driving force behind this shift is the cost savings from not having to manufacturer all of the controls, knobs, sliders, and the extensive electric systems to connect them all, the solution should be as minimal as possible while still allowing for multiple types of control and interactions.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- INITIAL SKETCH -->
             <ContentMediaWithCaption
@@ -99,6 +109,7 @@
                         srcset-medium="/Experiments/CarControls/1_Sketch_Med.png"
                         srcset-large="/Experiments/CarControls/1_Sketch.png"
                         alt-text="A rough sketch of the dashboard and center console of a car, showing the center touch screen and two knobs underneath it"
+                        additionalStyles="md:px-16 lg:px-32 xl:px-40"
                     />
                 </template>
             </ContentMediaWithCaption>
@@ -108,7 +119,7 @@
                 title="Wireframing Feedback"
             >
                 <template #caption>
-                    <p>Working from the initial idea, I sketched some low fidelity wireframes to start figuring out the interactions. I showed this series of sketches and flows to some of my associates and, among other conversations (about Google’s Nest thermostat, for instance) got this feedback which really helped to clarify how I should move forward with my exploration.</p>
+                    <!-- <p>I showed this series of low-fidelity sketches and flows to some of my associates and, among other conversations (about Google’s Nest thermostat, for instance) got this feedback.</p> -->
                 </template>
                 <template #custom>
                     <ContentMediaWithThumbs>
@@ -119,7 +130,7 @@
                                 iconName="1" 
                                 textStyles="italic"
                             >
-                                “Are these touch screen or will they be controlled entirely by rotating and clicking the dial?”
+                                “Are these touch screen or will they be controlled only by rotating and clicking the dial?”
                             </ThumbNotation>
                             <ThumbNotation 
                                 :colorOptions="['text-white', bgColor]" 
@@ -127,11 +138,11 @@
                                 iconName="2" 
                                 textStyles="italic"
                             >
-                                “The dials should have a preview of all of the available parameters, instead of focusing on one at a time, so its easier for users to get to the one they want to change.”
+                                “The dials should have a preview of all of the available options, instead of focusing on one at a time, so its easier for users to get to the one they want to change.”
                             </ThumbNotation>
                         </template>
                         <template #media>
-                            <div class="rounded-sm md:rounded-md bg-grayDarker">
+                            <div class="bg-grayDarker">
                                 <ImagePrimary 
                                     srcsetLarge="/Experiments/CarControls/1_LowFidelity.png"
                                     srcsetMedium="/Experiments/CarControls/1_LowFidelity_Med.png"
@@ -152,20 +163,19 @@
             title="Prototyping"
             iconPack="fas"
             iconName="pen-to-square"
-            :visibilityMode="1"
+            totalProcess="2"
             headerRef="2"
-            :isConcise="isConcise"
         >
-            <ContentBlurb>
+            <!-- <ContentBlurb>
                 <p>I moved to a connected prototype in about a week, incorporating the feedback I’d received from my sketches.</p>
-            </ContentBlurb>
+            </ContentBlurb> -->
 
             <!-- TESTING FLOWS -->
             <ContentCaptionWithCustom
-                title="Testing Flows"
+                title="Testing Feedback"
             >
                 <template #caption>
-                    <p>Staying in low fidelity, I was able to quickly flesh out a prototype with some basic user flows to test whether or not the concept can be useful. These are the main pieces of feedback I received.</p>
+                    <!-- <p>Staying in low fidelity, I was able to quickly flesh out a prototype with some basic user flows to test whether or not the concept can be useful. These are the main pieces of feedback I received.</p> -->
                 </template>
                 <template #custom>
                     <ContentMediaWithThumbs>
@@ -188,7 +198,7 @@
                             </ThumbNotation>
                         </template>
                         <template #media>
-                            <div class="rounded-sm md:rounded-md bg-grayDarker">
+                            <div class="bg-grayDarker">
                                 <ImagePrimary 
                                     srcsetLarge="/Experiments/CarControls/2_Iteration_Full.png"
                                     srcsetMedium="/Experiments/CarControls/2_Iteration_Med.png"
@@ -206,11 +216,11 @@
                 title="Refined"
             >
                 <template #caption>
-                    <p class="mb-4">For one last exploration, I applied the previous feedback. I created a default screen (A/C temperature) with the idea that this would be selectable in the Settings. There’s also individual controls for each seat so that each knob can be in different categories, unlike the previous prototype.</p>
-                    <p>I also slightly reorganized the layout and control scheme. Since the turning ring of the knob can be pressed inward to make selections, I realized it shouldn’t be too difficult (hardware-wise) to pull it outward for another control. This provides more navigation opportunities to go forward and backward through layers.</p>
+                    <p class="mb-4">I created a default screen with the idea that your preferred default would be selectable in Settings. There’s also individual controls for each seat so that each knob can be in different categories, unlike the previous prototype.</p>
+                    <p>Since the turning ring of the knob can be pressed inward to make selections, I realized it shouldn’t be too difficult (hardware-wise) to pull it outward for another control. This provides more navigation opportunities to go forward and backward through layers.</p>
                 </template>
                 <template #media>
-                    <div class="rounded-sm md:rounded-md bg-grayDarker">
+                    <div class="bg-grayDarker">
                         <ImagePrimary 
                             srcsetLarge="/Experiments/CarControls/2_Refined_Full.png"
                             srcsetMedium="/Experiments/CarControls/2_Refined_Med.png"
@@ -238,8 +248,8 @@
                     title="Final Thoughts & Next Steps"
                 >
                     <template #caption>
-                        <p class="mb-4">Manufacturers seem to understand that drivers don’t like the reliance on touchscreens but aren’t very willing to work on more physical controls. There needs to be a medium between the two extremes. Ford, for instance, introduced this IVI system in the Mach E. It has a physical knob embedded near the bottom edge of the screen, which is similar to the solution I explored but with the added expenses of a massive, complex, custom-shaped touch screen with integrated knob and additional, small screen.</p>
-                        <p>This entire project got me extremely intrigued by automotive UX and I would be very happy to continue exploring the industry.</p>
+                        <p class="mb-4">There needs to be a medium between the two extremes of <span class="italic">all touchscreen</span> and <span class="italic">all physical</span>. Ford, for instance, introduced this IVI system in the Mach E. It has a physical knob embedded near the bottom edge of the screen, which is similar to the solution I explored but with the added expenses of a massive, complex, custom-shaped screen with integrated knob and additional, small screen.</p>
+                        <p>This entire project got me extremely intrigued by HMI and the complexities of working within massive organizations and I would be very happy to continue exploring HMI solutions.</p>
                     </template>
                     <template #media>
                         <ImagePrimary

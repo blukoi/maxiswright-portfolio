@@ -11,8 +11,8 @@
                     <ImagePrimary 
                         srcsetLarge="/Work/Tattooo/0_Background_Full.png"
                         srcsetMedium="/Work/Tattooo/0_Background_Med.png"
-                        srcsetSmall="/Work/Tattooo/0_Background_Med.png"
-                        altText="A quadrant matrix showing different positions of competitive platforms; the x-axis shows General on the left and Focused on the right, while the y-axis shows Centralized at the top and Decentralized at the bottom."
+                        srcsetSmall="/Work/Tattooo/0_Background_Small.png"
+                        altText="A series of mockups showing multiple iPhones. Each iPhone shows a different, high-fidelity screen of a mobile app. The mobile app shows pages like Home, Messages, and Contacts in a minimal palette of white and blue."
                         additionalStyles="min-w-full min-h-full object-cover"
                     />
                     <!-- <LottieParent bgColor="bg-tattoooSecondaryDarker" :animation-data="animationData" alt="An animation showing a quick snapshot of what this app can help facilitate: when you get a tattoo idea, you can use this app to post about it, talk to an artist about it, and get the tattoo of your dreams with the artist that's right for you."></LottieParent> -->
@@ -20,7 +20,7 @@
             </template>
             <template #info>
                 <PillsAlone 
-                    :items="['Role: UX Researcher, Product Designer', 'Mobile App', '14 Weeks', 'Sept - December 2022', 'Solo Project']">
+                    :items="['Mobile App', 'Role: UX Researcher, Product Designer', '14 Weeks', 'Sept - December 2022', 'Solo Project']">
                 </PillsAlone>
             </template>
             <template #tools>
