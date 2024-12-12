@@ -2,7 +2,7 @@
     <div>
       <CustomCursor />
       <NavBar />
-      <div class="w-full content-center z-10 bg-grayLighter">
+      <div class="w-full content-center z-10 bg-white">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32 pt-20">
             <div class="col-span-1 md:col-start-2">
                 <div class="space-y-8">
@@ -53,12 +53,12 @@
             </div>
         </div>
       </div>
-      <div class="w-full content-center z-20 bg-grayLighter relative">
+      <div class="w-full content-center z-20 bg-white relative">
         <div class="container px-4 sm:px-0 mx-auto">
             <div class="h-px w-full bg-grayMiddle"></div>
         </div>
       </div>
-      <div class="w-full content-center z-10 bg-grayLighter">
+      <div class="w-full content-center z-10 bg-white">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 mb-16 md:mb-32 pt-20">
             <div class="col-span-1 md:col-start-2">
                 <div class="space-y-8">

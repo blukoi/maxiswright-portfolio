@@ -16,6 +16,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     link: [{ rel: 'stylesheet', href:'https://use.typekit.net/mdm2dyb.css'}],
+    link: [
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.15.3/css/all.css' } // Use the version you need
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
