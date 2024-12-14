@@ -21,9 +21,9 @@
 
                 <div class="static w-full grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-y-32 lg:gap-y-0 gap-x-0 lg:gap-x-16">
                     <div class="z-40 static container col-span-1 sm:col-span-2 lg:col-span-1 col-start-1 sm:col-start-2 lg:col-start-1 lg:grid lg:grid-cols-3 pointer-events-none gap-x-0 lg:gap-x-16 -mt-24 overflow-visible">
-                        <div class="lg:col-span-3 lg:col-start-1 pl-8">
+                        <div class="lg:col-span-3 lg:col-start-1">
                             <div 
-                            class="-ml-8 bg-white text-mint notch-bottom notch-bottom-border border border-t-4 border-black 
+                            class="bg-white text-mint notch-bottom notch-bottom-border border border-t-4 border-black 
                             w-full 
                             h-max 
                             items-center 
@@ -33,11 +33,11 @@
                                     About Max
                                     </h1>
                                 </div>
-                                <div class="w-28 h-28 -ml-8 flex justify-center overflow-hidden border-l border-black">
+                                <div class="w-28 h-28 flex justify-center overflow-hidden border-l border-black">
                                     <img src="/Brand/WrightMax_Portrait.png" alt="Portrait of Max. Look at that forehead!" class="h-28 object-cover overflow-hidden">
                                 </div>
                             </div>
-                            <div class="mt-8 space-y-8">
+                            <div class="mt-8 space-y-8 pl-8">
                                 <div class="font-normal font-main text-sm text-grayMiddle space-y-4">
                                     <p>I’m a UX and product designer applying my expertise in visual communication and systems thinking to enhance digital experiences with a focus on accessibility, empathy, and thoughtful research.</p>
                                     <p>I like working across diverse touchpoints and product ecosystems. Although I don't have to always explore the newest technologies, I like to experiment with new interactions and multimodal digital experiences. My MVP is always research-driven and I'm constantly revisiting and iterating.</p>
