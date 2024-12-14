@@ -68,7 +68,7 @@
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="pl-0 md:pl-8 font-main text-sm">We tried to reflect Apple’s penchant for a seamless user experience by utilizing MagSafe ports to enable owners to use whatever-sized screen they prefer (under the assumption that iPads would get MagSafe features at some point soon). We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
+                <p class="font-main text-sm">We tried to reflect Apple’s penchant for a seamless user experience by utilizing MagSafe ports to enable owners to use whatever-sized screen they prefer (under the assumption that iPads would get MagSafe features at some point soon). We also worked hard to utilize Apple’s current visual design system as it’s in the process of evolving with their extension into wearable and VR spaces.</p>
             </template>
             <template #media>
                 <ImagePrimary
