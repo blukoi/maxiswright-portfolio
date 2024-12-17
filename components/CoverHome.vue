@@ -15,6 +15,15 @@
                 <div v-if="project.animation">
                   <LottieDynamic :animation-path="project.animation"/>
                 </div>
+                <div v-else-if="project['video-lg']">
+                  <VideoPlayer
+                  :videoSources="[
+                      { src: project['video-lg'], type: 'video/mp4' },
+                      { src: project['video-md'], type: 'video/mp4' },
+                      { src: project['video-sm'], type: 'video/mp4' },
+                      ]">
+                  </VideoPlayer>
+                </div>
                 <!-- <LottieParent v-if="project.animation" bgColor="bg-applecarBlue" :animation-data="animationData"></LottieParent> -->
                 <img v-else :src="project.image" :alt="project.title">
               </div>

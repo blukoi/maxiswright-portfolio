@@ -1,8 +1,8 @@
 <template>
     <div class="space-y-16">
         <div class="space-y-4 flex flex-col justify-center" :class="imageParent">
-            <div v-for="(image, index) in srcset" :key="index" class="rounded-sm">
-                <img :srcset="getImageSrcset(image)" :sizes="sizes" :src="image.small" :alt="image.altText || altText" class="rounded-sm"/>
+            <div v-for="(image, index) in srcset" :key="index">
+                <img :srcset="getImageSrcset(image)" :sizes="sizes" :src="image.small" :alt="image.altText || altText"/>
             </div>
         </div>
         <div class="w-60 md:w-96 shrink-0 inline-block space-y-4">

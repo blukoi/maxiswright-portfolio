@@ -1,8 +1,8 @@
 <template>
     <div>
-        <ContentCaptionWithNotes title="Design Priorities">
+        <ContentCaptionWithNotes title="Concept Priorities">
             <template #caption>
-                <p>After taking the time to look at their customer experience, physical and online presence, advertising, design philosophy, and product decisions, these are the priorities we agreed to focus on.</p>
+                <!-- <p>These are the priorities we agreed to focus on.</p> -->
             </template>
             <template #notes>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -16,7 +16,7 @@
                     </template>
                     <template #caption>
                         <h3 class="font-bold">Apple Ecosystem</h3>
-                        <p>Because of the amount of work that Apple puts into their connected product line, any concept we come up with would have to support Apple’s other products and services with clear connections between them.</p>
+                        <p>Any concept we come up with would have to support Apple’s other products and services with clear connections between them.</p>
                     </template>
                 </ContentSmallCardWithMedia>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -30,7 +30,7 @@
                     </template>
                     <template #caption>
                         <h3 class="font-bold">Spatial Computing</h3>
-                        <p>Apple is cognizant of the future of technology going beyond a 2-dimensional screen. While developing a car, Apple would assuredly take advantage of the totality of space within to explore new interactions.</p>
+                        <p>While developing a car, Apple would assuredly take advantage of the totality of space within to explore new interactions.</p>
                     </template>
                 </ContentSmallCardWithMedia>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -44,7 +44,7 @@
                     </template>
                     <template #caption>
                         <h3 class="font-bold">Integration</h3>
-                        <p>We also noted the need for any concepts to not only work alongside the other products but for the experience, apps, and services to be fully integrated and seamless. The goal, therefore, should be frictionless integration.</p>
+                        <p>We also noted the need for any concepts to not only work alongside the other products but for the experience, apps, and services to be fully integrated and seamless.</p>
                     </template>
                 </ContentSmallCardWithMedia>
             </template>

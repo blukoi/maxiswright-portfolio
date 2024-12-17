@@ -16,7 +16,7 @@
             imageParent="h-64 md:h-120 w-64 md:w-120"
         >
             <template #caption>
-                <p>With a new goal of moving into mobility and becoming a more all-encompassing lifestyle company, a more fitting tagline would be, more than thinking, to “Live Different”.</p>
+                <!-- <p>With a new goal of moving into mobility and becoming a more all-encompassing lifestyle company, a more fitting tagline would be, more than thinking, to “Live Different”.</p> -->
             </template>
         </ScrollerImage>
 

@@ -703,8 +703,8 @@
         <!-- OUTRO BEGINNING -->
         <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
-                <div class="w-full flex flex-col space-y-64">
-                    <div class="bg-fontfacingGreen w-full flex justify-center p-32 rounded-md">
+                <div class="w-full flex flex-col space-y-16">
+                    <div class="bg-fontfacingGreen w-full flex justify-center p-32 notch">
                         <div class="w-48 text-white flex flex-col space-y-32">
                             <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.68 216" class="fill-current" alt="Simplistic logo of a capital letter F, the bottom has serifs but the top doesn't; one corner is empty with a square moving into the space to fill it, like a brick being placed into an empty spot in a wall.">
                                 <defs>

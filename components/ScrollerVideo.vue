@@ -1,7 +1,7 @@
 <template>
     <div class="space-y-16">
         <div class="flex flex-col justify-center" :class="videoParent">
-            <video autoplay loop muted playsinline class="rounded-sm">
+            <video autoplay loop muted playsinline >
                 <source v-for="source in videoSources" :key="source.src" :src="source.src" :type="source.type">
             </video>
         </div>
