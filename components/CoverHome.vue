@@ -69,13 +69,16 @@ export default {
 
 <style>
 #projectContainer #projectChild {
-  transition: all 0.5s ease-in-out 0.1s;
   transform: scale(1);
+  background: linear-gradient(to right, black 0%, black 100%);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0% 100%;
+  transition: transform 0.5s ease-in-out 0.1s, background-size 0.5s ease-in-out 0.1s;
 }
 
 #projectContainer:hover #projectChild {
-  transition: all 0.5s ease-in-out 0.1s;
   transform: scale(1.05);
-  background: black;
+  background-size: 100% 100%;
 }
 </style>
