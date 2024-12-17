@@ -81,7 +81,7 @@
         "impacttags":[
 
         ],
-        "color": "bg-fontfacingGreen"
+        "color": "bg-fontfacingPurple"
     },
     {
         "id": "1",
@@ -110,7 +110,7 @@
         "impacttags":[
 
         ],
-        "color": "bg-grayDarker"
+        "color": "bg-tattoooSecondaryDarker"
     },
     {
         "id": "5",
