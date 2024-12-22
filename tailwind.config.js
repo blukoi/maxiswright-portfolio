@@ -3,6 +3,9 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: [],
   presets: [],
+  safelist: [
+    'bg-fontfacingPurple',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
 
