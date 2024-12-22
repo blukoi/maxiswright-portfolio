@@ -43,10 +43,10 @@
                 <p>A training model should be able to figure out many, if not all, of the repeating visual cues from a relatively small sample size. Done correctly, an AI system should therefore be able to speed up the workflow of typeface design.</p>
             </template>
             <template #media>
-                <div class="w-full rounded-sm md:rounded-md text-grayDarkest bg-white px-8 py-8 flex flex-col items-center text-center space-y-8">
-                    <div class="font-title text-2xl flex flex-col justify-center space-y-1 items-center">
+                <div class="w-full text-fontfacingPurple bg-white px-8 py-8 flex flex-col items-center text-center space-y-8">
+                    <div class="font-title title-bold text-2xl flex flex-col justify-center space-y-1 items-center">
                         <h1>With the process in mind</h1>
-                        <h1 class="px-4 py-1 gradient-fontfacing text-white rounded-sm w-max">what is a typeface?</h1>
+                        <h1 class="px-4 pt-1 bg-fontfacingPurple text-white w-max">what is a typeface?</h1>
                     </div>
                     <div class="text-grayMiddle">
                         <svg width="212" height="213" viewBox="0 0 212 213" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">
