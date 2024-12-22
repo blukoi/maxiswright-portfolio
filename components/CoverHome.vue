@@ -1,8 +1,8 @@
 <template>
     <div class="w-full py-8">
       <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-px">
-        <nuxt-link v-for="project in highlightedProjects" id="projectContainer" :key="project.title" :to="project.buttonLink" :class="project.color" class="notch-large col-span-1 overflow-hidden">
-          <div id="projectChild" class="project-thumbnail py-8 lg:py-16 px-4 sm:px-8 lg:px-16 h-full">
+        <nuxt-link v-for="project in highlightedProjects" :key="project.title" :to="project.buttonLink" :class="project.color" class="notch-large col-span-1 overflow-hidden project-container">
+          <div class="project-thumbnail py-8 lg:py-16 px-4 sm:px-8 lg:px-16 h-full project-child">
             <div class="w-full space-y-8 overflow-hidden flex flex-col space-y-8">
               <h1 class="font-title title-normal text-3xl text-white flex flex-col justify-items-start">
                 <!-- <span class="w-max mb-4 h-10 px-4 flex flex-row items-center bg-white text-mint rounded-full space-x-4 z-30">
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style>
-#projectContainer #projectChild {
+.project-container .project-child {
   transform: scale(1);
   background: linear-gradient(to right, black 0%, black 100%);
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@ export default {
   transition: transform 0.5s ease-in-out 0.1s, background-size 0.5s ease-in-out 0.1s;
 }
 
-#projectContainer:hover #projectChild {
+.project-container:hover .project-child {
   transform: scale(1.05);
   background-size: 100% 100%;
 }
