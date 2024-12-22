@@ -63,7 +63,7 @@
         <IntroHowMightWe
             how="How might we..."
             direction="How can we make finding and working with tattoo artists easier and more trustworthy?"
-            title="The problem of trying to get a tattoo"
+            title="The problem when trying to get a tattoo"
             :bgColor="bgColor"
         >
             <template #caption>

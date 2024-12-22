@@ -13,7 +13,7 @@
                     </template>
                 </ContentMediaWithCaption>
             </div>
-            <div class="notch col-span-1 md:col-span-4 md:col-start-2 font-main italic font-bold text-3xl leading-10 p-8 text-white space-y-8 mb-16 md:mb-32 flex flex-col place-items-center" :class="bgColor">
+            <div class="col-span-1 md:col-span-4 md:col-start-2 font-main italic font-bold text-3xl leading-10 p-8 text-white space-y-8 mb-16 md:mb-32 flex flex-col place-items-center" :class="bgColor">
                 <div class="h-12 w-12 flex justify-center items-center">
                     <!-- Allow dynamic icon packs and icons -->
                     <FontAwesomeIcon :icon="['fas', 'arrow-down-long']" class="text-4xl" />

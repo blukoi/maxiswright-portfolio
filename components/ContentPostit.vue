@@ -1,5 +1,5 @@
 <template>
-    <div class="notch-small flex-auto w-full p-4 pl-8 flex flex-col space-y-4 text-grayDarkest font-main" :class="postitColor">
+    <div class="flex-auto w-full p-4 flex flex-col space-y-4 text-grayDarkest font-main" :class="postitColor">
         <h3 v-if="$slots.title" class="font-bold">
             <slot name="title"></slot>
         </h3>

@@ -76,7 +76,7 @@
                     srcset-large="/Work/EV/0_Problem_Full.jpeg"
                     alt-text="A photo of the interior of an upcoming 2025 Mercedes Benz EQS, showing the entire dashboard. The entire dashboard has been consolidated into 3 touchscreens connected by glossy plastic trying to make it appear like one, large touchscreen."
                 />
-                <p class="pl-4 md:pl-8 font-main text-xs text-grayMiddle">©HotCars 2024</p>
+                <p class="font-main text-xs text-grayMiddle">©HotCars 2024</p>
             </template>
         </IntroHowMightWe>
 
@@ -918,7 +918,7 @@
                     <p>Since the phone can be placed on the MagSafe dock and used as an additional screen, we can move the clock off of the main screen’s Tab Bar. This gives us plentiful space to move apps to the Tab Bar to form the equivalent of the Dock, which is in familiar use on many other Apple devices. This change means that the active process can now utilize the entirety of the screen.</p>
                 </template>
                 <template #media>
-                    <div class="w-full rounded-sm md:rounded-md text-white bg-grayDarkest px-2 py-8 flex flex-col items-center space-y-8">
+                    <div class="w-full text-white bg-grayDarkest px-2 py-8 flex flex-col items-center space-y-8">
                         <div class="w-32 md:w-48 xl:w-64">
                             <ImagePrimary
                                 srcset-small="/Work/EV/5_Prototyping/Change1_1_Small.png"

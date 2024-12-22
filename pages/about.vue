@@ -112,41 +112,41 @@
                         </div>
                         <h1 class="text-2xl font-title title-bold">Core Competencies</h1>
                     </div>
-                    <div class="col-span-1 notch bg-white p-4 space-y-8 self-start">
-                        <div class="notch w-full flex justify-center bg-transparent">
+                    <div class="col-span-1 bg-white p-4 space-y-8 self-start">
+                        <div class="w-full flex justify-center bg-transparent">
                             <img src="/Brand/Core_DesignResearch.svg" alt="Example Illustration Depicting Research via White Boarding and Post-Its" class="md:w-full">
                         </div>
                         <div class="w-full">
                             <div class="w-full">
                                 <h1 class="top-hash-mark-lightgray font-title title-bold text-xl text-grayDarker">Design Research</h1>
                             </div>
-                            <div class="pl-8 pt-4">
+                            <div class="pt-4">
                                 <PillsPrimary :tags="designResearch"></PillsPrimary>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 notch bg-white p-4 space-y-8 self-start">
-                        <div class="notch w-full flex justify-center bg-transparent">
+                    <div class="col-span-1 bg-white p-4 space-y-8 self-start">
+                        <div class="w-full flex justify-center bg-transparent">
                             <img src="/Brand/Core_VisualDesign.svg" alt="Example Illustration Depicting the Visual Design and Alteration of a Design System" class="md:w-full">
                         </div>
                         <div class="w-full">
                             <div class="w-full">
                                 <h1 class="top-hash-mark-lightgray font-title title-bold text-xl text-grayDarker">Visual Design</h1>
                             </div>
-                            <div class="pl-8 pt-4">
+                            <div class="pt-4">
                                 <PillsPrimary :tags="visualDesign"></PillsPrimary>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 notch bg-white p-4 space-y-8 self-start">
-                        <div class="notch w-full flex justify-center bg-transparent">
+                    <div class="col-span-1 bg-white p-4 space-y-8 self-start">
+                        <div class="w-full flex justify-center bg-transparent">
                             <img src="/Brand/Core_Prototyping.svg" alt="Example Illustration Depicting the Connections Between Prototyped Wireframes" class="md:w-full">
                         </div>
                         <div class="w-full">
                             <div class="w-full">
                                 <h1 class="top-hash-mark-lightgray font-title title-bold text-xl text-grayDarker">High Fidelity Prototyping</h1>
                             </div>
-                            <div class="pl-8 pt-4">
+                            <div class="pt-4">
                                 <PillsPrimary :tags="highFidelityPrototyping"></PillsPrimary>
                             </div>
                         </div>
@@ -168,12 +168,12 @@
                     <div class="col-span-1 md:col-span-3 bg-transparent pl-0 md:pl-8 flex flex-row text-white items-center space-x-6">
                         <p class="font-main text-sm text-grayLightPrimary md:text-whiteFaded">I love to learn, but wouldn’t call myself an expert on these technologies or processes just yet. I’m always eager to explore and add to my toolkit.</p>
                     </div>
-                    <div class="col-span-1 md:col-span-3 grid grid-cols1 md:grid-cols-3 notch-large bg-mint p-4 lg:p-16 gap-4 lg:gap-16">
+                    <div class="col-span-1 md:col-span-3 grid grid-cols1 md:grid-cols-3 bg-mint p-4 lg:p-16 gap-4 lg:gap-16">
                         <div class="col-span-1 bg-blackFaded p-4 space-y-8 self-start">
                             <div class="w-full">
                                 <div class="w-full flex flex-row justify-start items-center space-x-4">
-                                    <div class="w-12 h-12 px-8 flex justify-center items-center border-r-4 border-white">
-                                        <FontAwesomeIcon :icon="['fas', 'cubes']" class="text-2xl text-white" />
+                                    <div class="w-8 h-8 flex justify-center items-center">
+                                        <FontAwesomeIcon :icon="['fas', 'cubes']" class="text-xl text-white" />
                                     </div>
                                     <div class="w-full">
                                         <h1 class="font-title title-bold text-xl text-white pt-1">3D</h1>
@@ -189,8 +189,8 @@
                         <div class="col-span-1 bg-blackFaded p-4 space-y-8 self-start">
                             <div class="w-full">
                                 <div class="w-full flex flex-row justify-start items-center space-x-4">
-                                    <div class="w-12 h-12 px-8 flex justify-center items-center border-r-4 border-white">
-                                        <FontAwesomeIcon :icon="['fas', 'code']" class="text-2xl text-white" />
+                                    <div class="w-8 h-8 flex justify-center items-center">
+                                        <FontAwesomeIcon :icon="['fas', 'code']" class="text-xl text-white" />
                                     </div>
                                     <div class="w-full">
                                         <h1 class="font-title title-bold text-xl text-white pt-1">Code</h1>
@@ -204,8 +204,8 @@
                         <div class="col-span-1 bg-blackFaded p-4 space-y-8 self-start">
                             <div class="w-full">
                                 <div class="w-full flex flex-row justify-start items-center space-x-4">
-                                    <div class="w-12 h-12 px-8 flex justify-center items-center border-r-4 border-white">
-                                        <FontAwesomeIcon :icon="['fas', 'thumbs-up']" class="text-2xl text-white" />
+                                    <div class="w-8 h-8 flex justify-center items-center">
+                                        <FontAwesomeIcon :icon="['fas', 'thumbs-up']" class="text-xl text-white" />
                                     </div>
                                     <div class="w-full">
                                         <h1 class="font-title title-bold text-xl text-white pt-1">Misc.</h1>
@@ -284,7 +284,7 @@
                             <h1 class="top-hash-mark-lightgray font-title title-bold text-xl text-grayDarkest">
                                 Work Philosophy
                             </h1>
-                            <div class="w-full pl-8 space-y-4 font-main">
+                            <div class="w-full space-y-4 font-main">
                                 <p class="text-sm">Some of the things I try to focus on while working with any team include:</p>
                                 <PillsPrimary :tags="workPhilosophy"></PillsPrimary>
                             </div>
@@ -318,7 +318,7 @@
                             <h1 class="top-hash-mark-lightgray font-title title-bold text-xl text-grayDarkest">
                                 In my Free Time
                             </h1>
-                            <div class="w-full pl-8 space-y-4 font-main">
+                            <div class="w-full space-y-4 font-main">
                                 <p class="text-sm">Even if we’re not lucky enough to work together, if any of my other interests resonate with you, please reach out! I’m always open to hit a tennis court, relax at a brewery, or sit down for some gaming.</p>
                                 <PillsPrimary :tags="freeTime"></PillsPrimary>
                             </div>

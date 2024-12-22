@@ -1,8 +1,8 @@
 <template>
-    <div class="w-full notch grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8 bg-grayLightPrimary md:bg-transparent p-4 md:p-0 md:py-4 font-main text-sm">
+    <div class="w-full bracketing bracket-tl bracket-br grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8 p-4 font-main text-sm">
         <div class="col-span-1 space-y-8 pl-4 md:pl-0 order-2 lg:order-1 text-grayDarker">
             <h3 class="font-bold uppercase text-grayDarkest">{{ title }}</h3>
-            <div class="pl-0 md:pl-8">
+            <div>
                 <slot name="caption"></slot>
             </div>
         </div>

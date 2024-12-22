@@ -4,7 +4,7 @@
         <nuxt-link v-for="project in highlightedProjects" id="projectContainer" :key="project.title" :to="project.buttonLink" :class="project.color" class="notch-large col-span-1 overflow-hidden">
           <div id="projectChild" class="project-thumbnail py-8 lg:py-16 px-4 sm:px-8 lg:px-16 h-full">
             <div class="w-full space-y-8 overflow-hidden flex flex-col space-y-8">
-              <h1 class="top-hash-mark-lightgray pt-1 font-title title-normal text-3xl text-white flex flex-col justify-items-start">
+              <h1 class="font-title title-normal text-3xl text-white flex flex-col justify-items-start">
                 <!-- <span class="w-max mb-4 h-10 px-4 flex flex-row items-center bg-white text-mint rounded-full space-x-4 z-30">
                     <FontAwesomeIcon :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]" class="text-lg" />
                     <p class="font-main text-sm font-bold">{{ project.category }}</p>

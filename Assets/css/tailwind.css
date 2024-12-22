@@ -129,6 +129,10 @@ body {
 /* Hash Marks */
 /* Hash Marks */
 
+.bracketing {
+    position: relative;
+}
+
 .top-hash-mark-lightgray::before {
     width: 32px;
     height: 4px;
@@ -136,4 +140,56 @@ body {
     display: block;
     content: '';
     margin: 0 0 16px 0;
+}
+
+.bracket-tl::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-color: #000000;
+    border-width: 1px 0 0 1px;
+    display: block;
+    content: '';
+}
+
+.bracket-br::after {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-color: #000000;
+    border-width: 0 1px 1px 0;
+    display: block;
+    content: '';
+}
+
+.bracket-white::before, .bracket-white::after {
+    border-color: #ffffff;
+}
+
+.bracket-tl-thick::before {
+    border-width: 2px 0 0 2px;
+    margin: -1px 0 0 -1px;
+}
+
+.bracket-br-thick::after {
+    border-width: 0 2px 2px 0;
+    margin: 0 -1px -1px 0;
+}
+
+.bracket-tl-callout::before {
+    width: 32px;
+    height: 32px;
+    border-width: 4px 0 0 4px;
+    margin: -2px 0 0 -2px;
+}
+
+.bracket-br-callout::after {
+    width: 32px;
+    height: 32px;
+    border-width: 0 4px 4px 0;
+    margin: 0 -2px -2px 0;
 }

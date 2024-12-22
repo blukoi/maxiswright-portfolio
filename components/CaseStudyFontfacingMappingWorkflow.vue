@@ -28,7 +28,7 @@
                 <p>For instance, you can take the pieces of the lowercase ‘n’ to then work out the i, l, h, m, u, r, t, and you’d also have the x-height for other lowercase letters. After working on the lowercase ‘o’ you’d then have the building blocks for b, p, d, q, c, and e. You’d have to work on some of the finer details, but just from those two, the lowercase ‘n’ and ‘o’, you’d have a lot of the major work done for 15 characters, with the pieces necessary to work on many others.</p>
             </template>
             <template #media>
-                <div class="bg-fontfacingBlue rounded-sm md:rounded-md h-full flex justify-center items-center px-0 md:px-32">
+                <div class="bg-fontfacingBlue h-full flex justify-center items-center px-0 md:px-32">
                     <LottieParent bgColor="bg-fontfacingBlue" :animation-data="secondAnimationData" alt="An animation showing a series of letters (n, i, h, l, and m) as a highlight moves from letter to letter to show a visual element which is almost exactly the same in each letter."></LottieParent>
                 </div>
             </template>

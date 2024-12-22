@@ -4,14 +4,14 @@
         v-for="(project) in highlightedProjects" :key="project.title" class="w-full bg-black content-center z-10">
             <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 py-32">
                 <div class="pl-8 col-span-1 lg:col-span-3 flex flex-col md:flex-row flex-wrap gap-2 justify-center content-start md:justify-start md:content-center">
-                  <div class="w-max h-10 px-4 flex flex-row items-center bg-mint text-white rounded-full space-x-4">
+                  <!-- <div class="w-max h-10 px-4 flex flex-row items-center bg-mint text-white rounded-full space-x-4">
                       <FontAwesomeIcon :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]" class="text-lg" />
                       <p class="font-main font-bold text-sm">{{ project.category }}</p>
-                  </div>
-                  <ul class="flex flex-row flex-none flex-wrap gap-2 justify-start content-center">
-                    <li v-for="tag in project.researchtags" :key="tag" class="flex-none max-h-6 bg-opacity-50 rounded-full font-main text-white bg-grayMiddle text-xs px-2.5 py-1">{{ tag }}</li>
-                    <li v-for="tag in project.designtags" :key="tag" class="flex-none max-h-6 bg-opacity-50 rounded-full font-main text-white bg-grayMiddle text-xs px-2.5 py-1">{{ tag }}</li>
-                    <li v-for="tag in project.impacttags" :key="tag" class="flex-none max-h-6 bg-opacity-50 rounded-full font-main text-white bg-grayMiddle text-xs px-2.5 py-1">{{ tag }}</li>
+                  </div> -->
+                  <ul class="flex flex-row flex-none flex-wrap gap-px justify-start content-center">
+                    <li v-for="tag in project.researchtags" :key="tag" class="flex-none max-h-6 bg-opacity-50 font-main text-white bg-grayMiddle text-xs px-2.5 py-1">{{ tag }}</li>
+                    <li v-for="tag in project.designtags" :key="tag" class="flex-none max-h-6 bg-opacity-50 font-main text-white bg-grayMiddle text-xs px-2.5 py-1">{{ tag }}</li>
+                    <li v-for="tag in project.impacttags" :key="tag" class="flex-none max-h-6 bg-opacity-50 font-main text-white bg-grayMiddle text-xs px-2.5 py-1">{{ tag }}</li>
                   </ul>
                 </div>
                 <div class="col-span-1 lg:col-span-2 lg:order-4">

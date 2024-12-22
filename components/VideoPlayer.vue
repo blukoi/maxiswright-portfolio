@@ -1,5 +1,5 @@
 <template>
-  <div class="notch">
+  <div>
     <video autoplay loop muted playsinline class="full-size-video aspect-auto">
       <source 
       v-for="source in videoSources" :key="source.src"

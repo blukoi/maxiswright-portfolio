@@ -704,7 +704,7 @@
         <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
                 <div class="w-full flex flex-col space-y-16">
-                    <div class="bg-fontfacingGreen w-full flex justify-center p-32 notch">
+                    <div class="bg-fontfacingGreen w-full flex justify-center p-32">
                         <div class="w-48 text-white flex flex-col space-y-32">
                             <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.68 216" class="fill-current" alt="Simplistic logo of a capital letter F, the bottom has serifs but the top doesn't; one corner is empty with a square moving into the space to fill it, like a brick being placed into an empty spot in a wall.">
                                 <defs>
@@ -748,8 +748,8 @@
                     </template>
                     <template #media>
                         <ImagePrimary
-                            srcset-small="/Work/Fontfacing/7_Mockup3_Small.png"
-                            srcset-medium="/Work/Fontfacing/7_Mockup3_Med.png"
+                            srcset-small="/Work/Fontfacing/7_Mockup3_720.png"
+                            srcset-medium="/Work/Fontfacing/7_Mockup3_1080.png"
                             srcset-large="/Work/Fontfacing/7_Mockup3_Full.png"
                             alt-text="A mockup of a MacBook with the Fontfacing app opened to fullscreen to start a new project, with buttons available to start a new file, Open a file, as well as alternate open options, plus a featured banner for a trending font."
                         />

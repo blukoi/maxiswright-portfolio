@@ -16,9 +16,9 @@
                 <rect x="0" y="0" width="72" height="72" mask="url(#cutout-mask)"/>
               </svg>
             </div>
-            <h1 class="font-title title-bold self-center hidden sm:block pt-px">Max Wright</h1>
+            <h1 class="font-title title-bold self-center hidden sm:block pt-0.5">Max Wright</h1>
           </nuxt-link>
-          <ul class="border-l border-black flex flex-row h-full items-center uppercase text-xs font-semibold tracking-widest">
+          <ul class="flex flex-row h-full items-center uppercase text-xs font-semibold tracking-widest">
             <li class="hidden">
                 <NavButton label="Home" link="/" />
             </li>
@@ -35,7 +35,7 @@
                 <NavButton label="Contact" link="/contact" />
             </li>
             <li class="hidden lg:block">
-              <a href="/WrightMax_Resume.pdf" class="px-4 py-5 h-full font-main bg-transparent hover:bg-mint focus:bg-mint active:border-b-2 active:border-black focus:border-white text-black hover:text-white focus:text-white active:text-white" target="_blank" rel="noopener noreferrer">
+              <a href="/WrightMax_Resume.pdf" class="border-l border-black px-4 py-5 h-full font-main bg-transparent hover:bg-mint focus:bg-mint active:border-b-2 active:border-black focus:border-white text-black hover:text-white focus:text-white active:text-white" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>

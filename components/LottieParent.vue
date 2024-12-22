@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-max notch flex justify-center" :class="bgColor">
+    <div class="w-full h-max flex justify-center" :class="bgColor">
         <div ref="lottieContainer" class="lottie"></div>
     </div>
 </template>
