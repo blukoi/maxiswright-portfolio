@@ -9,9 +9,9 @@
                       <p class="font-main font-bold text-sm">{{ project.category }}</p>
                   </div> -->
                   <ul class="flex flex-row flex-none flex-wrap gap-1 justify-start content-center">
-                    <li v-for="tag in project.researchtags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-0.5">{{ tag }}</li>
-                    <li v-for="tag in project.designtags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-0.5">{{ tag }}</li>
-                    <li v-for="tag in project.impacttags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-0.5">{{ tag }}</li>
+                    <li v-for="tag in project.researchtags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-1">{{ tag }}</li>
+                    <li v-for="tag in project.designtags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-1">{{ tag }}</li>
+                    <li v-for="tag in project.impacttags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-1">{{ tag }}</li>
                   </ul>
                 </div>
                 <div class="col-span-1 lg:col-span-2 lg:order-4">
