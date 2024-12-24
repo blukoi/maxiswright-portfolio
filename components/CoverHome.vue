@@ -33,10 +33,10 @@
                 </p>
 
                 <!-- TAGS -->
-                <ul class="flex flex-row flex-wrap gap-px">
-                  <li v-for="tag in project.researchtags" :key="tag" class="bg-whiteFaded text-grayDarkest bg-opacity-50 font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
-                  <li v-for="tag in project.designtags" :key="tag" class="bg-whiteFaded text-grayDarkest bg-opacity-50 font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
-                  <li v-for="tag in project.impacttags" :key="tag" class="bg-whiteFaded text-grayDarkest bg-opacity-50 font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
+                <ul class="flex flex-row flex-wrap gap-1">
+                  <li v-for="tag in project.researchtags" :key="tag" class="text-whiteFaded border-whiteFaded border font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
+                  <li v-for="tag in project.designtags" :key="tag" class="text-whiteFaded border-whiteFaded border font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
+                  <li v-for="tag in project.impacttags" :key="tag" class="text-whiteFaded border-whiteFaded border font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
                 </ul>
               </div>
 
