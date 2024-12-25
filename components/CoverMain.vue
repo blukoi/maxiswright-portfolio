@@ -8,7 +8,7 @@
                       <FontAwesomeIcon :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]" class="text-lg" />
                       <p class="font-main font-bold text-sm">{{ project.category }}</p>
                   </div> -->
-                  <ul class="flex flex-row flex-none flex-wrap gap-1 justify-start content-center">
+                  <ul class="flex flex-row flex-none flex-wrap gap-px justify-start content-center">
                     <li v-for="tag in project.researchtags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-1">{{ tag }}</li>
                     <li v-for="tag in project.designtags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-1">{{ tag }}</li>
                     <li v-for="tag in project.impacttags" :key="tag" class="flex-none font-main text-grayMiddle border-grayMiddle border text-xs px-2.5 py-1">{{ tag }}</li>
