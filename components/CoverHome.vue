@@ -24,7 +24,6 @@
                       ]">
                   </VideoPlayer>
                 </div>
-                <!-- <LottieParent v-if="project.animation" bgColor="bg-applecarBlue" :animation-data="animationData"></LottieParent> -->
                 <img v-else :src="project.image" :alt="project.title">
               </div>
               <div class="space-y-4">
@@ -39,10 +38,6 @@
                   <li v-for="tag in project.impacttags" :key="tag" class="text-whiteFaded border-whiteFaded border font-main text-xs px-2.5 py-1 pb-1.5">{{ tag }}</li>
                 </ul>
               </div>
-
-              <!-- <div class="w-full flex justify-start py-2">
-                  <ButtonDark :label="'Read More'" :link="project.buttonLink" />
-              </div> -->
             </div>
           </div>
         </nuxt-link>

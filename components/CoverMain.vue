@@ -31,10 +31,7 @@
                             </p>
                         </div>
                         <div class="ml-8 py-2">
-                            <!-- Normal button -->
                             <ButtonLight label="Read More" :link="project.buttonLink" />
-                            <!-- Dynamic component for button -->
-                            <!-- <component :is="buttonType(index)" :label="'Read More'" :link="project.buttonLink"></component> -->
                         </div>
                     </div>
                 </div>

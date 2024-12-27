@@ -39,8 +39,8 @@
             title="Typefaces in the Context of AI"
         >
             <template #caption>
-                <p class="mb-4">With the understanding that, at its core, <span class="font-bold">a typeface is a visual pattern</span> which repeats to make up all of the characters of that typeface, we can begin to see how AI and type design can intersect. The consistency with which that pattern is applied to the characters is what defines the visual style (and the feelings it imparts on the reader) of a font.</p>
-                <p>A training model should be able to figure out many, if not all, of the repeating visual cues from a relatively small sample size. Done correctly, an AI system should therefore be able to speed up the workflow of typeface design.</p>
+                <p class="mb-4"><span class="font-bold">A typeface is a visual pattern</span> which repeats to make up all of the characters of that typeface. The consistency with which that pattern is applied to the characters is what defines the visual style (and the feelings it imparts on the reader) of a font.</p>
+                <p>A training model should be able to figure out the repeating visual cues from a relatively small sample size. Done correctly, an AI system should therefore be able to speed up the workflow of typeface design.</p>
             </template>
             <template #media>
                 <div class="w-full text-fontfacingPurple bg-white px-8 py-8 flex flex-col items-center text-center space-y-8">

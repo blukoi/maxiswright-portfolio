@@ -13,7 +13,7 @@
             </template>
             <template #info>
                 <PillsAlone 
-                    :items="['Desktop App', '14 Weeks', 'May - August 2023', 'Solo Project']">
+                    :items="['Desktop App', 'Role: UX Researcher, Product Designer', '14 Weeks', 'May - August 2023', 'Solo Project']">
                 </PillsAlone>
             </template>
             <template #tools>
@@ -26,8 +26,8 @@
         <!-- CASE STUDY INTRO -->
         <IntroStructure :showDisclaimer="false">
             <template #overview>
-                <p class="mb-4"><span class="font-bold">FontFacing</span> is a desktop app concept for typography design driven by AI. It will analyze your digital design/inputs and create a training model as you work. When you make changes to the path of one letterform FontFacing will analyze the change and reproduce it, if necessary, to the rest of the typeface. There exist multiple features within the interface to provide feedback about when, where, why, and how the AI is working so that designers can utilize them to their full potential. FontFacing represents the possibility of AI to vastly streamline the processes of repetitive tasks without taking away human agency or control.</p>
-                <p><span class="font-bold">After completing the project, OpenAI notably added a new feature to ChatGPT which validates, in part, the insights and direction of this project. This feature is a feedback system which is part of what I explored in FontFacing. For more details, see below.</span></p>
+                <p class="mb-4"><span class="font-bold">FontFacing</span> is a desktop app concept for typography design driven by AI. It will analyze your design/inputs and create a training model as you work. When you make changes to the path of one letterform FontFacing will analyze the change and reproduce it, if necessary, to the rest of the typeface. There are features that provide feedback about when, where, why, and how the AI is working so that designers can utilize them to their full potential. FontFacing represents the possibility of AI to vastly streamline the processes of repetitive tasks without taking away human agency or control.</p>
+                <p><span class="font-bold">After completing the project, OpenAI added 2 noteworthy features to ChatGPT which validate, in part, the insights and direction of this project. For more details, see below.</span></p>
             </template>
             <template #problem>
                 <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
@@ -57,12 +57,12 @@
         <!-- HOW MIGHT WE & HERO IMAGE -->
         <IntroHowMightWe
             how="How might we..."
-            direction="How can we help type designers create a complete, consistent typeface in less time without losing their creative vision?"
+            direction="How can we help type designers create a typeface in less time without losing their creative vision?"
             title="The problem of designing a typeface"
             :bgColor="bgColor"
         >
             <template #caption>
-                <p class="font-main text-sm">Designing an entire, cohesive typeface is a demanding, time-intensive task that often requires weeks or months of meticulous work. Each glyph must harmonize with the entire character set, making it difficult for designers to maintain visual consistency and experiment freely. Without intelligent support, the complexity of the process stifles creative exploration and increases the risk of creative burnout.</p>
+                <p class="font-main text-sm">Designing a typeface, and maintaining consistency, is a time-intensive task that often requires weeks or months of meticulous work. Each glyph must harmonize with the rest of the character set, making it difficult for designers to maintain visual consistency and experiment freely.</p>
             </template>
             <template #media>
                 <ImagePrimary
@@ -73,68 +73,6 @@
                 />
             </template>
         </IntroHowMightWe>
-
-        <!-- SIDE SCROLLER WITH FEATURE CALL-OUTS -->
-        <IntroHighlights 
-            title="Highlights"
-        >
-
-            <!-- SCROLLER CONTENT START -->
-
-
-            <ScrollerImage
-                :srcset = "{
-                    small: '/Work/Fontfacing/0_TabBar.png',
-                    medium: '/Work/Fontfacing/0_TabBar.png',
-                    large: '/Work/Fontfacing/0_TabBar.png',
-                }" 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="A tab bar to select process stage" 
-                alt-text="One detail of the app interface which shows a series of buttons (Sketch, Live Generation, Focus, Letterspacing) which users can use to move between working stages" 
-                imageParent="h-64 md:h-96 w-80 md:w-128" 
-            >
-                <template #caption>
-                    <p>Since the typeface design process works in well defined stages, albeit with some back and forth, this tab bar allows the designer to indicate where in the process they are and to see when the native AI platform will be actively learning versus actively generating or adjusting.</p>
-                </template>
-            </ScrollerImage>
-
-            <ScrollerImage
-                :srcset = "{
-                    small: '/Work/Fontfacing/0_AnalysisWindow.png',
-                    medium: '/Work/Fontfacing/0_AnalysisWindow.png',
-                    large: '/Work/Fontfacing/0_AnalysisWindow.png',
-                }" 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="Show how the platform analyzes" 
-                alt-text="One detail of the app interface which shows a window within the sidebar, Analysis, with some realtime AI analysis" 
-                imageParent="h-64 md:h-96 w-60 md:w-72" 
-            >
-                <template #caption>
-                    <p>A specific window displays how the AI is processing input and also gives designers the opportunity to for manual input within that process.</p>
-                </template>
-            </ScrollerImage>
-
-            <ScrollerImage
-                :srcset = "{
-                    small: '/Work/Fontfacing/0_ContextToolbar.png',
-                    medium: '/Work/Fontfacing/0_ContextToolbar.png',
-                    large: '/Work/Fontfacing/0_ContextToolbar.png',
-                }" 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
-                title="Context Bar" 
-                alt-text="One detail of the app interface which shows the canvas with a glyph being edited; below the canvas is a toolbar with options that are specific to what the user's currently doing on the canvas; this canvas has a completed letter but nothing's selected, so the context bar has a text input with the label text reading, `Describe what you'd like to generate or change about this letterform`, along with a `Generate` button and another button for additional options" 
-                imageParent="h-64 md:h-96 w-80 md:w-128" 
-            >
-                <template #caption>
-                    <p>As is being used more and more often in design programs, a contextual toolbar moves around the interface depending on what you’re interacting with and gives you context-specific options that may be particularly relevant. This allows AI features to be front-and-center without obstructing the workflow.</p>
-                </template>
-            </ScrollerImage>
-
-
-            <!-- SCROLLER CONTENT END -->
-
-
-        </IntroHighlights>
 
         <!-- PROCESS CONTENT -->
         <!-- 1. Foundational Research -->
@@ -209,7 +147,7 @@
                 title="Existing Research in this Space"
             >
                 <template #caption>
-                    <p>I did an extensive search to see if this was already being worked on and, as expected, there are various image generation and SVG tools already. Since I’d been testing with basic letterforms, I searched for typeface generators and none existed at the time of this project. There were a lot of copy/text generators, but none for typeface design. In my search, I read through the work of Erik Bern, Måns Grebäck, and Jean Böhm, all of whom had conducted research and experiments into the capabilities of AI to generate letterforms.</p>
+                    <p>Since I’d been testing with basic letterforms, I searched for typeface generators and none existed at the time of this project. There were a lot of copy/text generators, but none for typeface design. In my search, I read through the work of Erik Bern, Måns Grebäck, and Jean Böhm, all of whom had conducted research and experiments into the capabilities of AI to generate letterforms.</p>
                 </template>
                 <template #media>
                     <div class="flex flex-col space-y-4">
@@ -351,8 +289,7 @@
                 iconSize="text-6xl"
             >
                 <template #caption>
-                    <p class="mb-4">I quickly realized that I wasn’t designing with my insights in mind, but rather letting existing applications decide the direction of my design exploration and user interactions.</p>
-                    <p>After realizing this, I scrapped these ideas and started over by mapping the current workflow of typeface design. This would allow me to consider where AI could support the current process.</p>
+                    <p>I quickly realized that I wasn’t designing with my insights in mind. I scrapped these ideas and started over by mapping the current workflow of typeface design. This would allow me to consider where AI could support the current process.</p>
                 </template>
                 <template #callout>
                 </template>
@@ -412,7 +349,7 @@
                 title="More Detailed Iteration"
             >
                 <template #caption>
-                    <p>Moving towards medium fidelity, I introduced a sidebar which gives a preview into how the AI is interpreting and processing data. It also allows designers to have manual input via supervised learning, allowing or disallowing interpretations of the data.</p>
+                    <p>Moving towards medium fidelity, I introduced a sidebar to preview how the AI is interpreting data. It also allows designers to have manual input, allowing or disallowing interpretations of the data.</p>
                 </template>
                 <template #media>
                     <ImagePrimary
@@ -433,7 +370,7 @@
                 title="Moving from a Browser to the Desktop"
             >
                 <template #caption>
-                    <p class="mb-4">Since my concept has evolved with the target audience becoming designers, at this stage it’s necessary to iterate towards a desktop application instead of a webapp.</p>
+                    <p class="mb-4">At this stage it’s necessary to iterate towards a desktop application instead of a webapp to allow designers to work offline.</p>
                     <p>This iteration also features the introduction of the “Stage” slider to tell the platform which stage of the process you’re in.</p>
                 </template>
                 <template #media>
@@ -452,9 +389,8 @@
                 title="Starting Pop-Up"
             >
                 <template #caption>
-                    <p class="mb-4">In an effort to highlight that there are AI features, I experimented with the idea of a pop-up modal which would appear whenever starting a new file.</p>
-                    <p class="mb-4">Unfortunately, this precludes the idea of designers having differing workflows and forces them, potentially, into thinking they must select one particular way to work.</p>
-                    <p>Although the modal wouldn’t end up staying, <span class="font-bold">the use of color to indicate AI features ended up being a great highlight.</span></p>
+                    <p class="mb-4">In an effort to highlight that there are AI features, I experimented with the idea of a pop-up modal which would appear whenever starting a new file. Unfortunately, this could lead them into thinking they can only select one particular way to work.</p>
+                    <p>Although the modal wouldn’t end up staying, <span class="font-bold">the use of color to indicate AI features ended up being an important feature.</span></p>
                 </template>
                 <template #media>
                     <div class="bg-white rounded-sm md:rounded-md flex flex-col space-y-4 md:space-y-8 p-4 md:py-0 md:px-8 lg:px-16 xl:px-48">
@@ -643,7 +579,7 @@
             headerRef="6"
         >
             <ContentBlurb>
-                <p>After working on this project and developing the AI-related features, some interesting updates came to ChatGPT which helped to validate that, at least in part, I had correctly pursued aspects of providing feedback to the use of AI features.</p>
+                <p id="projectValidation">After working on this project and developing the AI-related features, some interesting updates came to ChatGPT which helped to validate that, at least in part, I've explored aspects of AI features which the industry agrees are important.</p>
             </ContentBlurb>
 
             <ContentMediaWithCaption
@@ -668,7 +604,7 @@
                 title="Insights for FontFacing"
             >
                 <template #caption>
-                    <p>This is a concept I'd come up with for FontFacing, specifically as a solution to a particular insight revolving around a startling lack of feedback and transparency in existing AI tools which often make AI seem like magical interactions. They also make it difficult to refine or iterate your prompts/interactions because there's no way to see how the previous interaction was analyzed.</p>
+                    <p>This is a concept I'd come up with for FontFacing, from an insight about the lack of feedback and transparency in existing AI tools which often make AI seem like magical interactions. That lack of feedback and transparency makes it difficult to refine your prompts/interactions because there's no way to know how the previous interaction was analyzed.</p>
                 </template>
                 <template #media>
                     <div class="bg-fontfacingBlue rounded-sm md:rounded-md p-4 px-8 sm:px-16 md:px-48 lg:px-48 xl:px-64 2xl:px-80">
@@ -686,7 +622,7 @@
                 title="ChatGPT-o1 Preview"
             >
                 <template #caption>
-                    <p>As if to validate some of my conceptual work, late in 2024 OpenAI released a preview of their newest model, ChatGPT-o1. After entering a prompt, there's a flash of feedback which relates to parts of the prompt as if to say, "This is what you asked for, let me think about it."</p>
+                    <p>Late in 2024 OpenAI released a preview of their newest model, ChatGPT-o1. After entering a prompt, there's a flash of text-based feedback as if to say, "This is what you asked for, let me think about it."</p>
                 </template>
                 <template #media>
                     <VideoPlayer
@@ -743,8 +679,8 @@
                     title="Final Thoughts & Next Steps"
                 >
                     <template #caption>
-                        <p class="mb-4">As developed, the concept itself is structurally sound and I firmly believe that it could successfully empower designers. There would be a lot of difficulty surrounding the base training sets, since the platform would need extensive training on typefaces to understand the anatomy and character sets. Typefaces are intellectual property and their use for AI training could be contentious.</p>
-                        <p>Given the opportunity, I would love to continue exploring this concept. The opportunities to explore micro-interactions are endless. Some of the areas I’d like to continue iterating on are the Options Bar and the Stage Slider, since there isn’t a clear indication that they’re stages of the design process meant to be moved through towards an end goal. This is also, roughly, the bare minimum the application would require to be considered a serious design application. Professional typeface design has a plethora of functions which aren’t represented here that would need to be worked into the interface in some way. Not everything can be folded into a menu.</p>
+                        <p class="mb-4">I firmly believe FontFacing and similarly designed tools could successfully empower designers. There would be some difficulty surrounding the base training sets, since the platform would need extensive training on typefaces to understand the anatomy and character sets. Typefaces are intellectual property and their use for AI training could be contentious.</p>
+                        <p>I would love to continue exploring this concept. The opportunities to explore micro-interactions are endless. This is also, roughly, the bare minimum the application would require to be considered a serious design application. Professional typeface design has a plethora of functions which aren’t represented here that would need to be worked into the interface; not everything can be folded into a menu.</p>
                     </template>
                     <template #media>
                         <ImagePrimary
@@ -757,6 +693,61 @@
                 </ContentMediaWithCaption>
             </template>
         </OutroHighlightsWork>
+
+        <!-- SIDE SCROLLER WITH FEATURE CALL-OUTS -->
+        <!-- <IntroHighlights 
+            title="Highlights"
+        >
+
+            <ScrollerImage
+                :srcset = "{
+                    small: '/Work/Fontfacing/0_TabBar.png',
+                    medium: '/Work/Fontfacing/0_TabBar.png',
+                    large: '/Work/Fontfacing/0_TabBar.png',
+                }" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                title="A tab bar to select process stage" 
+                alt-text="One detail of the app interface which shows a series of buttons (Sketch, Live Generation, Focus, Letterspacing) which users can use to move between working stages" 
+                imageParent="h-64 md:h-96 w-80 md:w-128" 
+            >
+                <template #caption>
+                    <p>Since the typeface design process works in well defined stages, albeit with some back and forth, this tab bar allows the designer to indicate where in the process they are and to see when the native AI platform will be actively learning versus actively generating or adjusting.</p>
+                </template>
+            </ScrollerImage>
+
+            <ScrollerImage
+                :srcset = "{
+                    small: '/Work/Fontfacing/0_AnalysisWindow.png',
+                    medium: '/Work/Fontfacing/0_AnalysisWindow.png',
+                    large: '/Work/Fontfacing/0_AnalysisWindow.png',
+                }" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                title="Show how the platform analyzes" 
+                alt-text="One detail of the app interface which shows a window within the sidebar, Analysis, with some realtime AI analysis" 
+                imageParent="h-64 md:h-96 w-60 md:w-72" 
+            >
+                <template #caption>
+                    <p>A specific window displays how the AI is processing input and also gives designers the opportunity to for manual input within that process.</p>
+                </template>
+            </ScrollerImage>
+
+            <ScrollerImage
+                :srcset = "{
+                    small: '/Work/Fontfacing/0_ContextToolbar.png',
+                    medium: '/Work/Fontfacing/0_ContextToolbar.png',
+                    large: '/Work/Fontfacing/0_ContextToolbar.png',
+                }" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                title="Context Bar" 
+                alt-text="One detail of the app interface which shows the canvas with a glyph being edited; below the canvas is a toolbar with options that are specific to what the user's currently doing on the canvas; this canvas has a completed letter but nothing's selected, so the context bar has a text input with the label text reading, `Describe what you'd like to generate or change about this letterform`, along with a `Generate` button and another button for additional options" 
+                imageParent="h-64 md:h-96 w-80 md:w-128" 
+            >
+                <template #caption>
+                    <p>As is being used more and more often in design programs, a contextual toolbar moves around the interface depending on what you’re interacting with and gives you context-specific options that may be particularly relevant. This allows AI features to be front-and-center without obstructing the workflow.</p>
+                </template>
+            </ScrollerImage>
+
+        </IntroHighlights> -->
 
         <!-- END OF THE PAGE -->
         <PreFooter :currentProjectId="'4'" :linksVisibility="[true, true, true, false]" class="relative"/>

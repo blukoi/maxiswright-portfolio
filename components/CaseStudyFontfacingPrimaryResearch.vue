@@ -4,14 +4,14 @@
         gridCols="md:grid-cols-2 lg:grid-cols-4" 
     >
         <template #caption>
-            <p>These are the key learnings I tried to keep in mind as I started to explore low fidelity wireframes and build out my concept.</p>
+            <!-- <p>These are the key learnings I tried to keep in mind as I started to explore low fidelity wireframes and build out my concept.</p> -->
         </template>
         <template #postits>
             <ContentPostit
                 postitColor="bg-postitYellow"
             >
                 <template #copy>
-                    <p><span class="font-bold">AI systems often prioritize their capabilities over user interaction</span>, leading to basic input methods such as text boxes. Shifting focus towards empowering users with what they can achieve using AI can enhance the design for more intuitive and impactful interactions.</p>
+                    <p><span class="font-bold">AI systems often prioritize their capabilities over user interaction</span>, leading to basic input methods. Shifting focus towards empowering users with what they can achieve using AI can enhance the design for more intuitive and impactful interactions.</p>
                 </template>
             </ContentPostit>
             <ContentPostit
