@@ -30,37 +30,35 @@
         <!-- CASE STUDY INTRO -->
         <IntroStructure :showDisclaimer="false">
             <template #overview>
-                <p class="mb-4"><span class="font-bold">The 2035 Vulcan</span> is an Apple-branded EV concept, encompassing the dashboard and front seats, incorporating forward-thinking, seamless user experiences that maintain support for Apple's existing product/software ecosystem.</p>
+                <p class="mb-4">I reimagined how apps and activities on personal devices can seamlessly transition into the vehicle environment. By removing the need for manual prompts and creating a singular, unified visual language, the design delivers a frictionless handoff that feels both natural and effortless.</p>
             </template>
             <template #problem>
                 <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
-                    <li>Drivers experience a disconnect when moving from their personal devices into their car. Preferences and ongoing activities (calls, media, navigation) must often be manually reconfigured.</li>
-                    <li>Even with advanced infotainment systems, users often face complicated interfaces that disrupt ease of use.</li>
-                    <li>While Apple products are renowned for their intuitive integration, the car space remains largely untapped for seamless Apple ecosystem transitions, limiting the brand’s promise of connectedness and accessibility.</li>
+                    <li>Drivers experience a disconnect when moving from personal devices to their car. Ongoing activities (calls, navigation, etc.) must often be manually reconfigured.</li>
+                    <li>Even with advanced infotainment systems, users often face complicated interfaces with inconsistent visual designs that disrupt the mental models that come with using other digital devices.</li>
                 </ul>
             </template>
             <template #goals>
                 <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
-                    <li>Create a user interface that requires minimal learning curve, aligning with Apple’s brand values of accessibility and intuitiveness, so that anyone can quickly understand and interact with the system.</li>
-                    <li>Strengthen the feeling of a unified Apple ecosystem by making the transition from phone to car as effortless and integrated as moving from an iPhone to a MacBook.</li>
+                    <li>Streamline in-car onboarding by leveraging familiar experiences utilized in other tech ecosystems.</li>
+                    <li>Automatically detect and continue whatever the user is doing on their device, with no extra steps.</li>
                 </ul>
             </template>
             <template #solution>
                 <ul class="list-disc list-outside pl-8 space-y-4 text-sm text-grayMiddle">
-                    <li>Develop a consistent visual and interaction design language to ensure that users feel at home with the car’s interface.</li>
-                    <li>Integrate the car’s IVI and AR features with Apple’s suite of apps so that ongoing calls, music, and navigation instantly resume in the car’s environment.</li>
-                    <li>Implement a profile system like Apple Wallet but for cars. When detected by the car’s system, it automatically configures seating, climate, dashboard preferences, and entertainment options.</li>
+                    <li>A consistent visual language to ensure that users feel at home with the car’s interface.</li>
+                    <li>A seamless transition system that recognizes when the user enters or exits the vehicle and instantly hands off active apps, preserving continuity and enhancing the overall driving experience.</li>
                 </ul>
             </template>
             <template #disclaimer>
-                <p class="text-grayMiddle inline">This project is a conceptual design exercise and is not officially affiliated with or endorsed by Apple Inc. In addition, myself and my team are not employed by, or affiliated with, Apple Inc. All trademarks and copyrights are the property of their respective owners. Any images used are displayed for illustrative and/or research purposes.</p>
+                <p class="text-grayMiddle inline">This project is a conceptual design exercise and is not officially affiliated with or endorsed by Apple Inc. Any images used are displayed for illustrative and/or research purposes.</p>
             </template>
         </IntroStructure>
 
         <!-- INTRO HIGHLIGHTS -->
 
         <!-- HOW MIGHT WE & HERO IMAGE -->
-        <IntroHowMightWe
+        <!-- <IntroHowMightWe
             how="How might we..."
             direction="How can we create an in-car experience that feels as authentically “Apple” as the devices in our pockets — integrated, simple, and visually consistent?"
             title="The problem with new cars today"
@@ -78,16 +76,16 @@
                 />
                 <p class="font-main text-xs text-grayMiddle">©HotCars 2024</p>
             </template>
-        </IntroHowMightWe>
+        </IntroHowMightWe> -->
 
         <!-- PROCESS CONTENT -->
-        <!-- 1. Vehicle & Brand Research -->
+        <!-- 1. Industry Research & Insights -->
         <ProcessPrimary
             :bgColor="bgColor"
-            title="Vehicle & Brand Research"
+            title="Industry Research & Insights"
             iconPack="fas"
             iconName="car"
-            totalProcess="5"
+            totalProcess="6"
             headerRef="1"
         >
             <!-- <ContentBlurb>
@@ -311,6 +309,15 @@
 
             <CaseStudyAppleCarVehicleAnalysis />
 
+            <ContentCalloutStack 
+                :colorStyles="bgColor" 
+                iconPack="fas" 
+                iconName="arrow-down-long" 
+                iconSize="text-2xl" 
+                callout1="We noticed that drivers experienced a disconnect between their car & personal devices, resulting in inconsistent handoffs and a broken mental model."
+                callout2="How can we leverage existing tech ecosystems to create a familiar in-car experience?"
+            />
+
             <!-- PHOTO JOURNAL -->
             <!-- <CaseStudyAppleCarPhotoJournal /> -->
 
@@ -378,16 +385,16 @@
 
             <!-- APPLE CONTINUITY -->
             <ContentMediaWithCaption
-                title="Apple Continuity"
+                title="Apple's Continuity Features"
             >
                 <template #caption>
-                    <p class="mb-4">We looked at how Apple currently handles transitioning between devices with a series of features under the umbrella of <span class="font-bold">Continuity</span>. This feature, called Handoff, allows eligible apps to be moved, mid-process, to another Apple device.</p>
+                    <p class="mb-4">We looked at how Apple handles transitioning between devices with a series of features under the umbrella of <span class="font-bold">Continuity</span>. One feature, called Handoff, allows eligible apps to be moved, mid-process, to another Apple device. If you're using Safari on your iPhone and open up your MacBook, an icon will appear on your desktop asking if you want to open up a browser to continue reading that website.</p>
                     <ContentTakeaway
                         title="Takeaway"
                         highlightColor="#89CBFB"
                     >
                         <template #copy>
-                            <p>Apple works very hard to ensure their product line is interconnected.</p>
+                            <p>Personal devices are fully capable of being interconnected to create a continuous, personal experience. <span class="font-bold">Is your car not a personal device?</span></p>
                         </template>
                     </ContentTakeaway>
                 </template>
@@ -402,11 +409,10 @@
             </ContentMediaWithCaption>
 
             <!-- EVOLVING DESIGN SYSTEM -->
-            <ContentScroller
+            <!-- <ContentScroller
                 title="Apple's Evolving Design System"
             >
 
-                <!-- IOS DESIGN -->
                 <ScrollerImage
                     :srcset = "{
                         small: '/Work/EV/2_Research/DesignSystem_1_Small.jpg',
@@ -419,11 +425,10 @@
                     imageParent="h-96 md:h-128 w-120 md:w-180"
                 >
                     <template #caption>
-                        <!-- <p>Every couple years Apple makes advancements and modifications to their macOS and iOS design systems. It’s an incredibly detailed design system that’s been defined and refined over decades, with a purpose-built font system, colors for every single context, and templates built for any situation. It’s built to be ultimately readable and clear and, since Apple (like Google) have an expansive library of their own Apps and Services, they’ve had to build this system to be flexible and open to modification in a way which is approachable for existing users without causing confusion.</p> -->
+                        <p>Every couple years Apple makes advancements and modifications to their macOS and iOS design systems. It’s an incredibly detailed design system that’s been defined and refined over decades, with a purpose-built font system, colors for every single context, and templates built for any situation. It’s built to be ultimately readable and clear and, since Apple (like Google) have an expansive library of their own Apps and Services, they’ve had to build this system to be flexible and open to modification in a way which is approachable for existing users without causing confusion.</p>
                     </template>
                 </ScrollerImage>
 
-                <!-- SERVICES -->
                 <ScrollerImage
                     :srcset = "{
                         small: '/Work/EV/2_Research/DesignSystem_2_Small.png',
@@ -436,14 +441,14 @@
                     imageParent="h-96 md:h-128 w-120 md:w-180"
                 >
                     <template #caption>
-                        <!-- <p>A huge source of inspiration for us, moving forward, became the way that Apple has approached redesigning their visual design system for future technologies like Apple Vision, their VR technology. This new system takes the existing one and makes it a little more spacious to account for AR/VR spaces and interactions, while also adding much more roundness for a little bit more of a friendly, easy to approach nature.</p> -->
+                        <p>A huge source of inspiration for us, moving forward, became the way that Apple has approached redesigning their visual design system for future technologies like Apple Vision, their VR technology. This new system takes the existing one and makes it a little more spacious to account for AR/VR spaces and interactions, while also adding much more roundness for a little bit more of a friendly, easy to approach nature.</p>
                     </template>
                 </ScrollerImage>
 
-            </ContentScroller>
+            </ContentScroller> -->
 
             <!-- SPATIAL COMPUTING -->
-            <ContentMediaWithCaption
+            <!-- <ContentMediaWithCaption
                 title="Spatial Computing"
             >
                 <template #caption>
@@ -465,21 +470,21 @@
                         alt-text="An array of still frames taken from a promotional video about Apple's Vision Pro VR headset and how the company envisioned the 3D and spatial aspects of computing for virtual space"
                     />
                 </template>
-            </ContentMediaWithCaption>
+            </ContentMediaWithCaption> -->
 
-            <CaseStudyAppleCarBrandResearch />
+            <!-- <CaseStudyAppleCarBrandResearch /> -->
 
             <!-- PERSONA -->
             <CaseStudyAppleCarPersona />
 
             <!-- OPPORTUNITIES -->
-            <ContentCaptionWithPostits 
+            <!-- <ContentCaptionWithPostits 
                 title="Key Opportunities" 
                 gridCols="lg:grid-cols-4" 
             >
                 <template #caption>
-                    <!-- <p>Apple doesn’t appear to have a specific, current mission statement, so we looked at some of the various mission, purpose, and vision statements released by the company over the years.</p>
-                    <p>These come from the company in the form of press releases, investor calls, the website, etc.</p> -->
+                    <p>Apple doesn’t appear to have a specific, current mission statement, so we looked at some of the various mission, purpose, and vision statements released by the company over the years.</p>
+                    <p>These come from the company in the form of press releases, investor calls, the website, etc.</p>
                 </template>
                 <template #postits>
                     <ContentPostit
@@ -518,7 +523,7 @@
                         </template>
                     </ContentPostit>
                 </template>
-            </ContentCaptionWithPostits>
+            </ContentCaptionWithPostits> -->
 
         </ProcessPrimary>
 
@@ -528,22 +533,38 @@
             title="Conceptualization"
             iconPack="fas"
             iconName="lightbulb"
-            totalProcess="5"
+            totalProcess="6"
             headerRef="2"
         >
 
             <!-- NEW BRAND STRATEGY -->
-            <CaseStudyAppleCarBrandStrategy />
+            <!-- <CaseStudyAppleCarBrandStrategy /> -->
+            <ContentMediaWithCaption
+                title="Concept Priorities"
+            >
+                <template #caption>
+                    <p>From the initial vehicle analysis and noticing the broken mental model and disconnect between devices, I wanted to prioritize that feeling of using tech in a way that "just works".</p>
+                </template>
+                <template #media>
+                    <ImagePrimary
+                        srcset-small="/Work/EV/3_Conceptualization/Vision.png"
+                        srcset-medium="/Work/EV/3_Conceptualization/Vision.png"
+                        srcset-large="/Work/EV/3_Conceptualization/Vision.png"
+                        alt-text="An array of 3 circles featuring; on the left is `Accessibility`; in the middle is `Connectedness & Compatibility`; on the right is`Ease of Use`"
+                        additionalStyles="bg-black"
+                    />
+                </template>
+            </ContentMediaWithCaption>
 
             <!-- PICKING DIRECTIONS -->
             <ContentMediaWithCaption
-                title="Picking Directions"
+                title="Concepts from Problems"
             >
                 <template #caption>
-                    <p>We went through a series of brainstorming exercises ranging from journey maps to lotus blossoms, and ended up writing out a variety of text-based scenarios. After several discussions, and refining some of these scenarios, these are the directions that we agreed were both the most exciting but also the most plausible.</p>
+                    <p>My team and I took our user journey map through a series of brainstorming exercises and ended up writing out a variety of text-based concept flows. After several discussions, and refining some of these scenarios, this is where my concept proposal started to take shape.</p>
                 </template>
                 <template #media>
-                    <div class="notch flex grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 p-4 bg-applecarBlue">
+                    <div class="p-8 sm:p-24 md:px-32 xl:px-48 bg-applecarBlue">
                         <ImageSmall
                             srcset-small="/Work/EV/3_Conceptualization/Concept1.jpg"
                             srcset-medium="/Work/EV/3_Conceptualization/Concept1.jpg"
@@ -551,7 +572,7 @@
                             alt-text="A descriptive alternative text for the image"
                             :image-style="{ width: '100%', height: 'auto' }"
                         />
-                        <ImageSmall
+                        <!-- <ImageSmall
                             srcset-small="/Work/EV/3_Conceptualization/Concept2.jpg"
                             srcset-medium="/Work/EV/3_Conceptualization/Concept2.jpg"
                             srcset-large="/Work/EV/3_Conceptualization/Concept2.jpg"
@@ -578,7 +599,7 @@
                             srcset-large="/Work/EV/3_Conceptualization/Concept5.jpg"
                             alt-text="A descriptive alternative text for the image"
                             :image-style="{ width: '100%', height: 'auto' }"
-                        />
+                        /> -->
                     </div>
                 </template>
             </ContentMediaWithCaption>
@@ -588,7 +609,7 @@
                 iconPack="fas" 
                 iconName="lightbulb" 
                 iconSize="text-4xl" 
-                callout="A major point of friction is moving into and out of your car. With Apple’s well-defined ecosystem we can introduce a seamless transition when entering or exiting the vehicle."
+                callout="A major point of friction is moving into and out of your car. As proven by Apple’s well-defined ecosystem, we can introduce a seamless handoff when entering or exiting the vehicle."
             />
 
             <ContentImagesWithCaption
@@ -614,7 +635,7 @@
             title="Designing"
             iconPack="fas"
             iconName="pencil"
-            totalProcess="5"
+            totalProcess="6"
             headerRef="3"
         >
             <!-- <ContentBlurb>
@@ -632,7 +653,7 @@
                 ]"
             >
                 <template #caption>
-                    <p>As a team, we realized we would need a “home” for our concepts to work from, and agreed on a long, narrow screen for the meter with an iPad-sized screen for the center console, utilizing MagSafe connections to use whatever sized screens the owner would prefer.</p>
+                    <p>Talking with my team, I realized we would need a “home” for our concepts to work from, and we agreed on an iPad-sized screen for the center console, potentially utilizing MagSafe connections to use whatever sized screens the owner would prefer.</p>
                 </template>
             </ContentImagesWithCaption>
 
@@ -739,7 +760,7 @@
                 iconPack="fas" 
                 iconName="lightbulb" 
                 iconSize="text-4xl" 
-                callout="By 2035 it will be easier for our devices to recognize what processes need to be transitioned over, and some of the process can also be handled with selected settings. In a refined concept, a lot of my hang-up with 'user agency' can actually be moved to a Settings page which you'll rarely have to interact with."
+                callout="By 2035 it will be easier for our devices to recognize processes that need to be handed over. In a refined concept, a lot of my hang-up with 'user agency' can actually be moved to a Settings page which you'll rarely have to interact with."
             />
             
         </ProcessPrimary>
@@ -773,7 +794,7 @@
             title="Making it Seamless"
             iconPack="fas"
             iconName="pen-to-square"
-            totalProcess="5"
+            totalProcess="6"
             headerRef="4"
         >
             <!-- <ContentBlurb>
@@ -862,7 +883,7 @@
                 </template>
             </ContentCaptionWithCustom> -->
 
-            <ContentScroller
+            <!-- <ContentScroller
                 title="Revised Process"
             >
 
@@ -883,7 +904,7 @@
                         <ThumbGood comment="No manual steps required" />
                     </template>
                     <template #caption>
-                        <!-- <p>This new “prototype” shows a seamless interaction where the user doesn’t actually have to do anything. The devices realize they’re nearing each other and, at an optimal time, the active process (in this case, a FaceTime call) is automatically transferred over without the user needing to manually do anything.</p> -->
+                        <p>This new “prototype” shows a seamless interaction where the user doesn’t actually have to do anything. The devices realize they’re nearing each other and, at an optimal time, the active process (in this case, a FaceTime call) is automatically transferred over without the user needing to manually do anything.</p>
                     </template>
                 </ScrollerVideoMulti>
 
@@ -904,18 +925,37 @@
                         <ThumbBad comment="Too much compartmentalization" />
                     </template>
                     <template #caption>
-                        <!-- <p>Although the actual interaction is much improved, there’s still a confusing hierarchy with too much compartmentalization. With the seamless transition interaction mostly solved, we decided to continue iterating on the Home screen to make better use of the available space.</p> -->
+                        <p>Although the actual interaction is much improved, there’s still a confusing hierarchy with too much compartmentalization. With the seamless transition interaction mostly solved, we decided to continue iterating on the Home screen to make better use of the available space.</p>
                     </template>
                 </ScrollerVideoMulti>
 
-            </ContentScroller>
+            </ContentScroller> -->
 
             <ContentMediaWithCaption
-                title="Reducing Compartmentalization"
+                title="Revised Process"
             >
                 <template #caption>
-                    <p class="mb-4">With a revised concept of how the transition should actually occur, it quickly became apparent that the active process should take precedence over other tasks, i.e. a FaceTime call should become, hierarchically, the most important active app on the screen. With that in mind, we needed a way to move other apps out of the way.</p>
-                    <p>Since the phone can be placed on the MagSafe dock and used as an additional screen, we can move the clock off of the main screen’s Tab Bar. This gives us plentiful space to move apps to the Tab Bar to form the equivalent of the Dock, which is in familiar use on many other Apple devices. This change means that the active process can now utilize the entirety of the screen.</p>
+                    <p>This new “prototype” shows a seamless interaction where the user doesn’t actually have to do anything. The devices realize they’re nearing each other and, at an optimal time, the active process (in this case, a FaceTime call) is automatically transferred over without the user needing to manually do anything.</p>
+                </template>
+                <template #media>
+                    <div class="bg-black py-4 px-40 xs:px-48 sm:px-48 md:px-64 lg:px-48 xl:px-80 2xl:px-96">
+                        <VideoPlayer
+                            :videoSources="[
+                                { src: '/Work/EV/5_Prototyping/Revision3_Full.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision3_720.mp4', type: 'video/mp4' },
+                                { src: '/Work/EV/5_Prototyping/Revision3_480.mp4', type: 'video/mp4' },
+                            ]">
+                        </VideoPlayer>
+                    </div>
+                </template>
+            </ContentMediaWithCaption>
+
+            <ContentMediaWithCaption
+                title="Reducing Interface Overload"
+            >
+                <template #caption>
+                    <p class="mb-4">With a revised concept of how the transition should actually occur, it quickly became apparent that the active process should take precedence over other tasks, i.e. a FaceTime call should become, hierarchically, the most important active app on the screen.</p>
+                    <p>Since the phone can be placed on the MagSafe dock and used as an additional screen, we can move the clock off of the main screen’s Tab Bar. This gives us space to use the Tab Bar to form the equivalent of the Dock, which is in familiar use on many other Apple devices. This change means that the active process can now utilize the entirety of the screen.</p>
                 </template>
                 <template #media>
                     <div class="w-full text-white bg-grayDarkest px-2 py-8 flex flex-col items-center space-y-8">
@@ -954,14 +994,14 @@
             title="Finalizing"
             iconPack="fas"
             iconName="video"
-            totalProcess="5"
+            totalProcess="6"
             headerRef="5"
         >
             <!-- <ContentBlurb>
                 <p>Creating a storyboard and animatic occurred alongside our other work, starting with our initial persona and accompanying journey map. With several concepts being developed we wanted a way to show, more than how the concepts work, how the value of our concepts could improve user’s experiences and lives.</p>
             </ContentBlurb> -->
 
-            <ContentMediaWithCaption
+            <!-- <ContentMediaWithCaption
                 title="Design System"
             >
                 <template #caption>
@@ -978,7 +1018,7 @@
                             additionalStyles="bg-black p-0 sm:p-8 md:p-16 lg:64"
                         />
                 </template>
-            </ContentMediaWithCaption>
+            </ContentMediaWithCaption> -->
 
             <ContentMediaWithCaption
                 title="Final Prototype"
@@ -998,7 +1038,7 @@
             </ContentMediaWithCaption>
 
             <!-- FEATURES -->
-            <ContentScroller
+            <!-- <ContentScroller
                 title="Feature Highlights"
             >
 
@@ -1012,7 +1052,7 @@
                     videoParent="h-80 w-60 md:h-128 md:w-120"
                 >
                     <template #caption>
-                        <!-- <p>We wanted to continue Apple’s penchant for supporting an interconnected ecosystem within their product line so that your Apple Car would connect with the rest of your Apple products. Your music, phone calls, GPS, and more would seamlessly transition to your Apple Car media screens (and vice versa) so you can keep moving.</p> -->
+                        <p>We wanted to continue Apple’s penchant for supporting an interconnected ecosystem within their product line so that your Apple Car would connect with the rest of your Apple products. Your music, phone calls, GPS, and more would seamlessly transition to your Apple Car media screens (and vice versa) so you can keep moving.</p>
                     </template>
                 </ScrollerVideo>
 
@@ -1025,8 +1065,8 @@
                     videoParent="h-80 w-32 md:h-128 md:w-64"
                 >
                     <template #caption>
-                        <!-- <p>To extend the Apple Wallet and Apple ID, you can now make a Passenger ID which remembers your preferred climate and seat position. When entering a new Apple Car or other participating vehicle you can connect your Passenger ID and the car will accommodate your preferences.</p>
-                        <p>You can also create different presets to easily adjust for different situations, such as when you need a nap or if it’s colder than usual.</p> -->
+                        <p>To extend the Apple Wallet and Apple ID, you can now make a Passenger ID which remembers your preferred climate and seat position. When entering a new Apple Car or other participating vehicle you can connect your Passenger ID and the car will accommodate your preferences.</p>
+                        <p>You can also create different presets to easily adjust for different situations, such as when you need a nap or if it’s colder than usual.</p>
                     </template>
                 </ScrollerVideo>
 
@@ -1043,7 +1083,7 @@
                     imageParent="h-80 md:h-128 w-60 md:w-120" 
                 >
                     <template #caption>
-                        <!-- <p>More than simply adding AR/VR to the driving experience, we wanted to integrate spatial computing so that AR information appears seamlessly within your surroundings in the cockpit. Some menus adhere to physical surfaces for tactile feedback, and other elements intelligently move so they don’t cover necessities like the meter or streetview.</p> -->
+                        <p>More than simply adding AR/VR to the driving experience, we wanted to integrate spatial computing so that AR information appears seamlessly within your surroundings in the cockpit. Some menus adhere to physical surfaces for tactile feedback, and other elements intelligently move so they don’t cover necessities like the meter or streetview.</p>
                     </template>
                 </ScrollerImage>
 
@@ -1060,7 +1100,7 @@
                     imageParent="h-80 md:h-128 w-60 md:w-120" 
                 >
                     <template #caption>
-                        <!-- <p>Your home and workspace are very often personalized to your needs and self expression but even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p> -->
+                        <p>Your home and workspace are very often personalized to your needs and self expression but even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
                     </template>
                 </ScrollerImage>
 
@@ -1075,11 +1115,11 @@
                     videoParent="h-80 w-60 md:h-128 md:w-120"
                 >
                     <template #caption>
-                        <!-- <p>Apple, like many large technology companies (but not many car companies), uses highlight colors for important information. We continued that trend by using an Autonomous Violet as the indicator of autonomous driving mode and related features.</p> -->
+                        <p>Apple, like many large technology companies (but not many car companies), uses highlight colors for important information. We continued that trend by using an Autonomous Violet as the indicator of autonomous driving mode and related features.</p>
                     </template>
                 </ScrollerVideo>
 
-            </ContentScroller>
+            </ContentScroller> -->
 
             <!-- <ContentCaptionWithCustom
                 title="Beat Board"
@@ -1137,7 +1177,7 @@
         </ProcessPrimary>
 
         <!-- OUTRO BEGINNING -->
-        <OutroHighlightsWork :bgColor="bgColor">
+        <!-- <OutroHighlightsWork :bgColor="bgColor">
             <template #central>
                 <div class="w-full space-y-16">
                     <LottieParent bgColor="bg-applecarBlue" :animation-data="animationData"></LottieParent>
@@ -1160,8 +1200,8 @@
                     title="Final Thoughts & Next Steps"
                 >
                     <template #caption>
-                        <p class="mb-4">Our original brief was to design for 2035. To be perfectly honest, we found it incredibly difficult to design for a release 10 years from now. Although we understand that the development timeline for cars is around 5 years, has so many moving parts, and can constantly change considerations, it’s completely atypical for most product/UX/UI design timelines. To be honest, it’s something that I would be really eager to explore more, simply because of the differences to other development pipelines.</p>
-                        <p>Regarding the design, we kept it a little closer to current design trends and features than will probably be in use in 2035. There are also a lot of aspects we wanted to keep iterating on, like more versions of the center screen’s Tab Bar, adding an information bar for things like battery info and range, utilizing secondary screens (e.g. a docked phone) as a controller for quick app access, and more. Some of my teammates decided to continue working on the project afterwards and you can see that on their respective websites.</p>
+                        <p class="mb-4">Our team's brief was to design for 2035. We found it incredibly difficult to design for a release 10 years away. Although we understand that the development timeline for cars is around 5 years, has so many moving parts, and can constantly change considerations, it’s completely atypical for most UX/UI design timelines. To be honest, it’s something that I would be really eager to explore more, simply because of the differences to other development pipelines.</p>
+                        <p>There are a lot of aspects we wanted to keep iterating on, like more versions of the center screen’s Tab/Information Bar, adding an information bar for things like battery info and range, utilizing secondary screens (e.g. a docked phone) as a controller for quick app access, and more. Some of my teammates decided to continue working on the project afterwards and you can see that on their respective websites.</p>
                     </template>
                     <template #media>
                         <ImagePrimary
@@ -1173,7 +1213,7 @@
                     </template>
                 </ContentMediaWithCaption>
             </template>
-        </OutroHighlightsWork>
+        </OutroHighlightsWork> -->
 
         <!-- SIDE SCROLLER WITH FEATURE CALL-OUTS
         <IntroHighlights 
@@ -1260,6 +1300,121 @@
         </IntroHighlights> -->
 
         <!-- TEAM CREDITS -->
+        <OutroTeamwork
+            :bgColor="bgColor"
+            title="Overall Vision (Teamwork)"
+            iconPack="fas"
+            iconName="people-group"
+            totalProcess="6"
+            headerRef="6"
+        >
+
+            <ContentMediaWithCaption
+                title="Conceptual 2035 Apple EV"
+            >
+                <template #caption>
+                    <p class="mb-4">We actually worked as a team to conceptualize several connected driver experiences under the umbrella of an Apple-branded vehicle. We spent quite a bit of time researching the brand and coming up with a consistent design system, including shape language and colors.</p>
+                    <p>This video highlights all of these features in the appropriate context of a driver's day.</p>
+                </template>
+                <template #media>
+                    <VideoPlayerControlled 
+                        :autoplay=false 
+                        :loop=false 
+                        :muted=false 
+                        :controls=true
+                        roundedLvl="notch" 
+                        :videoSources="[
+                            { src: '/Work/EV/x_AppleVulcan_1080.mp4', type: 'video/mp4' },
+                            { src: '/Work/EV/x_AppleVulcan_720.mp4', type: 'video/mp4' },
+                            { src: '/Work/EV/x_AppleVulcan_480.mp4', type: 'video/mp4' }
+                        ]">
+                    </VideoPlayerControlled>
+                </template>
+            </ContentMediaWithCaption>
+            
+            <OutroTeamworkScroller
+                title="Feature Highlights"
+            >
+
+                <ScrollerVideo
+                    :videoSources="[
+                        { src: '/Work/EV/0_SeamlessTransitionFull.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/0_SeamlessTransition1080.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/0_SeamlessTransition480.mp4', type: 'video/mp4' },
+                    ]"
+                    title="Seamless Transitions Between Devices"
+                    videoParent="h-80 w-60 md:h-128 md:w-120"
+                >
+                    <template #caption>
+                        <p>We wanted to continue Apple’s penchant for supporting an interconnected ecosystem within their product line so that your Apple Car would connect with the rest of your Apple products. Your music, phone calls, GPS, and more would seamlessly transition to your Apple Car media screens (and vice versa) so you can keep moving.</p>
+                    </template>
+                </ScrollerVideo>
+
+
+                <ScrollerVideo
+                    :videoSources="[
+                        { src: '/Work/EV/0_PassengerID.mp4', type: 'video/mp4' }
+                    ]"
+                    title="Passenger ID (Apple Wallet for Car Settings)"
+                    videoParent="h-80 w-32 md:h-128 md:w-64"
+                >
+                    <template #caption>
+                        <p>To extend the Apple Wallet and Apple ID, you can now make a Passenger ID which remembers your preferred climate and seat position. When entering a new Apple Car or other participating vehicle you can connect your Passenger ID and the car will accommodate your preferences.</p>
+                        <p>You can also create different presets to easily adjust for different situations, such as when you need a nap or if it’s colder than usual.</p>
+                    </template>
+                </ScrollerVideo>
+
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/EV/0_ARVR_Small.png',
+                        medium: '/Work/EV/0_ARVR_Med.png',
+                        large: '/Work/EV/0_ARVR_Full.png',
+                    }" 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                    title="AR/VR Integration" 
+                    alt-text="A mockup of the interior of a car while sitting in the driver's seat; the driver is using AR glasses and using an AR menu hovering in the air in front of them." 
+                    imageParent="h-80 md:h-128 w-60 md:w-120" 
+                >
+                    <template #caption>
+                        <p>More than simply adding AR/VR to the driving experience, we wanted to integrate spatial computing so that AR information appears seamlessly within your surroundings in the cockpit. Some menus adhere to physical surfaces for tactile feedback, and other elements intelligently move so they don’t cover necessities like the meter or streetview.</p>
+                    </template>
+                </ScrollerImage>
+
+
+                <ScrollerImage
+                    :srcset = "{
+                        small: '/Work/EV/0_ThirdSpace_Small.png',
+                        medium: '/Work/EV/0_ThirdSpace_Med.png',
+                        large: '/Work/EV/0_ThirdSpace_Full.png',
+                    }" 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" 
+                    title="Enforcing the Personal “Third Space”" 
+                    alt-text="A prototype of a dashboard center screen using an app to order a delivery with the car as the delivery option." 
+                    imageParent="h-80 md:h-128 w-60 md:w-120" 
+                >
+                    <template #caption>
+                        <p>Your home and workspace are very often personalized to your needs and self expression but even though people spend a lot of time in their car, effectively their “third space”, they don’t often personalize these spaces. To enforce that your car is a personal space, some apps will be integrated into the onboard apps for things like using your car as a delivery option when you’re not at home.</p>
+                    </template>
+                </ScrollerImage>
+
+
+                <ScrollerVideo
+                :videoSources="[
+                        { src: '/Work/EV/0_MeterAutonomous_Full.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/0_MeterAutonomous_1080.mp4', type: 'video/mp4' },
+                        { src: '/Work/EV/0_MeterAutonomous_480.mp4', type: 'video/mp4' }
+                    ]"
+                    title="Highlighting Autonomous Driving Features"
+                    videoParent="h-80 w-60 md:h-128 md:w-120"
+                >
+                    <template #caption>
+                        <p>Apple, like many large technology companies (but not many car companies), uses highlight colors for important information. We continued that trend by using an Autonomous Violet as the indicator of autonomous driving mode and related features.</p>
+                    </template>
+                </ScrollerVideo>
+
+            </OutroTeamworkScroller>
+        </OutroTeamwork>
         <OutroCredits 
             title="Team —"
         >

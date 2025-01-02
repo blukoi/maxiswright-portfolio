@@ -65,6 +65,8 @@ import {
     faSquareCheck,
     faScrewdriverWrench,
     faCircleInfo,
+    faDownLong,
+    faPeopleGroup,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -140,6 +142,8 @@ library.add(
     faSquareCheck,
     faScrewdriverWrench,
     faCircleInfo,
+    faDownLong,
+    faPeopleGroup,
     faFontAwesome,
     faLinkedin,
     faInstagram,

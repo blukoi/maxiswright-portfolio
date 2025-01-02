@@ -326,16 +326,10 @@
                     </div>
                 </div>
 
-                <div class="w-full grid gap-16 md:gap-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    <div class="col-span-1 flex justify-center">
-                        <img src="/Brand/About_Charlie.jpg" alt="Charlie is a short-haired, mostly dark gray cat, with a little white moustache." class="flex-initial w-64 h-64 md:w-full md:h-full object-cover rounded-full overflow-hidden">
-                    </div>
-                    <div class="col-span-1 flex justify-center">
-                        <img src="/Brand/About_Burger.jpg" alt="A fig-and-bacon cheeseburger with arugula and a side of fries from Firestone Walker." class="flex-initial w-64 h-64 md:w-full md:h-full object-cover rounded-full overflow-hidden">
-                    </div>
-                    <div class="col-span-1 flex justify-center">
-                        <img src="/Brand/About_Zeus.jpg" alt="Zeus is a long-haired, fluffy white cat with a large gray splotch on his back that comes over the top of his head like a mask." class="flex-initial w-64 h-64 md:w-full md:h-full object-cover rounded-full overflow-hidden">
-                    </div>
+                <div class="w-full flex justify-center space-x-px">
+                        <img src="/Brand/About_Charlie.jpg" alt="Charlie is a short-haired, mostly dark gray cat, with a little white moustache." class="h-32 w-32 md:h-48 md:w-48">
+                        <img src="/Brand/About_Burger.jpg" alt="A fig-and-bacon cheeseburger with arugula and a side of fries from Firestone Walker." class="h-32 w-32 md:h-48 md:w-48">
+                        <img src="/Brand/About_Zeus.jpg" alt="Zeus is a long-haired, fluffy white cat with a large gray splotch on his back that comes over the top of his head like a mask." class="h-32 w-32 md:h-48 md:w-48">
                 </div>
 
             </div>

@@ -15,8 +15,8 @@
                         />
                     </template>
                     <template #caption>
-                        <h3 class="font-bold">Poor feature implementation</h3>
-                        <p>Some new features are surprisingly poorly integrated and, beyond simply impacting safety, can create an awful experience for drivers. For instance, drivers have been growing frustrated by the increasing use of touch screens, but Tesla takes it to an extreme where they’ve moved almost every single aspect of the dashboard into a single touch screen in the center of the dashboard.</p>
+                        <h3 class="font-bold">Poor Feature Implementation</h3>
+                        <p>Trendy features can be integrated in a way that impacts safety and the driving experience. For instance, drivers have been growing frustrated by the prevalence of touch screens but Tesla have condensed almost every single aspect of the dashboard into a single touch screen.</p>
                     </template>
                 </ContentSmallCardWithMedia>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -30,7 +30,7 @@
                     </template>
                     <template #caption>
                         <h3 class="font-bold">Inconsistent Visual Design & App Integration</h3>
-                        <p>None of the vehicles we reviewed had complete ownership over their digital design, instead contracting with Apple and Google for services like CarPlay and Android Auto. Since each service has their own design guidelines and requirements, the result is a clash of multiple visual design languages.</p>
+                        <p>None of the vehicles we reviewed had complete ownership over their digital UX, instead contracting services like CarPlay and Android Auto. Since each service has their own guidelines and requirements, the result is a clash of multiple visual design languages.</p>
                     </template>
                 </ContentSmallCardWithMedia>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -43,8 +43,8 @@
                         />
                     </template>
                     <template #caption>
-                        <h3 class="font-bold">Willing to Explore but with Mixed Results</h3>
-                        <p>Many manufacturers are fully willing to explore new ways of displaying information or integrating new technologies. Some features are more easily adapted while others are too new to really be a benefit. For instance, this thin, interior strip of lights mounted under the windshield of VW’s ID.4 is supposed to provide feedback to but is too limited to provide meaningful assistance.</p>
+                        <h3 class="font-bold">New Tech Overshadowing the Core Experience</h3>
+                        <p>Manufacturers exploring new technologies will rush to bring them to market without working to incorporate them into the driving experience. For instance, this interior strip of lights is supposed to provide feedback but is too limited for any meaningful assistance.</p>
                     </template>
                 </ContentSmallCardWithMedia>
             </template>

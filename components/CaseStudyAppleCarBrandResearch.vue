@@ -15,8 +15,8 @@
                         />
                     </template>
                     <template #caption>
-                        <h3 class="font-bold">Apple Ecosystem</h3>
-                        <p>Any concept we come up with would have to support Apple’s other products and services with clear connections between them.</p>
+                        <h3 class="font-bold">Connected Products</h3>
+                        <!-- <p>Any concept we come up with would have to support Apple’s other products and services with clear connections between them.</p> -->
                     </template>
                 </ContentSmallCardWithMedia>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -29,8 +29,8 @@
                         />
                     </template>
                     <template #caption>
-                        <h3 class="font-bold">Spatial Computing</h3>
-                        <p>While developing a car, Apple would assuredly take advantage of the totality of space within to explore new interactions.</p>
+                        <h3 class="font-bold">Spatial Awareness</h3>
+                        <!-- <p>While developing a car, Apple would assuredly take advantage of the totality of space within to explore new interactions.</p> -->
                     </template>
                 </ContentSmallCardWithMedia>
                 <ContentSmallCardWithMedia class="flex-1">
@@ -43,8 +43,8 @@
                         />
                     </template>
                     <template #caption>
-                        <h3 class="font-bold">Integration</h3>
-                        <p>We also noted the need for any concepts to not only work alongside the other products but for the experience, apps, and services to be fully integrated and seamless.</p>
+                        <h3 class="font-bold">Integrated & Seamless</h3>
+                        <!-- <p>We also noted the need for any concepts to not only work alongside the other products but for the experience, apps, and services to be fully integrated and seamless.</p> -->
                     </template>
                 </ContentSmallCardWithMedia>
             </template>

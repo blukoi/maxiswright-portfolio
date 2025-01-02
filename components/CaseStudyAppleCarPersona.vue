@@ -1,6 +1,6 @@
 <template>
     <div class="w-full space-y-32 md:space-y-64">
-        <ContentMediaWithCaption
+        <!-- <ContentMediaWithCaption
             title="Persona"
         >
             <template #caption>
@@ -14,12 +14,12 @@
                     alt-text="A summary and description of a fictional person, named Tina, acting as the synthesis of a variety of research and a target for the concepts to be designed for"
                 />
             </template>
-        </ContentMediaWithCaption>
+        </ContentMediaWithCaption> -->
         <ContentMediaWithCaption
-            title="Journey Map"
+            title="Ideal User Journey"
         >
             <template #caption>
-                <p>We brainstormed what the ideal day of Tina, as a new Apple Car owner, could look like, taking into consideration her life and needs.</p>
+                <!-- <p>This is the idealized journey of one day in the life of an electric vehicle owner.</p> -->
             </template>
             <template #media>
                 <ImagePrimary
