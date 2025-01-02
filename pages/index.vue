@@ -23,8 +23,11 @@
 
           <div class="col-span-1 col-start-1 lg:col-span-2 justify-center pl-8">
             <div class="space-y-6">
+              <div class="w-max bracketing bracket-tl bracket-br bracket-tl-thick bracket-br-thick bg-transparent text-black font-title text-xl lg:text-2xl title-bold px-4 pt-2 pb-1">
+                <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-xl text-mint" /><span class="pl-4">Hello!</span>
+              </div>
               <p class="font-normal font-main text-xl lg:text-2xl text-grayMiddle">
-                <span class="bracketing bracket-tl bracket-br bracket-tl-thick bracket-br-thick bg-mint text-white font-title title-bold px-4 pt-2 pb-1"><FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-xl" /><span class="pl-4">Hi!</span></span> I'm a mission-driven product designer who excels at exhaustive iteration to apply insights to interfaces & create thoughtful design systems.
+                 As a mission-driven product designer & exhaustive explorer, I excel at applying insights to interfaces to craft intuitive experiences that solve real-world challenges.
               </p>
               <!-- <p class="font-light font-main text-lg lg:text-xl text-grayMiddle">
                 My experience with graphic design, front-end code, and working alongside engineers & stakeholders helps me quickly impact projects and multi-disciplinary teams as a strong, pro-active collaborator.
