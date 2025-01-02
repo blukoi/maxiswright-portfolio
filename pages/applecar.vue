@@ -645,7 +645,7 @@
             <ContentImagesWithCaption
                 title="Home Screen Exploration"
                 spacing="space-x-4 md:space-x-8"
-                imgSizing="filter drop-shadow-2xl mb-4 md:mb-8 w-40 sm:w-48 md:w-64 lg:w-72 xl:w-96 rounded-sm"
+                imgSizing="filter drop-shadow-2xl mb-4 md:mb-8 w-40 sm:w-48 md:w-64 lg:w-72 xl:w-72 2xl:w-80 rounded-sm"
                 :images="[
                     { src: '/Work/EV/5_Prototyping/HeroPass1_Small.png', alt: 'Low-fidelity wireframe of a car`s center screen showing some app icons' },
                     { src: '/Work/EV/5_Prototyping/HeroPass2_Small.png', alt: 'Low-fidelity wireframe of a car`s center screen showing some app icons on one side and a preview of the car on the other side' },
