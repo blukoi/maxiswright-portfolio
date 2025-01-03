@@ -49,8 +49,8 @@
 
                 <div class="col-span-1 col-start-1 md:col-span-2 flex flex-col justify-between space-y-6 mt-6 md:mt-0">
                     <div class="bracketing bracket-tl bracket-br bracket-white p-4 font-main text-grayDarker text-left md:text-center text-sm">
-                        <p>Copyright © 2016-2024</p>
-                        <p>Designed in Figma & Coded in Vue.js by Max Wright</p>
+                        <p>Copyright © 2016-2025</p>
+                        <p>Designed in Figma & Built with Vue.js by Max Wright</p>
                     </div>
                 </div>
             </div>

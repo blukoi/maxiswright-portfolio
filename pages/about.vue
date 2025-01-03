@@ -326,10 +326,22 @@
                     </div>
                 </div>
 
-                <div class="w-full flex justify-center space-x-px">
-                        <img src="/Brand/About_Charlie.jpg" alt="Charlie is a short-haired, mostly dark gray cat, with a little white moustache." class="h-32 w-32 md:h-48 md:w-48">
-                        <img src="/Brand/About_Burger.jpg" alt="A fig-and-bacon cheeseburger with arugula and a side of fries from Firestone Walker." class="h-32 w-32 md:h-48 md:w-48">
-                        <img src="/Brand/About_Zeus.jpg" alt="Zeus is a long-haired, fluffy white cat with a large gray splotch on his back that comes over the top of his head like a mask." class="h-32 w-32 md:h-48 md:w-48">
+                <div class="w-full flex flex-col justify-center space-y-px">
+                    <div class="w-full flex justify-center space-x-px">
+                        <ImageTiny imgSrc="/Brand/About_Charlie.jpg" imgAlt="Charlie is a short-haired, mostly dark gray cat, with a little white moustache." />
+                        <ImageTiny imgSrc="/Brand/About_Burger.jpg" imgAlt="A fig-and-bacon cheeseburger with arugula and a side of fries from Firestone Walker." />
+                        <ImageTiny imgSrc="/Brand/About_Zeus.jpg" imgAlt="Zeus is a long-haired, fluffy white cat with a large gray splotch on his back that comes over the top of his head like a mask." />
+                    </div>
+                    <div class="w-full flex justify-center space-x-px">
+                        <ImageTiny imgSrc="/Brand/About_Beer.jpg" imgAlt="I used to work as a beer buyer, right when hard seltzers were exploding in popularity. This is a beer from Monkish, one of my favorite breweries." />
+                        <ImageTiny imgSrc="/Brand/About_Travel.jpg" imgAlt="I don't actually get to travel a lot, anymore." />
+                        <ImageTiny imgSrc="/Brand/About_Tacos.jpg" imgAlt="I don't usually take pictures of my tacos, since we get pretty standard street tacos from a local stand. These are special, though. They're Villa's Tacos; 3 different tacos, each with a different meat and different toppings." />
+                    </div>
+                    <div class="w-full flex justify-center space-x-px">
+                        <ImageTiny imgSrc="/Brand/About_Dodgers.jpg" imgAlt="Couldn't really explain why but somehow I became obsessed with the Dodgers and baseball in 2024. Never been interested in the sport before then." />
+                        <ImageTiny imgSrc="/Brand/About_Pizza.jpg" imgAlt="This is just a pizza. You could put almost any pizza in front of me and I'd probably like it." />
+                        <ImageTiny imgSrc="/Brand/About_Music.jpg" imgAlt="My partner surprised me with tickets to see Odesza for my birthday. It was pretty great. (That's an understatement.)" />
+                    </div>
                 </div>
 
             </div>
