@@ -27,10 +27,13 @@
                 <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-xl text-mint" /><span class="pl-4">Hello!</span>
               </div>
               <p class="font-normal font-main text-xl lg:text-2xl text-grayMiddle">
-                 As a mission-driven product designer & exhaustive explorer, I excel at applying insights to interfaces to craft intuitive experiences that solve real-world challenges.
+                As a mission-driven product designer & exhaustive explorer, I excel at applying insights to interfaces to craft scalable design systems & intuitive microinteractions.
               </p>
-              <!-- <p class="font-light font-main text-lg lg:text-xl text-grayMiddle">
-                My experience with graphic design, front-end code, and working alongside engineers & stakeholders helps me quickly impact projects and multi-disciplinary teams as a strong, pro-active collaborator.
+              <!-- <p class="font-normal font-main text-grayMiddle">
+                My experience with visual communication, front-end development, and working as a freelancer alongside engineers & stakeholders helps me quickly impact projects as a pro-active collaborator.
+              </p> -->
+              <!-- <p class="font-normal font-main text-grayMiddle">
+                Currently contributing to user research, design systems, and UI design at Keyworded.
               </p> -->
             </div>
           </div>
