@@ -14,10 +14,10 @@
 <script>
 export default {
     props: {
-        comment: {
-            type: String,
-            required: true,
-        },
+        // comment: {
+        //     type: String,
+        //     required: true,
+        // },
         colorOptions: {
             type: Array,
             default: () => ['bg-grayDarker', 'text-white'],

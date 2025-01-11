@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="w-full relative h-160 md:h-180 filter drop-shadow-md">
-            <div ref="parallaxImage" :class="mediaBackground" class="absolute top-0 left-0 w-full h-full h-64 flex place-items-center">
+            <div ref="parallaxImage" :class="mediaBackground" class="fixed top-0 left-0 w-full h-full h-64 flex place-items-center">
                 <slot name="media" />
             </div>
             <div class="absolute top-0 left-0 w-full h-full bg-transparent">
@@ -43,21 +43,21 @@ export default{
             default: "bg-grayDarkest"
         }
     },
-    mounted() {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-    beforeDestroy() {
-        window.removeEventListener('scroll', this.handleScroll);
-    },
-    methods: {
-        handleScroll() {
-            const scrolled = window.scrollY;
-            const offset = scrolled * 0.5;
-            if (this.$refs.parallaxImage) {
-                this.$refs.parallaxImage.style.transform = `translateY(${offset}px)`;
-            }
-        }
-    },
+    // mounted() {
+    //     window.addEventListener('scroll', this.handleScroll);
+    // },
+    // beforeDestroy() {
+    //     window.removeEventListener('scroll', this.handleScroll);
+    // },
+    // methods: {
+    //     handleScroll() {
+    //         const scrolled = window.scrollY;
+    //         const offset = scrolled * 0.5;
+    //         if (this.$refs.parallaxImage) {
+    //             this.$refs.parallaxImage.style.transform = `translateY(${offset}px)`;
+    //         }
+    //     }
+    // },
 }
 </script>
 

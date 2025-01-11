@@ -50,6 +50,9 @@ module.exports = {
 
         // Rethinking Car Controls
         'highlightCarControls': '#B80F36',
+
+        // Hyperbole
+        'hyperbolepink': '#CB063E',
       },
 
       backgroundImage: {

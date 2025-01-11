@@ -67,6 +67,7 @@ import {
     faCircleInfo,
     faDownLong,
     faPeopleGroup,
+    faBookOpen,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -144,6 +145,7 @@ library.add(
     faCircleInfo,
     faDownLong,
     faPeopleGroup,
+    faBookOpen,
     faFontAwesome,
     faLinkedin,
     faInstagram,

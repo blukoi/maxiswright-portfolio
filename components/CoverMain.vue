@@ -25,7 +25,7 @@
                 <div class="col-span-1 lg:col-start-1 lg:order-2">
                     <div>
                         <h1 class="text-white ml-8 lg:ml-0 font-title title-bold text-2xl">{{ project.title }}</h1>
-                        <div class="ml-8 text-grayLightPrimary font-main font-sm font-light mt-4 lg:mt-8 mb-8 lg:mb-16">
+                        <div class="ml-8 text-grayLightPrimary font-main font-sm font-normal mt-4 lg:mt-8 mb-8 lg:mb-16">
                             <p>
                                 {{ project.caption }}
                             </p>

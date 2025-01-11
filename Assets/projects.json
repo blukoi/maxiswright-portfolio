@@ -1,5 +1,62 @@
 [
     {
+        "id": "0",
+        "image": "/Experiments/Hyperbole/0_hyperbolecover.jpg",
+        "animation": "",
+        "video-lg": "",
+        "video-md": "",
+        "video-sm": "",
+        "title": "User Research for Product Packaging",
+        "caption": "Combining 2 great pastimes: Craft beer and movies. I apply user research principles to begin a personal project to make digital illustrations for product packaging.",
+        "category": "Packaging Design",
+        "categoryIcon": "fas fa-tag",
+        "buttonLink": "/hyperbole",
+        "highlight": true,
+        "completed": true,
+        "type": "Experiment",
+        "researchtags":[
+            "Observations",
+            "Quantitative Survey",
+            "Usability Test"
+        ],
+        "designtags":[
+            "Digital Illustrations",
+            "Typography",
+            "Color Theory"
+        ],
+        "impacttags":[
+
+        ],
+        "color": "bg-hyperbolepink"
+    },
+    {
+        "id": "5",
+        "image": "",
+        "animation": "",
+        "video-lg": "",
+        "video-md": "",
+        "video-sm": "",
+        "title": "Speculative Typographic Branding System for the Washington Capitals",
+        "caption": "An extensive speculative branding system, focused on typography, for the Washington Capitals, featuring color options, letterhead, mailers, and more.",
+        "category": "Typography",
+        "categoryIcon": "fas fa-book-open",
+        "buttonLink": "/allcaps",
+        "highlight": true,
+        "completed": false,
+        "type": "Experiment",
+        "researchtags":[
+            "Observations"
+        ],
+        "designtags":[
+            "Typography",
+            "Color Theory"
+        ],
+        "impacttags":[
+
+        ],
+        "color": "bg-hyperbolepink"
+    },
+    {
         "id": "4",
         "image": "/Work/EV/0_Cockpit_Med.png",
         "animation": "",
@@ -111,32 +168,6 @@
 
         ],
         "color": "bg-tattoooSecondaryDarker"
-    },
-    {
-        "id": "5",
-        "image": "/Experiments/Hyperbole/",
-        "animation": "",
-        "video-lg": "",
-        "video-md": "",
-        "video-sm": "",
-        "title": "Beer Labels Based on Movies",
-        "caption": "Applying UX research principals to product packaging to start a personal project for graphic design based on the movies I'm watching",
-        "category": "Packaging Design",
-        "categoryIcon": "fas fa-tag",
-        "buttonLink": "/hyperbole",
-        "highlight": true,
-        "completed": false,
-        "type": "Experiment",
-        "researchtags":[
-
-        ],
-        "designtags":[
-
-        ],
-        "impacttags":[
-
-        ],
-        "color": ""
     }
 ]
   

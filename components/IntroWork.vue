@@ -12,7 +12,7 @@
 
         </div>
         <div class="hidden md:block md:col-span-1 h-full"></div>
-        <div class="col-span-1 space-y-8">
+        <div v-if="$slots.problem" class="col-span-1 space-y-8">
 
             <h3 class="font-title title-normal text-grayDarkest text-2xl top-hash-mark-lightgray">
                 Problem
@@ -20,7 +20,7 @@
             <slot name="problem"></slot>
 
         </div>
-        <div class="col-span-1 space-y-8">
+        <div v-if="$slots.goals" class="col-span-1 space-y-8">
 
             <h3 class="font-title title-normal text-grayDarkest text-2xl top-hash-mark-lightgray">
                 Goals
@@ -28,7 +28,7 @@
             <slot name="goals"></slot>
 
         </div>
-        <div class="col-span-1 space-y-8">
+        <div v-if="$slots.solution" class="col-span-1 space-y-8">
 
             <h3 class="font-title title-normal text-grayDarkest text-2xl top-hash-mark-lightgray">
                 Solution
