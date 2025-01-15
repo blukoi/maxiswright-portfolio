@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .decoration-window {
   position: fixed;
   pointer-events: none;
