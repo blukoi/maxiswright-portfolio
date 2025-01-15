@@ -3,7 +3,7 @@
     <nav class="fixed z-50 top-0 w-full h-max bg-transparent font-main">
       <div class="w-full h-full container mx-auto px-4 sm:px-0 py-4 flex flex-row space-between content-center">
         <div class="notch notch-border w-full h-10 h-max border border-black bg-whiteFaded backdrop-filter backdrop-blur-sm overflow-hidden flex flex-row justify-between">
-          <nuxt-link to="/" class="notch self-center px-8 py-2 rounded-none h-fit border-r border-black hover:bg-mint focus:bg-mint active:bg-white hover:drop-shadow-lg text-black hover:text-white active:text-mint stroke-none focus:stroke-white flex flex-row gap-2">
+          <nuxt-link to="/" class="notch self-center px-8 py-2 rounded-none h-fit border-r border-black focus:bg-mint active:bg-white active:text-mint stroke-none focus:stroke-white flex flex-row gap-2 sweep-hover">
             <div class="w-6 h-6 self-center rounded-full">
               <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="rounded-full fill-current">
                 <defs>
@@ -16,9 +16,9 @@
                 <rect x="0" y="0" width="72" height="72" mask="url(#cutout-mask)"/>
               </svg>
             </div>
-            <h1 class="font-title title-bold self-center hidden sm:block pt-0.5">Max Wright</h1>
+            <h1 class="font-title title-normal self-center hidden sm:block pt-0.5">Max Wright</h1>
           </nuxt-link>
-          <ul class="flex flex-row h-full items-center uppercase text-xs font-semibold tracking-widest">
+          <ul class="flex flex-row h-full items-center uppercase text-xs tracking-widest">
             <li class="hidden">
                 <NavButton label="Home" link="/" />
             </li>
@@ -35,7 +35,7 @@
                 <NavButton label="Contact" link="/contact" />
             </li>
             <li class="hidden lg:block">
-              <a href="/WrightMax_Resume.pdf" class="border-l border-black px-4 py-5 h-full font-main bg-transparent hover:bg-mint focus:bg-mint active:border-b-2 active:border-black focus:border-white text-black hover:text-white focus:text-white active:text-white" target="_blank" rel="noopener noreferrer">
+              <a href="/WrightMax_Resume.pdf" class="border-l border-black px-4 py-5 h-full font-main focus:bg-mint active:border-b-2 active:border-black focus:border-white focus:text-white active:text-white sweep-hover" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>
@@ -181,5 +181,17 @@ export default {
     content: "01101000.01101001.01110010.01100101.00100000.01101101.01100101.00101110";
   }
   
+}
+
+.sweep-hover {
+  background: linear-gradient(#00AB8F 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  transform: scale(1) rotate(0deg);
+  color: #000000;
+  transition: transform 0.4s, background-size 0.4s, background-position 0s, color 0.4s;
+}
+
+.sweep-hover:hover {
+  --p: 100%;
+  color: #FFFFFF;
 }
 </style>

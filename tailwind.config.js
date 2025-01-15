@@ -52,7 +52,10 @@ module.exports = {
         'highlightCarControls': '#B80F36',
 
         // Hyperbole
-        'hyperbolepink': '#CB063E',
+        'hyperbolePink': '#db146e',
+
+        // Washington Capitals
+        'capsRed': '#cd0e2c',
       },
 
       backgroundImage: {

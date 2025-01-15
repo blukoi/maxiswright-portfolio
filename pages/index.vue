@@ -23,10 +23,10 @@
 
           <div class="col-span-1 col-start-1 lg:col-span-2 justify-center pl-8">
             <div class="space-y-6">
-              <div class="w-max bracketing bracket-tl bracket-br bracket-tl-thick bracket-br-thick bg-transparent text-black font-title text-xl lg:text-2xl title-bold px-4 pt-2 pb-1">
+              <div class="w-max bracketing bracket-tl bracket-br bracket-tl-thick bracket-br-thick bg-transparent text-black font-title text-xl title-bold px-4 pt-2 pb-1">
                 <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-xl text-mint" /><span class="pl-4">Hello!</span>
               </div>
-              <p class="font-normal font-main text-xl lg:text-2xl text-grayMiddle">
+              <p class="py-6 font-normal font-main text-xl text-grayMiddle">
                 As a mission-driven product designer & exhaustive explorer, I excel at applying insights to interfaces to craft scalable design systems & intuitive microinteractions.
               </p>
               <!-- <p class="font-normal font-main text-grayMiddle">
@@ -47,7 +47,7 @@
           </div>
 
           <div class="col-span-1 col-start-1 lg:col-span-3 w-full sm:px-0 mx-auto mb-8 lg:mb-16 flex justify-end">
-            <h1 class="font-title title-bold text-grayLightPrimary text-6xl">Highlights —</h1>
+            <h1 class="font-title title-normal text-grayLighter text-6xl">Highlights —</h1>
           </div>
       
         </div>

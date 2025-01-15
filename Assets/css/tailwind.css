@@ -104,6 +104,11 @@ body {
     clip-path: polygon(0 8px, 0 100%, 100% 100%, 100% 0, 8px 0);
 }
 
+.notch-small-bw {
+    background-image: linear-gradient(135deg, white 0 5px, transparent 0 5px);
+    clip-path: polygon(0 8px, 0 100%, 100% 100%, 100% 0, 8px 0);
+}
+
 .notch-border {
     background-image: linear-gradient(135deg, black 0 10.75px, transparent 0 10.75px);
     clip-path: polygon(0 16px, 0 100%, 100% 100%, 100% 0, 16px 0);

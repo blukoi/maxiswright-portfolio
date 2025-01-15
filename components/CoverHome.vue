@@ -4,7 +4,7 @@
         <nuxt-link v-for="project in highlightedProjects" :key="project.title" :to="project.buttonLink" :class="project.color" class="notch-large col-span-1 overflow-hidden project-container">
           <div class="project-thumbnail py-8 lg:py-16 px-4 sm:px-8 lg:px-16 h-full project-child">
             <div class="w-full space-y-8 overflow-hidden flex flex-col space-y-8">
-              <h1 class="font-title title-normal text-3xl text-white flex flex-col justify-items-start">
+              <h1 class="font-title title-bold text-xl text-white flex flex-col justify-items-start">
                 <!-- <span class="w-max mb-4 h-10 px-4 flex flex-row items-center bg-white text-mint rounded-full space-x-4 z-30">
                     <FontAwesomeIcon :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]" class="text-lg" />
                     <p class="font-main text-sm font-bold">{{ project.category }}</p>
@@ -62,18 +62,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .project-container .project-child {
-  transform: scale(1);
-  background: linear-gradient(to right, black 0%, black 100%);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 0% 100%;
-  transition: transform 0.5s ease-in-out 0.1s, background-size 0.5s ease-in-out 0.1s;
+  background: linear-gradient(#000000 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  transform: scale(1) skewY(0deg);
+  transition: transform 0.4s, background-size 0.4s, background-position 0s;
 }
 
 .project-container:hover .project-child {
-  transform: scale(1.05);
-  background-size: 100% 100%;
+  transform: scale(1.1) skewY(-3deg);
+  --p: 100%;
 }
 </style>

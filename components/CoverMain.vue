@@ -2,7 +2,7 @@
     <div>
         <div 
         v-for="(project) in highlightedProjects" :key="project.title" class="w-full bg-black content-center z-10">
-            <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 py-32">
+            <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 py-48">
                 <div class="pl-8 col-span-1 lg:col-span-3 flex flex-col md:flex-row flex-wrap gap-2 justify-center content-start md:justify-start md:content-center">
                   <!-- <div class="w-max h-10 px-4 flex flex-row items-center bg-mint text-white rounded-full space-x-4">
                       <FontAwesomeIcon :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]" class="text-lg" />
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-span-1 lg:col-start-1 lg:order-2">
                     <div>
-                        <h1 class="text-white ml-8 lg:ml-0 font-title title-bold text-2xl">{{ project.title }}</h1>
+                        <h1 class="text-white ml-8 lg:ml-0 font-title title-bold text-xl">{{ project.title }}</h1>
                         <div class="ml-8 text-grayLightPrimary font-main font-sm font-normal mt-4 lg:mt-8 mb-8 lg:mb-16">
                             <p>
                                 {{ project.caption }}

@@ -1,18 +1,20 @@
 <template>
     <div class="w-full content-center z-10 bg-white relative">
         <div class="container px-4 sm:px-0 mx-auto grid grid-cols-1">
-            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 my-32 text-2xl font-title title-bold">
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 my-64 text-xl font-title title-normal">
 
                 <div class="col-span-1">
                     <h1 class="text-grayDarkest">More —</h1>
                 </div>
 
-                <nuxt-link v-if="linksVisibility[0]" :to="currentProject.buttonLink" class="notch col-span-1 md:col-span-2 bg-grayDarker hover:bg-mint hover:border-mint hover:border-2 px-8 py-6 flex flex-row items-center space-x-4 text-white">
-                    <div class="h-8 w-8 flex justify-center items-center">
-                        <FontAwesomeIcon :icon="currentProject.categoryIcon.split(' ')" class="text-2xl" />
-                    </div>
-                    <h1 class="pt-1">{{ currentProject.title }}</h1>
-                </nuxt-link>
+                <div v-if="linksVisibility[0]" class="notch col-span-1 md:col-span-2 flex place-items-center bg-grayDarker">
+                  <nuxt-link :to="currentProject.buttonLink" class="h-full w-full px-8 py-6 flex flex-row items-center space-x-4 sweep-hover">
+                      <div class="h-8 w-8 flex justify-center items-center">
+                          <FontAwesomeIcon :icon="currentProject.categoryIcon.split(' ')" class="text-2xl" />
+                      </div>
+                      <h1 class="pt-1">{{ currentProject.title }}</h1>
+                  </nuxt-link>
+                </div>
 
                 <div class="col-span-1 md:col-span-2 md:col-start-2 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
@@ -97,5 +99,18 @@ export default {
 
 .button-link:hover .foreground-image {
   opacity: 1;
+}
+</style>
+
+<style scoped>
+.sweep-hover {
+  background: linear-gradient(#00AB8F 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  color: #FFFFFF;
+  transition: background-size 0.4s, background-position 0s, color 0.4s;
+}
+
+.sweep-hover:hover {
+  --p: 100%;
+  color: #000000;
 }
 </style>

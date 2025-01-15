@@ -114,10 +114,10 @@
                 <template #media>
                     <div class="flex flex-col justify-center items-center space-y-4 bg-white h-full p-4">
                         <div>
-                            <img src="/Experiments/Hyperbole/Research/Good.jpg" alt="A complex graph showing the customer journey through the tattoo process and the user's thoughts, feelings, and actions.">
+                            <img src="/Experiments/Hyperbole/Research/Good.jpg" alt="A series of photos of well-designed beer cans showing how easy to read the labels are, with information organized well.">
                         </div>
                         <div>
-                            <img src="/Experiments/Hyperbole/Research/Bad.jpg" alt="A complex graph showing the customer journey through the tattoo process and the touchpoints, goals, pain points, and opportunities.">
+                            <img src="/Experiments/Hyperbole/Research/Bad.jpg" alt="A series of photos of poorly designed beer cans showing that the labels are disorganized and difficult to read, with text jumbled around and information being hard to find.">
                         </div>
                     </div>
                 </template>
@@ -345,7 +345,7 @@
             // console.log("Imported animation data:", animationData);
             return {
                 projects: require('~/Assets/projects.json'),
-                bgColor: "bg-hyperbolepink",
+                bgColor: "bg-hyperbolePink",
                 isConcise: true,
             };
         },

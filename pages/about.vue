@@ -29,7 +29,7 @@
                             items-center 
                             flex flex-row justify-between">
                                 <div class="h-full flex items-center">
-                                    <h1 class="ml-8 font-title title-bold text-2xl justify-self-start self-center pt-1">
+                                    <h1 class="ml-8 font-title title-bold text-xl justify-self-start self-center pt-1">
                                     About Max
                                     </h1>
                                 </div>
@@ -61,7 +61,7 @@
                     </div>
         
                     <div class="col-span-1 col-start-1 md:col-span-2 md:col-start-2 font-main">
-                        <div class="w-full bg-white text-grayDarker p-4 text-sm space-y-4">
+                        <div class="w-full bg-white text-grayDarker p-4 text-sm space-y-8">
                             <h1 class="top-hash-mark-lightgray font-title title-bold text-xl">What drives me</h1>
                             <div class="notch notch-border border border-black p-4 bg-white text-black space-y-4">
                                 <div :class="{'space-y-4 expandable-content': true, 'space-y-4 is-expanded': isExpanded}">
@@ -87,7 +87,7 @@
                                             <FontAwesomeIcon :icon="['fas', 'caret-up']" class="text-base" />
                                         </div>
                                     </button> -->
-                                    <button class="notch-small button flex flex-row gap-1 pl-2 text-grayDarker items-center bg-transparent hover:bg-grayDarker hover:text-white font-main" @click="toggleOne">
+                                    <button class="notch-small button flex flex-row gap-1 pl-2 items-center font-main sweep-hover" @click="toggleOne">
                                         <p class="uppercase text-xs tracking-widest">{{ isExpanded ? 'Hide' : 'Read More' }}</p>
                                         <div class="h-6 w-6 flex justify-center items-center">
                                             <FontAwesomeIcon :icon="['fas', isExpanded ? 'caret-up' : 'caret-down']" class="text-sm" />
@@ -106,11 +106,11 @@
             <div class="container px-4 sm:px-0 mx-auto py-32">
 
                 <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-16">
-                    <div class="sticky top-14 z-30 col-span-1 md:col-span-3 h-14 bg-blackFaded backdrop-filter backdrop-blur-sm md:h-20 pl-0 md:pl-8 border-white border border-t-4 flex flex-row text-white items-center space-x-6">
+                    <div class="sticky top-14 z-30 col-span-1 md:col-span-3 h-12 bg-blackFaded backdrop-filter backdrop-blur-sm md:h-20 pl-0 md:pl-8 border-white border border-t-4 flex flex-row text-white items-center space-x-6">
                         <div class="h-12 w-12 flex flex-row justify-items-center items-center hidden md:grid">
                             <FontAwesomeIcon :icon="['fas', 'address-card']" class="text-3xl" />
                         </div>
-                        <h1 class="text-2xl font-title title-bold">Core Competencies</h1>
+                        <h1 class="text-xl font-title title-bold">Core Competencies</h1>
                     </div>
                     <div class="col-span-1 bg-white p-4 space-y-8 self-start">
                         <div class="w-full flex justify-center bg-transparent">
@@ -159,11 +159,11 @@
             <div class="container px-4 sm:px-0 mx-auto py-32">
 
                 <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-16">
-                    <div class="sticky top-14 z-30 col-span-1 md:col-span-3 h-14 bg-blackFaded backdrop-filter backdrop-blur-sm md:h-20 pl-0 md:pl-8 border-white border border-t-4 flex flex-row text-white items-center space-x-6">
+                    <div class="sticky top-14 z-30 col-span-1 md:col-span-3 h-12 bg-blackFaded backdrop-filter backdrop-blur-sm md:h-20 pl-0 md:pl-8 border-white border border-t-4 flex flex-row text-white items-center space-x-6">
                         <div class="h-12 w-12 flex flex-row justify-items-center items-center hidden md:grid">
                             <FontAwesomeIcon :icon="['fas', 'shapes']" class="text-3xl" />
                         </div>
-                        <h1 class="text-2xl font-title title-bold">A Bit of This, a Bit of That</h1>
+                        <h1 class="text-xl font-title title-bold">A Bit of This, a Bit of That</h1>
                     </div>
                     <div class="col-span-1 md:col-span-3 bg-transparent pl-0 md:pl-8 flex flex-row text-white items-center space-x-6">
                         <p class="font-main text-sm text-grayLightPrimary md:text-whiteFaded">I love to learn, but wouldn’t call myself an expert on these technologies or processes just yet. I’m always eager to explore and add to my toolkit.</p>
@@ -458,5 +458,19 @@ export default {
 .fa, .fas, .far, .fal, .fad, .fab {
     min-width: 1em; /* Ensures icons have a default width */
     min-height: 1em; /* Ensures icons have a default height */
+}
+</style>
+
+<style scoped>
+.sweep-hover {
+  background: linear-gradient(#505050 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  transform: scale(1) rotate(0deg);
+  color: #505050;
+  transition: transform 0.4s, background-size 0.4s, background-position 0s, color 0.4s;
+}
+
+.sweep-hover:hover {
+  --p: 100%;
+  color: #FFFFFF;
 }
 </style>

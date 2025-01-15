@@ -6,8 +6,8 @@
             </div>
             <div class="absolute top-0 left-0 w-full h-full bg-transparent">
                 <div class="container mx-auto px-4 sm:px-0 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-x-16">
-                    <div class="col-span-1 lg:col-span-2 bg-white border border-black bracketing bracket-tl bracket-br bracket-tl-callout bracket-br-callout mt-20 p-4 pl-8">
-                        <h1 class="font-title title-bold text-xl md:text-3xl gradient-text pt-1" :class="bgColor">
+                    <div class="col-span-1 lg:col-span-2 bg-white border border-black bracketing bracket-tl bracket-br bracket-tl-callout bracket-br-callout mt-20 pl-8 pr-4 py-6">
+                        <h1 class="font-title title-bold text-xl gradient-text pt-1" :class="bgColor">
                             <slot name="title" />
                         </h1>
                     </div>

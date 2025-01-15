@@ -23,7 +23,7 @@
                             <ButtonSecondary label="Contact" link="/contact" class="notch-small px-2 py-1 text-white"/>
                         </li>
                         <li>
-                            <a href="/WrightMax_Resume.pdf" class="notch-small px-2 py-1 bg-transparent text-white hover:bg-mint hover:text-black focus:text-white active:text-white hover:font-semibold" target="_blank" rel="noopener noreferrer">
+                            <a href="/WrightMax_Resume.pdf" class="notch-small px-2 py-1 focus:text-white active:text-white hover:font-semibold sweep-hover" target="_blank" rel="noopener noreferrer">
                                 Resume
                             </a>
                         </li>
@@ -57,3 +57,17 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+.sweep-hover {
+  background: linear-gradient(#00AB8F 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  transform: scale(1) rotate(0deg);
+  color: #FFFFFF;
+  transition: transform 0.4s, background-size 0.4s, background-position 0s, color 0.4s;
+}
+
+.sweep-hover:hover {
+  --p: 100%;
+  color: #000000;
+}
+</style>

@@ -27,22 +27,22 @@
         "impacttags":[
 
         ],
-        "color": "bg-hyperbolepink"
+        "color": "bg-hyperbolePink"
     },
     {
         "id": "5",
-        "image": "",
+        "image": "/Experiments/Capitals/0_Hero_Full.jpeg",
         "animation": "",
         "video-lg": "",
         "video-md": "",
         "video-sm": "",
-        "title": "Speculative Typographic Branding System for the Washington Capitals",
+        "title": "Speculative Typographic Branding for the Washington Capitals",
         "caption": "An extensive speculative branding system, focused on typography, for the Washington Capitals, featuring color options, letterhead, mailers, and more.",
         "category": "Typography",
         "categoryIcon": "fas fa-book-open",
         "buttonLink": "/allcaps",
         "highlight": true,
-        "completed": false,
+        "completed": true,
         "type": "Experiment",
         "researchtags":[
             "Observations"
@@ -54,7 +54,7 @@
         "impacttags":[
 
         ],
-        "color": "bg-hyperbolepink"
+        "color": "bg-capsRed"
     },
     {
         "id": "4",

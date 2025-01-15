@@ -1,7 +1,9 @@
 <template>
-    <nuxt-link :to="link" class="notch notch-border border px-4 py-2 font-main font-sm bg-white border-black hover:bg-mint focus:bg-mint active:bg-mint focus:border-white text-grayDarkest hover:text-white focus:text-white active:text-white">
-        {{ label }}
+  <div class="bg-white w-max h-10 flex place-items-center p-0">
+    <nuxt-link :to="link" class="border h-full w-full px-4 pb-px flex place-items-center font-main font-sm border-black focus:bg-mint active:bg-mint focus:border-white focus:text-white active:text-white sweep-hover">
+      {{ label }}
     </nuxt-link>
+  </div>
 </template>
 
 <script>
@@ -18,3 +20,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.sweep-hover {
+  background: linear-gradient(#00AB8F 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  transform: scale(1) rotate(0deg);
+  color: #323232;
+  transition: transform 0.4s, background-size 0.4s, background-position 0s, color 0.4s;
+}
+
+.sweep-hover:hover {
+  --p: 100%;
+  color: #FFFFFF;
+}
+</style>
