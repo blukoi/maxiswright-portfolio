@@ -24,8 +24,8 @@
                         <button 
                             class="button h-full w-full project-tab relative flex flex-row justify-center place-items-center" 
                             :class="{
-                            'pt-1': index === selectedProjectIndex,
-                            'pt-0 sweep-hover': index !== selectedProjectIndex
+                            'pt-0': index === selectedProjectIndex,
+                            'pt-1 sweep-hover': index !== selectedProjectIndex
                             }"
                         >
                             <FontAwesomeIcon
