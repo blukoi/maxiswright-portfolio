@@ -2,7 +2,7 @@
     <div class="w-full">
       <div class="h-auto">
         <div>
-            <div class="bg-whiteFaded backdrop-filter backdrop-blur-sm sticky top-14 flex flex-row items-end z-40">
+            <div class="bg-gradient-to-t from-white via-white to-transparent sticky top-0 pt-14 flex flex-row items-end z-40">
                 <div
                     v-for="(project, index) in highlightedProjects"
                     :key="project.title + '-tab'"

@@ -5,7 +5,7 @@
     <div class="w-full content-center z-10">
       <div class="container px-4 sm:px-0 mx-auto pt-32">
   
-        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-x-8 md:gap-x-16 gap-y-16 md:gap-y-32">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-x-8 md:gap-x-16 gap-y-8 md:gap-y-16">
 
           <div class="col-span-1 col-start-1 lg:col-span-2 justify-center">
               <div class="space-y-6 lg:space-y-12 pl-8">
@@ -33,7 +33,7 @@
           </div>
 
           <div class="col-span-1 col-start-1">
-              <div class="w-full text-right">
+              <div class="w-full text-right pt-14">
                   <h1 class="font-title title-normal text-grayLighter text-2xl">Highlights —</h1>
               </div>
           </div>
