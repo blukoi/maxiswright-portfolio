@@ -54,8 +54,8 @@
                                 class="project-child grid grid-cols-1 gap-8 p-8 text-white"
                             >
                                 <div class="flex justify-start items-center">
-                                  <FontAwesomeIcon :icon="['fas', 'arrow-right-to-bracket']" class="text-2xl text-whiteFaded mr-4" />
-                                  <h1 class="font-title title-bold text-xl pt-1">
+                                  <h1 class="font-title title-bold text-xl">
+                                    <FontAwesomeIcon :icon="['fas', 'arrow-right-to-bracket']" class="text-xl text-whiteFaded mr-2" />
                                     {{ activeProject.title }}
                                   </h1>
                                 </div>
