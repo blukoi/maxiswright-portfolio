@@ -2,51 +2,63 @@
     <div class="w-full">
       <div class="h-auto">
         <div>
-            <div class="flex flex-row space-x-px z-40">
+            <div class="bg-whiteFaded backdrop-filter backdrop-blur-sm sticky top-14 flex flex-row items-end z-40">
                 <div
                     v-for="(project, index) in highlightedProjects"
                     :key="project.title + '-tab'"
-                    class="button notch border-black w-max h-10"
+                    class="w-12 flex-auto border-black"
                     :class="{
-                    'border border-b-0 notch-border bg-white text-black': index === selectedProjectIndex,
-                    'border-b bg-grayLightPrimary text-grayDarker': index !== selectedProjectIndex
+                    'px-0 border-0': index === selectedProjectIndex,
+                    'pr-px border-b': index < selectedProjectIndex,
+                    'pl-px border-b': index > selectedProjectIndex
                     }"
-                    @click="selectedProjectIndex = index"
                 >
-                    <button 
-                        class="button h-10 w-20 project-tab relative flex flex-row justify-center place-items-center" 
+                    <div
+                        class="button notch border-black w-full"
                         :class="{
-                        'pt-1': index === selectedProjectIndex,
-                        'pt-0 sweep-hover': index !== selectedProjectIndex
+                        'h-10 border border-b-0 notch-border bg-white text-black': index === selectedProjectIndex,
+                        'h-9 bg-grayLighter text-grayDarkest': index !== selectedProjectIndex,
                         }"
+                        @click="selectedProjectIndex = index"
                     >
-                        <FontAwesomeIcon
-                        :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]"
-                        class="text-lg"
-                        />
-                    </button>
+                        <button 
+                            class="button h-full w-full project-tab relative flex flex-row justify-center place-items-center" 
+                            :class="{
+                            'pt-1': index === selectedProjectIndex,
+                            'pt-0 sweep-hover': index !== selectedProjectIndex
+                            }"
+                        >
+                            <FontAwesomeIcon
+                            :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]"
+                            class="text-lg"
+                            />
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <!-- The Currently Selected Project's Content -->
             <div 
                 v-if="activeProject" 
-                class="border border-black p-2 lg:p-4 bg-white z-30 -mt-px"
+                class="relative border border-black p-2 lg:p-4 bg-white z-20 -mt-px"
             >
-                <div class="w-full h-max notch-small overflow-hidden">
+                <div class="w-full h-max notch overflow-hidden">
                     <transition name="wipe" mode="out-in">
                         <div
                             :key="activeProject.title"
                             :class="activeProject.color" 
-                            class="project-container notch-small"
+                            class="project-container notch"
                         >
                             <nuxt-link
                                 :to="activeProject.buttonLink"
                                 class="project-child grid grid-cols-1 gap-8 p-8 text-white"
                             >
-                                <h1 class="font-title title-bold text-xl">
-                                {{ activeProject.title }}
-                                </h1>
+                                <div class="flex justify-start items-center">
+                                  <FontAwesomeIcon :icon="['fas', 'arrow-right-to-bracket']" class="text-2xl text-whiteFaded mr-4" />
+                                  <h1 class="font-title title-bold text-xl pt-1">
+                                    {{ activeProject.title }}
+                                  </h1>
+                                </div>
             
                                 <!-- Media (Lottie, Video, or Image) -->
                                 <div class="overflow-hidden z-20">
@@ -211,9 +223,7 @@ export default {
 .sweep-hover {
   background: linear-gradient(#00AB8F 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
   transform: scale(1) rotate(0deg);
-  color: #505050;
-  border-width: 0 0 1px 0;
-  border-color: #000000;
+  color: #323232;
   transition: transform 0.4s, background-size 0.4s, background-position 0s, color 0.4s;
 }
 

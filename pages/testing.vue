@@ -2,24 +2,10 @@
     <div>
       <CustomCursor />
       <NavBar />
-      <!-- <TestComponent /> -->
       <div class="w-full content-center z-10">
         <div class="container px-4 sm:px-0 mx-auto pt-32">
   
-          <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-0 gap-y-16">
-  
-            <!-- <div class="z-40 lg:pt-24 lg:pb-24 static col-span-1 lg:col-span-2 col-start-1 lg:col-start-2 flex flex-row justify-center mx-0 lg:mx-24 xl:mx-32 2xl:mx-56">
-              <JumbotronHome class="z-0 w-full md:w-1/2 lg:w-full" />
-            </div> -->
-  
-            <!-- <div class="col-span-1 lg:col-span-3 w-max bg-mint text-white h-16 px-8 items-center rounded-full flex flex-row gap-4">
-              <div class="h-8 w-8 flex flex-row justify-center items-center">
-                <FontAwesomeIcon id="WavingHand" :icon="['fas', 'hand']" class="text-3xl" />
-              </div>
-              <h1 class="font-title title-bold text-3xl pt-1">
-                Hi!
-              </h1>
-            </div> -->
+          <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-x-8 md:gap-x-16 gap-y-16 md:gap-y-32">
   
             <div class="col-span-1 col-start-1 lg:col-span-2 justify-center">
                 <div class="space-y-6 lg:space-y-12 pl-8">
@@ -45,11 +31,14 @@
                     <ButtonLight label="Let's Talk" link="/contact" class="content-center pointer-events-auto w-max" />
                 </div>
             </div>
-  
-            <div class="col-span-1 col-start-1 lg:col-start-2 space-y-10">
+
+            <div class="col-span-1 col-start-1">
                 <div class="w-full text-right">
-                    <h1 class="font-title title-normal text-grayLighter text-6xl">Highlights —</h1>
+                    <h1 class="font-title title-normal text-grayLighter text-2xl">Highlights —</h1>
                 </div>
+            </div>
+  
+            <div class="col-span-1 col-start-1 lg:col-span-2 lg:col-start-2 space-y-10">
                 <CoverTesting />   
             </div>
         

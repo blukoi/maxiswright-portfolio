@@ -68,6 +68,7 @@ import {
     faDownLong,
     faPeopleGroup,
     faBookOpen,
+    faArrowRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFontAwesome,
@@ -146,6 +147,7 @@ library.add(
     faDownLong,
     faPeopleGroup,
     faBookOpen,
+    faArrowRightToBracket,
     faFontAwesome,
     faLinkedin,
     faInstagram,

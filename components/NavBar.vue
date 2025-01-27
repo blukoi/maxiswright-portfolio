@@ -18,7 +18,7 @@
             </div>
             <h1 class="font-title title-normal self-center hidden sm:block pt-0.5">Max Wright</h1>
           </nuxt-link>
-          <ul class="flex flex-row h-full items-center uppercase text-xs tracking-widest">
+          <ul class="flex flex-row h-full items-center text-xs tracking-widest">
             <li class="hidden">
                 <NavButton label="Home" link="/" />
             </li>
