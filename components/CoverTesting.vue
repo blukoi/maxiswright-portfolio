@@ -1,46 +1,52 @@
 <template>
     <div class="w-full">
       <div class="h-auto">
-        <div>
-            <div class="bg-gradient-to-t from-white via-white to-transparent sticky top-0 pt-14 flex flex-row items-end z-40">
-                <div
-                    v-for="(project, index) in highlightedProjects"
-                    :key="project.title + '-tab'"
-                    class="w-12 flex-auto border-black"
-                    :class="{
-                    'px-0 border-0': index === selectedProjectIndex,
-                    'pr-px border-b': index < selectedProjectIndex,
-                    'pl-px border-b': index > selectedProjectIndex
-                    }"
-                >
-                    <div
-                        class="button notch border-black w-full"
-                        :class="{
-                        'h-10 border border-b-0 notch-border bg-white text-black': index === selectedProjectIndex,
-                        'h-9 bg-grayLighter text-grayDarkest': index !== selectedProjectIndex,
-                        }"
-                        @click="selectedProjectIndex = index"
-                    >
-                        <button 
-                            class="button h-full w-full project-tab relative flex flex-row justify-center place-items-center" 
-                            :class="{
-                            'pt-0': index === selectedProjectIndex,
-                            'pt-1 sweep-hover': index !== selectedProjectIndex
-                            }"
-                        >
-                            <FontAwesomeIcon
-                            :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]"
-                            class="text-lg"
-                            />
-                        </button>
-                    </div>
+        <div class="border-black border-b">
+            <div class="bg-gradient-to-t from-white via-white to-transparent sticky top-0 pt-14 z-40">
+                <div class="flex flex-row items-end">
+                  <div
+                      v-for="(project, index) in highlightedProjects"
+                      :key="project.title + '-tab'"
+                      class="w-12 flex-auto border-black"
+                      :class="{
+                      'px-0 border-0': index === selectedProjectIndex,
+                      'pr-px border-b': index < selectedProjectIndex,
+                      'pl-px border-b': index > selectedProjectIndex
+                      }"
+                  >
+                      <div
+                          class="button notch border-black w-full"
+                          :class="{
+                          'h-10 border border-b-0 notch-border bg-white text-black': index === selectedProjectIndex,
+                          'h-9 bg-grayLighter text-grayDarkest': index !== selectedProjectIndex,
+                          }"
+                          @click="selectedProjectIndex = index"
+                      >
+                          <button 
+                              class="button h-full w-full project-tab relative flex flex-row justify-center place-items-center" 
+                              :class="{
+                              'pt-0': index === selectedProjectIndex,
+                              'pt-1 sweep-hover': index !== selectedProjectIndex
+                              }"
+                          >
+                              <FontAwesomeIcon
+                              :icon="[project.categoryIcon.split(' ')[0], project.categoryIcon.split(' ')[1]]"
+                              class="text-lg"
+                              />
+                          </button>
+                      </div>
+                  </div>
                 </div>
+
+                <div class="w-full h-2 lg:h-4 bg-white border-black border-l border-r border-t -mt-px"></div>
             </div>
 
             <!-- The Currently Selected Project's Content -->
             <div 
-                v-if="activeProject" 
-                class="relative border border-black p-2 lg:p-4 bg-white z-20 -mt-px"
+                v-for="(project, index) in highlightedProjects" 
+                v-show="index === selectedProjectIndex" 
+                :key="project.title" 
+                class="relative border-l border-r border-black px-2 lg:px-4 pb-2 lg:pb-4 bg-white z-20 -mt-px"
             >
                 <div class="w-full h-max notch overflow-hidden">
                     <transition name="wipe" mode="out-in">
